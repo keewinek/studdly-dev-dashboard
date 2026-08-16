@@ -131730,7 +131730,7 @@ if(s!=null&&B.d.b7(s).length!==0)B.c.J(l,A.b([B.el,A.af(s,2,B.az,q,B.eo.b8(A.t(a
 e.push(A.dy(A.bP(l,B.aP,B.bF,B.y),1))
 return A.bZ(q,A.er(!1,B.W,!0,q,A.ir(!1,g,!0,new A.bT(new A.aP(24,8,24,8),A.fo(e,B.D,q,B.A,B.y),q),q,!0,q,q,q,q,q,q,r.f,q,q,q),B.r,B.x,0,q,q,q,q,q,B.aL),B.r,q,new A.az(0,1/0,51,1/0),new A.cL(k,q,h,i,q,q,B.ae),q,q,q,q,1/0)}}
 A.a5E.prototype={
-W(a){var s=A.t(a).ax.a===B.f?"assets/images/logotype_white.png":"assets/images/logotype_black.png"
+W(a){var s=A.t(a).ax.a===B.f?"assets/images/logotype_new_white.png":"assets/images/logotype_new_black.png"
 return A.fo(A.b([A.Ze(s,null,new A.aIM(this),B.dc,B.eA,60,!1,200)],t.p),B.D,null,B.A,B.cd)}}
 A.aIM.prototype={
 $3(a,b,c){var s=null,r=A.t(a).ax.a===B.f?B.p:B.h
@@ -131762,7 +131762,7 @@ $S:703}
 A.aKv.prototype={
 $3(a,b,c){var s
 if(b.a)s="assets/images/logotype_dev.png"
-else s=A.t(a).ax.a===B.f?"assets/images/logotype_white.png":"assets/images/logotype_black.png"
+else s=A.t(a).ax.a===B.f?"assets/images/logotype_new_white.png":"assets/images/logotype_new_black.png"
 return A.Ze(s,null,new A.aKr(),B.dc,B.eA,45,!1,200)},
 $C:"$3",
 $R:3,
