@@ -190,8 +190,8 @@ body,
   flex-direction: column;
   gap: var(--block-gap);
   min-width: max-content;
-  content-visibility: auto;
-  contain-intrinsic-size: auto 520px 2400px;
+  /* Do not use content-visibility here: fixed intrinsic widths fight --ms /
+     transient CSS scale and make locale columns look far apart until settle. */
 }
 
 .locale-heading {
@@ -206,8 +206,6 @@ body,
   border-radius: var(--radius-block);
   padding: var(--block-pad);
   background: transparent;
-  content-visibility: auto;
-  contain-intrinsic-size: auto 480px 900px;
 }
 
 .theme-block[data-theme='light'] {
@@ -423,7 +421,8 @@ body,
   user-select: none;
   contain: strict;
   content-visibility: auto;
-  contain-intrinsic-size: auto 156px 338px;
+  /* Must track layout zoom — fixed 156×338 placeholders diverge while --ms changes. */
+  contain-intrinsic-size: auto var(--frame-w) var(--frame-h);
 }
 
 .frame img {
