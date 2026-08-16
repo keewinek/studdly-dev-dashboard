@@ -171,6 +171,20 @@ async function buildScreenEntry(job, result, previous) {
   }
 }
 
+async function normalizeScreenImageUrls(screens) {
+  for (const screen of screens) {
+    const fullRel = `/screens/${screen.id}.png`
+    const thumbRel = `/screens/thumbs/${screen.id}.webp`
+    screen.fullImageUrl = fullRel
+    const thumbOnDisk = await exists(path.join(root, 'public/screens/thumbs', `${screen.id}.webp`))
+    if (thumbOnDisk) {
+      screen.imageUrl = thumbRel
+    } else if (!screen.imageUrl) {
+      screen.imageUrl = fullRel
+    }
+  }
+}
+
 async function writeMergedManifest(catalogJobs, entryById, packFailures, options = {}) {
   const captureInProgress = options.captureInProgress === true
   const screens = []
@@ -182,6 +196,7 @@ async function writeMergedManifest(catalogJobs, entryById, packFailures, options
     }
     screens.push(await buildScreenEntry(job, null, entryById))
   }
+  await normalizeScreenImageUrls(screens)
   const missing = screens.filter((s) => s.missing).length
   const stale = screens.filter((s) => s.stale).length
   const keptOld = packFailures.filter((f) => f.keptOld).length

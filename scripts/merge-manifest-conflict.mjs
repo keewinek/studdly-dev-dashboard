@@ -17,11 +17,17 @@ const manifestPath = path.join(root, 'public/manifest.json')
 function preferScreenEntry(a, b) {
   const aAt = Date.parse(a?.lastSuccessAt || '') || 0
   const bAt = Date.parse(b?.lastSuccessAt || '') || 0
-  if (bAt !== aAt) return bAt > aAt ? b : a
-  const aWebp = typeof a?.imageUrl === 'string' && a.imageUrl.includes('/thumbs/')
-  const bWebp = typeof b?.imageUrl === 'string' && b.imageUrl.includes('/thumbs/')
-  if (aWebp !== bWebp) return bWebp ? b : a
-  return b
+  const winner = bAt >= aAt ? b : a
+  const loser = winner === b ? a : b
+  const webpUrl =
+    (typeof winner?.imageUrl === 'string' && winner.imageUrl.includes('/thumbs/') && winner.imageUrl) ||
+    (typeof loser?.imageUrl === 'string' && loser.imageUrl.includes('/thumbs/') && loser.imageUrl) ||
+    winner?.imageUrl
+  return {
+    ...winner,
+    imageUrl: webpUrl,
+    fullImageUrl: winner?.fullImageUrl || loser?.fullImageUrl || `/screens/${winner.id}.png`,
+  }
 }
 
 function mergeManifestDocuments(ours, theirs) {

@@ -42,6 +42,29 @@ function frameAssetVersion(frame: ScreenFrame, manifest: UiManifest): string | u
   return frame.lastSuccessSha || frame.attemptSha || manifest.gitSha || undefined
 }
 
+/**
+ * Map tiles always prefer WebP thumbs even if a pack race rewrote imageUrl → PNG.
+ * Order: thumb → declared imageUrl → full PNG. Deduped.
+ */
+function frameImageCandidates(frame: ScreenFrame): string[] {
+  const thumb = `/screens/thumbs/${frame.id}.webp`
+  const full = frame.fullImageUrl || `/screens/${frame.id}.png`
+  const declared = frame.imageUrl
+  const out: string[] = []
+  const push = (u: string | undefined) => {
+    if (!u || out.includes(u)) return
+    out.push(u)
+  }
+  if (declared?.includes('/thumbs/')) {
+    push(declared)
+  } else {
+    push(thumb)
+    push(declared)
+  }
+  push(full)
+  return out
+}
+
 /** Prefer per-frame timestamp; fall back to manifest time when SHA matches the latest run. */
 function frameSuccessAt(frame: ScreenFrame, manifest: UiManifest): string | undefined {
   if (frame.lastSuccessAt) return frame.lastSuccessAt
@@ -204,7 +227,7 @@ export function createUiMap(
     tile.card.classList.add('frame-stale')
   }
 
-  const MAX_CONCURRENT_IMAGES = 8
+  const MAX_CONCURRENT_IMAGES = 16
   let inFlightImages = 0
   const imageQueue: Tile[] = []
 
@@ -235,8 +258,9 @@ export function createUiMap(
       inFlightImages++
       tile.loading = true
       const version = frameAssetVersion(tile.frame, manifest)
-      const baseUrl = withAssetVersion(tile.frame.imageUrl, version)
-      let attempts = 0
+      const candidates = frameImageCandidates(tile.frame).map((u) => withAssetVersion(u, version))
+      let candidateIdx = 0
+      let attemptsOnCandidate = 0
 
       const finish = () => {
         inFlightImages--
@@ -246,38 +270,35 @@ export function createUiMap(
         pumpImageQueue()
       }
 
-      const fullUrl = tile.frame.fullImageUrl
-        ? withAssetVersion(tile.frame.fullImageUrl, version)
-        : undefined
-      let useFull = false
-
       const tryLoad = () => {
         if (!tile.activated) {
           finish()
           return
         }
-        attempts++
-        const url = useFull && fullUrl ? fullUrl : baseUrl
+        const url = candidates[candidateIdx]
+        if (!url) {
+          showFallback(tile)
+          finish()
+          return
+        }
+        attemptsOnCandidate++
         tile.img.onload = () => finish()
         tile.img.onerror = () => {
           if (!tile.activated) {
             finish()
             return
           }
-          if (attempts < 3) {
-            window.setTimeout(tryLoad, 350 * attempts)
+          // One quick retry for flakes, then next candidate (thumb → PNG) with no long backoff.
+          if (attemptsOnCandidate < 2) {
+            window.setTimeout(tryLoad, 80)
             return
           }
-          if (!useFull && fullUrl && fullUrl !== baseUrl) {
-            useFull = true
-            attempts = 0
-            window.setTimeout(tryLoad, 120)
-            return
-          }
-          showFallback(tile)
-          finish()
+          candidateIdx++
+          attemptsOnCandidate = 0
+          tryLoad()
         }
-        const bust = attempts === 1 ? '' : `${url.includes('?') ? '&' : '?'}r=${attempts}`
+        const bust =
+          attemptsOnCandidate === 1 ? '' : `${url.includes('?') ? '&' : '?'}r=${attemptsOnCandidate}`
         tile.img.src = `${url}${bust}`
       }
 
