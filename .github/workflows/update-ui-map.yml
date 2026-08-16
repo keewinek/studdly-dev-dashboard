@@ -81,10 +81,16 @@ jobs:
             --no-wasm-dry-run \
             --no-tree-shake-icons
 
+      - name: Export UI preview catalog
+        working-directory: studdly
+        run: |
+          dart run tool/export_ui_preview_catalog.dart --out "$GITHUB_WORKSPACE/src/preview_catalog.json"
+          dart run tool/export_ui_preview_catalog.dart --out "$GITHUB_WORKSPACE/public/preview_catalog.json"
+
       - name: Sync preview into public/app
         run: |
           chmod +x scripts/sync-flutter-preview.sh
-          SKIP_BUILD=1 STUDDLY_ROOT="$GITHUB_WORKSPACE/studdly" \
+          SKIP_BUILD=1 SKIP_CATALOG_EXPORT=1 STUDDLY_ROOT="$GITHUB_WORKSPACE/studdly" \
             ./scripts/sync-flutter-preview.sh
 
       - name: Setup Node
@@ -136,7 +142,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Never `git add -A` — CI checks out private Studdly into ./studdly;
           # that would land as a broken private gitlink and stall Netlify.
-          git add public/app public/screens public/manifest.json public/capture-report.json
+          git add public/app public/screens public/manifest.json public/capture-report.json \
+            public/preview_catalog.json src/preview_catalog.json
           if git diff --cached --quiet; then
             echo "No leftover dashboard changes (packs already pushed)."
             exit 0
@@ -156,8 +163,10 @@ jobs:
             else
               echo "Rebase conflict on attempt ${attempt} — keeping our capture artifacts"
               # During rebase: "theirs" = our commit being replayed
-              git checkout --theirs -- public/screens public/manifest.json public/capture-report.json public/app || true
-              git add public/screens public/manifest.json public/capture-report.json public/app
+              git checkout --theirs -- public/screens public/manifest.json public/capture-report.json public/app \
+                public/preview_catalog.json src/preview_catalog.json || true
+              git add public/screens public/manifest.json public/capture-report.json public/app \
+                public/preview_catalog.json src/preview_catalog.json
               GIT_EDITOR=true git rebase --continue || {
                 git rebase --abort || true
               }

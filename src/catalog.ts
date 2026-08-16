@@ -1,7 +1,7 @@
 import type { LocaleId, ScreenFrame, ThemeId, UiManifest } from './types'
 import { generateScreenDefs } from './catalog-spec'
 
-/** Canonical screen catalog — generated from axes/prunes in catalog-spec.ts. */
+/** Canonical screen catalog — exported from Studdly ui_preview_catalog.dart. */
 export const SCREEN_DEFS = generateScreenDefs()
 
 export const LOCALES: { code: LocaleId; label: string; nativeName: string }[] = [

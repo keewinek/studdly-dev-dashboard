@@ -29,6 +29,17 @@ rm -rf "$ROOT/public/app"
 mkdir -p "$ROOT/public/app"
 rsync -a --delete --exclude '.last_build_id' "$STUDDLY_ROOT/build/web/" "$ROOT/public/app/"
 
+if [[ "${SKIP_CATALOG_EXPORT:-0}" == "1" ]]; then
+  echo "SKIP_CATALOG_EXPORT=1 — leaving preview_catalog.json as-is"
+else
+  echo "Exporting UI preview catalog from Studdly ..."
+  (
+    cd "$STUDDLY_ROOT"
+    dart run tool/export_ui_preview_catalog.dart --out "$ROOT/src/preview_catalog.json"
+    dart run tool/export_ui_preview_catalog.dart --out "$ROOT/public/preview_catalog.json"
+  )
+fi
+
 # Ensure stale PWAs are cleared for deep-link reliability.
 INDEX_HTML="$ROOT/public/app/index.html" python3 - <<'PY'
 from pathlib import Path

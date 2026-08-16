@@ -101,7 +101,7 @@ PREVIEW_BASE=http://127.0.0.1:7360/app/ npm run capture:screens
 
 One PNG per frame (`/screens/{id}.png`). Zoom uses layout size (`--ms`), not CSS `scale()`, so chrome stays sharp; tiles load only when near the viewport.
 
-Screen states are generated algorithmically from `src/catalog-spec.ts` (scroll positions, overlays, empty/full, CTA chrome, …) — currently ~90 unique layouts × theme × locale.
+Screen states come from Studdly (`lib/ui_preview/ui_preview_catalog.dart`), exported to `src/preview_catalog.json` — currently ~90 unique layouts × theme × locale. Add/remove screens there (+ wire `UiPreviewRegistry`), then re-export / re-run UI map CI.
 
 Failed frames keep the previous file and set `stale` / `captureError` / `lastSuccessSha` / `lastSuccessAt` in `public/manifest.json`.
 The map shows a caption under each shot (`relative time · short SHA`) and badges **Kept old** (capture failed), **Behind** (older successful SHA than the latest map run), or **Missing**.
@@ -112,6 +112,14 @@ Build + sync into this repo (or let CI do it):
 
 ```bash
 ./scripts/sync-flutter-preview.sh
+# also refreshes src/preview_catalog.json from Studdly's ui_preview_catalog.dart
+```
+
+Or catalog only:
+
+```bash
+cd ../studdly && dart run tool/export_ui_preview_catalog.dart \
+  --out ../studdly-dev-dashboard/src/preview_catalog.json
 ```
 
 `VITE_FLUTTER_PREVIEW_URL` defaults to `/app/` (same origin).

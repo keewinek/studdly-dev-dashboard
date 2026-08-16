@@ -12,10 +12,10 @@
 import { chromium } from 'playwright'
 import { execSync } from 'node:child_process'
 import { access, mkdir, readFile, rename, unlink, writeFile } from 'node:fs/promises'
+import { readFileSync } from 'node:fs'
 import path from 'node:path'
-import { fileURLToPath, pathToFileURL } from 'node:url'
+import { fileURLToPath } from 'node:url'
 import { constants as fsConstants } from 'node:fs'
-
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
 const previewBase = (process.env.PREVIEW_BASE || 'https://dev.studdly.app/app/').replace(/\/?$/, '/')
@@ -29,10 +29,28 @@ const commitEachPack = process.env.COMMIT_EACH_PACK === '1'
 const gitSha = (process.env.GITHUB_SHA || 'local').slice(0, 12)
 const settleMs = Number(process.env.SETTLE_MS || 2200)
 
-const { generateScreenDefs } = await import(
-  pathToFileURL(path.join(root, 'src/catalog-spec.ts')).href,
-)
-const SCREEN_DEFS = generateScreenDefs()
+function loadScreenDefs() {
+  const candidates = [
+    path.join(root, 'src/preview_catalog.json'),
+    path.join(root, 'public/preview_catalog.json'),
+  ]
+  for (const file of candidates) {
+    try {
+      const data = JSON.parse(readFileSync(file, 'utf8'))
+      if (Array.isArray(data.screens) && data.screens.length > 0) {
+        console.log(`Catalog: ${data.screens.length} screens from ${path.relative(root, file)}`)
+        return data.screens
+      }
+    } catch {
+      // try next
+    }
+  }
+  throw new Error(
+    'Missing preview_catalog.json — export from Studdly: dart run tool/export_ui_preview_catalog.dart',
+  )
+}
+
+const SCREEN_DEFS = loadScreenDefs()
 
 const LOCALES = [
   { code: 'en', label: 'English', nativeName: 'English' },
@@ -209,11 +227,13 @@ async function commitAndPushPack(packLabel) {
   const short = String(gitSha).slice(0, 7)
   const message = `chore: UI map pack ${packLabel} from studdly@${short}`
   // Screens + manifest only — Flutter web build is committed once at the end of CI.
-  execSync('git add public/screens public/manifest.json public/capture-report.json', {
-    cwd: root,
-    stdio: 'inherit',
-  })
-  const porcelain = execSync('git status --porcelain', { cwd: root, encoding: 'utf8' }).trim()
+  execSync(
+    'git add public/screens public/manifest.json public/capture-report.json public/preview_catalog.json src/preview_catalog.json',
+    {
+      cwd: root,
+      stdio: 'inherit',
+    },
+  )  const porcelain = execSync('git status --porcelain', { cwd: root, encoding: 'utf8' }).trim()
   if (!porcelain) {
     console.log(`[pack ${packLabel}] nothing new to commit`)
     return
@@ -234,11 +254,13 @@ async function commitAndPushPack(packLabel) {
       )
       try {
         execSync(
-          'git checkout --theirs -- public/screens public/manifest.json public/capture-report.json || true',
+          'git checkout --theirs -- public/screens public/manifest.json public/capture-report.json public/preview_catalog.json src/preview_catalog.json || true',
           { cwd: root, stdio: 'inherit', shell: '/bin/bash' },
         )
-        execSync('git add -A', { cwd: root, stdio: 'inherit' })
-        execSync('git rebase --continue', {
+        execSync(
+          'git add public/screens public/manifest.json public/capture-report.json public/preview_catalog.json src/preview_catalog.json',
+          { cwd: root, stdio: 'inherit' },
+        )        execSync('git rebase --continue', {
           cwd: root,
           stdio: 'inherit',
           env: { ...process.env, GIT_EDITOR: 'true' },
