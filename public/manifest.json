@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-08-16T19:37:51.373Z",
+  "generatedAt": "2026-08-16T19:39:44.912Z",
   "gitSha": "470b8eb5c893",
   "appVersion": "preview-capture",
   "flutterPreviewBaseUrl": "/app/",
@@ -20431,16 +20431,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_language|default",
       "imageUrl": "/screens/thumbs/onboarding_language.default.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_language.default.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_language.default.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.825Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_language.other_highlighted.dark.de",
@@ -20456,16 +20456,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_language|other_highlighted",
       "imageUrl": "/screens/thumbs/onboarding_language.other_highlighted.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_language.other_highlighted.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_language.other_highlighted.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.826Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "language_picker.default.dark.de",
@@ -20481,16 +20481,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|default",
       "imageUrl": "/screens/thumbs/language_picker.default.dark.de.webp",
+      "fullImageUrl": "/screens/language_picker.default.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.default.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.826Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "language_picker.no_selection.dark.de",
@@ -20507,16 +20507,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|no_selection",
       "imageUrl": "/screens/thumbs/language_picker.no_selection.dark.de.webp",
+      "fullImageUrl": "/screens/language_picker.no_selection.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.no_selection.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.826Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "language_picker.search.dark.de",
@@ -20533,16 +20533,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|search",
       "imageUrl": "/screens/thumbs/language_picker.search.dark.de.webp",
+      "fullImageUrl": "/screens/language_picker.search.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.search.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.826Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "language_picker.search_empty.dark.de",
@@ -20560,16 +20560,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|search_empty",
       "imageUrl": "/screens/thumbs/language_picker.search_empty.dark.de.webp",
+      "fullImageUrl": "/screens/language_picker.search_empty.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.search_empty.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.826Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "language_picker.scrolled_mid.dark.de",
@@ -20586,16 +20586,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|scrolled_mid",
       "imageUrl": "/screens/thumbs/language_picker.scrolled_mid.dark.de.webp",
+      "fullImageUrl": "/screens/language_picker.scrolled_mid.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.scrolled_mid.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.827Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_q1.default.dark.de",
@@ -20611,16 +20611,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q1|default",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q1.default.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q1.default.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q1.default.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.827Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_q1.option_selected.dark.de",
@@ -20636,16 +20636,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q1|option_selected",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q1.option_selected.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q1.option_selected.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q1.option_selected.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.827Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_q2.default.dark.de",
@@ -20661,16 +20661,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q2|default",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q2.default.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q2.default.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q2.default.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.827Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_q2.option_selected.dark.de",
@@ -20686,16 +20686,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q2|option_selected",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q2.option_selected.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q2.option_selected.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q2.option_selected.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.827Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_q3.default.dark.de",
@@ -20711,16 +20711,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q3|default",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q3.default.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q3.default.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q3.default.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.827Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_q3.option_selected.dark.de",
@@ -20736,16 +20736,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q3|option_selected",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q3.option_selected.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q3.option_selected.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q3.option_selected.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.827Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_name.empty.dark.de",
@@ -20762,16 +20762,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_name|empty",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_name.empty.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_name.empty.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_name.empty.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.827Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_name.filled.dark.de",
@@ -20787,16 +20787,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_name|filled",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_name.filled.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_name.filled.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.322Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_name.filled.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.827Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_video.video_google_ai_studio.dark.de",
@@ -20815,16 +20815,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_google_ai_studio",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_google_ai_studio.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_google_ai_studio.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_google_ai_studio.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.828Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_video.video_groq.dark.de",
@@ -20843,16 +20843,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_groq",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_groq.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_groq.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_groq.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.828Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_video.video_cerebras.dark.de",
@@ -20871,16 +20871,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_cerebras",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_cerebras.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_cerebras.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_cerebras.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.828Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_video.video_open_router.dark.de",
@@ -20899,16 +20899,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_open_router",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_open_router.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_open_router.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_open_router.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.828Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_video.video_openai.dark.de",
@@ -20927,16 +20927,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_openai",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_openai.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_openai.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_openai.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.828Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_video.video_sambanova.dark.de",
@@ -20955,16 +20955,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_sambanova",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_sambanova.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_sambanova.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_sambanova.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.828Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_video.video_mistral.dark.de",
@@ -20983,16 +20983,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_mistral",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_mistral.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_mistral.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_mistral.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.828Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_video.video_zai.dark.de",
@@ -21011,16 +21011,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_zai",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_zai.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_zai.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_zai.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.828Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_google_ai_studio.dark.de",
@@ -21039,16 +21039,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_google_ai_studio",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_google_ai_studio.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_google_ai_studio.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_google_ai_studio.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.828Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_groq.dark.de",
@@ -21067,16 +21067,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_groq",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_groq.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_groq.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_groq.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.828Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_cerebras.dark.de",
@@ -21095,16 +21095,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_cerebras",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_cerebras.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_cerebras.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_cerebras.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.829Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_open_router.dark.de",
@@ -21123,16 +21123,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_open_router",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_open_router.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_open_router.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_open_router.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.829Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_openai.dark.de",
@@ -21151,16 +21151,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_openai",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_openai.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_openai.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_openai.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.829Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_sambanova.dark.de",
@@ -21179,16 +21179,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_sambanova",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_sambanova.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_sambanova.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_sambanova.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.829Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_mistral.dark.de",
@@ -21207,16 +21207,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_mistral",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_mistral.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_mistral.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_mistral.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.829Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_zai.dark.de",
@@ -21235,16 +21235,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_zai",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_zai.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_zai.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_zai.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.829Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_api_key.testing.dark.de",
@@ -21262,16 +21262,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|testing",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.testing.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.testing.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.testing.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.829Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_api_key.error.dark.de",
@@ -21290,16 +21290,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|error",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.error.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.error.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.error.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.829Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_api_key.visible.dark.de",
@@ -21317,16 +21317,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|visible",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.visible.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.visible.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.visible.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.829Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_api_key.provider_dialog.dark.de",
@@ -21345,16 +21345,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|provider_dialog",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.provider_dialog.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.provider_dialog.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.provider_dialog.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.829Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_easy.default.dark.de",
@@ -21370,16 +21370,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_easy|default",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_easy.default.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_easy.default.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_easy.default.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.830Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_dialogue_final.default.dark.de",
@@ -21395,16 +21395,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_final|default",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_final.default.dark.de.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_final.default.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_final.default.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.830Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.empty.dark.de",
@@ -21421,16 +21421,16 @@
       "group": "Home",
       "compareKey": "home|empty",
       "imageUrl": "/screens/thumbs/home.empty.dark.de.webp",
+      "fullImageUrl": "/screens/home.empty.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.empty.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.830Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.ready.dark.de",
@@ -21446,16 +21446,16 @@
       "group": "Home",
       "compareKey": "home|ready",
       "imageUrl": "/screens/thumbs/home.ready.dark.de.webp",
+      "fullImageUrl": "/screens/home.ready.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.ready.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.830Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.ready_scrolled_mid.dark.de",
@@ -21472,16 +21472,16 @@
       "group": "Home",
       "compareKey": "home|ready_scrolled_mid",
       "imageUrl": "/screens/thumbs/home.ready_scrolled_mid.dark.de.webp",
+      "fullImageUrl": "/screens/home.ready_scrolled_mid.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.ready_scrolled_mid.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.830Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.ready_scrolled_bottom.dark.de",
@@ -21498,16 +21498,16 @@
       "group": "Home",
       "compareKey": "home|ready_scrolled_bottom",
       "imageUrl": "/screens/thumbs/home.ready_scrolled_bottom.dark.de.webp",
+      "fullImageUrl": "/screens/home.ready_scrolled_bottom.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.ready_scrolled_bottom.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.830Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.empty_ready.dark.de",
@@ -21524,16 +21524,16 @@
       "group": "Home",
       "compareKey": "home|empty_ready",
       "imageUrl": "/screens/thumbs/home.empty_ready.dark.de.webp",
+      "fullImageUrl": "/screens/home.empty_ready.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.empty_ready.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.830Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.partial_progress.dark.de",
@@ -21549,16 +21549,16 @@
       "group": "Home",
       "compareKey": "home|partial_progress",
       "imageUrl": "/screens/thumbs/home.partial_progress.dark.de.webp",
+      "fullImageUrl": "/screens/home.partial_progress.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.partial_progress.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.830Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.analyzing.dark.de",
@@ -21574,16 +21574,16 @@
       "group": "Home",
       "compareKey": "home|analyzing",
       "imageUrl": "/screens/thumbs/home.analyzing.dark.de.webp",
+      "fullImageUrl": "/screens/home.analyzing.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.analyzing.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.830Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.queued.dark.de",
@@ -21599,16 +21599,16 @@
       "group": "Home",
       "compareKey": "home|queued",
       "imageUrl": "/screens/thumbs/home.queued.dark.de.webp",
+      "fullImageUrl": "/screens/home.queued.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.323Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.queued.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.830Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.mixed_statuses.dark.de",
@@ -21624,16 +21624,16 @@
       "group": "Home",
       "compareKey": "home|mixed_statuses",
       "imageUrl": "/screens/thumbs/home.mixed_statuses.dark.de.webp",
+      "fullImageUrl": "/screens/home.mixed_statuses.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.mixed_statuses.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.830Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.mixed_scrolled_mid.dark.de",
@@ -21650,16 +21650,16 @@
       "group": "Home",
       "compareKey": "home|mixed_scrolled_mid",
       "imageUrl": "/screens/thumbs/home.mixed_scrolled_mid.dark.de.webp",
+      "fullImageUrl": "/screens/home.mixed_scrolled_mid.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.mixed_scrolled_mid.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.831Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.search_no_results.dark.de",
@@ -21677,16 +21677,16 @@
       "group": "Home",
       "compareKey": "home|search_no_results",
       "imageUrl": "/screens/thumbs/home.search_no_results.dark.de.webp",
+      "fullImageUrl": "/screens/home.search_no_results.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.search_no_results.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.831Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.context_menu.dark.de",
@@ -21703,16 +21703,16 @@
       "group": "Home",
       "compareKey": "home|context_menu",
       "imageUrl": "/screens/thumbs/home.context_menu.dark.de.webp",
+      "fullImageUrl": "/screens/home.context_menu.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.context_menu.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.831Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.rename.dark.de",
@@ -21728,16 +21728,16 @@
       "group": "Home",
       "compareKey": "home|rename",
       "imageUrl": "/screens/thumbs/home.rename.dark.de.webp",
+      "fullImageUrl": "/screens/home.rename.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.rename.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.831Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "home.delete_dialog.dark.de",
@@ -21754,16 +21754,16 @@
       "group": "Home",
       "compareKey": "home|delete_dialog",
       "imageUrl": "/screens/thumbs/home.delete_dialog.dark.de.webp",
+      "fullImageUrl": "/screens/home.delete_dialog.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.delete_dialog.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.831Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "create_topic.empty.dark.de",
@@ -21780,16 +21780,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|empty",
       "imageUrl": "/screens/thumbs/create_topic.empty.dark.de.webp",
+      "fullImageUrl": "/screens/create_topic.empty.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.empty.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.831Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "create_topic.title_only.dark.de",
@@ -21805,16 +21805,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|title_only",
       "imageUrl": "/screens/thumbs/create_topic.title_only.dark.de.webp",
+      "fullImageUrl": "/screens/create_topic.title_only.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.title_only.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.831Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "create_topic.with_pages.dark.de",
@@ -21830,16 +21830,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|with_pages",
       "imageUrl": "/screens/thumbs/create_topic.with_pages.dark.de.webp",
+      "fullImageUrl": "/screens/create_topic.with_pages.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.with_pages.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.831Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "create_topic.pages_one.dark.de",
@@ -21855,16 +21855,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|pages_one",
       "imageUrl": "/screens/thumbs/create_topic.pages_one.dark.de.webp",
+      "fullImageUrl": "/screens/create_topic.pages_one.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.pages_one.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.832Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "create_topic.ocr.dark.de",
@@ -21880,16 +21880,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|ocr",
       "imageUrl": "/screens/thumbs/create_topic.ocr.dark.de.webp",
+      "fullImageUrl": "/screens/create_topic.ocr.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.ocr.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.832Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "create_topic.ocr_start.dark.de",
@@ -21905,16 +21905,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|ocr_start",
       "imageUrl": "/screens/thumbs/create_topic.ocr_start.dark.de.webp",
+      "fullImageUrl": "/screens/create_topic.ocr_start.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.ocr_start.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.832Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "create_topic.creating.dark.de",
@@ -21930,16 +21930,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|creating",
       "imageUrl": "/screens/thumbs/create_topic.creating.dark.de.webp",
+      "fullImageUrl": "/screens/create_topic.creating.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.creating.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.832Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "create_topic.pages_many_scrolled_mid.dark.de",
@@ -21956,16 +21956,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|pages_many_scrolled_mid",
       "imageUrl": "/screens/thumbs/create_topic.pages_many_scrolled_mid.dark.de.webp",
+      "fullImageUrl": "/screens/create_topic.pages_many_scrolled_mid.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.pages_many_scrolled_mid.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.832Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "create_topic.advancement_open.dark.de",
@@ -21981,16 +21981,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|advancement_open",
       "imageUrl": "/screens/thumbs/create_topic.advancement_open.dark.de.webp",
+      "fullImageUrl": "/screens/create_topic.advancement_open.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.advancement_open.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.832Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "create_topic.permission_dialog.dark.de",
@@ -22007,16 +22007,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|permission_dialog",
       "imageUrl": "/screens/thumbs/create_topic.permission_dialog.dark.de.webp",
+      "fullImageUrl": "/screens/create_topic.permission_dialog.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.permission_dialog.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.832Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "create_topic.suggested_title_dialog.dark.de",
@@ -22033,16 +22033,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|suggested_title_dialog",
       "imageUrl": "/screens/thumbs/create_topic.suggested_title_dialog.dark.de.webp",
+      "fullImageUrl": "/screens/create_topic.suggested_title_dialog.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.suggested_title_dialog.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.832Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "create_topic.add_page_sheet.dark.de",
@@ -22059,16 +22059,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|add_page_sheet",
       "imageUrl": "/screens/thumbs/create_topic.add_page_sheet.dark.de.webp",
+      "fullImageUrl": "/screens/create_topic.add_page_sheet.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.add_page_sheet.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.832Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "topic_path.empty.dark.de",
@@ -22085,16 +22085,16 @@
       "group": "Learning",
       "compareKey": "topic_path|empty",
       "imageUrl": "/screens/thumbs/topic_path.empty.dark.de.webp",
+      "fullImageUrl": "/screens/topic_path.empty.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.empty.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.832Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "topic_path.partial.dark.de",
@@ -22110,16 +22110,16 @@
       "group": "Learning",
       "compareKey": "topic_path|partial",
       "imageUrl": "/screens/thumbs/topic_path.partial.dark.de.webp",
+      "fullImageUrl": "/screens/topic_path.partial.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.partial.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.832Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "topic_path.ready.dark.de",
@@ -22135,16 +22135,16 @@
       "group": "Learning",
       "compareKey": "topic_path|ready",
       "imageUrl": "/screens/thumbs/topic_path.ready.dark.de.webp",
+      "fullImageUrl": "/screens/topic_path.ready.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.ready.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.833Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "topic_path.expanded.dark.de",
@@ -22160,16 +22160,16 @@
       "group": "Learning",
       "compareKey": "topic_path|expanded",
       "imageUrl": "/screens/thumbs/topic_path.expanded.dark.de.webp",
+      "fullImageUrl": "/screens/topic_path.expanded.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.expanded.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.833Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "topic_path.completed_nodes.dark.de",
@@ -22185,16 +22185,16 @@
       "group": "Learning",
       "compareKey": "topic_path|completed_nodes",
       "imageUrl": "/screens/thumbs/topic_path.completed_nodes.dark.de.webp",
+      "fullImageUrl": "/screens/topic_path.completed_nodes.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.completed_nodes.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.833Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "topic_path.completed_nodes_expanded.dark.de",
@@ -22210,16 +22210,16 @@
       "group": "Learning",
       "compareKey": "topic_path|completed_nodes_expanded",
       "imageUrl": "/screens/thumbs/topic_path.completed_nodes_expanded.dark.de.webp",
+      "fullImageUrl": "/screens/topic_path.completed_nodes_expanded.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.completed_nodes_expanded.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.833Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "topic_path.analyzing_with_path.dark.de",
@@ -22235,16 +22235,16 @@
       "group": "Learning",
       "compareKey": "topic_path|analyzing_with_path",
       "imageUrl": "/screens/thumbs/topic_path.analyzing_with_path.dark.de.webp",
+      "fullImageUrl": "/screens/topic_path.analyzing_with_path.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.analyzing_with_path.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.833Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "topic_path.scrolled.dark.de",
@@ -22261,16 +22261,16 @@
       "group": "Learning",
       "compareKey": "topic_path|scrolled",
       "imageUrl": "/screens/thumbs/topic_path.scrolled.dark.de.webp",
+      "fullImageUrl": "/screens/topic_path.scrolled.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.324Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.scrolled.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.833Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "topic_path.ready_scrolled_bottom.dark.de",
@@ -22287,16 +22287,16 @@
       "group": "Learning",
       "compareKey": "topic_path|ready_scrolled_bottom",
       "imageUrl": "/screens/thumbs/topic_path.ready_scrolled_bottom.dark.de.webp",
+      "fullImageUrl": "/screens/topic_path.ready_scrolled_bottom.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.ready_scrolled_bottom.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.833Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "topic_path.empty_content_dialog.dark.de",
@@ -22313,16 +22313,16 @@
       "group": "Learning",
       "compareKey": "topic_path|empty_content_dialog",
       "imageUrl": "/screens/thumbs/topic_path.empty_content_dialog.dark.de.webp",
+      "fullImageUrl": "/screens/topic_path.empty_content_dialog.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.empty_content_dialog.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.833Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "read_text.quiz_disabled.dark.de",
@@ -22338,16 +22338,16 @@
       "group": "Learning",
       "compareKey": "read_text|quiz_disabled",
       "imageUrl": "/screens/thumbs/read_text.quiz_disabled.dark.de.webp",
+      "fullImageUrl": "/screens/read_text.quiz_disabled.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.quiz_disabled.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.833Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "read_text.quiz_enabled.dark.de",
@@ -22363,16 +22363,16 @@
       "group": "Learning",
       "compareKey": "read_text|quiz_enabled",
       "imageUrl": "/screens/thumbs/read_text.quiz_enabled.dark.de.webp",
+      "fullImageUrl": "/screens/read_text.quiz_enabled.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.quiz_enabled.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.833Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "read_text.empty_content.dark.de",
@@ -22389,16 +22389,16 @@
       "group": "Learning",
       "compareKey": "read_text|empty_content",
       "imageUrl": "/screens/thumbs/read_text.empty_content.dark.de.webp",
+      "fullImageUrl": "/screens/read_text.empty_content.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.empty_content.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.833Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "read_text.reading_aloud.dark.de",
@@ -22414,16 +22414,16 @@
       "group": "Learning",
       "compareKey": "read_text|reading_aloud",
       "imageUrl": "/screens/thumbs/read_text.reading_aloud.dark.de.webp",
+      "fullImageUrl": "/screens/read_text.reading_aloud.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.reading_aloud.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.834Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "read_text.scrolled.dark.de",
@@ -22440,16 +22440,16 @@
       "group": "Learning",
       "compareKey": "read_text|scrolled",
       "imageUrl": "/screens/thumbs/read_text.scrolled.dark.de.webp",
+      "fullImageUrl": "/screens/read_text.scrolled.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.scrolled.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.834Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "read_text.scrolled_bottom.dark.de",
@@ -22466,16 +22466,16 @@
       "group": "Learning",
       "compareKey": "read_text|scrolled_bottom",
       "imageUrl": "/screens/thumbs/read_text.scrolled_bottom.dark.de.webp",
+      "fullImageUrl": "/screens/read_text.scrolled_bottom.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.scrolled_bottom.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.834Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "quiz.unanswered.dark.de",
@@ -22491,16 +22491,16 @@
       "group": "Quiz",
       "compareKey": "quiz|unanswered",
       "imageUrl": "/screens/thumbs/quiz.unanswered.dark.de.webp",
+      "fullImageUrl": "/screens/quiz.unanswered.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.unanswered.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.834Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "quiz.correct.dark.de",
@@ -22516,16 +22516,16 @@
       "group": "Quiz",
       "compareKey": "quiz|correct",
       "imageUrl": "/screens/thumbs/quiz.correct.dark.de.webp",
+      "fullImageUrl": "/screens/quiz.correct.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.correct.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.834Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "quiz.wrong.dark.de",
@@ -22541,16 +22541,16 @@
       "group": "Quiz",
       "compareKey": "quiz|wrong",
       "imageUrl": "/screens/thumbs/quiz.wrong.dark.de.webp",
+      "fullImageUrl": "/screens/quiz.wrong.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.wrong.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.834Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "quiz.wrong_with_cta.dark.de",
@@ -22566,16 +22566,16 @@
       "group": "Quiz",
       "compareKey": "quiz|wrong_with_cta",
       "imageUrl": "/screens/thumbs/quiz.wrong_with_cta.dark.de.webp",
+      "fullImageUrl": "/screens/quiz.wrong_with_cta.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.wrong_with_cta.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.834Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "quiz.completed.dark.de",
@@ -22591,16 +22591,16 @@
       "group": "Quiz",
       "compareKey": "quiz|completed",
       "imageUrl": "/screens/thumbs/quiz.completed.dark.de.webp",
+      "fullImageUrl": "/screens/quiz.completed.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.completed.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.834Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "quiz.mid_progress.dark.de",
@@ -22616,16 +22616,16 @@
       "group": "Quiz",
       "compareKey": "quiz|mid_progress",
       "imageUrl": "/screens/thumbs/quiz.mid_progress.dark.de.webp",
+      "fullImageUrl": "/screens/quiz.mid_progress.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.mid_progress.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.834Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "quiz.mid_progress_wrong_with_cta.dark.de",
@@ -22641,16 +22641,16 @@
       "group": "Quiz",
       "compareKey": "quiz|mid_progress_wrong_with_cta",
       "imageUrl": "/screens/thumbs/quiz.mid_progress_wrong_with_cta.dark.de.webp",
+      "fullImageUrl": "/screens/quiz.mid_progress_wrong_with_cta.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.mid_progress_wrong_with_cta.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.834Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "quiz.revision.dark.de",
@@ -22666,16 +22666,16 @@
       "group": "Quiz",
       "compareKey": "quiz|revision",
       "imageUrl": "/screens/thumbs/quiz.revision.dark.de.webp",
+      "fullImageUrl": "/screens/quiz.revision.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.revision.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.835Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "quiz.revision_wrong.dark.de",
@@ -22691,16 +22691,16 @@
       "group": "Quiz",
       "compareKey": "quiz|revision_wrong",
       "imageUrl": "/screens/thumbs/quiz.revision_wrong.dark.de.webp",
+      "fullImageUrl": "/screens/quiz.revision_wrong.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.revision_wrong.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.835Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "quiz.no_questions.dark.de",
@@ -22717,16 +22717,16 @@
       "group": "Quiz",
       "compareKey": "quiz|no_questions",
       "imageUrl": "/screens/thumbs/quiz.no_questions.dark.de.webp",
+      "fullImageUrl": "/screens/quiz.no_questions.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.no_questions.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.835Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "quiz.long_options.dark.de",
@@ -22742,16 +22742,16 @@
       "group": "Quiz",
       "compareKey": "quiz|long_options",
       "imageUrl": "/screens/thumbs/quiz.long_options.dark.de.webp",
+      "fullImageUrl": "/screens/quiz.long_options.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.long_options.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.835Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "quiz.long_options_scrolled_mid.dark.de",
@@ -22768,16 +22768,16 @@
       "group": "Quiz",
       "compareKey": "quiz|long_options_scrolled_mid",
       "imageUrl": "/screens/thumbs/quiz.long_options_scrolled_mid.dark.de.webp",
+      "fullImageUrl": "/screens/quiz.long_options_scrolled_mid.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.long_options_scrolled_mid.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.835Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "ai_analysis.analyzing_start.dark.de",
@@ -22793,16 +22793,16 @@
       "group": "Learning",
       "compareKey": "ai_analysis|analyzing_start",
       "imageUrl": "/screens/thumbs/ai_analysis.analyzing_start.dark.de.webp",
+      "fullImageUrl": "/screens/ai_analysis.analyzing_start.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_analysis.analyzing_start.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.835Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "ai_analysis.analyzing_mid.dark.de",
@@ -22818,16 +22818,16 @@
       "group": "Learning",
       "compareKey": "ai_analysis|analyzing_mid",
       "imageUrl": "/screens/thumbs/ai_analysis.analyzing_mid.dark.de.webp",
+      "fullImageUrl": "/screens/ai_analysis.analyzing_mid.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_analysis.analyzing_mid.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.835Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "download_prompt.default.dark.de",
@@ -22843,16 +22843,16 @@
       "group": "System",
       "compareKey": "download_prompt|default",
       "imageUrl": "/screens/thumbs/download_prompt.default.dark.de.webp",
+      "fullImageUrl": "/screens/download_prompt.default.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/download_prompt.default.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.835Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.default.dark.de",
@@ -22868,16 +22868,16 @@
       "group": "Settings",
       "compareKey": "settings|default",
       "imageUrl": "/screens/thumbs/settings.default.dark.de.webp",
+      "fullImageUrl": "/screens/settings.default.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.default.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.835Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.no_api_key.dark.de",
@@ -22895,16 +22895,16 @@
       "group": "Settings",
       "compareKey": "settings|no_api_key",
       "imageUrl": "/screens/thumbs/settings.no_api_key.dark.de.webp",
+      "fullImageUrl": "/screens/settings.no_api_key.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.no_api_key.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.835Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.key_visible.dark.de",
@@ -22921,16 +22921,16 @@
       "group": "Settings",
       "compareKey": "settings|key_visible",
       "imageUrl": "/screens/thumbs/settings.key_visible.dark.de.webp",
+      "fullImageUrl": "/screens/settings.key_visible.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.key_visible.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.836Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.sound_muted.dark.de",
@@ -22946,16 +22946,16 @@
       "group": "Settings",
       "compareKey": "settings|sound_muted",
       "imageUrl": "/screens/thumbs/settings.sound_muted.dark.de.webp",
+      "fullImageUrl": "/screens/settings.sound_muted.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.325Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.sound_muted.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.837Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.scrolled_mid.dark.de",
@@ -22972,16 +22972,16 @@
       "group": "Settings",
       "compareKey": "settings|scrolled_mid",
       "imageUrl": "/screens/thumbs/settings.scrolled_mid.dark.de.webp",
+      "fullImageUrl": "/screens/settings.scrolled_mid.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.scrolled_mid.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.837Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.scrolled_bottom.dark.de",
@@ -22998,16 +22998,16 @@
       "group": "Settings",
       "compareKey": "settings|scrolled_bottom",
       "imageUrl": "/screens/thumbs/settings.scrolled_bottom.dark.de.webp",
+      "fullImageUrl": "/screens/settings.scrolled_bottom.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.scrolled_bottom.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.837Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.provider_google_ai_studio.dark.de",
@@ -23024,16 +23024,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_google_ai_studio",
       "imageUrl": "/screens/thumbs/settings.provider_google_ai_studio.dark.de.webp",
+      "fullImageUrl": "/screens/settings.provider_google_ai_studio.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_google_ai_studio.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.837Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.provider_groq.dark.de",
@@ -23050,16 +23050,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_groq",
       "imageUrl": "/screens/thumbs/settings.provider_groq.dark.de.webp",
+      "fullImageUrl": "/screens/settings.provider_groq.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_groq.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.837Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.provider_cerebras.dark.de",
@@ -23076,16 +23076,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_cerebras",
       "imageUrl": "/screens/thumbs/settings.provider_cerebras.dark.de.webp",
+      "fullImageUrl": "/screens/settings.provider_cerebras.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_cerebras.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.837Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.provider_open_router.dark.de",
@@ -23102,16 +23102,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_open_router",
       "imageUrl": "/screens/thumbs/settings.provider_open_router.dark.de.webp",
+      "fullImageUrl": "/screens/settings.provider_open_router.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_open_router.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.837Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.provider_openai.dark.de",
@@ -23128,16 +23128,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_openai",
       "imageUrl": "/screens/thumbs/settings.provider_openai.dark.de.webp",
+      "fullImageUrl": "/screens/settings.provider_openai.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_openai.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.838Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.provider_sambanova.dark.de",
@@ -23154,16 +23154,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_sambanova",
       "imageUrl": "/screens/thumbs/settings.provider_sambanova.dark.de.webp",
+      "fullImageUrl": "/screens/settings.provider_sambanova.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_sambanova.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.838Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.provider_mistral.dark.de",
@@ -23180,16 +23180,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_mistral",
       "imageUrl": "/screens/thumbs/settings.provider_mistral.dark.de.webp",
+      "fullImageUrl": "/screens/settings.provider_mistral.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_mistral.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.838Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "settings.provider_zai.dark.de",
@@ -23206,16 +23206,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_zai",
       "imageUrl": "/screens/thumbs/settings.provider_zai.dark.de.webp",
+      "fullImageUrl": "/screens/settings.provider_zai.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_zai.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.838Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "ai_provider_dialog.default.dark.de",
@@ -23233,16 +23233,16 @@
       "group": "Settings",
       "compareKey": "ai_provider_dialog|default",
       "imageUrl": "/screens/thumbs/ai_provider_dialog.default.dark.de.webp",
+      "fullImageUrl": "/screens/ai_provider_dialog.default.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_provider_dialog.default.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.838Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "ai_provider_dialog.scrolled_mid.dark.de",
@@ -23261,16 +23261,16 @@
       "group": "Settings",
       "compareKey": "ai_provider_dialog|scrolled_mid",
       "imageUrl": "/screens/thumbs/ai_provider_dialog.scrolled_mid.dark.de.webp",
+      "fullImageUrl": "/screens/ai_provider_dialog.scrolled_mid.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_provider_dialog.scrolled_mid.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.838Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "logs.empty.dark.de",
@@ -23288,16 +23288,16 @@
       "group": "Settings",
       "compareKey": "logs|empty",
       "imageUrl": "/screens/thumbs/logs.empty.dark.de.webp",
+      "fullImageUrl": "/screens/logs.empty.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/logs.empty.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.838Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "logs.with_entries.dark.de",
@@ -23314,16 +23314,16 @@
       "group": "Settings",
       "compareKey": "logs|with_entries",
       "imageUrl": "/screens/thumbs/logs.with_entries.dark.de.webp",
+      "fullImageUrl": "/screens/logs.with_entries.dark.de.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:26:30.326Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/logs.with_entries.dark.de.png"
+      "lastSuccessSha": "470b8eb5c893",
+      "lastSuccessAt": "2026-08-16T19:39:44.838Z",
+      "attemptSha": "470b8eb5c893"
     },
     {
       "id": "onboarding_language.default.light.fr",
