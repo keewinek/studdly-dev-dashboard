@@ -90,8 +90,7 @@ body,
   padding: 3px;
   border: 1px solid var(--stroke);
   border-radius: 10px;
-  background: rgba(18, 18, 18, 0.88);
-  backdrop-filter: blur(10px);
+  background: rgba(18, 18, 18, 0.92);
 }
 
 .toolbar button {
@@ -129,10 +128,15 @@ body,
   cursor: grab;
   touch-action: none;
   overflow: hidden;
+  contain: strict;
 }
 
 .viewport.panning {
   cursor: grabbing;
+}
+
+.viewport.panning .frame-overlay {
+  display: none;
 }
 
 .world {
@@ -170,9 +174,8 @@ body,
   left: 0;
   top: 0;
   transform-origin: 0 0;
-  /* translate-only pan — never scale() this layer */
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .columns {
@@ -260,7 +263,9 @@ body,
   overflow: hidden;
   background: #000;
   user-select: none;
-  contain: layout paint style;
+  contain: strict;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 338px 156px;
 }
 
 .theme-block[data-theme='light'] .frame {
@@ -277,7 +282,6 @@ body,
   -webkit-user-drag: none;
   user-select: none;
   -webkit-user-select: none;
-  image-rendering: auto;
 }
 
 .frame-fallback {
@@ -287,23 +291,11 @@ body,
   flex-direction: column;
   justify-content: flex-end;
   padding: calc(12px * var(--ms));
-  background:
-    linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.75)),
-    repeating-linear-gradient(
-      -12deg,
-      rgba(255, 255, 255, 0.03) 0 calc(8px * var(--ms)),
-      transparent calc(8px * var(--ms)) calc(16px * var(--ms))
-    );
+  background: linear-gradient(180deg, #1a1a1a 0%, #0c0c0c 100%);
 }
 
 .theme-block[data-theme='light'] .frame-fallback {
-  background:
-    linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.55)),
-    repeating-linear-gradient(
-      -12deg,
-      rgba(0, 0, 0, 0.03) 0 calc(8px * var(--ms)),
-      transparent calc(8px * var(--ms)) calc(16px * var(--ms))
-    );
+  background: linear-gradient(180deg, #eceae6 0%, #d8d5d0 100%);
 }
 
 .frame-fallback strong {
@@ -313,10 +305,18 @@ body,
   color: #fff;
 }
 
+.theme-block[data-theme='light'] .frame-fallback strong {
+  color: #1a1a1a;
+}
+
 .frame-fallback span {
   font-size: var(--fs-fallback-meta);
   color: rgba(255, 255, 255, 0.75);
   margin-top: calc(4px * var(--ms));
+}
+
+.theme-block[data-theme='light'] .frame-fallback span {
+  color: rgba(26, 26, 26, 0.65);
 }
 
 .frame-overlay {

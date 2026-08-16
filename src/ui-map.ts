@@ -2,9 +2,13 @@ import type { LocaleId, ScreenFrame, ThemeId, UiManifest } from './types'
 import { previewUrl } from './types'
 
 interface PanZoom {
+  /** Pan offset in CSS px (GPU translate). */
   x: number
   y: number
-  scale: number
+  /** Committed layout zoom — drives --ms (expensive to change). */
+  layout: number
+  /** Transient CSS scale during wheel/pinch — cheap; baked into layout on settle. */
+  transient: number
 }
 
 interface Tile {
@@ -17,6 +21,7 @@ interface Tile {
 
 const MIN_SCALE = 0.15
 const MAX_SCALE = 5
+const ZOOM_SETTLE_MS = 140
 
 export function createUiMap(
   host: HTMLElement,
@@ -64,17 +69,69 @@ export function createUiMap(
   const columns = document.createElement('div')
   columns.className = 'columns'
 
-  const tiles: Tile[] = []
+  const tilesById = new Map<string, Tile>()
+  // Index screens once — avoid O(n) filter per theme block.
+  const byLocaleTheme = new Map<string, ScreenFrame[]>()
+  for (const screen of manifest.screens) {
+    const key = `${screen.locale}|${screen.theme}`
+    const list = byLocaleTheme.get(key)
+    if (list) list.push(screen)
+    else byLocaleTheme.set(key, [screen])
+  }
+
   for (const locale of manifest.locales) {
-    columns.appendChild(buildLocaleColumn(manifest, locale.code, locale.nativeName, tiles))
+    columns.appendChild(
+      buildLocaleColumn(manifest, locale.code, locale.nativeName, byLocaleTheme, tilesById),
+    )
   }
 
   world.appendChild(columns)
   viewport.appendChild(world)
   host.append(topbar, viewport, toolbar)
 
-  const state: PanZoom = { x: 48, y: 24, scale: 0.55 }
+  const state: PanZoom = { x: 48, y: 24, layout: 0.55, transient: 1 }
   const zoomLabel = toolbar.querySelector('[data-zoom]') as HTMLElement
+
+  let paintRaf = 0
+  let settleTimer: number | null = null
+  let lastLayoutWritten = -1
+
+  const visualScale = () => state.layout * state.transient
+
+  const paintNow = () => {
+    paintRaf = 0
+    const t = state.transient
+    world.style.transform =
+      t === 1
+        ? `translate(${state.x}px, ${state.y}px)`
+        : `translate(${state.x}px, ${state.y}px) scale(${t})`
+    if (state.layout !== lastLayoutWritten) {
+      lastLayoutWritten = state.layout
+      world.style.setProperty('--ms', String(state.layout))
+    }
+    zoomLabel.textContent = `${Math.round(visualScale() * 100)}%`
+  }
+
+  const schedulePaint = () => {
+    if (paintRaf) return
+    paintRaf = requestAnimationFrame(paintNow)
+  }
+
+  /** Fold transient CSS scale into layout --ms (crisp settle). Translate stays put at origin 0,0. */
+  const bakeTransient = () => {
+    if (state.transient === 1) return
+    state.layout = Math.min(MAX_SCALE, Math.max(MIN_SCALE, state.layout * state.transient))
+    state.transient = 1
+    schedulePaint()
+  }
+
+  const scheduleBake = () => {
+    if (settleTimer != null) window.clearTimeout(settleTimer)
+    settleTimer = window.setTimeout(() => {
+      settleTimer = null
+      bakeTransient()
+    }, ZOOM_SETTLE_MS)
+  }
 
   const showFallback = (tile: Tile) => {
     tile.img.removeAttribute('src')
@@ -96,53 +153,55 @@ export function createUiMap(
     tile.img.src = tile.frame.imageUrl
   }
 
-  const applyTransform = () => {
-    // Zoom via layout size (--ms), not transform:scale() — keeps text/borders sharp.
-    world.style.setProperty('--ms', String(state.scale))
-    world.style.transform = `translate(${state.x}px, ${state.y}px)`
-    zoomLabel.textContent = `${Math.round(state.scale * 100)}%`
-  }
-
-  const zoomAt = (clientX: number, clientY: number, nextScale: number) => {
+  /** Zoom using cheap CSS scale; layout --ms updates after gesture settles. */
+  const zoomAt = (clientX: number, clientY: number, nextVisual: number) => {
     const rect = viewport.getBoundingClientRect()
     const px = clientX - rect.left
     const py = clientY - rect.top
-    const clamped = Math.min(MAX_SCALE, Math.max(MIN_SCALE, nextScale))
-    const wx = (px - state.x) / state.scale
-    const wy = (py - state.y) / state.scale
-    state.scale = clamped
-    state.x = px - wx * state.scale
-    state.y = py - wy * state.scale
-    applyTransform()
+    const clamped = Math.min(MAX_SCALE, Math.max(MIN_SCALE, nextVisual))
+    const t = state.transient
+    const wx = (px - state.x) / t
+    const wy = (py - state.y) / t
+    const nextT = clamped / state.layout
+    state.transient = nextT
+    state.x = px - wx * nextT
+    state.y = py - wy * nextT
+    schedulePaint()
+    scheduleBake()
   }
 
   const zoomBy = (factor: number) => {
     const rect = viewport.getBoundingClientRect()
-    zoomAt(rect.left + rect.width / 2, rect.top + rect.height / 2, state.scale * factor)
+    zoomAt(rect.left + rect.width / 2, rect.top + rect.height / 2, visualScale() * factor)
   }
 
   const resetView = () => {
+    if (settleTimer != null) {
+      window.clearTimeout(settleTimer)
+      settleTimer = null
+    }
     state.x = 48
     state.y = 24
-    state.scale = 0.55
-    applyTransform()
+    state.layout = 0.55
+    state.transient = 1
+    schedulePaint()
   }
 
-  // Only fetch images near the viewport (native loading=lazy is unreliable with pan transforms).
   const observer = new IntersectionObserver(
     (entries) => {
       for (const entry of entries) {
         if (!entry.isIntersecting) continue
         const id = (entry.target as HTMLElement).dataset.id
-        const tile = tiles.find((t) => t.frame.id === id)
+        if (!id) continue
+        const tile = tilesById.get(id)
         if (tile) activate(tile)
       }
     },
-    { root: viewport, rootMargin: '200px', threshold: 0 },
+    { root: viewport, rootMargin: '240px', threshold: 0 },
   )
-  for (const tile of tiles) observer.observe(tile.card)
+  for (const tile of tilesById.values()) observer.observe(tile.card)
 
-  applyTransform()
+  schedulePaint()
 
   let panning = false
   let panStartX = 0
@@ -158,6 +217,8 @@ export function createUiMap(
       moved = false
       return
     }
+    // Finish any soft zoom before pan so hit-testing stays sane.
+    if (state.transient !== 1) bakeTransient()
     panning = true
     moved = false
     panStartX = e.clientX
@@ -175,33 +236,35 @@ export function createUiMap(
     if (Math.hypot(dx, dy) > 3) moved = true
     state.x = originX + dx
     state.y = originY + dy
-    applyTransform()
+    schedulePaint()
   }
 
   const onPointerUp = () => {
     panning = false
     viewport.classList.remove('panning')
-    if (moved) window.setTimeout(() => {
-      moved = false
-    }, 0)
+    if (moved) {
+      window.setTimeout(() => {
+        moved = false
+      }, 0)
+    }
   }
 
   const onWheel = (e: WheelEvent) => {
     e.preventDefault()
     const factor = e.deltaY < 0 ? 1.08 : 1 / 1.08
-    zoomAt(e.clientX, e.clientY, state.scale * factor)
+    zoomAt(e.clientX, e.clientY, visualScale() * factor)
   }
 
   const pointers = new Map<number, PointerEvent>()
   let pinchStartDist = 0
-  let pinchStartScale = 1
+  let pinchStartVisual = 1
 
   const onPointerDownPinch = (e: PointerEvent) => {
     pointers.set(e.pointerId, e)
     if (pointers.size === 2) {
       const [a, b] = [...pointers.values()]
       pinchStartDist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY)
-      pinchStartScale = state.scale
+      pinchStartVisual = visualScale()
     }
   }
 
@@ -213,13 +276,16 @@ export function createUiMap(
       const dist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY)
       const midX = (a.clientX + b.clientX) / 2
       const midY = (a.clientY + b.clientY) / 2
-      zoomAt(midX, midY, pinchStartScale * (dist / pinchStartDist))
+      zoomAt(midX, midY, pinchStartVisual * (dist / pinchStartDist))
     }
   }
 
   const onPointerUpPinch = (e: PointerEvent) => {
     pointers.delete(e.pointerId)
-    if (pointers.size < 2) pinchStartDist = 0
+    if (pointers.size < 2) {
+      pinchStartDist = 0
+      bakeTransient()
+    }
   }
 
   const blockSelect = (e: Event) => e.preventDefault()
@@ -257,6 +323,8 @@ export function createUiMap(
 
   return {
     destroy: () => {
+      if (paintRaf) cancelAnimationFrame(paintRaf)
+      if (settleTimer != null) window.clearTimeout(settleTimer)
       observer.disconnect()
       host.innerHTML = ''
     },
@@ -269,7 +337,8 @@ function buildLocaleColumn(
   manifest: UiManifest,
   locale: LocaleId,
   nativeName: string,
-  tiles: Tile[],
+  byLocaleTheme: Map<string, ScreenFrame[]>,
+  tilesById: Map<string, Tile>,
 ): HTMLElement {
   const col = document.createElement('section')
   col.className = 'locale-column'
@@ -281,7 +350,9 @@ function buildLocaleColumn(
   col.append(heading)
 
   for (const theme of manifest.themes) {
-    col.appendChild(buildThemeBlock(manifest, locale, theme.id, theme.label, tiles))
+    col.appendChild(
+      buildThemeBlock(manifest, locale, theme.id, theme.label, byLocaleTheme, tilesById),
+    )
   }
   return col
 }
@@ -291,13 +362,14 @@ function buildThemeBlock(
   locale: LocaleId,
   theme: ThemeId,
   themeLabel: string,
-  tiles: Tile[],
+  byLocaleTheme: Map<string, ScreenFrame[]>,
+  tilesById: Map<string, Tile>,
 ): HTMLElement {
   const block = document.createElement('section')
   block.className = 'theme-block'
   block.dataset.theme = theme
 
-  const frames = manifest.screens.filter((s) => s.locale === locale && s.theme === theme)
+  const frames = byLocaleTheme.get(`${locale}|${theme}`) ?? []
   const title = document.createElement('h3')
   title.className = 'theme-title'
   title.textContent = `${themeLabel} theme`
@@ -319,7 +391,7 @@ function buildThemeBlock(
     const grid = document.createElement('div')
     grid.className = 'frames'
     for (const frame of groupFrames) {
-      grid.appendChild(buildFrameCard(manifest, frame, tiles))
+      grid.appendChild(buildFrameCard(manifest, frame, tilesById))
     }
     groupEl.append(label, grid)
     groupsWrap.appendChild(groupEl)
@@ -332,7 +404,7 @@ function buildThemeBlock(
 function buildFrameCard(
   manifest: UiManifest,
   frame: ScreenFrame,
-  tiles: Tile[],
+  tilesById: Map<string, Tile>,
 ): HTMLElement {
   const card = document.createElement('article')
   card.className = 'frame'
@@ -346,28 +418,45 @@ function buildFrameCard(
   const fallback = document.createElement('div')
   fallback.className = 'frame-fallback'
   fallback.hidden = true
-  fallback.innerHTML = `<strong>${escapeHtml(frame.name)}</strong><span>${escapeHtml(frame.state)} · ${frame.locale} · ${frame.theme}</span>`
+  // Text only — avoid expensive repeating gradients until shown.
+  fallback.textContent = ''
+  const strong = document.createElement('strong')
+  strong.textContent = frame.name
+  const span = document.createElement('span')
+  span.textContent = `${frame.state} · ${frame.locale} · ${frame.theme}`
+  fallback.append(strong, span)
 
   if (frame.missing) {
     fallback.hidden = false
     img.hidden = true
   }
 
-  const overlay = document.createElement('div')
-  overlay.className = 'frame-overlay'
+  card.append(img, fallback)
 
-  const openBtn = document.createElement('button')
-  openBtn.type = 'button'
-  openBtn.className = 'open-btn'
-  openBtn.textContent = 'Open in new tab'
-  openBtn.addEventListener('click', (e) => {
-    e.preventDefault()
-    e.stopPropagation()
-    window.open(previewUrl(manifest.flutterPreviewBaseUrl, frame), '_blank', 'noopener,noreferrer')
-  })
-
-  overlay.appendChild(openBtn)
-  card.append(img, fallback, overlay)
+  // Build Open button on first hover — saves ~1080 overlay nodes at rest.
+  let overlayReady = false
+  const ensureOverlay = () => {
+    if (overlayReady) return
+    overlayReady = true
+    const overlay = document.createElement('div')
+    overlay.className = 'frame-overlay'
+    const openBtn = document.createElement('button')
+    openBtn.type = 'button'
+    openBtn.className = 'open-btn'
+    openBtn.textContent = 'Open in new tab'
+    openBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      e.stopPropagation()
+      window.open(
+        previewUrl(manifest.flutterPreviewBaseUrl, frame),
+        '_blank',
+        'noopener,noreferrer',
+      )
+    })
+    overlay.appendChild(openBtn)
+    card.appendChild(overlay)
+  }
+  card.addEventListener('pointerenter', ensureOverlay, { once: true })
 
   if (frame.stale || frame.missing) {
     card.classList.add('frame-stale')
@@ -378,17 +467,18 @@ function buildFrameCard(
       : frame.missing
         ? 'No screenshot for this state yet'
         : 'Capture failed on the latest commit'
-    badge.textContent = frame.missing ? 'Missing' : 'Outdated'
+    const label = document.createElement('span')
+    label.textContent = frame.missing ? 'Missing' : 'Outdated'
     const detail = document.createElement('span')
     detail.className = 'stale-detail'
     detail.textContent = frame.missing
       ? 'No screenshot yet'
       : `Old build${frame.lastSuccessSha ? ` · ${frame.lastSuccessSha.slice(0, 7)}` : ''}`
-    badge.appendChild(detail)
+    badge.append(label, detail)
     card.appendChild(badge)
   }
 
-  tiles.push({
+  tilesById.set(frame.id, {
     card,
     img,
     fallback,
@@ -407,12 +497,4 @@ function groupBy<T>(items: T[], keyFn: (item: T) => string): Map<string, T[]> {
     else map.set(key, [item])
   }
   return map
-}
-
-function escapeHtml(value: string): string {
-  return value
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
 }
