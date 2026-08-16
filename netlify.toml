@@ -34,4 +34,19 @@
 [[headers]]
   for = "/app/*"
   [headers.values]
-    Cache-Control = "public, max-age=3600"
+    Cache-Control = "public, max-age=60, must-revalidate"
+
+[[headers]]
+  for = "/app/main.dart.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/app/flutter_bootstrap.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/app/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

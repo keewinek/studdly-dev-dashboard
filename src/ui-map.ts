@@ -288,7 +288,15 @@ function buildFrameCard(manifest: UiManifest, frame: ScreenFrame): HTMLElement {
   fallback.hidden = true
   fallback.innerHTML = `<strong>${escapeHtml(frame.name)}</strong><span>${escapeHtml(frame.state)} · ${frame.locale} · ${frame.theme}</span>`
 
+  let retries = 0
   img.addEventListener('error', () => {
+    if (retries < 2) {
+      retries += 1
+      const url = new URL(frame.imageUrl, window.location.origin)
+      url.searchParams.set('retry', String(retries))
+      img.src = url.toString()
+      return
+    }
     img.remove()
     fallback.hidden = false
   })
