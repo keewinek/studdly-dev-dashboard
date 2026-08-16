@@ -352,7 +352,6 @@
   "onboardingApiKeyDescriptionSambaNova": "Get a free key from SambaNova Cloud",
   "onboardingApiKeyOpenStudioSambaNova": "Open SambaNova API Keys",
   "contentResponsibilityDisclaimer": "By using this app, you are fully responsible for the content you provide (e.g. photos of textbooks, notes and other materials). By using the app, you declare that you have the necessary rights to this content and that its use does not infringe copyright or other third-party rights.",
-  "onboardingApiKeySafety": "Your key stays on this device. Free AI won't charge Studdly. Wrong key? Try again.",
   "onboardingBackupGeminiTitle": "Add a free backup key? (Google)",
   "onboardingBackupGeminiDescription": "Optional. A Google key helps if your main free AI runs out.",
   "onboardingBackupGeminiSkip": "Skip",
