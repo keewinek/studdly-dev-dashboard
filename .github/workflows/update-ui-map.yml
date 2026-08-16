@@ -1,0 +1,135 @@
+name: Update UI map
+
+# Runs on this *public* repo → free GitHub Actions minutes.
+# Private studdly only fires a tiny trigger workflow (almost zero private minutes).
+on:
+  workflow_dispatch:
+    inputs:
+      studdly_sha:
+        description: Studdly git SHA or branch to build (default main)
+        required: false
+        default: main
+  repository_dispatch:
+    types: [studdly-main-updated]
+
+concurrency:
+  group: update-ui-map
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update-ui-map:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Require STUDDLY_REPO_TOKEN
+        env:
+          TOKEN: ${{ secrets.STUDDLY_REPO_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::Add repo secret STUDDLY_REPO_TOKEN (PAT with Contents: Read on private keewinek/studdly). See README."
+            exit 1
+          fi
+
+      - name: Resolve Studdly ref
+        id: studdly
+        run: |
+          REF="${{ github.event.inputs.studdly_sha }}"
+          if [ -z "$REF" ] || [ "$REF" = "null" ]; then
+            REF="${{ github.event.client_payload.sha }}"
+          fi
+          if [ -z "$REF" ] || [ "$REF" = "null" ]; then
+            REF="main"
+          fi
+          echo "ref=$REF" >> "$GITHUB_OUTPUT"
+          echo "Building Studdly @ $REF"
+
+      - name: Checkout dashboard
+        uses: actions/checkout@v4
+
+      - name: Checkout Studdly (private)
+        uses: actions/checkout@v4
+        with:
+          repository: keewinek/studdly
+          ref: ${{ steps.studdly.outputs.ref }}
+          token: ${{ secrets.STUDDLY_REPO_TOKEN }}
+          path: studdly
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Flutter pub get
+        working-directory: studdly
+        run: flutter pub get
+
+      - name: Build Flutter web UI preview
+        working-directory: studdly
+        run: |
+          flutter build web \
+            -t lib/ui_preview_main.dart \
+            --base-href /app/ \
+            --release \
+            --pwa-strategy=none \
+            --no-wasm-dry-run \
+            --no-tree-shake-icons
+
+      - name: Sync preview into public/app
+        run: |
+          chmod +x scripts/sync-flutter-preview.sh
+          SKIP_BUILD=1 STUDDLY_ROOT="$GITHUB_WORKSPACE/studdly" \
+            ./scripts/sync-flutter-preview.sh
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install deps + Playwright
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Serve preview and capture screenshots
+        env:
+          GITHUB_SHA: ${{ steps.studdly.outputs.ref }}
+          CONCURRENCY: '4'
+          SETTLE_MS: '2000'
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/ui-preview-root
+          mkdir -p /tmp/ui-preview-root/app
+          rsync -a --delete public/app/ /tmp/ui-preview-root/app/
+          python3 -m http.server 7360 --directory /tmp/ui-preview-root >/tmp/preview-server.log 2>&1 &
+          echo $! > /tmp/preview-server.pid
+          for i in $(seq 1 30); do
+            if curl -fsS "http://127.0.0.1:7360/app/" >/dev/null; then
+              break
+            fi
+            sleep 1
+          done
+          curl -fsS "http://127.0.0.1:7360/app/" >/dev/null
+
+          PREVIEW_BASE=http://127.0.0.1:7360/app/ \
+            node --experimental-strip-types scripts/capture-screenshots.mjs
+
+          kill "$(cat /tmp/preview-server.pid)" || true
+
+      - name: Commit and push
+        run: |
+          set -euo pipefail
+          git config user.name "studdly-ui-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No dashboard changes."
+            exit 0
+          fi
+          SHORT_SHA="$(echo "${{ steps.studdly.outputs.ref }}" | cut -c1-7)"
+          git commit -m "chore: refresh UI map from studdly@${SHORT_SHA}"
+          git push origin HEAD:main

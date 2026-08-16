@@ -25,28 +25,48 @@ Hover a tile → **Open in new tab** → Flutter web preview with that `screen`,
 
 If a screenshot fails on the latest commit, the map **keeps the previous PNG** and shows an **Outdated** badge (plus a top-bar warning).
 
-## Automation (free)
+## Automation (free Actions on public repo)
 
-Netlify free only builds this Vite site. Flutter + Playwright run on **GitHub Actions** in the Studdly repo (free minutes), then push assets here.
+Heavy work runs on **this public repo** (`studdly-dev-dashboard`) so GitHub Actions minutes are free.
+Private `studdly` only runs a tiny trigger (~seconds) on each `main` push.
 
 Flow:
 
-1. Push to `studdly` `main` → workflow `.github/workflows/update-ui-map.yml`
-2. Build Flutter web UI preview → sync into `public/app/`
-3. Capture screenshots once into `public/screens/` (fail-soft: keep old PNGs, mark `stale` in `manifest.json`)
-4. Commit + push this repo → Netlify rebuilds `https://dev.studdly.app` (backup: `https://studdlydev.netlify.app`)
+1. Push to `studdly` `main` → tiny workflow `trigger-ui-map.yml`  
+2. That kicks off **Update UI map** here (public, free minutes)  
+3. Checkout private Studdly → build Flutter `/app` → capture screenshots → commit  
+4. Netlify rebuilds `https://dev.studdly.app` (backup: `https://studdlydev.netlify.app`)
 
-### One-time setup: `DASHBOARD_REPO_TOKEN`
+### One-time setup (2 secrets)
 
-In the **Studdly** GitHub repo → Settings → Secrets and variables → Actions, add:
+Create **one** fine-grained PAT: https://github.com/settings/personal-access-tokens/new
 
-| Secret | Value |
+| Field | Value |
 |--------|--------|
-| `DASHBOARD_REPO_TOKEN` | Fine-grained PAT (or classic) with **Contents: Read and write** on `keewinek/studdly-dev-dashboard` |
+| Token name | `studdly-ui-map-ci` |
+| Expiration | your choice (e.g. 90 days) |
+| Repository access | **Only select** → `studdly` **and** `studdly-dev-dashboard` |
+| Permissions | **Contents → Read and write**, **Actions → Read and write** |
 
-Without this secret, the workflow cannot push screenshot/preview updates.
+Generate → **copy the token once**.
 
-You can also run the workflow manually: Actions → **Update UI map** → Run workflow.
+Then add it in **two** places (same token value is fine):
+
+1. **Public dashboard** → https://github.com/keewinek/studdly-dev-dashboard/settings/secrets/actions  
+   - Name: `STUDDLY_REPO_TOKEN`  
+   - Secret: paste token  
+
+2. **Private Studdly** → https://github.com/keewinek/studdly/settings/secrets/actions  
+   - Name: `UI_MAP_DISPATCH_TOKEN`  
+   - Secret: paste same token  
+
+You can delete the old `DASHBOARD_REPO_TOKEN` on Studdly if you added it earlier — it’s unused now.
+
+### Run manually
+
+- Dashboard: Actions → **Update UI map** → Run workflow  
+- Or Studdly: Actions → **Trigger UI map update** → Run workflow  
+
 
 ## Develop
 
