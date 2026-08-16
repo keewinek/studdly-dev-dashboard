@@ -203,21 +203,21 @@ body,
   border: 0;
   border-radius: var(--radius-block);
   padding: var(--block-pad);
-  background: var(--panel);
+  background: transparent;
 }
 
 .theme-block[data-theme='light'] {
-  background: var(--light-block);
-  color: var(--light-text);
+  background: transparent;
+  color: var(--text);
 }
 
 .theme-block[data-theme='light'] .theme-title {
-  color: var(--light-text);
+  color: var(--text);
 }
 
 .theme-block[data-theme='light'] .theme-meta,
 .theme-block[data-theme='light'] .group-label {
-  color: #5a5a5a;
+  color: var(--muted);
 }
 
 .theme-title {
@@ -312,7 +312,7 @@ body,
   max-width: calc(100% + (8px * var(--ms)));
   padding: calc(2px * var(--ms)) calc(6px * var(--ms));
   border-radius: calc(6px * var(--ms));
-  background: #121212;
+  background: transparent;
   color: rgba(255, 255, 255, 0.78);
   font-size: calc(9px * var(--ms));
   font-weight: 500;
@@ -371,18 +371,18 @@ body,
 }
 
 .theme-block[data-theme='light'] .frame-caption {
-  background: #eceae6;
-  color: #4a4a4a;
+  background: transparent;
+  color: var(--muted);
 }
 
 .theme-block[data-theme='light'] .frame-caption-main:hover {
-  color: #1a1a1a;
+  color: var(--text);
 }
 
 .theme-block[data-theme='light'] .frame-caption-behind,
 .theme-block[data-theme='light'] .frame-caption-stale {
-  background: #f3e6c8;
-  color: #7a5a18;
+  background: #1c160c;
+  color: #e8c98a;
 }
 
 .frame {
@@ -392,15 +392,11 @@ body,
   border-radius: var(--radius-frame);
   border: 0;
   overflow: hidden;
-  background: #000;
+  background: transparent;
   user-select: none;
   contain: strict;
   content-visibility: auto;
   contain-intrinsic-size: auto 338px 156px;
-}
-
-.theme-block[data-theme='light'] .frame {
-  background: #fff;
 }
 
 .frame img {
@@ -421,32 +417,32 @@ body,
   flex-direction: column;
   justify-content: flex-end;
   padding: calc(12px * var(--ms));
-  background: linear-gradient(180deg, #1a1a1a 0%, #0c0c0c 100%);
+  background: transparent;
 }
 
 .theme-block[data-theme='light'] .frame-fallback {
-  background: linear-gradient(180deg, #eceae6 0%, #d8d5d0 100%);
+  background: transparent;
 }
 
 .frame-fallback strong {
   font-size: var(--fs-fallback-title);
   font-weight: 600;
   line-height: 1.25;
-  color: #fff;
+  color: var(--text);
 }
 
 .theme-block[data-theme='light'] .frame-fallback strong {
-  color: #1a1a1a;
+  color: var(--text);
 }
 
 .frame-fallback span {
   font-size: var(--fs-fallback-meta);
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--muted);
   margin-top: calc(4px * var(--ms));
 }
 
 .theme-block[data-theme='light'] .frame-fallback span {
-  color: rgba(26, 26, 26, 0.65);
+  color: var(--muted);
 }
 
 .frame-stale {
