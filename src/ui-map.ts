@@ -293,7 +293,7 @@ export function createUiMap(
     if (chromeTimer != null) window.clearTimeout(chromeTimer)
     chromeTimer = window.setTimeout(() => {
       chromeTimer = null
-      if (viewport.querySelector('.open-btn:hover, .frame-filename:hover, .frame-meta:hover, .open-btn:focus-visible, .frame-meta:focus-within')) {
+      if (viewport.querySelector('.open-btn:hover, .frame-caption:hover, .open-btn:focus-visible, .frame-caption:focus-within')) {
         bumpChrome()
         return
       }
@@ -347,11 +347,7 @@ export function createUiMap(
   const onPointerDown = (e: PointerEvent) => {
     if (e.pointerType === 'mouse' && e.button !== 0) return
     const target = e.target as HTMLElement
-    if (
-      target.closest('.open-btn') ||
-      target.closest('.frame-filename') ||
-      target.closest('.frame-meta')
-    ) {
+    if (target.closest('.open-btn') || target.closest('.frame-caption')) {
       moved = false
       bumpChrome()
       return
@@ -491,8 +487,7 @@ export function createUiMap(
     (e) => {
       if (!moved) return
       if ((e.target as HTMLElement).closest('.open-btn')) return
-      if ((e.target as HTMLElement).closest('.frame-filename')) return
-      if ((e.target as HTMLElement).closest('.frame-meta')) return
+      if ((e.target as HTMLElement).closest('.frame-caption')) return
       e.preventDefault()
       e.stopPropagation()
     },
@@ -702,9 +697,9 @@ function buildFrameCard(
 
   const cell = document.createElement('div')
   cell.className = 'frame-cell'
+  // Earlier tiles paint above later ones so captions can overlap the row below.
+  cell.style.zIndex = String(10000 - tilesById.size)
 
-  const meta = document.createElement('div')
-  meta.className = 'frame-meta'
   const successAt = frameSuccessAt(frame, manifest)
   const sha = shortSha(frame.lastSuccessSha)
   const timeLabel = frame.missing
@@ -715,49 +710,47 @@ function buildFrameCard(
         ? 'older commit'
         : 'unknown'
 
-  const timeEl = document.createElement('span')
-  timeEl.className = 'frame-meta-time'
-  timeEl.textContent = timeLabel
-  if (successAt) {
-    timeEl.title = formatAbsoluteUtc(successAt)
-  }
+  const caption = document.createElement('div')
+  caption.className = 'frame-caption'
+  if (behind) caption.classList.add('frame-caption-behind')
+  else if (frame.stale) caption.classList.add('frame-caption-stale')
 
-  meta.appendChild(timeEl)
+  const mainBtn = document.createElement('button')
+  mainBtn.type = 'button'
+  mainBtn.className = 'frame-caption-main'
+  const absoluteHint = successAt ? ` · ${formatAbsoluteUtc(successAt)}` : ''
+  mainBtn.title = `Open preview · ${frame.id}.png${absoluteHint}`
+  mainBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    openPreview()
+  })
+
+  const timeEl = document.createElement('span')
+  timeEl.className = 'frame-caption-time'
+  timeEl.textContent = timeLabel
+
+  const nameEl = document.createElement('span')
+  nameEl.className = 'frame-caption-name'
+  nameEl.textContent = `${frame.id}.png`
+
+  mainBtn.append(timeEl, document.createTextNode(' · '), nameEl)
+
+  caption.appendChild(mainBtn)
 
   if (sha) {
-    const sep = document.createElement('span')
-    sep.className = 'frame-meta-sep'
-    sep.textContent = ' · '
-    meta.appendChild(sep)
-
     const shaLink = document.createElement('a')
-    shaLink.className = 'frame-meta-sha'
+    shaLink.className = 'frame-caption-sha'
     shaLink.href = `${STUDDLY_COMMIT_URL}/${frame.lastSuccessSha}`
     shaLink.target = '_blank'
     shaLink.rel = 'noopener noreferrer'
     shaLink.textContent = sha
     shaLink.title = `Capture from ${frame.lastSuccessSha} · Open commit`
     shaLink.addEventListener('click', (e) => e.stopPropagation())
-    meta.appendChild(shaLink)
+    caption.append(document.createTextNode(' · '), shaLink)
   }
 
-  if (behind) {
-    meta.classList.add('frame-meta-behind')
-  } else if (frame.stale) {
-    meta.classList.add('frame-meta-stale')
-  }
-
-  const filename = document.createElement('button')
-  filename.type = 'button'
-  filename.className = 'frame-filename'
-  filename.textContent = `${frame.id}.png`
-  filename.title = `Open preview · ${frame.id}.png`
-  filename.addEventListener('click', (e) => {
-    e.preventDefault()
-    e.stopPropagation()
-    openPreview()
-  })
-  cell.append(card, meta, filename)
+  cell.append(card, caption)
   return cell
 }
 
