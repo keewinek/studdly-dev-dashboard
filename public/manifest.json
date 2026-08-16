@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-08-16T20:12:47.928Z",
+  "generatedAt": "2026-08-16T20:14:39.603Z",
   "gitSha": "162810dd11ab",
   "appVersion": "preview-capture",
   "flutterPreviewBaseUrl": "/app/",
@@ -10,7 +10,7 @@
     "failed": 0,
     "keptOld": 0,
     "missing": 0,
-    "stale": 86
+    "stale": 0
   },
   "device": {
     "name": "phone",
@@ -5898,9 +5898,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.635Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.520Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_language.other_highlighted.light.pl",
@@ -5923,9 +5923,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.635Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.521Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "language_picker.default.light.pl",
@@ -5948,9 +5948,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.636Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.521Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "language_picker.no_selection.light.pl",
@@ -5974,9 +5974,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.636Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.521Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "language_picker.search.light.pl",
@@ -6000,9 +6000,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.637Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.522Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "language_picker.search_empty.light.pl",
@@ -6027,9 +6027,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.637Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.522Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "language_picker.scrolled_mid.light.pl",
@@ -6053,9 +6053,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.637Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.522Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_q1.default.light.pl",
@@ -6078,9 +6078,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.637Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.522Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_q1.option_selected.light.pl",
@@ -6103,9 +6103,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.638Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.522Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_q2.default.light.pl",
@@ -6128,9 +6128,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.638Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.522Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_q2.option_selected.light.pl",
@@ -6153,9 +6153,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.638Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.522Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_q3.default.light.pl",
@@ -6178,9 +6178,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.638Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.522Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_q3.option_selected.light.pl",
@@ -6203,9 +6203,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.640Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.523Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_name.empty.light.pl",
@@ -6229,9 +6229,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.640Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.523Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_name.filled.light.pl",
@@ -6254,9 +6254,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.640Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.523Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_video.video_google_ai_studio.light.pl",
@@ -6282,9 +6282,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.640Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.523Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_video.video_groq.light.pl",
@@ -6310,9 +6310,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.640Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.523Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_video.video_cerebras.light.pl",
@@ -6338,9 +6338,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.640Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.523Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_video.video_open_router.light.pl",
@@ -6366,9 +6366,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.640Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.523Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_video.video_openai.light.pl",
@@ -6394,9 +6394,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.640Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.523Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_video.video_sambanova.light.pl",
@@ -6422,9 +6422,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.640Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.523Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_video.video_mistral.light.pl",
@@ -6450,9 +6450,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.641Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.523Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_video.video_zai.light.pl",
@@ -6478,9 +6478,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.641Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.523Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_google_ai_studio.light.pl",
@@ -6506,9 +6506,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.641Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.523Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_groq.light.pl",
@@ -6534,9 +6534,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.642Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_cerebras.light.pl",
@@ -6562,9 +6562,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "edfae6a178b8",
-      "lastSuccessAt": "2026-08-16T19:54:26.642Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_open_router.light.pl",
@@ -6588,12 +6588,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=api_key_open_router\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=api_key_open_router\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.995Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_openai.light.pl",
@@ -6617,12 +6616,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=api_key_openai\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=api_key_openai\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.996Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_sambanova.light.pl",
@@ -6646,12 +6644,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=api_key_sambanova\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=api_key_sambanova\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.996Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_mistral.light.pl",
@@ -6675,12 +6672,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=api_key_mistral\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=api_key_mistral\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.996Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_zai.light.pl",
@@ -6704,12 +6700,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=api_key_zai\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=api_key_zai\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.996Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_api_key.testing.light.pl",
@@ -6732,12 +6727,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=testing\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=testing\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.996Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_api_key.error.light.pl",
@@ -6761,12 +6755,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=error\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=error\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.996Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_api_key.visible.light.pl",
@@ -6789,12 +6782,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=visible\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=visible\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.996Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_api_key.provider_dialog.light.pl",
@@ -6818,12 +6810,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=provider_dialog\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=pl&state=provider_dialog\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.996Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_easy.default.light.pl",
@@ -6844,12 +6835,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_easy&theme=light&locale=pl&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_easy&theme=light&locale=pl&state=default\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.996Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_dialogue_final.default.light.pl",
@@ -6870,12 +6860,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_final&theme=light&locale=pl&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_final&theme=light&locale=pl&state=default\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.997Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.524Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.empty.light.pl",
@@ -6897,12 +6886,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=empty\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=empty\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.997Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.ready.light.pl",
@@ -6923,12 +6911,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=ready\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=ready\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.997Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.ready_scrolled_mid.light.pl",
@@ -6950,12 +6937,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=ready_scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=ready_scrolled_mid\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.997Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.ready_scrolled_bottom.light.pl",
@@ -6977,12 +6963,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=ready_scrolled_bottom\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=ready_scrolled_bottom\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.997Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.empty_ready.light.pl",
@@ -7004,12 +6989,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=empty_ready\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=empty_ready\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.997Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.partial_progress.light.pl",
@@ -7030,12 +7014,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=partial_progress\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=partial_progress\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.997Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.analyzing.light.pl",
@@ -7056,12 +7039,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=analyzing\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=analyzing\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.997Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.queued.light.pl",
@@ -7082,12 +7064,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=queued\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=queued\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.997Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.mixed_statuses.light.pl",
@@ -7108,12 +7089,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=mixed_statuses\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=mixed_statuses\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.997Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.mixed_scrolled_mid.light.pl",
@@ -7135,12 +7115,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=mixed_scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=mixed_scrolled_mid\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.998Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.search_no_results.light.pl",
@@ -7163,12 +7142,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=search_no_results\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=search_no_results\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.998Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.context_menu.light.pl",
@@ -7190,12 +7168,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=context_menu\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=context_menu\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.998Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.rename.light.pl",
@@ -7216,12 +7193,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=rename\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=rename\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.998Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.525Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "home.delete_dialog.light.pl",
@@ -7243,12 +7219,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=delete_dialog\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=pl&state=delete_dialog\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.998Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "create_topic.empty.light.pl",
@@ -7270,12 +7245,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=empty\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=empty\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.998Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "create_topic.title_only.light.pl",
@@ -7296,12 +7270,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=title_only\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=title_only\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.998Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "create_topic.with_pages.light.pl",
@@ -7322,12 +7295,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=with_pages\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=with_pages\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.998Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "create_topic.pages_one.light.pl",
@@ -7348,12 +7320,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=pages_one\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=pages_one\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.998Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "create_topic.ocr.light.pl",
@@ -7374,12 +7345,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=ocr\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=ocr\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.998Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "create_topic.ocr_start.light.pl",
@@ -7400,12 +7370,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=ocr_start\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=ocr_start\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.998Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "create_topic.creating.light.pl",
@@ -7426,12 +7395,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=creating\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=creating\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.999Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "create_topic.pages_many_scrolled_mid.light.pl",
@@ -7453,12 +7421,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=pages_many_scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=pages_many_scrolled_mid\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.999Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "create_topic.advancement_open.light.pl",
@@ -7479,12 +7446,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=advancement_open\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=advancement_open\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.999Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "create_topic.permission_dialog.light.pl",
@@ -7506,12 +7472,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=permission_dialog\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=permission_dialog\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.999Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "create_topic.suggested_title_dialog.light.pl",
@@ -7533,12 +7498,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=suggested_title_dialog\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=suggested_title_dialog\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.999Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "create_topic.add_page_sheet.light.pl",
@@ -7560,12 +7524,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=add_page_sheet\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=pl&state=add_page_sheet\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.999Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.526Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "topic_path.empty.light.pl",
@@ -7587,12 +7550,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=empty\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=empty\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.999Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.527Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "topic_path.partial.light.pl",
@@ -7613,12 +7575,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=partial\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=partial\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.999Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.527Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "topic_path.ready.light.pl",
@@ -7639,12 +7600,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=ready\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=ready\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.999Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.527Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "topic_path.expanded.light.pl",
@@ -7665,12 +7625,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=expanded\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=expanded\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:16.999Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.527Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "topic_path.completed_nodes.light.pl",
@@ -7691,12 +7650,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=completed_nodes\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=completed_nodes\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.000Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.527Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "topic_path.completed_nodes_expanded.light.pl",
@@ -7717,12 +7675,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=completed_nodes_expanded\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=completed_nodes_expanded\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.000Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.527Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "topic_path.analyzing_with_path.light.pl",
@@ -7743,12 +7700,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=analyzing_with_path\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=analyzing_with_path\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.000Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.527Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "topic_path.scrolled.light.pl",
@@ -7770,12 +7726,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=scrolled\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=scrolled\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.000Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.527Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "topic_path.ready_scrolled_bottom.light.pl",
@@ -7797,12 +7752,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=ready_scrolled_bottom\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=ready_scrolled_bottom\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.000Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.527Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "topic_path.empty_content_dialog.light.pl",
@@ -7824,12 +7778,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=empty_content_dialog\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=pl&state=empty_content_dialog\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.000Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.527Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "read_text.quiz_disabled.light.pl",
@@ -7850,12 +7803,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=pl&state=quiz_disabled\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=pl&state=quiz_disabled\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.000Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.527Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "read_text.quiz_enabled.light.pl",
@@ -7876,12 +7828,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=pl&state=quiz_enabled\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=pl&state=quiz_enabled\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.000Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.527Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "read_text.empty_content.light.pl",
@@ -7903,12 +7854,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=pl&state=empty_content\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=pl&state=empty_content\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.000Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "read_text.reading_aloud.light.pl",
@@ -7929,12 +7879,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=pl&state=reading_aloud\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=pl&state=reading_aloud\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.000Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "read_text.scrolled.light.pl",
@@ -7956,12 +7905,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=pl&state=scrolled\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=pl&state=scrolled\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.001Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "read_text.scrolled_bottom.light.pl",
@@ -7983,12 +7931,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=pl&state=scrolled_bottom\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=pl&state=scrolled_bottom\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.001Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "quiz.unanswered.light.pl",
@@ -8009,12 +7956,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=unanswered\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=unanswered\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.001Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "quiz.correct.light.pl",
@@ -8035,12 +7981,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=correct\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=correct\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.001Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "quiz.wrong.light.pl",
@@ -8061,12 +8006,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=wrong\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=wrong\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.001Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "quiz.wrong_with_cta.light.pl",
@@ -8087,12 +8031,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=wrong_with_cta\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=wrong_with_cta\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.001Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "quiz.completed.light.pl",
@@ -8113,12 +8056,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=completed\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=completed\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.001Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "quiz.mid_progress.light.pl",
@@ -8139,12 +8081,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=mid_progress\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=mid_progress\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.001Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "quiz.mid_progress_wrong_with_cta.light.pl",
@@ -8165,12 +8106,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=mid_progress_wrong_with_cta\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=mid_progress_wrong_with_cta\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.002Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "quiz.revision.light.pl",
@@ -8191,12 +8131,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=revision\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=revision\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.002Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "quiz.revision_wrong.light.pl",
@@ -8217,12 +8156,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=revision_wrong\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=revision_wrong\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.002Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "quiz.no_questions.light.pl",
@@ -8244,12 +8182,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=no_questions\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=no_questions\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.002Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.528Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "quiz.long_options.light.pl",
@@ -8270,12 +8207,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=long_options\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=long_options\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.002Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "quiz.long_options_scrolled_mid.light.pl",
@@ -8297,12 +8233,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=long_options_scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=pl&state=long_options_scrolled_mid\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.002Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "ai_analysis.analyzing_start.light.pl",
@@ -8323,12 +8258,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=ai_analysis&theme=light&locale=pl&state=analyzing_start\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=ai_analysis&theme=light&locale=pl&state=analyzing_start\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.002Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "ai_analysis.analyzing_mid.light.pl",
@@ -8349,12 +8283,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=ai_analysis&theme=light&locale=pl&state=analyzing_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=ai_analysis&theme=light&locale=pl&state=analyzing_mid\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.003Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "download_prompt.default.light.pl",
@@ -8375,12 +8308,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=download_prompt&theme=light&locale=pl&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=download_prompt&theme=light&locale=pl&state=default\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.003Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.default.light.pl",
@@ -8401,12 +8333,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=default\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.003Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.no_api_key.light.pl",
@@ -8429,12 +8360,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=no_api_key\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=no_api_key\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.003Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.key_visible.light.pl",
@@ -8456,12 +8386,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=key_visible\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=key_visible\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.003Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.sound_muted.light.pl",
@@ -8482,12 +8411,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=sound_muted\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=sound_muted\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.003Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.scrolled_mid.light.pl",
@@ -8509,12 +8437,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=scrolled_mid\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.003Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.scrolled_bottom.light.pl",
@@ -8536,12 +8463,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=scrolled_bottom\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=scrolled_bottom\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.003Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.provider_google_ai_studio.light.pl",
@@ -8563,12 +8489,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_google_ai_studio\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_google_ai_studio\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.003Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.provider_groq.light.pl",
@@ -8590,12 +8515,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_groq\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_groq\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.004Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.529Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.provider_cerebras.light.pl",
@@ -8617,12 +8541,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_cerebras\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_cerebras\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.004Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.530Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.provider_open_router.light.pl",
@@ -8644,12 +8567,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_open_router\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_open_router\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.004Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.530Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.provider_openai.light.pl",
@@ -8671,12 +8593,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_openai\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_openai\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.004Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.530Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.provider_sambanova.light.pl",
@@ -8698,12 +8619,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_sambanova\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_sambanova\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.004Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.530Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.provider_mistral.light.pl",
@@ -8725,12 +8645,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_mistral\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_mistral\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.004Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.530Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "settings.provider_zai.light.pl",
@@ -8752,12 +8671,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_zai\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=pl&state=provider_zai\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.004Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.530Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "ai_provider_dialog.default.light.pl",
@@ -8780,12 +8698,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=ai_provider_dialog&theme=light&locale=pl&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=ai_provider_dialog&theme=light&locale=pl&state=default\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.004Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.530Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "ai_provider_dialog.scrolled_mid.light.pl",
@@ -8809,12 +8726,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=ai_provider_dialog&theme=light&locale=pl&state=scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=ai_provider_dialog&theme=light&locale=pl&state=scrolled_mid\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.004Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.530Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "logs.empty.light.pl",
@@ -8837,12 +8753,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=logs&theme=light&locale=pl&state=empty\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=logs&theme=light&locale=pl&state=empty\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.004Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.530Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "logs.with_entries.light.pl",
@@ -8864,12 +8779,11 @@
         "width": 390,
         "height": 844
       },
-      "stale": true,
+      "stale": false,
       "missing": false,
-      "captureError": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=logs&theme=light&locale=pl&state=with_entries\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=logs&theme=light&locale=pl&state=with_entries\", waiting until \"domcontentloaded\"\n",
-      "lastSuccessSha": "470b8eb5c893",
-      "lastSuccessAt": "2026-08-16T19:30:17.005Z",
-      "attemptSha": "edfae6a178b8"
+      "lastSuccessSha": "162810dd11ab",
+      "lastSuccessAt": "2026-08-16T20:14:39.530Z",
+      "attemptSha": "162810dd11ab"
     },
     {
       "id": "onboarding_language.default.dark.pl",
