@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-16T16:25:43.788416Z",
+  "generatedAt": "2026-08-16T16:37:23.958530Z",
   "source": "studdly/lib/ui_preview/ui_preview_catalog.dart",
   "screens": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "screenKey": "onboarding_language",
-      "name": "Onboarding — Language — Other",
+      "name": "Onboarding — Language — Other Selected",
       "route": "/onboarding",
       "state": "other_highlighted",
       "group": "Onboarding",
@@ -82,7 +82,7 @@
       "screenKey": "onboarding_dialogue_q1",
       "name": "Onboarding — Q1",
       "route": "/onboarding-dialogue",
-      "state": "q1",
+      "state": "default",
       "group": "Onboarding",
       "tags": [
         "onboarding"
@@ -102,7 +102,17 @@
       "screenKey": "onboarding_dialogue_q2",
       "name": "Onboarding — Q2",
       "route": "/onboarding-dialogue",
-      "state": "q2",
+      "state": "default",
+      "group": "Onboarding",
+      "tags": [
+        "onboarding"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_q2",
+      "name": "Onboarding — Q2 — Option Selected",
+      "route": "/onboarding-dialogue",
+      "state": "option_selected",
       "group": "Onboarding",
       "tags": [
         "onboarding"
@@ -112,17 +122,17 @@
       "screenKey": "onboarding_dialogue_q3",
       "name": "Onboarding — Q3",
       "route": "/onboarding-dialogue",
-      "state": "q3",
+      "state": "default",
       "group": "Onboarding",
       "tags": [
         "onboarding"
       ]
     },
     {
-      "screenKey": "onboarding_dialogue_name",
-      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_q3",
+      "name": "Onboarding — Q3 — Option Selected",
       "route": "/onboarding-dialogue",
-      "state": "name",
+      "state": "option_selected",
       "group": "Onboarding",
       "tags": [
         "onboarding"
@@ -132,17 +142,18 @@
       "screenKey": "onboarding_dialogue_name",
       "name": "Onboarding — Name — CTA Off",
       "route": "/onboarding-dialogue",
-      "state": "cta_disabled",
+      "state": "empty",
       "group": "Onboarding",
       "tags": [
-        "onboarding"
+        "onboarding",
+        "empty"
       ]
     },
     {
       "screenKey": "onboarding_dialogue_name",
       "name": "Onboarding — Name — CTA On",
       "route": "/onboarding-dialogue",
-      "state": "cta_enabled",
+      "state": "filled",
       "group": "Onboarding",
       "tags": [
         "onboarding"
@@ -150,32 +161,210 @@
     },
     {
       "screenKey": "onboarding_dialogue_video",
-      "name": "Onboarding — Video",
+      "name": "Onboarding — Get Key Video — Google AI Studio",
       "route": "/onboarding-dialogue",
-      "state": "video",
-      "group": "Onboarding",
+      "state": "video_google_ai_studio",
+      "group": "Onboarding · AI",
       "tags": [
-        "onboarding"
+        "onboarding",
+        "ai",
+        "ai",
+        "video"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_video",
+      "name": "Onboarding — Get Key Video — Groq",
+      "route": "/onboarding-dialogue",
+      "state": "video_groq",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "video"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_video",
+      "name": "Onboarding — Get Key Video — Cerebras",
+      "route": "/onboarding-dialogue",
+      "state": "video_cerebras",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "video"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_video",
+      "name": "Onboarding — Get Key Video — OpenRouter",
+      "route": "/onboarding-dialogue",
+      "state": "video_open_router",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "video"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_video",
+      "name": "Onboarding — Get Key Video — OpenAI",
+      "route": "/onboarding-dialogue",
+      "state": "video_openai",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "video"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_video",
+      "name": "Onboarding — Get Key Video — SambaNova",
+      "route": "/onboarding-dialogue",
+      "state": "video_sambanova",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "video"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_video",
+      "name": "Onboarding — Get Key Video — Mistral",
+      "route": "/onboarding-dialogue",
+      "state": "video_mistral",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "video"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_video",
+      "name": "Onboarding — Get Key Video — Z.ai",
+      "route": "/onboarding-dialogue",
+      "state": "video_zai",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "video"
       ]
     },
     {
       "screenKey": "onboarding_dialogue_api_key",
-      "name": "Onboarding — API Key",
+      "name": "Onboarding — API Key — Google AI Studio",
       "route": "/onboarding-dialogue",
-      "state": "api_key",
-      "group": "Onboarding",
+      "state": "api_key_google_ai_studio",
+      "group": "Onboarding · AI",
       "tags": [
-        "onboarding"
+        "onboarding",
+        "ai",
+        "ai",
+        "empty"
       ]
     },
     {
       "screenKey": "onboarding_dialogue_api_key",
-      "name": "Onboarding — API Key — Empty",
+      "name": "Onboarding — API Key — Groq",
       "route": "/onboarding-dialogue",
-      "state": "cta_disabled",
-      "group": "Onboarding",
+      "state": "api_key_groq",
+      "group": "Onboarding · AI",
       "tags": [
-        "onboarding"
+        "onboarding",
+        "ai",
+        "ai",
+        "empty"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_api_key",
+      "name": "Onboarding — API Key — Cerebras",
+      "route": "/onboarding-dialogue",
+      "state": "api_key_cerebras",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "empty"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_api_key",
+      "name": "Onboarding — API Key — OpenRouter",
+      "route": "/onboarding-dialogue",
+      "state": "api_key_open_router",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "empty"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_api_key",
+      "name": "Onboarding — API Key — OpenAI",
+      "route": "/onboarding-dialogue",
+      "state": "api_key_openai",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "empty"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_api_key",
+      "name": "Onboarding — API Key — SambaNova",
+      "route": "/onboarding-dialogue",
+      "state": "api_key_sambanova",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "empty"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_api_key",
+      "name": "Onboarding — API Key — Mistral",
+      "route": "/onboarding-dialogue",
+      "state": "api_key_mistral",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "empty"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_api_key",
+      "name": "Onboarding — API Key — Z.ai",
+      "route": "/onboarding-dialogue",
+      "state": "api_key_zai",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "empty"
       ]
     },
     {
@@ -183,46 +372,78 @@
       "name": "Onboarding — API Key — Testing",
       "route": "/onboarding-dialogue",
       "state": "testing",
-      "group": "Onboarding",
+      "group": "Onboarding · AI",
       "tags": [
-        "onboarding"
+        "onboarding",
+        "ai",
+        "ai"
       ]
     },
     {
       "screenKey": "onboarding_dialogue_api_key",
-      "name": "Onboarding — API Key — Invalid",
+      "name": "Onboarding — API Key — Invalid Key",
       "route": "/onboarding-dialogue",
       "state": "error",
-      "group": "Onboarding",
+      "group": "Onboarding · AI",
       "tags": [
-        "onboarding"
+        "onboarding",
+        "ai",
+        "ai",
+        "error"
       ]
     },
     {
       "screenKey": "onboarding_dialogue_api_key",
-      "name": "Onboarding — API Key — Visible",
+      "name": "Onboarding — API Key — Key Visible",
       "route": "/onboarding-dialogue",
       "state": "visible",
-      "group": "Onboarding",
+      "group": "Onboarding · AI",
       "tags": [
-        "onboarding"
+        "onboarding",
+        "ai",
+        "ai"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_api_key",
+      "name": "Onboarding — API Key — Provider Picker",
+      "route": "/onboarding-dialogue",
+      "state": "provider_dialog",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai",
+        "ai",
+        "dialog"
       ]
     },
     {
       "screenKey": "onboarding_dialogue_backup",
-      "name": "Onboarding — Backup Key",
+      "name": "Onboarding — Backup Gemini Key — Empty + Skip",
       "route": "/onboarding-dialogue",
-      "state": "backup",
-      "group": "Onboarding",
+      "state": "empty",
+      "group": "Onboarding · AI",
       "tags": [
-        "onboarding"
+        "onboarding",
+        "ai"
+      ]
+    },
+    {
+      "screenKey": "onboarding_dialogue_backup",
+      "name": "Onboarding — Backup Gemini Key — Filled",
+      "route": "/onboarding-dialogue",
+      "state": "filled",
+      "group": "Onboarding · AI",
+      "tags": [
+        "onboarding",
+        "ai"
       ]
     },
     {
       "screenKey": "onboarding_dialogue_easy",
       "name": "Onboarding — Easy Dialogue",
       "route": "/onboarding-dialogue",
-      "state": "easy",
+      "state": "default",
       "group": "Onboarding",
       "tags": [
         "onboarding"
@@ -232,7 +453,7 @@
       "screenKey": "onboarding_dialogue_final",
       "name": "Onboarding — Start",
       "route": "/onboarding-dialogue",
-      "state": "final",
+      "state": "default",
       "group": "Onboarding",
       "tags": [
         "onboarding"
@@ -283,7 +504,7 @@
     },
     {
       "screenKey": "home",
-      "name": "Home — Empty Ready",
+      "name": "Home — Empty Ready Path",
       "route": "/home",
       "state": "empty_ready",
       "group": "Home",
@@ -460,18 +681,7 @@
     },
     {
       "screenKey": "create_topic",
-      "name": "Create Topic — Many Pages",
-      "route": "/create-topic",
-      "state": "scrolled_pages",
-      "group": "Create Topic",
-      "tags": [
-        "create",
-        "scrolled"
-      ]
-    },
-    {
-      "screenKey": "create_topic",
-      "name": "Create Topic — Pages Scrolled",
+      "name": "Create Topic — Many Pages Scrolled",
       "route": "/create-topic",
       "state": "pages_many_scrolled_mid",
       "group": "Create Topic",
@@ -510,6 +720,17 @@
       "tags": [
         "create",
         "dialog"
+      ]
+    },
+    {
+      "screenKey": "create_topic",
+      "name": "Create Topic — Add Page Sheet",
+      "route": "/create-topic",
+      "state": "add_page_sheet",
+      "group": "Create Topic",
+      "tags": [
+        "create",
+        "sheet"
       ]
     },
     {
@@ -802,6 +1023,36 @@
       ]
     },
     {
+      "screenKey": "ai_analysis",
+      "name": "AI Analysis — Start",
+      "route": "/ai-analysis",
+      "state": "analyzing_start",
+      "group": "Learning",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "screenKey": "ai_analysis",
+      "name": "AI Analysis — Mid Progress",
+      "route": "/ai-analysis",
+      "state": "analyzing_mid",
+      "group": "Learning",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "screenKey": "download_prompt",
+      "name": "Download Prompt",
+      "route": "/download",
+      "state": "default",
+      "group": "System",
+      "tags": [
+        "system"
+      ]
+    },
+    {
       "screenKey": "settings",
       "name": "Settings",
       "route": "/settings",
@@ -819,7 +1070,8 @@
       "group": "Settings",
       "tags": [
         "settings",
-        "empty"
+        "empty",
+        "ai"
       ]
     },
     {
@@ -829,7 +1081,8 @@
       "state": "key_visible",
       "group": "Settings",
       "tags": [
-        "settings"
+        "settings",
+        "ai"
       ]
     },
     {
@@ -839,7 +1092,8 @@
       "state": "testing",
       "group": "Settings",
       "tags": [
-        "settings"
+        "settings",
+        "ai"
       ]
     },
     {
@@ -850,7 +1104,8 @@
       "group": "Settings",
       "tags": [
         "settings",
-        "dialog"
+        "dialog",
+        "ai"
       ]
     },
     {
@@ -865,19 +1120,9 @@
     },
     {
       "screenKey": "settings",
-      "name": "Settings — Groq Selected",
-      "route": "/settings",
-      "state": "groq_selected",
-      "group": "Settings",
-      "tags": [
-        "settings"
-      ]
-    },
-    {
-      "screenKey": "settings",
       "name": "Settings — Scrolled Mid",
       "route": "/settings",
-      "state": "scrolled",
+      "state": "scrolled_mid",
       "group": "Settings",
       "tags": [
         "settings",
@@ -896,14 +1141,91 @@
       ]
     },
     {
-      "screenKey": "ai_provider_dialog",
-      "name": "AI Provider Picker — Default",
+      "screenKey": "settings",
+      "name": "Settings — Google AI Studio",
       "route": "/settings",
-      "state": "provider_dialog",
+      "state": "provider_google_ai_studio",
       "group": "Settings",
       "tags": [
         "settings",
-        "dialog"
+        "ai"
+      ]
+    },
+    {
+      "screenKey": "settings",
+      "name": "Settings — Groq",
+      "route": "/settings",
+      "state": "provider_groq",
+      "group": "Settings",
+      "tags": [
+        "settings",
+        "ai"
+      ]
+    },
+    {
+      "screenKey": "settings",
+      "name": "Settings — Cerebras",
+      "route": "/settings",
+      "state": "provider_cerebras",
+      "group": "Settings",
+      "tags": [
+        "settings",
+        "ai"
+      ]
+    },
+    {
+      "screenKey": "settings",
+      "name": "Settings — OpenRouter",
+      "route": "/settings",
+      "state": "provider_open_router",
+      "group": "Settings",
+      "tags": [
+        "settings",
+        "ai"
+      ]
+    },
+    {
+      "screenKey": "settings",
+      "name": "Settings — OpenAI",
+      "route": "/settings",
+      "state": "provider_openai",
+      "group": "Settings",
+      "tags": [
+        "settings",
+        "ai"
+      ]
+    },
+    {
+      "screenKey": "settings",
+      "name": "Settings — SambaNova",
+      "route": "/settings",
+      "state": "provider_sambanova",
+      "group": "Settings",
+      "tags": [
+        "settings",
+        "ai"
+      ]
+    },
+    {
+      "screenKey": "settings",
+      "name": "Settings — Mistral",
+      "route": "/settings",
+      "state": "provider_mistral",
+      "group": "Settings",
+      "tags": [
+        "settings",
+        "ai"
+      ]
+    },
+    {
+      "screenKey": "settings",
+      "name": "Settings — Z.ai",
+      "route": "/settings",
+      "state": "provider_zai",
+      "group": "Settings",
+      "tags": [
+        "settings",
+        "ai"
       ]
     },
     {
@@ -914,7 +1236,8 @@
       "group": "Settings",
       "tags": [
         "settings",
-        "dialog"
+        "dialog",
+        "ai"
       ]
     },
     {
@@ -925,19 +1248,44 @@
       "group": "Settings",
       "tags": [
         "settings",
-        "dialog"
+        "dialog",
+        "ai"
       ]
     },
     {
       "screenKey": "ai_provider_dialog",
       "name": "AI Provider Picker — Scrolled",
       "route": "/settings",
-      "state": "keys_some_scrolled_mid",
+      "state": "scrolled_mid",
       "group": "Settings",
       "tags": [
         "settings",
         "dialog",
+        "ai",
         "scrolled"
+      ]
+    },
+    {
+      "screenKey": "logs",
+      "name": "Logs — Empty",
+      "route": "/logs",
+      "state": "empty",
+      "group": "Settings",
+      "tags": [
+        "settings",
+        "dev",
+        "empty"
+      ]
+    },
+    {
+      "screenKey": "logs",
+      "name": "Logs — With Entries",
+      "route": "/logs",
+      "state": "with_entries",
+      "group": "Settings",
+      "tags": [
+        "settings",
+        "dev"
       ]
     }
   ]
