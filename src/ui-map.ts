@@ -31,6 +31,17 @@ function shortSha(sha: string | undefined): string {
   return sha ? sha.slice(0, 7) : ''
 }
 
+/** Stable cache key so week-long /screens/* CDN cache picks up recaptures. */
+function withAssetVersion(url: string, version: string | undefined): string {
+  if (!version) return url
+  const sep = url.includes('?') ? '&' : '?'
+  return `${url}${sep}v=${encodeURIComponent(version)}`
+}
+
+function frameAssetVersion(frame: ScreenFrame, manifest: UiManifest): string | undefined {
+  return frame.lastSuccessSha || frame.attemptSha || manifest.gitSha || undefined
+}
+
 /** Prefer per-frame timestamp; fall back to manifest time when SHA matches the latest run. */
 function frameSuccessAt(frame: ScreenFrame, manifest: UiManifest): string | undefined {
   if (frame.lastSuccessAt) return frame.lastSuccessAt
@@ -223,7 +234,8 @@ export function createUiMap(
       if (!tile || !tile.activated) continue
       inFlightImages++
       tile.loading = true
-      const baseUrl = tile.frame.imageUrl
+      const version = frameAssetVersion(tile.frame, manifest)
+      const baseUrl = withAssetVersion(tile.frame.imageUrl, version)
       let attempts = 0
 
       const finish = () => {
@@ -235,6 +247,8 @@ export function createUiMap(
       }
 
       const fullUrl = tile.frame.fullImageUrl
+        ? withAssetVersion(tile.frame.fullImageUrl, version)
+        : undefined
       let useFull = false
 
       const tryLoad = () => {
@@ -765,7 +779,7 @@ function buildFrameCard(
     mainBtn.type = 'button'
     mainBtn.className = 'frame-caption-main'
     const absoluteHint = successAt ? ` · ${formatAbsoluteUtc(successAt)}` : ''
-    mainBtn.title = `Open preview · ${frame.id}.png${absoluteHint}`
+    mainBtn.title = `Open live preview${absoluteHint}`
     mainBtn.addEventListener('click', (e) => {
       e.preventDefault()
       e.stopPropagation()
@@ -776,12 +790,18 @@ function buildFrameCard(
     timeEl.className = 'frame-caption-time'
     timeEl.textContent = timeLabel
 
-    const nameEl = document.createElement('span')
+    const fullPng = frame.fullImageUrl || `/screens/${frame.id}.png`
+    const nameEl = document.createElement('a')
     nameEl.className = 'frame-caption-name'
+    nameEl.href = withAssetVersion(fullPng, frameAssetVersion(frame, manifest))
+    nameEl.target = '_blank'
+    nameEl.rel = 'noopener noreferrer'
     nameEl.textContent = `${frame.id}.png`
+    nameEl.title = `Open full PNG · ${frame.id}.png${absoluteHint}`
+    nameEl.addEventListener('click', (e) => e.stopPropagation())
 
-    mainBtn.append(timeEl, document.createTextNode(' · '), nameEl)
-    caption.appendChild(mainBtn)
+    mainBtn.append(timeEl, document.createTextNode(' · '))
+    caption.append(mainBtn, nameEl)
 
     if (sha) {
       const shaLink = document.createElement('a')

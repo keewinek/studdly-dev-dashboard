@@ -221,6 +221,8 @@ async function writeMergedManifest(catalogJobs, entryById, packFailures, options
           keptOld: f.keptOld,
           error: f.error,
         })),
+        thumbFailures: options.thumbFailures || [],
+        thumbFailureCount: (options.thumbFailures || []).length,
       },
       null,
       2,
@@ -282,12 +284,31 @@ function ensurePackCommit(message) {
   return true
 }
 
+function resolveConflictedManifest() {
+  try {
+    execSync('node scripts/merge-manifest-conflict.mjs', {
+      cwd: root,
+      stdio: 'inherit',
+    })
+    return true
+  } catch {
+    return false
+  }
+}
+
 function resolveRebaseConflicts() {
-  execSync(`git checkout --theirs -- ${PACK_PATHS.map((p) => JSON.stringify(p)).join(' ')}`, {
+  const nonManifest = PACK_PATHS.filter((p) => p !== 'public/manifest.json')
+  execSync(`git checkout --theirs -- ${nonManifest.map((p) => JSON.stringify(p)).join(' ')}`, {
     cwd: root,
     stdio: 'inherit',
     shell: '/bin/bash',
   })
+  if (!resolveConflictedManifest()) {
+    execSync('git checkout --theirs -- public/manifest.json', {
+      cwd: root,
+      stdio: 'inherit',
+    })
+  }
   execSync(`git add -- ${PACK_PATHS.map((p) => JSON.stringify(p)).join(' ')}`, {
     cwd: root,
     stdio: 'inherit',
@@ -387,12 +408,14 @@ async function captureOne(browser, job) {
     await copyFile(tempPath, finalPath)
     await unlink(tempPath).catch(() => {})
     await mkdir(thumbsDir, { recursive: true })
+    let thumbOk = false
     try {
       await writeWebpThumb(finalPath, path.join(thumbsDir, `${job.id}.webp`))
+      thumbOk = true
     } catch (thumbErr) {
       console.warn(`thumb ${job.id}:`, String(thumbErr).slice(0, 180))
     }
-    return { ok: true, id: job.id, keptOld: false }
+    return { ok: true, id: job.id, keptOld: false, thumbOk }
   } catch (error) {
     try {
       await unlink(tempPath)
@@ -469,6 +492,7 @@ async function main() {
 
   const browser = await chromium.launch({ headless: true })
   const allFailures = []
+  const thumbFailures = []
   try {
     let packIndex = 0
     for (const pack of packs) {
@@ -488,11 +512,13 @@ async function main() {
         const result = packResults[i]
         entryById.set(job.id, await buildScreenEntry(job, result, previous))
         if (result && !result.ok) allFailures.push(result)
+        if (result?.ok && result.thumbOk === false) thumbFailures.push(job.id)
       }
 
       if (writeManifest) {
         await writeMergedManifest(catalogJobs, entryById, allFailures, {
           captureInProgress: packIndex < packs.length,
+          thumbFailures,
         })
       }
 
@@ -502,9 +528,14 @@ async function main() {
     }
 
     const keptOld = allFailures.filter((f) => f.keptOld).length
-    console.log(`\ndone. packs=${packs.length} failed=${allFailures.length} keptOld=${keptOld}`)
+    console.log(
+      `\ndone. packs=${packs.length} failed=${allFailures.length} keptOld=${keptOld} thumbFail=${thumbFailures.length}`,
+    )
     for (const f of allFailures.slice(0, 40)) {
       console.error(`${f.id} keptOld=${f.keptOld} ${f.error}`)
+    }
+    if (thumbFailures.length) {
+      console.warn(`thumb failures (${thumbFailures.length}): ${thumbFailures.slice(0, 20).join(', ')}`)
     }
     // Fail CI only when every frame in this run failed (nothing useful captured).
     if (captureJobs.length > 0 && allFailures.length === captureJobs.length) {

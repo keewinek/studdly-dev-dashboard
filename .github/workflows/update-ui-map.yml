@@ -199,6 +199,9 @@ jobs:
           PREVIEW_BASE=http://127.0.0.1:7360/app/ \
             node scripts/capture-screenshots.mjs
 
+          # Recover any missing WebP thumbs / rewrite PNG imageUrls after pack races.
+          npm run thumbs:screens
+
       - name: Commit remaining leftovers
         run: |
           set -euo pipefail
@@ -223,8 +226,13 @@ jobs:
               fi
             else
               echo "Rebase conflict on attempt ${attempt} — keeping our capture artifacts"
-              git checkout --theirs -- public/screens public/manifest.json public/capture-report.json public/app \
+              git checkout --theirs -- public/screens public/capture-report.json public/app \
                 public/preview_catalog.json src/preview_catalog.json
+              if git show :2:public/manifest.json >/dev/null 2>&1; then
+                node scripts/merge-manifest-conflict.mjs || git checkout --theirs -- public/manifest.json
+              else
+                git checkout --theirs -- public/manifest.json
+              fi
               git add public/screens public/manifest.json public/capture-report.json public/app \
                 public/preview_catalog.json src/preview_catalog.json
               unresolved="$(git diff --name-only --diff-filter=U || true)"
