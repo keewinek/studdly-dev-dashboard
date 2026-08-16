@@ -134,16 +134,37 @@ async function captureOne(browser, job) {
   }
 }
 
+function formatDuration(ms) {
+  if (!Number.isFinite(ms) || ms < 0) return '?'
+  const sec = Math.round(ms / 1000)
+  if (sec < 60) return `${sec}s`
+  const min = Math.floor(sec / 60)
+  const rem = sec % 60
+  if (min < 60) return rem ? `${min}m ${rem}s` : `${min}m`
+  const hr = Math.floor(min / 60)
+  const remMin = min % 60
+  return remMin ? `${hr}h ${remMin}m` : `${hr}h`
+}
+
 async function pool(items, limit, worker) {
   const results = []
   let i = 0
+  let completed = 0
+  const startedAt = Date.now()
   async function run() {
     while (i < items.length) {
       const idx = i++
       results[idx] = await worker(items[idx])
-      const done = results.filter(Boolean).length
+      completed++
+      const done = completed
       if (done % 10 === 0 || done === items.length) {
-        console.log(`progress ${done}/${items.length}`)
+        const elapsed = Date.now() - startedAt
+        const rate = done / elapsed // items per ms
+        const remaining = items.length - done
+        const etaMs = rate > 0 ? remaining / rate : NaN
+        console.log(
+          `progress ${done}/${items.length} · elapsed ${formatDuration(elapsed)} · ETA ${formatDuration(etaMs)}`,
+        )
       }
     }
   }
