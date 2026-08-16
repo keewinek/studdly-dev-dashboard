@@ -15,6 +15,9 @@ dist-ssr
 .env.*
 !.env.example
 
+# CI checks out private Studdly here — never commit it into this public repo.
+/studdly/
+
 # Editor
 .vscode/*
 !.vscode/extensions.json
