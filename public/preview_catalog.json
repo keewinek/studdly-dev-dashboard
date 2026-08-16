@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-16T16:47:42.038053Z",
+  "generatedAt": "2026-08-16T16:50:07.025962Z",
   "source": "studdly/lib/ui_preview/ui_preview_catalog.dart",
   "screens": [
     {
@@ -1185,21 +1185,9 @@
     },
     {
       "screenKey": "ai_provider_dialog",
-      "name": "AI Provider Picker — No Keys",
+      "name": "AI Provider Picker",
       "route": "/settings",
-      "state": "keys_none",
-      "group": "Settings",
-      "tags": [
-        "settings",
-        "dialog",
-        "ai"
-      ]
-    },
-    {
-      "screenKey": "ai_provider_dialog",
-      "name": "AI Provider Picker — Some Keys",
-      "route": "/settings",
-      "state": "keys_some",
+      "state": "default",
       "group": "Settings",
       "tags": [
         "settings",
