@@ -201,6 +201,7 @@ jobs:
 
           # Recover any missing WebP thumbs / rewrite PNG imageUrls after pack races.
           npm run thumbs:screens
+          node scripts/point-manifest-thumbs.mjs
 
       - name: Commit remaining leftovers
         run: |

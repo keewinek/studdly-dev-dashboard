@@ -1,18 +1,19 @@
 #!/usr/bin/env node
 /**
  * Merge conflicted public/manifest.json during rebase (union by screen id).
- * Prefer newer lastSuccessAt; on ties prefer WebP imageUrl.
+ * Prefer newer lastSuccessAt; always keep WebP imageUrl when either side (or disk) has it.
  *
  *   node scripts/merge-manifest-conflict.mjs
  */
 import { execSync } from 'node:child_process'
-import { writeFileSync } from 'node:fs'
+import { existsSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
 const manifestPath = path.join(root, 'public/manifest.json')
+const thumbsDir = path.join(root, 'public/screens/thumbs')
 
 function preferScreenEntry(a, b) {
   const aAt = Date.parse(a?.lastSuccessAt || '') || 0
@@ -46,10 +47,25 @@ function mergeManifestDocuments(ours, theirs) {
   }
 }
 
+function pointAtThumbsOnDisk(manifest) {
+  let n = 0
+  for (const screen of manifest.screens || []) {
+    const fullRel = `/screens/${screen.id}.png`
+    const thumbRel = `/screens/thumbs/${screen.id}.webp`
+    screen.fullImageUrl = fullRel
+    if (existsSync(path.join(thumbsDir, `${screen.id}.webp`))) {
+      if (screen.imageUrl !== thumbRel) n++
+      screen.imageUrl = thumbRel
+    }
+  }
+  return n
+}
+
 const ours = JSON.parse(execSync('git show :2:public/manifest.json', { cwd: root, encoding: 'utf8' }))
 const theirs = JSON.parse(
   execSync('git show :3:public/manifest.json', { cwd: root, encoding: 'utf8' }),
 )
 const merged = mergeManifestDocuments(ours, theirs)
+const rewritten = pointAtThumbsOnDisk(merged)
 writeFileSync(manifestPath, `${JSON.stringify(merged, null, 2)}\n`)
-console.log(`merged manifest screens=${merged.screens.length}`)
+console.log(`merged manifest screens=${merged.screens.length} thumbUrls=${rewritten}`)

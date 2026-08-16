@@ -293,6 +293,12 @@ function stagePackPaths() {
 }
 
 function ensurePackCommit(message) {
+  // Pack races / old in-flight CI often rewrite imageUrl → PNG; always re-point from disk.
+  try {
+    execSync('node scripts/point-manifest-thumbs.mjs', { cwd: root, stdio: 'inherit' })
+  } catch (err) {
+    console.warn('point-manifest-thumbs failed:', String(err).slice(0, 180))
+  }
   stagePackPaths()
   if (!hasStagedChanges()) return false
   execSync(`git commit -m ${JSON.stringify(message)}`, { cwd: root, stdio: 'inherit' })
@@ -371,6 +377,19 @@ async function commitAndPushPack(packLabel) {
           ensurePackCommit(message)
           throw resolveErr
         }
+      }
+      // Rebase may have taken a PNG-only remote manifest — re-point before push.
+      try {
+        execSync('node scripts/point-manifest-thumbs.mjs', { cwd: root, stdio: 'inherit' })
+        stagePackPaths()
+        if (hasStagedChanges()) {
+          execSync(`git commit -m ${JSON.stringify(`${message} (thumb urls)`)}`, {
+            cwd: root,
+            stdio: 'inherit',
+          })
+        }
+      } catch (thumbErr) {
+        console.warn(`[pack ${packLabel}] thumb url fix:`, String(thumbErr).slice(0, 180))
       }
       execSync('git push origin HEAD:main', { cwd: root, stdio: 'inherit' })
       console.log(`[pack ${packLabel}] pushed (attempt ${attempt})`)
