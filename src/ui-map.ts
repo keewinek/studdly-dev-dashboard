@@ -210,11 +210,57 @@ export function createUiMap(
   let originY = 0
   let moved = false
 
+  // Tile chrome (Open + filename): only while the pointer is moving, then idle-hide.
+  const CHROME_IDLE_MS = 1400
+  let chromeTimer: number | null = null
+  let lastChromeX = Number.NaN
+  let lastChromeY = Number.NaN
+
+  const hideChrome = () => {
+    if (chromeTimer != null) {
+      window.clearTimeout(chromeTimer)
+      chromeTimer = null
+    }
+    viewport.classList.remove('show-chrome')
+  }
+
+  const bumpChrome = () => {
+    if (panning) {
+      hideChrome()
+      return
+    }
+    viewport.classList.add('show-chrome')
+    if (chromeTimer != null) window.clearTimeout(chromeTimer)
+    chromeTimer = window.setTimeout(() => {
+      chromeTimer = null
+      // Keep chrome if the user is aiming at Open / filename.
+      if (viewport.querySelector('.open-btn:hover, .frame-filename:hover, .open-btn:focus-visible')) {
+        bumpChrome()
+        return
+      }
+      viewport.classList.remove('show-chrome')
+    }, CHROME_IDLE_MS)
+  }
+
+  const onPointerMoveChrome = (e: PointerEvent) => {
+    if (
+      Number.isFinite(lastChromeX) &&
+      Math.abs(e.clientX - lastChromeX) < 1 &&
+      Math.abs(e.clientY - lastChromeY) < 1
+    ) {
+      return
+    }
+    lastChromeX = e.clientX
+    lastChromeY = e.clientY
+    bumpChrome()
+  }
+
   const onPointerDown = (e: PointerEvent) => {
     if (e.button !== 0) return
     const target = e.target as HTMLElement
-    if (target.closest('.open-btn')) {
+    if (target.closest('.open-btn') || target.closest('.frame-filename')) {
       moved = false
+      bumpChrome()
       return
     }
     // Finish any soft zoom before pan so hit-testing stays sane.
@@ -226,6 +272,7 @@ export function createUiMap(
     originX = state.x
     originY = state.y
     viewport.classList.add('panning')
+    hideChrome()
     viewport.setPointerCapture(e.pointerId)
   }
 
@@ -253,6 +300,7 @@ export function createUiMap(
     e.preventDefault()
     const factor = e.deltaY < 0 ? 1.08 : 1 / 1.08
     zoomAt(e.clientX, e.clientY, visualScale() * factor)
+    bumpChrome()
   }
 
   const pointers = new Map<number, PointerEvent>()
@@ -295,6 +343,8 @@ export function createUiMap(
   viewport.addEventListener('pointerdown', onPointerDownPinch)
   viewport.addEventListener('pointermove', onPointerMove)
   viewport.addEventListener('pointermove', onPointerMovePinch)
+  viewport.addEventListener('pointermove', onPointerMoveChrome)
+  viewport.addEventListener('pointerleave', hideChrome)
   viewport.addEventListener('pointerup', onPointerUp)
   viewport.addEventListener('pointerup', onPointerUpPinch)
   viewport.addEventListener('pointercancel', onPointerUp)
@@ -325,6 +375,7 @@ export function createUiMap(
     destroy: () => {
       if (paintRaf) cancelAnimationFrame(paintRaf)
       if (settleTimer != null) window.clearTimeout(settleTimer)
+      if (chromeTimer != null) window.clearTimeout(chromeTimer)
       observer.disconnect()
       host.innerHTML = ''
     },

@@ -281,8 +281,8 @@ body,
   transition: opacity 100ms ease, background 100ms ease;
 }
 
-.frame-cell:hover .open-btn,
-.frame-cell:focus-within .open-btn {
+.viewport.show-chrome:not(.panning) .frame-cell:hover .open-btn,
+.viewport.show-chrome:not(.panning) .frame-cell:focus-within .open-btn {
   opacity: 1;
   pointer-events: auto;
 }
@@ -316,8 +316,8 @@ body,
   cursor: pointer;
 }
 
-.frame-cell:hover .frame-filename,
-.frame-cell:focus-within .frame-filename {
+.viewport.show-chrome:not(.panning) .frame-cell:hover .frame-filename,
+.viewport.show-chrome:not(.panning) .frame-cell:focus-within .frame-filename {
   opacity: 1;
   pointer-events: auto;
 }
