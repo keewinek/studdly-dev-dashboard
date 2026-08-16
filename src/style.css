@@ -320,6 +320,14 @@ body,
   letter-spacing: -0.01em;
   white-space: nowrap;
   overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 100ms ease;
+}
+
+.viewport.show-chrome:not(.panning) .frame-cell:hover .frame-caption,
+.viewport.show-chrome:not(.panning) .frame-cell:focus-within .frame-caption {
+  opacity: 1;
   pointer-events: auto;
 }
 
