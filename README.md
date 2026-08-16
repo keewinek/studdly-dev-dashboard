@@ -45,10 +45,25 @@ Screenshot generation lives in the Flutter repo (`test/ui_catalog/` + CI), then 
 
 ## Flutter preview
 
-Build the web preview entry from the Studdly app:
+Build + sync into this repo (deploys with Netlify):
 
 ```bash
-flutter build web -t lib/ui_preview_main.dart --base-href /app/
+./scripts/sync-flutter-preview.sh
+git add public/app && git commit -m "Update Flutter UI preview" && git push
 ```
 
-Deploy the `build/web` output to Netlify under `/app/` (or set `VITE_FLUTTER_PREVIEW_URL` to that host).
+Or manually:
+
+```bash
+cd ../studdly
+flutter build web -t lib/ui_preview_main.dart --base-href /app/ --release
+rsync -a --delete --exclude '.last_build_id' build/web/ ../studdly-dev-dashboard/public/app/
+```
+
+Preview URLs look like:
+
+```
+https://dev.studdly.app/app/?preview=1&screen=home&theme=dark&locale=pl&state=empty
+```
+
+`VITE_FLUTTER_PREVIEW_URL` defaults to `/app/` (same origin). Override in Netlify env only if the preview is hosted elsewhere.
