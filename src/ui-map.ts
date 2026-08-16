@@ -154,7 +154,12 @@ export function createUiMap(
   }
 
   /** Zoom using cheap CSS scale; layout --ms updates after gesture settles. */
-  const zoomAt = (clientX: number, clientY: number, nextVisual: number) => {
+  const zoomAt = (
+    clientX: number,
+    clientY: number,
+    nextVisual: number,
+    opts?: { settle?: boolean },
+  ) => {
     const rect = viewport.getBoundingClientRect()
     const px = clientX - rect.left
     const py = clientY - rect.top
@@ -167,7 +172,7 @@ export function createUiMap(
     state.x = px - wx * nextT
     state.y = py - wy * nextT
     schedulePaint()
-    scheduleBake()
+    if (opts?.settle !== false) scheduleBake()
   }
 
   const zoomBy = (factor: number) => {
@@ -203,14 +208,23 @@ export function createUiMap(
 
   schedulePaint()
 
-  let panning = false
+  // Google Maps–style gestures: 1 finger = pan, 2 fingers = pinch-zoom + mid pan.
+  type GestureMode = 'none' | 'pan' | 'pinch'
+  const activePointers = new Map<number, { x: number; y: number; type: string }>()
+  let gestureMode: GestureMode = 'none'
+  let panOriginX = 0
+  let panOriginY = 0
   let panStartX = 0
   let panStartY = 0
-  let originX = 0
-  let originY = 0
+  let pinchStartDist = 0
+  let pinchStartVisual = 1
+  let lastPinchMidX = 0
+  let lastPinchMidY = 0
   let moved = false
+  let lastTapAt = 0
+  let lastTapX = 0
+  let lastTapY = 0
 
-  // Tile chrome (Open + filename): only while the pointer is moving, then idle-hide.
   const CHROME_IDLE_MS = 200
   let chromeTimer: number | null = null
   let lastChromeX = Number.NaN
@@ -225,7 +239,7 @@ export function createUiMap(
   }
 
   const bumpChrome = () => {
-    if (panning) {
+    if (gestureMode !== 'none') {
       hideChrome()
       return
     }
@@ -233,7 +247,6 @@ export function createUiMap(
     if (chromeTimer != null) window.clearTimeout(chromeTimer)
     chromeTimer = window.setTimeout(() => {
       chromeTimer = null
-      // Keep chrome if the user is aiming at Open / filename.
       if (viewport.querySelector('.open-btn:hover, .frame-filename:hover, .open-btn:focus-visible')) {
         bumpChrome()
         return
@@ -243,6 +256,7 @@ export function createUiMap(
   }
 
   const onPointerMoveChrome = (e: PointerEvent) => {
+    if (e.pointerType !== 'mouse') return
     if (
       Number.isFinite(lastChromeX) &&
       Math.abs(e.clientX - lastChromeX) < 1 &&
@@ -255,40 +269,146 @@ export function createUiMap(
     bumpChrome()
   }
 
+  const beginPan = (x: number, y: number) => {
+    if (state.transient !== 1) bakeTransient()
+    gestureMode = 'pan'
+    panStartX = x
+    panStartY = y
+    panOriginX = state.x
+    panOriginY = state.y
+    viewport.classList.add('panning')
+    hideChrome()
+  }
+
+  const beginPinch = () => {
+    if (settleTimer != null) {
+      window.clearTimeout(settleTimer)
+      settleTimer = null
+    }
+    const pts = [...activePointers.values()]
+    if (pts.length < 2) return
+    const [a, b] = pts
+    gestureMode = 'pinch'
+    viewport.classList.remove('panning')
+    hideChrome()
+    pinchStartDist = Math.hypot(a.x - b.x, a.y - b.y)
+    pinchStartVisual = visualScale()
+    lastPinchMidX = (a.x + b.x) / 2
+    lastPinchMidY = (a.y + b.y) / 2
+    moved = true
+  }
+
   const onPointerDown = (e: PointerEvent) => {
-    if (e.button !== 0) return
+    if (e.pointerType === 'mouse' && e.button !== 0) return
     const target = e.target as HTMLElement
     if (target.closest('.open-btn') || target.closest('.frame-filename')) {
       moved = false
       bumpChrome()
       return
     }
-    // Finish any soft zoom before pan so hit-testing stays sane.
-    if (state.transient !== 1) bakeTransient()
-    panning = true
-    moved = false
-    panStartX = e.clientX
-    panStartY = e.clientY
-    originX = state.x
-    originY = state.y
-    viewport.classList.add('panning')
-    hideChrome()
-    viewport.setPointerCapture(e.pointerId)
+
+    activePointers.set(e.pointerId, { x: e.clientX, y: e.clientY, type: e.pointerType })
+    try {
+      viewport.setPointerCapture(e.pointerId)
+    } catch {
+      // ignore
+    }
+
+    if (activePointers.size === 1) {
+      moved = false
+      beginPan(e.clientX, e.clientY)
+    } else if (activePointers.size === 2) {
+      beginPinch()
+    }
   }
 
   const onPointerMove = (e: PointerEvent) => {
-    if (!panning) return
-    const dx = e.clientX - panStartX
-    const dy = e.clientY - panStartY
-    if (Math.hypot(dx, dy) > 3) moved = true
-    state.x = originX + dx
-    state.y = originY + dy
-    schedulePaint()
+    if (!activePointers.has(e.pointerId)) {
+      onPointerMoveChrome(e)
+      return
+    }
+    activePointers.set(e.pointerId, { x: e.clientX, y: e.clientY, type: e.pointerType })
+
+    if (gestureMode === 'pan' && activePointers.size === 1) {
+      const p = activePointers.values().next().value!
+      const dx = p.x - panStartX
+      const dy = p.y - panStartY
+      if (Math.hypot(dx, dy) > 3) moved = true
+      state.x = panOriginX + dx
+      state.y = panOriginY + dy
+      schedulePaint()
+    } else if (gestureMode === 'pinch' && activePointers.size >= 2) {
+      const pts = [...activePointers.values()]
+      const a = pts[0]
+      const b = pts[1]
+      const midX = (a.x + b.x) / 2
+      const midY = (a.y + b.y) / 2
+      const dist = Math.hypot(a.x - b.x, a.y - b.y)
+
+      // Midpoint drag pans (same as Google Maps while pinching).
+      state.x += midX - lastPinchMidX
+      state.y += midY - lastPinchMidY
+      lastPinchMidX = midX
+      lastPinchMidY = midY
+
+      if (pinchStartDist > 0) {
+        zoomAt(midX, midY, pinchStartVisual * (dist / pinchStartDist), { settle: false })
+      }
+      moved = true
+    }
+
+    onPointerMoveChrome(e)
   }
 
-  const onPointerUp = () => {
-    panning = false
+  const onPointerUp = (e: PointerEvent) => {
+    if (!activePointers.has(e.pointerId)) return
+    const released = activePointers.get(e.pointerId)!
+    activePointers.delete(e.pointerId)
+    try {
+      viewport.releasePointerCapture(e.pointerId)
+    } catch {
+      // ignore
+    }
+
+    if (activePointers.size >= 2) {
+      beginPinch()
+      return
+    }
+
+    if (activePointers.size === 1) {
+      if (gestureMode === 'pinch') bakeTransient()
+      const remaining = activePointers.values().next().value!
+      beginPan(remaining.x, remaining.y)
+      return
+    }
+
+    // No fingers left.
+    const wasPinch = gestureMode === 'pinch'
+    const wasTap =
+      !moved &&
+      !wasPinch &&
+      (released.type === 'touch' || released.type === 'pen')
+    if (wasPinch) bakeTransient()
+    gestureMode = 'none'
     viewport.classList.remove('panning')
+    pinchStartDist = 0
+
+    if (wasTap) {
+      const now = performance.now()
+      const dt = now - lastTapAt
+      const dist = Math.hypot(released.x - lastTapX, released.y - lastTapY)
+      if (dt < 320 && dist < 28) {
+        // Double-tap zoom in (Google Maps–style).
+        zoomAt(released.x, released.y, visualScale() * 1.8)
+        lastTapAt = 0
+      } else {
+        lastTapAt = now
+        lastTapX = released.x
+        lastTapY = released.y
+        bumpChrome()
+      }
+    }
+
     if (moved) {
       window.setTimeout(() => {
         moved = false
@@ -303,52 +423,17 @@ export function createUiMap(
     bumpChrome()
   }
 
-  const pointers = new Map<number, PointerEvent>()
-  let pinchStartDist = 0
-  let pinchStartVisual = 1
-
-  const onPointerDownPinch = (e: PointerEvent) => {
-    pointers.set(e.pointerId, e)
-    if (pointers.size === 2) {
-      const [a, b] = [...pointers.values()]
-      pinchStartDist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY)
-      pinchStartVisual = visualScale()
-    }
-  }
-
-  const onPointerMovePinch = (e: PointerEvent) => {
-    if (!pointers.has(e.pointerId)) return
-    pointers.set(e.pointerId, e)
-    if (pointers.size === 2 && pinchStartDist > 0) {
-      const [a, b] = [...pointers.values()]
-      const dist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY)
-      const midX = (a.clientX + b.clientX) / 2
-      const midY = (a.clientY + b.clientY) / 2
-      zoomAt(midX, midY, pinchStartVisual * (dist / pinchStartDist))
-    }
-  }
-
-  const onPointerUpPinch = (e: PointerEvent) => {
-    pointers.delete(e.pointerId)
-    if (pointers.size < 2) {
-      pinchStartDist = 0
-      bakeTransient()
-    }
-  }
-
   const blockSelect = (e: Event) => e.preventDefault()
   viewport.addEventListener('selectstart', blockSelect)
   viewport.addEventListener('dragstart', blockSelect)
   viewport.addEventListener('pointerdown', onPointerDown)
-  viewport.addEventListener('pointerdown', onPointerDownPinch)
   viewport.addEventListener('pointermove', onPointerMove)
-  viewport.addEventListener('pointermove', onPointerMovePinch)
-  viewport.addEventListener('pointermove', onPointerMoveChrome)
-  viewport.addEventListener('pointerleave', hideChrome)
   viewport.addEventListener('pointerup', onPointerUp)
-  viewport.addEventListener('pointerup', onPointerUpPinch)
   viewport.addEventListener('pointercancel', onPointerUp)
-  viewport.addEventListener('pointercancel', onPointerUpPinch)
+  viewport.addEventListener('pointerleave', (e) => {
+    // Only hide chrome when the primary mouse leaves; don't break multi-touch.
+    if (e.pointerType === 'mouse' && activePointers.size === 0) hideChrome()
+  })
   viewport.addEventListener('wheel', onWheel, { passive: false })
 
   world.addEventListener(
@@ -356,6 +441,7 @@ export function createUiMap(
     (e) => {
       if (!moved) return
       if ((e.target as HTMLElement).closest('.open-btn')) return
+      if ((e.target as HTMLElement).closest('.frame-filename')) return
       e.preventDefault()
       e.stopPropagation()
     },
@@ -512,6 +598,8 @@ function buildFrameCard(
   }
   card.addEventListener('pointerenter', ensureOpenControl, { once: true })
   card.addEventListener('dblclick', (e) => {
+    // On touch, double-tap zooms the map (Google Maps–style) instead of opening.
+    if (window.matchMedia('(pointer: coarse)').matches) return
     e.preventDefault()
     e.stopPropagation()
     ensureOpenControl()
