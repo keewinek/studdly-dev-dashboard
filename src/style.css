@@ -251,7 +251,7 @@ body,
 
 .frames {
   display: grid;
-  grid-template-columns: repeat(4, var(--frame-w));
+  grid-template-columns: repeat(7, var(--frame-w));
   gap: var(--gap);
 }
 
@@ -521,10 +521,6 @@ body,
 }
 
 @media (max-width: 720px) {
-  .frames {
-    grid-template-columns: repeat(2, var(--frame-w));
-  }
-
   .brand h1 {
     font-size: 18px;
   }
