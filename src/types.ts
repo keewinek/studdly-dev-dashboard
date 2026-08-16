@@ -23,10 +23,12 @@ export interface ScreenFrame {
   group: string
   /** Identity across theme/locale for future diffs */
   compareKey: string
-  /** 1× phone screenshot (default / zoomed-out LOD). */
+  /** 1× phone screenshot (zoomed-out LOD). */
   imageUrl: string
-  /** Optional 2× screenshot for zoomed-in LOD. */
+  /** 2× mid zoom. */
   imageUrl2x?: string
+  /** 4× crisp zoom-in (~1560×3376 — near-4K on phone aspect). */
+  imageUrl4x?: string
   size: { width: number; height: number }
   /** True when this commit's capture failed and we kept an older PNG. */
   stale?: boolean
@@ -40,18 +42,34 @@ export interface ScreenFrame {
   attemptSha?: string
 }
 
-/** World-zoom → texture LOD. Higher zoom loads sharper assets. */
-export type ImageLod = 1 | 2
+/**
+ * World-zoom → texture LOD.
+ * Frame tiles are ~156 CSS-px wide; on retina at 400% zoom we need ~4× phone captures.
+ */
+export type ImageLod = 1 | 2 | 4
 
-export function lodForScale(scale: number): ImageLod {
-  return scale >= 1 ? 2 : 1
+export function lodForScale(scale: number, devicePixelRatio = 1): ImageLod {
+  const effective = scale * Math.max(1, devicePixelRatio)
+  if (effective < 1.15) return 1
+  if (effective < 2.4) return 2
+  return 4
 }
 
 export function frameImageUrl(frame: ScreenFrame, lod: ImageLod): string {
+  if (lod === 4) {
+    return frame.imageUrl4x || `/screens/4x/${frame.id}.png`
+  }
   if (lod === 2) {
     return frame.imageUrl2x || `/screens/2x/${frame.id}.png`
   }
   return frame.imageUrl
+}
+
+/** Fallback chain when a higher LOD asset 404s. */
+export function lodFallback(lod: ImageLod): ImageLod | null {
+  if (lod === 4) return 2
+  if (lod === 2) return 1
+  return null
 }
 
 export interface CaptureSummary {

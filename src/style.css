@@ -244,6 +244,8 @@ body,
   -webkit-user-drag: none;
   user-select: none;
   -webkit-user-select: none;
+  /* Prefer high-quality resampling; 4× assets supply the sharpness when zoomed. */
+  image-rendering: auto;
 }
 
 .frame-fallback {

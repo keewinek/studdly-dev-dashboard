@@ -69,10 +69,18 @@ Optional: copy `.env.example` → `.env` and set `VITE_FLUTTER_PREVIEW_URL`.
 mkdir -p /tmp/ui-preview-root/app && rsync -a public/app/ /tmp/ui-preview-root/app/
 python3 -m http.server 7360 --directory /tmp/ui-preview-root
 
-# Terminal B
+# Terminal B — 1× / 2× / 4× (4× = crisp zoom-in on retina)
 PREVIEW_BASE=http://127.0.0.1:7360/app/ npm run capture:screens
 PREVIEW_BASE=http://127.0.0.1:7360/app/ npm run capture:screens:2x
+PREVIEW_BASE=http://127.0.0.1:7360/app/ npm run capture:screens:4x
+
+# Optional filters for faster local runs:
+# LOCALE_FILTER=en THEME_FILTER=dark …
 ```
+
+The map swaps textures by zoom × devicePixelRatio: **1×** overview → **2×** mid → **4×** (~1560×3376, near-4K) when zoomed in.
+
+Screen states are generated algorithmically from `src/catalog-spec.ts` (scroll positions, overlays, empty/full, CTA chrome, …) — currently ~90 unique layouts × theme × locale.
 
 Failed frames keep the previous file and set `stale` / `captureError` / `lastSuccessSha` in `public/manifest.json`.
 

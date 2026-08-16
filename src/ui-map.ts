@@ -1,5 +1,11 @@
 import type { LocaleId, ScreenFrame, ThemeId, UiManifest } from './types'
-import { frameImageUrl, lodForScale, previewUrl, type ImageLod } from './types'
+import {
+  frameImageUrl,
+  lodFallback,
+  lodForScale,
+  previewUrl,
+  type ImageLod,
+} from './types'
 
 interface PanZoomState {
   x: number
@@ -14,7 +20,7 @@ interface LodFrame {
 }
 
 const MIN_SCALE = 0.15
-const MAX_SCALE = 4
+const MAX_SCALE = 5
 
 export function createUiMap(
   host: HTMLElement,
@@ -25,13 +31,18 @@ export function createUiMap(
 
   const topbar = document.createElement('div')
   topbar.className = 'topbar'
-  const staleCount = manifest.screens.filter((s) => s.stale || s.missing).length
+  const staleCount = manifest.screens.filter((s) => s.stale && !s.missing).length
+  const missingCount = manifest.screens.filter((s) => s.missing).length
+  const warnBits = [
+    staleCount > 0 ? `${staleCount} outdated` : '',
+    missingCount > 0 ? `${missingCount} missing` : '',
+  ].filter(Boolean)
   topbar.innerHTML = `
     <div class="brand">
       <h1>Studdly UI Map</h1>
       ${
-        staleCount > 0
-          ? `<p class="status-warn" title="Some screens failed to capture on the latest commit; older screenshots are shown.">${staleCount} outdated · capture error</p>`
+        warnBits.length
+          ? `<p class="status-warn" title="Outdated = capture failed and an older PNG is shown. Missing = no PNG yet.">${warnBits.join(' · ')}</p>`
           : ''
       }
     </div>
@@ -70,7 +81,8 @@ export function createUiMap(
 
   const state: PanZoomState = { x: 48, y: 24, scale: 0.55 }
   const zoomLabel = toolbar.querySelector('[data-zoom]') as HTMLElement
-  let currentLod: ImageLod = lodForScale(state.scale)
+  const dpr = typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1
+  let currentLod: ImageLod = lodForScale(state.scale, dpr)
   let lodTimer: number | null = null
 
   const applyLod = (lod: ImageLod) => {
@@ -85,6 +97,7 @@ export function createUiMap(
       }
       entry.lod = lod
       entry.img.setAttribute('data-lod-src', next)
+      entry.img.setAttribute('data-lod', String(lod))
       // Prefetch then swap to avoid flicker
       const pre = new Image()
       pre.decoding = 'async'
@@ -94,18 +107,24 @@ export function createUiMap(
         }
       }
       pre.onerror = () => {
-        // Keep current texture if higher LOD is missing.
+        const fb = lodFallback(lod)
+        if (fb == null || entry.lod !== lod) return
+        const fallbackUrl = frameImageUrl(entry.frame, fb)
+        entry.lod = fb
+        entry.img.setAttribute('data-lod-src', fallbackUrl)
+        entry.img.setAttribute('data-lod', String(fb))
+        entry.img.src = fallbackUrl
       }
       pre.src = next
     }
   }
 
   const scheduleLod = () => {
-    const next = lodForScale(state.scale)
+    const next = lodForScale(state.scale, dpr)
     if (next === currentLod) return
     if (lodTimer != null) window.clearTimeout(lodTimer)
-    // Small debounce so pinch/scroll doesn't thrash network.
-    lodTimer = window.setTimeout(() => applyLod(next), 80)
+    // Swap hi-res early so crisp pixels are ready as you zoom in.
+    lodTimer = window.setTimeout(() => applyLod(next), 40)
   }
 
   const applyTransform = () => {
@@ -357,9 +376,18 @@ function buildFrameCard(
       img.src = url.toString()
       return
     }
-    // If 2× missing, fall back to 1× once.
+    // Fall down the LOD chain: 4× → 2× → 1×
+    if (intended.includes('/4x/')) {
+      const mid = frame.imageUrl2x || `/screens/2x/${frame.id}.png`
+      img.setAttribute('data-lod-src', mid)
+      img.setAttribute('data-lod', '2')
+      img.src = mid
+      retries = 0
+      return
+    }
     if (intended.includes('/2x/')) {
       img.setAttribute('data-lod-src', frame.imageUrl)
+      img.setAttribute('data-lod', '1')
       img.src = frame.imageUrl
       retries = 0
       return
