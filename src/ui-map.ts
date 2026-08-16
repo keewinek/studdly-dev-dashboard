@@ -128,7 +128,10 @@ export function createUiMap(
   }
 
   const applyTransform = () => {
-    world.style.transform = `translate(${state.x}px, ${state.y}px) scale(${state.scale})`
+    // Pan with translate only. Zoom by resizing layout (--ms), NOT transform:scale().
+    // CSS scale() rasterizes the world as a bitmap and upscales it → pixelated text/borders.
+    world.style.setProperty('--ms', String(state.scale))
+    world.style.transform = `translate(${state.x}px, ${state.y}px)`
     zoomLabel.textContent = `${Math.round(state.scale * 100)}%`
     scheduleLod()
   }
