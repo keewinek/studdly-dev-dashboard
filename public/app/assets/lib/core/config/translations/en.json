@@ -295,6 +295,7 @@
   "groqParseError": "Invalid response from Groq API. Please try again.",
   "aiCreatingLearningPath": "AI is creating the next part of the learning path",
   "changeAiProvider": "Change AI provider",
+  "changeLanguage": "Change language",
   "done": "Done",
   "groqApi": "Groq API",
   "cerebrasApi": "Cerebras API",

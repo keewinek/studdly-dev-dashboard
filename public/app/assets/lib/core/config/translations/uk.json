@@ -250,6 +250,7 @@
   "groqParseError": "Недійсна відповідь від API Groq. Спробуй ще раз.",
   "aiCreatingLearningPath": "ШІ створює наступну частину навчального шляху",
   "changeAiProvider": "Змінити постачальника ШІ",
+  "changeLanguage": "Змінити мову",
   "done": "Готово",
   "groqApi": "Groq API",
   "cerebrasApi": "Cerebras API",

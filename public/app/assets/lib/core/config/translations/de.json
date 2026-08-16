@@ -250,6 +250,7 @@
   "groqParseError": "Ungültige Antwort von der Groq-API. Bitte versuche es erneut.",
   "aiCreatingLearningPath": "Die KI erstellt den nächsten Teil des Lernpfads",
   "changeAiProvider": "KI-Anbieter ändern",
+  "changeLanguage": "Sprache ändern",
   "done": "Fertig",
   "groqApi": "Groq API",
   "cerebrasApi": "Cerebras API",

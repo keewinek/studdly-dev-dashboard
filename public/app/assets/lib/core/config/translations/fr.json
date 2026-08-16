@@ -250,6 +250,7 @@
   "groqParseError": "Réponse invalide de l'API Groq. Réessaie.",
   "aiCreatingLearningPath": "L'IA crée la prochaine partie du parcours d'apprentissage",
   "changeAiProvider": "Changer de fournisseur d'IA",
+  "changeLanguage": "Changer de langue",
   "done": "Terminé",
   "groqApi": "Groq API",
   "cerebrasApi": "Cerebras API",

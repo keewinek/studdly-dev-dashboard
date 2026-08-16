@@ -250,6 +250,7 @@
   "groqParseError": "Respuesta no válida de la API de Groq. Inténtalo de nuevo.",
   "aiCreatingLearningPath": "La IA está creando la siguiente parte de la ruta de aprendizaje",
   "changeAiProvider": "Cambiar proveedor de IA",
+  "changeLanguage": "Cambiar idioma",
   "done": "Hecho",
   "groqApi": "Groq API",
   "cerebrasApi": "Cerebras API",

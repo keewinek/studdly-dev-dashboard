@@ -295,6 +295,7 @@
   "groqParseError": "Nieprawidłowa odpowiedź z API Groq. Spróbuj ponownie.",
   "aiCreatingLearningPath": "AI tworzy dalszą część ścieżki nauki",
   "changeAiProvider": "Zmień dostawcę AI",
+  "changeLanguage": "Zmień język",
   "done": "Gotowe",
   "groqApi": "Groq API",
   "cerebrasApi": "Cerebras API",
