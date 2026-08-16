@@ -70,7 +70,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_language.default.light.en.png"
     },
     {
       "id": "language_picker.default.light.en",
@@ -89,7 +90,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/language_picker.default.light.en.png"
     },
     {
       "id": "onboarding_dialogue_q1.q1.light.en",
@@ -108,7 +110,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q1.q1.light.en.png"
     },
     {
       "id": "onboarding_dialogue_q2.q2.light.en",
@@ -127,7 +130,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q2.q2.light.en.png"
     },
     {
       "id": "onboarding_dialogue_q3.q3.light.en",
@@ -146,7 +150,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q3.q3.light.en.png"
     },
     {
       "id": "onboarding_dialogue_name.name.light.en",
@@ -165,7 +170,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_name.name.light.en.png"
     },
     {
       "id": "onboarding_dialogue_video.video.light.en",
@@ -184,7 +190,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_video.video.light.en.png"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key.light.en",
@@ -203,7 +210,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_api_key.api_key.light.en.png"
     },
     {
       "id": "onboarding_dialogue_final.final.light.en",
@@ -222,7 +230,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_final.final.light.en.png"
     },
     {
       "id": "home.empty.light.en",
@@ -242,7 +251,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.empty.light.en.png"
     },
     {
       "id": "home.ready.light.en",
@@ -261,7 +271,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.ready.light.en.png"
     },
     {
       "id": "home.analyzing.light.en",
@@ -280,7 +291,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.analyzing.light.en.png"
     },
     {
       "id": "home.queued.light.en",
@@ -299,7 +311,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.queued.light.en.png"
     },
     {
       "id": "create_topic.empty.light.en",
@@ -318,7 +331,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.empty.light.en.png"
     },
     {
       "id": "create_topic.with_pages.light.en",
@@ -337,7 +351,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.with_pages.light.en.png"
     },
     {
       "id": "create_topic.ocr.light.en",
@@ -356,7 +371,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.ocr.light.en.png"
     },
     {
       "id": "topic_path.empty.light.en",
@@ -375,7 +391,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.empty.light.en.png"
     },
     {
       "id": "topic_path.ready.light.en",
@@ -394,7 +411,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.ready.light.en.png"
     },
     {
       "id": "topic_path.partial.light.en",
@@ -413,7 +431,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.partial.light.en.png"
     },
     {
       "id": "read_text.default.light.en",
@@ -432,7 +451,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/read_text.default.light.en.png"
     },
     {
       "id": "quiz.unanswered.light.en",
@@ -451,7 +471,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.unanswered.light.en.png"
     },
     {
       "id": "quiz.correct.light.en",
@@ -470,7 +491,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.correct.light.en.png"
     },
     {
       "id": "quiz.wrong.light.en",
@@ -489,7 +511,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.wrong.light.en.png"
     },
     {
       "id": "quiz.completed.light.en",
@@ -508,7 +531,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.completed.light.en.png"
     },
     {
       "id": "settings.default.light.en",
@@ -527,7 +551,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/settings.default.light.en.png"
     },
     {
       "id": "ai_provider_dialog.provider_dialog.light.en",
@@ -547,7 +572,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/ai_provider_dialog.provider_dialog.light.en.png"
     },
     {
       "id": "onboarding_language.default.dark.en",
@@ -566,7 +592,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_language.default.dark.en.png"
     },
     {
       "id": "language_picker.default.dark.en",
@@ -585,7 +612,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/language_picker.default.dark.en.png"
     },
     {
       "id": "onboarding_dialogue_q1.q1.dark.en",
@@ -604,7 +632,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q1.q1.dark.en.png"
     },
     {
       "id": "onboarding_dialogue_q2.q2.dark.en",
@@ -623,7 +652,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q2.q2.dark.en.png"
     },
     {
       "id": "onboarding_dialogue_q3.q3.dark.en",
@@ -642,7 +672,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q3.q3.dark.en.png"
     },
     {
       "id": "onboarding_dialogue_name.name.dark.en",
@@ -661,7 +692,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_name.name.dark.en.png"
     },
     {
       "id": "onboarding_dialogue_video.video.dark.en",
@@ -680,7 +712,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_video.video.dark.en.png"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key.dark.en",
@@ -699,7 +732,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_api_key.api_key.dark.en.png"
     },
     {
       "id": "onboarding_dialogue_final.final.dark.en",
@@ -718,7 +752,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_final.final.dark.en.png"
     },
     {
       "id": "home.empty.dark.en",
@@ -738,7 +773,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.empty.dark.en.png"
     },
     {
       "id": "home.ready.dark.en",
@@ -757,7 +793,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.ready.dark.en.png"
     },
     {
       "id": "home.analyzing.dark.en",
@@ -776,7 +813,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.analyzing.dark.en.png"
     },
     {
       "id": "home.queued.dark.en",
@@ -795,7 +833,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.queued.dark.en.png"
     },
     {
       "id": "create_topic.empty.dark.en",
@@ -814,7 +853,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.empty.dark.en.png"
     },
     {
       "id": "create_topic.with_pages.dark.en",
@@ -833,7 +873,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.with_pages.dark.en.png"
     },
     {
       "id": "create_topic.ocr.dark.en",
@@ -852,7 +893,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.ocr.dark.en.png"
     },
     {
       "id": "topic_path.empty.dark.en",
@@ -871,7 +913,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.empty.dark.en.png"
     },
     {
       "id": "topic_path.ready.dark.en",
@@ -890,7 +933,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.ready.dark.en.png"
     },
     {
       "id": "topic_path.partial.dark.en",
@@ -909,7 +953,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.partial.dark.en.png"
     },
     {
       "id": "read_text.default.dark.en",
@@ -928,7 +973,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/read_text.default.dark.en.png"
     },
     {
       "id": "quiz.unanswered.dark.en",
@@ -947,7 +993,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.unanswered.dark.en.png"
     },
     {
       "id": "quiz.correct.dark.en",
@@ -966,7 +1013,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.correct.dark.en.png"
     },
     {
       "id": "quiz.wrong.dark.en",
@@ -985,7 +1033,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.wrong.dark.en.png"
     },
     {
       "id": "quiz.completed.dark.en",
@@ -1004,7 +1053,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.completed.dark.en.png"
     },
     {
       "id": "settings.default.dark.en",
@@ -1023,7 +1073,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/settings.default.dark.en.png"
     },
     {
       "id": "ai_provider_dialog.provider_dialog.dark.en",
@@ -1043,7 +1094,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/ai_provider_dialog.provider_dialog.dark.en.png"
     },
     {
       "id": "onboarding_language.default.light.pl",
@@ -1062,7 +1114,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_language.default.light.pl.png"
     },
     {
       "id": "language_picker.default.light.pl",
@@ -1081,7 +1134,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/language_picker.default.light.pl.png"
     },
     {
       "id": "onboarding_dialogue_q1.q1.light.pl",
@@ -1100,7 +1154,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q1.q1.light.pl.png"
     },
     {
       "id": "onboarding_dialogue_q2.q2.light.pl",
@@ -1119,7 +1174,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q2.q2.light.pl.png"
     },
     {
       "id": "onboarding_dialogue_q3.q3.light.pl",
@@ -1138,7 +1194,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q3.q3.light.pl.png"
     },
     {
       "id": "onboarding_dialogue_name.name.light.pl",
@@ -1157,7 +1214,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_name.name.light.pl.png"
     },
     {
       "id": "onboarding_dialogue_video.video.light.pl",
@@ -1176,7 +1234,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_video.video.light.pl.png"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key.light.pl",
@@ -1195,7 +1254,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_api_key.api_key.light.pl.png"
     },
     {
       "id": "onboarding_dialogue_final.final.light.pl",
@@ -1214,7 +1274,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_final.final.light.pl.png"
     },
     {
       "id": "home.empty.light.pl",
@@ -1234,7 +1295,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.empty.light.pl.png"
     },
     {
       "id": "home.ready.light.pl",
@@ -1253,7 +1315,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.ready.light.pl.png"
     },
     {
       "id": "home.analyzing.light.pl",
@@ -1272,7 +1335,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.analyzing.light.pl.png"
     },
     {
       "id": "home.queued.light.pl",
@@ -1291,7 +1355,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.queued.light.pl.png"
     },
     {
       "id": "create_topic.empty.light.pl",
@@ -1310,7 +1375,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.empty.light.pl.png"
     },
     {
       "id": "create_topic.with_pages.light.pl",
@@ -1329,7 +1395,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.with_pages.light.pl.png"
     },
     {
       "id": "create_topic.ocr.light.pl",
@@ -1348,7 +1415,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.ocr.light.pl.png"
     },
     {
       "id": "topic_path.empty.light.pl",
@@ -1367,7 +1435,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.empty.light.pl.png"
     },
     {
       "id": "topic_path.ready.light.pl",
@@ -1386,7 +1455,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.ready.light.pl.png"
     },
     {
       "id": "topic_path.partial.light.pl",
@@ -1405,7 +1475,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.partial.light.pl.png"
     },
     {
       "id": "read_text.default.light.pl",
@@ -1424,7 +1495,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/read_text.default.light.pl.png"
     },
     {
       "id": "quiz.unanswered.light.pl",
@@ -1443,7 +1515,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.unanswered.light.pl.png"
     },
     {
       "id": "quiz.correct.light.pl",
@@ -1462,7 +1535,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.correct.light.pl.png"
     },
     {
       "id": "quiz.wrong.light.pl",
@@ -1481,7 +1555,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.wrong.light.pl.png"
     },
     {
       "id": "quiz.completed.light.pl",
@@ -1500,7 +1575,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.completed.light.pl.png"
     },
     {
       "id": "settings.default.light.pl",
@@ -1519,7 +1595,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/settings.default.light.pl.png"
     },
     {
       "id": "ai_provider_dialog.provider_dialog.light.pl",
@@ -1539,7 +1616,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/ai_provider_dialog.provider_dialog.light.pl.png"
     },
     {
       "id": "onboarding_language.default.dark.pl",
@@ -1558,7 +1636,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_language.default.dark.pl.png"
     },
     {
       "id": "language_picker.default.dark.pl",
@@ -1577,7 +1656,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/language_picker.default.dark.pl.png"
     },
     {
       "id": "onboarding_dialogue_q1.q1.dark.pl",
@@ -1596,7 +1676,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q1.q1.dark.pl.png"
     },
     {
       "id": "onboarding_dialogue_q2.q2.dark.pl",
@@ -1615,7 +1696,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q2.q2.dark.pl.png"
     },
     {
       "id": "onboarding_dialogue_q3.q3.dark.pl",
@@ -1634,7 +1716,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q3.q3.dark.pl.png"
     },
     {
       "id": "onboarding_dialogue_name.name.dark.pl",
@@ -1653,7 +1736,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_name.name.dark.pl.png"
     },
     {
       "id": "onboarding_dialogue_video.video.dark.pl",
@@ -1672,7 +1756,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_video.video.dark.pl.png"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key.dark.pl",
@@ -1691,7 +1776,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_api_key.api_key.dark.pl.png"
     },
     {
       "id": "onboarding_dialogue_final.final.dark.pl",
@@ -1710,7 +1796,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_final.final.dark.pl.png"
     },
     {
       "id": "home.empty.dark.pl",
@@ -1730,7 +1817,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.empty.dark.pl.png"
     },
     {
       "id": "home.ready.dark.pl",
@@ -1749,7 +1837,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.ready.dark.pl.png"
     },
     {
       "id": "home.analyzing.dark.pl",
@@ -1768,7 +1857,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.analyzing.dark.pl.png"
     },
     {
       "id": "home.queued.dark.pl",
@@ -1787,7 +1877,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.queued.dark.pl.png"
     },
     {
       "id": "create_topic.empty.dark.pl",
@@ -1806,7 +1897,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.empty.dark.pl.png"
     },
     {
       "id": "create_topic.with_pages.dark.pl",
@@ -1825,7 +1917,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.with_pages.dark.pl.png"
     },
     {
       "id": "create_topic.ocr.dark.pl",
@@ -1844,7 +1937,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.ocr.dark.pl.png"
     },
     {
       "id": "topic_path.empty.dark.pl",
@@ -1863,7 +1957,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.empty.dark.pl.png"
     },
     {
       "id": "topic_path.ready.dark.pl",
@@ -1882,7 +1977,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.ready.dark.pl.png"
     },
     {
       "id": "topic_path.partial.dark.pl",
@@ -1901,7 +1997,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.partial.dark.pl.png"
     },
     {
       "id": "read_text.default.dark.pl",
@@ -1920,7 +2017,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/read_text.default.dark.pl.png"
     },
     {
       "id": "quiz.unanswered.dark.pl",
@@ -1939,7 +2037,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.unanswered.dark.pl.png"
     },
     {
       "id": "quiz.correct.dark.pl",
@@ -1958,7 +2057,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.correct.dark.pl.png"
     },
     {
       "id": "quiz.wrong.dark.pl",
@@ -1977,7 +2077,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.wrong.dark.pl.png"
     },
     {
       "id": "quiz.completed.dark.pl",
@@ -1996,7 +2097,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.completed.dark.pl.png"
     },
     {
       "id": "settings.default.dark.pl",
@@ -2015,7 +2117,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/settings.default.dark.pl.png"
     },
     {
       "id": "ai_provider_dialog.provider_dialog.dark.pl",
@@ -2035,7 +2138,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/ai_provider_dialog.provider_dialog.dark.pl.png"
     },
     {
       "id": "onboarding_language.default.light.es",
@@ -2054,7 +2158,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_language.default.light.es.png"
     },
     {
       "id": "language_picker.default.light.es",
@@ -2073,7 +2178,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/language_picker.default.light.es.png"
     },
     {
       "id": "onboarding_dialogue_q1.q1.light.es",
@@ -2092,7 +2198,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q1.q1.light.es.png"
     },
     {
       "id": "onboarding_dialogue_q2.q2.light.es",
@@ -2111,7 +2218,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q2.q2.light.es.png"
     },
     {
       "id": "onboarding_dialogue_q3.q3.light.es",
@@ -2130,7 +2238,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q3.q3.light.es.png"
     },
     {
       "id": "onboarding_dialogue_name.name.light.es",
@@ -2149,7 +2258,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_name.name.light.es.png"
     },
     {
       "id": "onboarding_dialogue_video.video.light.es",
@@ -2168,7 +2278,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_video.video.light.es.png"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key.light.es",
@@ -2187,7 +2298,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_api_key.api_key.light.es.png"
     },
     {
       "id": "onboarding_dialogue_final.final.light.es",
@@ -2206,7 +2318,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_final.final.light.es.png"
     },
     {
       "id": "home.empty.light.es",
@@ -2226,7 +2339,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.empty.light.es.png"
     },
     {
       "id": "home.ready.light.es",
@@ -2245,7 +2359,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.ready.light.es.png"
     },
     {
       "id": "home.analyzing.light.es",
@@ -2264,7 +2379,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.analyzing.light.es.png"
     },
     {
       "id": "home.queued.light.es",
@@ -2283,7 +2399,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.queued.light.es.png"
     },
     {
       "id": "create_topic.empty.light.es",
@@ -2302,7 +2419,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.empty.light.es.png"
     },
     {
       "id": "create_topic.with_pages.light.es",
@@ -2321,7 +2439,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.with_pages.light.es.png"
     },
     {
       "id": "create_topic.ocr.light.es",
@@ -2340,7 +2459,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.ocr.light.es.png"
     },
     {
       "id": "topic_path.empty.light.es",
@@ -2359,7 +2479,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.empty.light.es.png"
     },
     {
       "id": "topic_path.ready.light.es",
@@ -2378,7 +2499,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.ready.light.es.png"
     },
     {
       "id": "topic_path.partial.light.es",
@@ -2397,7 +2519,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.partial.light.es.png"
     },
     {
       "id": "read_text.default.light.es",
@@ -2416,7 +2539,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/read_text.default.light.es.png"
     },
     {
       "id": "quiz.unanswered.light.es",
@@ -2435,7 +2559,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.unanswered.light.es.png"
     },
     {
       "id": "quiz.correct.light.es",
@@ -2454,7 +2579,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.correct.light.es.png"
     },
     {
       "id": "quiz.wrong.light.es",
@@ -2473,7 +2599,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.wrong.light.es.png"
     },
     {
       "id": "quiz.completed.light.es",
@@ -2492,7 +2619,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.completed.light.es.png"
     },
     {
       "id": "settings.default.light.es",
@@ -2511,7 +2639,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/settings.default.light.es.png"
     },
     {
       "id": "ai_provider_dialog.provider_dialog.light.es",
@@ -2531,7 +2660,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/ai_provider_dialog.provider_dialog.light.es.png"
     },
     {
       "id": "onboarding_language.default.dark.es",
@@ -2550,7 +2680,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_language.default.dark.es.png"
     },
     {
       "id": "language_picker.default.dark.es",
@@ -2569,7 +2700,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/language_picker.default.dark.es.png"
     },
     {
       "id": "onboarding_dialogue_q1.q1.dark.es",
@@ -2588,7 +2720,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q1.q1.dark.es.png"
     },
     {
       "id": "onboarding_dialogue_q2.q2.dark.es",
@@ -2607,7 +2740,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q2.q2.dark.es.png"
     },
     {
       "id": "onboarding_dialogue_q3.q3.dark.es",
@@ -2626,7 +2760,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q3.q3.dark.es.png"
     },
     {
       "id": "onboarding_dialogue_name.name.dark.es",
@@ -2645,7 +2780,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_name.name.dark.es.png"
     },
     {
       "id": "onboarding_dialogue_video.video.dark.es",
@@ -2664,7 +2800,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_video.video.dark.es.png"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key.dark.es",
@@ -2683,7 +2820,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_api_key.api_key.dark.es.png"
     },
     {
       "id": "onboarding_dialogue_final.final.dark.es",
@@ -2702,7 +2840,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_final.final.dark.es.png"
     },
     {
       "id": "home.empty.dark.es",
@@ -2722,7 +2861,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.empty.dark.es.png"
     },
     {
       "id": "home.ready.dark.es",
@@ -2741,7 +2881,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.ready.dark.es.png"
     },
     {
       "id": "home.analyzing.dark.es",
@@ -2760,7 +2901,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.analyzing.dark.es.png"
     },
     {
       "id": "home.queued.dark.es",
@@ -2779,7 +2921,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.queued.dark.es.png"
     },
     {
       "id": "create_topic.empty.dark.es",
@@ -2798,7 +2941,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.empty.dark.es.png"
     },
     {
       "id": "create_topic.with_pages.dark.es",
@@ -2817,7 +2961,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.with_pages.dark.es.png"
     },
     {
       "id": "create_topic.ocr.dark.es",
@@ -2836,7 +2981,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.ocr.dark.es.png"
     },
     {
       "id": "topic_path.empty.dark.es",
@@ -2855,7 +3001,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.empty.dark.es.png"
     },
     {
       "id": "topic_path.ready.dark.es",
@@ -2874,7 +3021,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.ready.dark.es.png"
     },
     {
       "id": "topic_path.partial.dark.es",
@@ -2893,7 +3041,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.partial.dark.es.png"
     },
     {
       "id": "read_text.default.dark.es",
@@ -2912,7 +3061,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/read_text.default.dark.es.png"
     },
     {
       "id": "quiz.unanswered.dark.es",
@@ -2931,7 +3081,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.unanswered.dark.es.png"
     },
     {
       "id": "quiz.correct.dark.es",
@@ -2950,7 +3101,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.correct.dark.es.png"
     },
     {
       "id": "quiz.wrong.dark.es",
@@ -2969,7 +3121,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.wrong.dark.es.png"
     },
     {
       "id": "quiz.completed.dark.es",
@@ -2988,7 +3141,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.completed.dark.es.png"
     },
     {
       "id": "settings.default.dark.es",
@@ -3007,7 +3161,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/settings.default.dark.es.png"
     },
     {
       "id": "ai_provider_dialog.provider_dialog.dark.es",
@@ -3027,7 +3182,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/ai_provider_dialog.provider_dialog.dark.es.png"
     },
     {
       "id": "onboarding_language.default.light.de",
@@ -3046,7 +3202,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_language.default.light.de.png"
     },
     {
       "id": "language_picker.default.light.de",
@@ -3065,7 +3222,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/language_picker.default.light.de.png"
     },
     {
       "id": "onboarding_dialogue_q1.q1.light.de",
@@ -3084,7 +3242,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q1.q1.light.de.png"
     },
     {
       "id": "onboarding_dialogue_q2.q2.light.de",
@@ -3103,7 +3262,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q2.q2.light.de.png"
     },
     {
       "id": "onboarding_dialogue_q3.q3.light.de",
@@ -3122,7 +3282,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q3.q3.light.de.png"
     },
     {
       "id": "onboarding_dialogue_name.name.light.de",
@@ -3141,7 +3302,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_name.name.light.de.png"
     },
     {
       "id": "onboarding_dialogue_video.video.light.de",
@@ -3160,7 +3322,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_video.video.light.de.png"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key.light.de",
@@ -3179,7 +3342,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_api_key.api_key.light.de.png"
     },
     {
       "id": "onboarding_dialogue_final.final.light.de",
@@ -3198,7 +3362,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_final.final.light.de.png"
     },
     {
       "id": "home.empty.light.de",
@@ -3218,7 +3383,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.empty.light.de.png"
     },
     {
       "id": "home.ready.light.de",
@@ -3237,7 +3403,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.ready.light.de.png"
     },
     {
       "id": "home.analyzing.light.de",
@@ -3256,7 +3423,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.analyzing.light.de.png"
     },
     {
       "id": "home.queued.light.de",
@@ -3275,7 +3443,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.queued.light.de.png"
     },
     {
       "id": "create_topic.empty.light.de",
@@ -3294,7 +3463,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.empty.light.de.png"
     },
     {
       "id": "create_topic.with_pages.light.de",
@@ -3313,7 +3483,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.with_pages.light.de.png"
     },
     {
       "id": "create_topic.ocr.light.de",
@@ -3332,7 +3503,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.ocr.light.de.png"
     },
     {
       "id": "topic_path.empty.light.de",
@@ -3351,7 +3523,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.empty.light.de.png"
     },
     {
       "id": "topic_path.ready.light.de",
@@ -3370,7 +3543,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.ready.light.de.png"
     },
     {
       "id": "topic_path.partial.light.de",
@@ -3389,7 +3563,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.partial.light.de.png"
     },
     {
       "id": "read_text.default.light.de",
@@ -3408,7 +3583,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/read_text.default.light.de.png"
     },
     {
       "id": "quiz.unanswered.light.de",
@@ -3427,7 +3603,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.unanswered.light.de.png"
     },
     {
       "id": "quiz.correct.light.de",
@@ -3446,7 +3623,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.correct.light.de.png"
     },
     {
       "id": "quiz.wrong.light.de",
@@ -3465,7 +3643,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.wrong.light.de.png"
     },
     {
       "id": "quiz.completed.light.de",
@@ -3484,7 +3663,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.completed.light.de.png"
     },
     {
       "id": "settings.default.light.de",
@@ -3503,7 +3683,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/settings.default.light.de.png"
     },
     {
       "id": "ai_provider_dialog.provider_dialog.light.de",
@@ -3523,7 +3704,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/ai_provider_dialog.provider_dialog.light.de.png"
     },
     {
       "id": "onboarding_language.default.dark.de",
@@ -3542,7 +3724,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_language.default.dark.de.png"
     },
     {
       "id": "language_picker.default.dark.de",
@@ -3561,7 +3744,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/language_picker.default.dark.de.png"
     },
     {
       "id": "onboarding_dialogue_q1.q1.dark.de",
@@ -3580,7 +3764,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q1.q1.dark.de.png"
     },
     {
       "id": "onboarding_dialogue_q2.q2.dark.de",
@@ -3599,7 +3784,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q2.q2.dark.de.png"
     },
     {
       "id": "onboarding_dialogue_q3.q3.dark.de",
@@ -3618,7 +3804,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q3.q3.dark.de.png"
     },
     {
       "id": "onboarding_dialogue_name.name.dark.de",
@@ -3637,7 +3824,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_name.name.dark.de.png"
     },
     {
       "id": "onboarding_dialogue_video.video.dark.de",
@@ -3656,7 +3844,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_video.video.dark.de.png"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key.dark.de",
@@ -3675,7 +3864,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_api_key.api_key.dark.de.png"
     },
     {
       "id": "onboarding_dialogue_final.final.dark.de",
@@ -3694,7 +3884,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_final.final.dark.de.png"
     },
     {
       "id": "home.empty.dark.de",
@@ -3714,7 +3905,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.empty.dark.de.png"
     },
     {
       "id": "home.ready.dark.de",
@@ -3733,7 +3925,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.ready.dark.de.png"
     },
     {
       "id": "home.analyzing.dark.de",
@@ -3752,7 +3945,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.analyzing.dark.de.png"
     },
     {
       "id": "home.queued.dark.de",
@@ -3771,7 +3965,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.queued.dark.de.png"
     },
     {
       "id": "create_topic.empty.dark.de",
@@ -3790,7 +3985,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.empty.dark.de.png"
     },
     {
       "id": "create_topic.with_pages.dark.de",
@@ -3809,7 +4005,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.with_pages.dark.de.png"
     },
     {
       "id": "create_topic.ocr.dark.de",
@@ -3828,7 +4025,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.ocr.dark.de.png"
     },
     {
       "id": "topic_path.empty.dark.de",
@@ -3847,7 +4045,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.empty.dark.de.png"
     },
     {
       "id": "topic_path.ready.dark.de",
@@ -3866,7 +4065,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.ready.dark.de.png"
     },
     {
       "id": "topic_path.partial.dark.de",
@@ -3885,7 +4085,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.partial.dark.de.png"
     },
     {
       "id": "read_text.default.dark.de",
@@ -3904,7 +4105,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/read_text.default.dark.de.png"
     },
     {
       "id": "quiz.unanswered.dark.de",
@@ -3923,7 +4125,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.unanswered.dark.de.png"
     },
     {
       "id": "quiz.correct.dark.de",
@@ -3942,7 +4145,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.correct.dark.de.png"
     },
     {
       "id": "quiz.wrong.dark.de",
@@ -3961,7 +4165,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.wrong.dark.de.png"
     },
     {
       "id": "quiz.completed.dark.de",
@@ -3980,7 +4185,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.completed.dark.de.png"
     },
     {
       "id": "settings.default.dark.de",
@@ -3999,7 +4205,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/settings.default.dark.de.png"
     },
     {
       "id": "ai_provider_dialog.provider_dialog.dark.de",
@@ -4019,7 +4226,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/ai_provider_dialog.provider_dialog.dark.de.png"
     },
     {
       "id": "onboarding_language.default.light.fr",
@@ -4038,7 +4246,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_language.default.light.fr.png"
     },
     {
       "id": "language_picker.default.light.fr",
@@ -4057,7 +4266,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/language_picker.default.light.fr.png"
     },
     {
       "id": "onboarding_dialogue_q1.q1.light.fr",
@@ -4076,7 +4286,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q1.q1.light.fr.png"
     },
     {
       "id": "onboarding_dialogue_q2.q2.light.fr",
@@ -4095,7 +4306,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q2.q2.light.fr.png"
     },
     {
       "id": "onboarding_dialogue_q3.q3.light.fr",
@@ -4114,7 +4326,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q3.q3.light.fr.png"
     },
     {
       "id": "onboarding_dialogue_name.name.light.fr",
@@ -4133,7 +4346,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_name.name.light.fr.png"
     },
     {
       "id": "onboarding_dialogue_video.video.light.fr",
@@ -4152,7 +4366,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_video.video.light.fr.png"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key.light.fr",
@@ -4171,7 +4386,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_api_key.api_key.light.fr.png"
     },
     {
       "id": "onboarding_dialogue_final.final.light.fr",
@@ -4190,7 +4406,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_final.final.light.fr.png"
     },
     {
       "id": "home.empty.light.fr",
@@ -4210,7 +4427,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.empty.light.fr.png"
     },
     {
       "id": "home.ready.light.fr",
@@ -4229,7 +4447,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.ready.light.fr.png"
     },
     {
       "id": "home.analyzing.light.fr",
@@ -4248,7 +4467,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.analyzing.light.fr.png"
     },
     {
       "id": "home.queued.light.fr",
@@ -4267,7 +4487,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.queued.light.fr.png"
     },
     {
       "id": "create_topic.empty.light.fr",
@@ -4286,7 +4507,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.empty.light.fr.png"
     },
     {
       "id": "create_topic.with_pages.light.fr",
@@ -4305,7 +4527,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.with_pages.light.fr.png"
     },
     {
       "id": "create_topic.ocr.light.fr",
@@ -4324,7 +4547,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.ocr.light.fr.png"
     },
     {
       "id": "topic_path.empty.light.fr",
@@ -4343,7 +4567,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.empty.light.fr.png"
     },
     {
       "id": "topic_path.ready.light.fr",
@@ -4362,7 +4587,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.ready.light.fr.png"
     },
     {
       "id": "topic_path.partial.light.fr",
@@ -4381,7 +4607,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.partial.light.fr.png"
     },
     {
       "id": "read_text.default.light.fr",
@@ -4400,7 +4627,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/read_text.default.light.fr.png"
     },
     {
       "id": "quiz.unanswered.light.fr",
@@ -4419,7 +4647,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.unanswered.light.fr.png"
     },
     {
       "id": "quiz.correct.light.fr",
@@ -4438,7 +4667,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.correct.light.fr.png"
     },
     {
       "id": "quiz.wrong.light.fr",
@@ -4457,7 +4687,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.wrong.light.fr.png"
     },
     {
       "id": "quiz.completed.light.fr",
@@ -4476,7 +4707,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.completed.light.fr.png"
     },
     {
       "id": "settings.default.light.fr",
@@ -4495,7 +4727,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/settings.default.light.fr.png"
     },
     {
       "id": "ai_provider_dialog.provider_dialog.light.fr",
@@ -4515,7 +4748,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/ai_provider_dialog.provider_dialog.light.fr.png"
     },
     {
       "id": "onboarding_language.default.dark.fr",
@@ -4534,7 +4768,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_language.default.dark.fr.png"
     },
     {
       "id": "language_picker.default.dark.fr",
@@ -4553,7 +4788,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/language_picker.default.dark.fr.png"
     },
     {
       "id": "onboarding_dialogue_q1.q1.dark.fr",
@@ -4572,7 +4808,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q1.q1.dark.fr.png"
     },
     {
       "id": "onboarding_dialogue_q2.q2.dark.fr",
@@ -4591,7 +4828,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q2.q2.dark.fr.png"
     },
     {
       "id": "onboarding_dialogue_q3.q3.dark.fr",
@@ -4610,7 +4848,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q3.q3.dark.fr.png"
     },
     {
       "id": "onboarding_dialogue_name.name.dark.fr",
@@ -4629,7 +4868,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_name.name.dark.fr.png"
     },
     {
       "id": "onboarding_dialogue_video.video.dark.fr",
@@ -4648,7 +4888,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_video.video.dark.fr.png"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key.dark.fr",
@@ -4667,7 +4908,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_api_key.api_key.dark.fr.png"
     },
     {
       "id": "onboarding_dialogue_final.final.dark.fr",
@@ -4686,7 +4928,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_final.final.dark.fr.png"
     },
     {
       "id": "home.empty.dark.fr",
@@ -4706,7 +4949,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.empty.dark.fr.png"
     },
     {
       "id": "home.ready.dark.fr",
@@ -4725,7 +4969,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.ready.dark.fr.png"
     },
     {
       "id": "home.analyzing.dark.fr",
@@ -4744,7 +4989,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.analyzing.dark.fr.png"
     },
     {
       "id": "home.queued.dark.fr",
@@ -4763,7 +5009,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.queued.dark.fr.png"
     },
     {
       "id": "create_topic.empty.dark.fr",
@@ -4782,7 +5029,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.empty.dark.fr.png"
     },
     {
       "id": "create_topic.with_pages.dark.fr",
@@ -4801,7 +5049,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.with_pages.dark.fr.png"
     },
     {
       "id": "create_topic.ocr.dark.fr",
@@ -4820,7 +5069,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.ocr.dark.fr.png"
     },
     {
       "id": "topic_path.empty.dark.fr",
@@ -4839,7 +5089,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.empty.dark.fr.png"
     },
     {
       "id": "topic_path.ready.dark.fr",
@@ -4858,7 +5109,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.ready.dark.fr.png"
     },
     {
       "id": "topic_path.partial.dark.fr",
@@ -4877,7 +5129,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.partial.dark.fr.png"
     },
     {
       "id": "read_text.default.dark.fr",
@@ -4896,7 +5149,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/read_text.default.dark.fr.png"
     },
     {
       "id": "quiz.unanswered.dark.fr",
@@ -4915,7 +5169,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.unanswered.dark.fr.png"
     },
     {
       "id": "quiz.correct.dark.fr",
@@ -4934,7 +5189,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.correct.dark.fr.png"
     },
     {
       "id": "quiz.wrong.dark.fr",
@@ -4953,7 +5209,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.wrong.dark.fr.png"
     },
     {
       "id": "quiz.completed.dark.fr",
@@ -4972,7 +5229,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.completed.dark.fr.png"
     },
     {
       "id": "settings.default.dark.fr",
@@ -4991,7 +5249,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/settings.default.dark.fr.png"
     },
     {
       "id": "ai_provider_dialog.provider_dialog.dark.fr",
@@ -5011,7 +5270,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/ai_provider_dialog.provider_dialog.dark.fr.png"
     },
     {
       "id": "onboarding_language.default.light.uk",
@@ -5030,7 +5290,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_language.default.light.uk.png"
     },
     {
       "id": "language_picker.default.light.uk",
@@ -5049,7 +5310,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/language_picker.default.light.uk.png"
     },
     {
       "id": "onboarding_dialogue_q1.q1.light.uk",
@@ -5068,7 +5330,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q1.q1.light.uk.png"
     },
     {
       "id": "onboarding_dialogue_q2.q2.light.uk",
@@ -5087,7 +5350,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q2.q2.light.uk.png"
     },
     {
       "id": "onboarding_dialogue_q3.q3.light.uk",
@@ -5106,7 +5370,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q3.q3.light.uk.png"
     },
     {
       "id": "onboarding_dialogue_name.name.light.uk",
@@ -5125,7 +5390,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_name.name.light.uk.png"
     },
     {
       "id": "onboarding_dialogue_video.video.light.uk",
@@ -5144,7 +5410,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_video.video.light.uk.png"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key.light.uk",
@@ -5163,7 +5430,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_api_key.api_key.light.uk.png"
     },
     {
       "id": "onboarding_dialogue_final.final.light.uk",
@@ -5182,7 +5450,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_final.final.light.uk.png"
     },
     {
       "id": "home.empty.light.uk",
@@ -5202,7 +5471,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.empty.light.uk.png"
     },
     {
       "id": "home.ready.light.uk",
@@ -5221,7 +5491,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.ready.light.uk.png"
     },
     {
       "id": "home.analyzing.light.uk",
@@ -5240,7 +5511,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.analyzing.light.uk.png"
     },
     {
       "id": "home.queued.light.uk",
@@ -5259,7 +5531,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.queued.light.uk.png"
     },
     {
       "id": "create_topic.empty.light.uk",
@@ -5278,7 +5551,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.empty.light.uk.png"
     },
     {
       "id": "create_topic.with_pages.light.uk",
@@ -5297,7 +5571,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.with_pages.light.uk.png"
     },
     {
       "id": "create_topic.ocr.light.uk",
@@ -5316,7 +5591,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.ocr.light.uk.png"
     },
     {
       "id": "topic_path.empty.light.uk",
@@ -5335,7 +5611,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.empty.light.uk.png"
     },
     {
       "id": "topic_path.ready.light.uk",
@@ -5354,7 +5631,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.ready.light.uk.png"
     },
     {
       "id": "topic_path.partial.light.uk",
@@ -5373,7 +5651,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.partial.light.uk.png"
     },
     {
       "id": "read_text.default.light.uk",
@@ -5392,7 +5671,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/read_text.default.light.uk.png"
     },
     {
       "id": "quiz.unanswered.light.uk",
@@ -5411,7 +5691,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.unanswered.light.uk.png"
     },
     {
       "id": "quiz.correct.light.uk",
@@ -5430,7 +5711,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.correct.light.uk.png"
     },
     {
       "id": "quiz.wrong.light.uk",
@@ -5449,7 +5731,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.wrong.light.uk.png"
     },
     {
       "id": "quiz.completed.light.uk",
@@ -5468,7 +5751,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.completed.light.uk.png"
     },
     {
       "id": "settings.default.light.uk",
@@ -5487,7 +5771,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/settings.default.light.uk.png"
     },
     {
       "id": "ai_provider_dialog.provider_dialog.light.uk",
@@ -5507,7 +5792,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/ai_provider_dialog.provider_dialog.light.uk.png"
     },
     {
       "id": "onboarding_language.default.dark.uk",
@@ -5526,7 +5812,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_language.default.dark.uk.png"
     },
     {
       "id": "language_picker.default.dark.uk",
@@ -5545,7 +5832,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/language_picker.default.dark.uk.png"
     },
     {
       "id": "onboarding_dialogue_q1.q1.dark.uk",
@@ -5564,7 +5852,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q1.q1.dark.uk.png"
     },
     {
       "id": "onboarding_dialogue_q2.q2.dark.uk",
@@ -5583,7 +5872,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q2.q2.dark.uk.png"
     },
     {
       "id": "onboarding_dialogue_q3.q3.dark.uk",
@@ -5602,7 +5892,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_q3.q3.dark.uk.png"
     },
     {
       "id": "onboarding_dialogue_name.name.dark.uk",
@@ -5621,7 +5912,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_name.name.dark.uk.png"
     },
     {
       "id": "onboarding_dialogue_video.video.dark.uk",
@@ -5640,7 +5932,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_video.video.dark.uk.png"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key.dark.uk",
@@ -5659,7 +5952,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_api_key.api_key.dark.uk.png"
     },
     {
       "id": "onboarding_dialogue_final.final.dark.uk",
@@ -5678,7 +5972,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/onboarding_dialogue_final.final.dark.uk.png"
     },
     {
       "id": "home.empty.dark.uk",
@@ -5698,7 +5993,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.empty.dark.uk.png"
     },
     {
       "id": "home.ready.dark.uk",
@@ -5717,7 +6013,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.ready.dark.uk.png"
     },
     {
       "id": "home.analyzing.dark.uk",
@@ -5736,7 +6033,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.analyzing.dark.uk.png"
     },
     {
       "id": "home.queued.dark.uk",
@@ -5755,7 +6053,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/home.queued.dark.uk.png"
     },
     {
       "id": "create_topic.empty.dark.uk",
@@ -5774,7 +6073,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.empty.dark.uk.png"
     },
     {
       "id": "create_topic.with_pages.dark.uk",
@@ -5793,7 +6093,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.with_pages.dark.uk.png"
     },
     {
       "id": "create_topic.ocr.dark.uk",
@@ -5812,7 +6113,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/create_topic.ocr.dark.uk.png"
     },
     {
       "id": "topic_path.empty.dark.uk",
@@ -5831,7 +6133,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.empty.dark.uk.png"
     },
     {
       "id": "topic_path.ready.dark.uk",
@@ -5850,7 +6153,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.ready.dark.uk.png"
     },
     {
       "id": "topic_path.partial.dark.uk",
@@ -5869,7 +6173,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/topic_path.partial.dark.uk.png"
     },
     {
       "id": "read_text.default.dark.uk",
@@ -5888,7 +6193,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/read_text.default.dark.uk.png"
     },
     {
       "id": "quiz.unanswered.dark.uk",
@@ -5907,7 +6213,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.unanswered.dark.uk.png"
     },
     {
       "id": "quiz.correct.dark.uk",
@@ -5926,7 +6233,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.correct.dark.uk.png"
     },
     {
       "id": "quiz.wrong.dark.uk",
@@ -5945,7 +6253,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.wrong.dark.uk.png"
     },
     {
       "id": "quiz.completed.dark.uk",
@@ -5964,7 +6273,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/quiz.completed.dark.uk.png"
     },
     {
       "id": "settings.default.dark.uk",
@@ -5983,7 +6293,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/settings.default.dark.uk.png"
     },
     {
       "id": "ai_provider_dialog.provider_dialog.dark.uk",
@@ -6003,7 +6314,8 @@
       "size": {
         "width": 390,
         "height": 844
-      }
+      },
+      "imageUrl2x": "/screens/2x/ai_provider_dialog.provider_dialog.dark.uk.png"
     }
   ]
 }

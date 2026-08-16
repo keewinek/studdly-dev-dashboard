@@ -71,6 +71,7 @@ function buildFrame(
     group: def.group,
     compareKey: `${def.screenKey}|${def.state}`,
     imageUrl: `/screens/${id}.png`,
+    imageUrl2x: `/screens/2x/${id}.png`,
     size: { width: DEVICE.width, height: DEVICE.height },
   }
 }
@@ -105,6 +106,10 @@ export async function loadManifest(): Promise<UiManifest> {
     if (res.ok) {
       const data = (await res.json()) as UiManifest
       if (Array.isArray(data.screens) && data.screens.length > 0) {
+        data.screens = data.screens.map((screen) => ({
+          ...screen,
+          imageUrl2x: screen.imageUrl2x || `/screens/2x/${screen.id}.png`,
+        }))
         return data
       }
     }

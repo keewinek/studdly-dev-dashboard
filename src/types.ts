@@ -23,8 +23,25 @@ export interface ScreenFrame {
   group: string
   /** Identity across theme/locale for future diffs */
   compareKey: string
+  /** 1× phone screenshot (default / zoomed-out LOD). */
   imageUrl: string
+  /** Optional 2× screenshot for zoomed-in LOD. */
+  imageUrl2x?: string
   size: { width: number; height: number }
+}
+
+/** World-zoom → texture LOD. Higher zoom loads sharper assets. */
+export type ImageLod = 1 | 2
+
+export function lodForScale(scale: number): ImageLod {
+  return scale >= 1 ? 2 : 1
+}
+
+export function frameImageUrl(frame: ScreenFrame, lod: ImageLod): string {
+  if (lod === 2) {
+    return frame.imageUrl2x || `/screens/2x/${frame.id}.png`
+  }
+  return frame.imageUrl
 }
 
 export interface UiManifest {

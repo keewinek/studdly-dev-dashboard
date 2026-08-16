@@ -1,5 +1,5 @@
 import type { LocaleId, ScreenFrame, ThemeId, UiManifest } from './types'
-import { previewUrl } from './types'
+import { frameImageUrl, lodForScale, previewUrl, type ImageLod } from './types'
 
 interface PanZoomState {
   x: number
@@ -7,8 +7,14 @@ interface PanZoomState {
   scale: number
 }
 
+interface LodFrame {
+  img: HTMLImageElement
+  frame: ScreenFrame
+  lod: ImageLod
+}
+
 const MIN_SCALE = 0.15
-const MAX_SCALE = 2.5
+const MAX_SCALE = 4
 
 export function createUiMap(
   host: HTMLElement,
@@ -46,8 +52,12 @@ export function createUiMap(
   const columns = document.createElement('div')
   columns.className = 'columns'
 
+  const lodFrames: LodFrame[] = []
+
   for (const locale of manifest.locales) {
-    columns.appendChild(buildLocaleColumn(manifest, locale.code, locale.label, locale.nativeName))
+    columns.appendChild(
+      buildLocaleColumn(manifest, locale.code, locale.label, locale.nativeName, lodFrames),
+    )
   }
 
   world.appendChild(columns)
@@ -56,10 +66,48 @@ export function createUiMap(
 
   const state: PanZoomState = { x: 48, y: 24, scale: 0.55 }
   const zoomLabel = topbar.querySelector('[data-zoom]') as HTMLElement
+  let currentLod: ImageLod = lodForScale(state.scale)
+  let lodTimer: number | null = null
+
+  const applyLod = (lod: ImageLod) => {
+    if (lod === currentLod) return
+    currentLod = lod
+    for (const entry of lodFrames) {
+      if (entry.lod === lod) continue
+      const next = frameImageUrl(entry.frame, lod)
+      if (entry.img.src.endsWith(next) || entry.img.getAttribute('data-lod-src') === next) {
+        entry.lod = lod
+        continue
+      }
+      entry.lod = lod
+      entry.img.setAttribute('data-lod-src', next)
+      // Prefetch then swap to avoid flicker
+      const pre = new Image()
+      pre.decoding = 'async'
+      pre.onload = () => {
+        if (entry.lod === lod) {
+          entry.img.src = next
+        }
+      }
+      pre.onerror = () => {
+        // Keep current texture if higher LOD is missing.
+      }
+      pre.src = next
+    }
+  }
+
+  const scheduleLod = () => {
+    const next = lodForScale(state.scale)
+    if (next === currentLod) return
+    if (lodTimer != null) window.clearTimeout(lodTimer)
+    // Small debounce so pinch/scroll doesn't thrash network.
+    lodTimer = window.setTimeout(() => applyLod(next), 80)
+  }
 
   const applyTransform = () => {
     world.style.transform = `translate(${state.x}px, ${state.y}px) scale(${state.scale})`
     zoomLabel.textContent = `${Math.round(state.scale * 100)}%`
+    scheduleLod()
   }
 
   const zoomAt = (clientX: number, clientY: number, nextScale: number) => {
@@ -131,7 +179,6 @@ export function createUiMap(
     zoomAt(e.clientX, e.clientY, state.scale * factor)
   }
 
-  // Pinch zoom
   const pointers = new Map<number, PointerEvent>()
   let pinchStartDist = 0
   let pinchStartScale = 1
@@ -166,6 +213,10 @@ export function createUiMap(
     }
   }
 
+  const blockSelect = (e: Event) => e.preventDefault()
+  viewport.addEventListener('selectstart', blockSelect)
+  viewport.addEventListener('dragstart', blockSelect)
+
   viewport.addEventListener('pointerdown', onPointerDown)
   viewport.addEventListener('pointerdown', onPointerDownPinch)
   viewport.addEventListener('pointermove', onPointerMove)
@@ -176,7 +227,6 @@ export function createUiMap(
   viewport.addEventListener('pointercancel', onPointerUpPinch)
   viewport.addEventListener('wheel', onWheel, { passive: false })
 
-  // Prevent accidental navigation while dragging
   world.addEventListener('click', (e) => {
     if (moved) {
       e.preventDefault()
@@ -195,6 +245,7 @@ export function createUiMap(
 
   return {
     destroy: () => {
+      if (lodTimer != null) window.clearTimeout(lodTimer)
       host.innerHTML = ''
     },
     resetView,
@@ -207,6 +258,7 @@ function buildLocaleColumn(
   locale: LocaleId,
   label: string,
   nativeName: string,
+  lodFrames: LodFrame[],
 ): HTMLElement {
   const col = document.createElement('section')
   col.className = 'locale-column'
@@ -223,7 +275,7 @@ function buildLocaleColumn(
   col.append(heading, sub)
 
   for (const theme of manifest.themes) {
-    col.appendChild(buildThemeBlock(manifest, locale, theme.id, theme.label))
+    col.appendChild(buildThemeBlock(manifest, locale, theme.id, theme.label, lodFrames))
   }
 
   return col
@@ -234,6 +286,7 @@ function buildThemeBlock(
   locale: LocaleId,
   theme: ThemeId,
   themeLabel: string,
+  lodFrames: LodFrame[],
 ): HTMLElement {
   const block = document.createElement('section')
   block.className = 'theme-block'
@@ -261,7 +314,7 @@ function buildThemeBlock(
     const grid = document.createElement('div')
     grid.className = 'frames'
     for (const frame of groupFrames) {
-      grid.appendChild(buildFrameCard(manifest, frame))
+      grid.appendChild(buildFrameCard(manifest, frame, lodFrames))
     }
 
     groupEl.append(label, grid)
@@ -272,16 +325,23 @@ function buildThemeBlock(
   return block
 }
 
-function buildFrameCard(manifest: UiManifest, frame: ScreenFrame): HTMLElement {
+function buildFrameCard(
+  manifest: UiManifest,
+  frame: ScreenFrame,
+  lodFrames: LodFrame[],
+): HTMLElement {
   const card = document.createElement('article')
   card.className = 'frame'
   card.dataset.id = frame.id
 
   const img = document.createElement('img')
-  img.alt = frame.name
+  img.alt = ''
+  img.draggable = false
   img.loading = 'lazy'
   img.decoding = 'async'
-  img.src = frame.imageUrl
+  const initialUrl = frameImageUrl(frame, 1)
+  img.src = initialUrl
+  img.setAttribute('data-lod-src', initialUrl)
 
   const fallback = document.createElement('div')
   fallback.className = 'frame-fallback'
@@ -290,11 +350,19 @@ function buildFrameCard(manifest: UiManifest, frame: ScreenFrame): HTMLElement {
 
   let retries = 0
   img.addEventListener('error', () => {
+    const intended = img.getAttribute('data-lod-src') || frame.imageUrl
     if (retries < 2) {
       retries += 1
-      const url = new URL(frame.imageUrl, window.location.origin)
+      const url = new URL(intended, window.location.origin)
       url.searchParams.set('retry', String(retries))
       img.src = url.toString()
+      return
+    }
+    // If 2× missing, fall back to 1× once.
+    if (intended.includes('/2x/')) {
+      img.setAttribute('data-lod-src', frame.imageUrl)
+      img.src = frame.imageUrl
+      retries = 0
       return
     }
     img.remove()
@@ -317,6 +385,7 @@ function buildFrameCard(manifest: UiManifest, frame: ScreenFrame): HTMLElement {
 
   overlay.appendChild(openBtn)
   card.append(img, fallback, overlay)
+  lodFrames.push({ img, frame, lod: 1 })
   return card
 }
 

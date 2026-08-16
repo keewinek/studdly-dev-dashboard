@@ -16,7 +16,9 @@ const root = path.resolve(__dirname, '..')
 const previewBase = (process.env.PREVIEW_BASE || 'https://dev.studdly.app/app/').replace(/\/?$/, '/')
 const outDir = path.resolve(root, process.env.OUT_DIR || 'public/screens')
 const concurrency = Number(process.env.CONCURRENCY || 2)
+const deviceScaleFactor = Number(process.env.DEVICE_SCALE || 1)
 const device = { width: 390, height: 844 }
+const writeManifest = process.env.WRITE_MANIFEST !== '0'
 
 const SCREEN_DEFS = [
   { screenKey: 'onboarding_language', name: 'Onboarding — Language', route: '/onboarding', state: 'default', group: 'Onboarding', tags: ['onboarding'] },
@@ -83,7 +85,7 @@ function jobs() {
 async function captureOne(browser, job) {
   const context = await browser.newContext({
     viewport: device,
-    deviceScaleFactor: 1,
+    deviceScaleFactor,
   })
   const page = await context.newPage()
   try {
@@ -125,36 +127,46 @@ async function pool(items, limit, worker) {
 async function main() {
   await mkdir(outDir, { recursive: true })
   const all = jobs()
-  console.log(`Capturing ${all.length} screens from ${previewBase}`)
+  console.log(
+    `Capturing ${all.length} screens from ${previewBase} (scale=${deviceScaleFactor}) → ${outDir}`,
+  )
   const browser = await chromium.launch({ headless: true })
   try {
     const results = await pool(all, concurrency, (job) => captureOne(browser, job))
     const failed = results.filter((r) => !r.ok)
-    const manifest = {
-      version: 1,
-      generatedAt: new Date().toISOString(),
-      gitSha: process.env.GITHUB_SHA || 'local',
-      appVersion: 'preview-capture',
-      flutterPreviewBaseUrl: '/app/',
-      device: { name: 'phone', width: device.width, height: device.height, pixelRatio: 1 },
-      locales: LOCALES,
-      themes: THEMES,
-      screens: all.map((job) => ({
-        id: job.id,
-        name: job.def.name,
-        screenKey: job.def.screenKey,
-        route: job.def.route,
-        theme: job.id.split('.').at(-2),
-        locale: job.id.split('.').at(-1),
-        state: job.def.state,
-        tags: job.def.tags,
-        group: job.def.group,
-        compareKey: `${job.def.screenKey}|${job.def.state}`,
-        imageUrl: `/screens/${job.id}.png`,
-        size: { width: device.width, height: device.height },
-      })),
+    if (writeManifest) {
+      const manifest = {
+        version: 1,
+        generatedAt: new Date().toISOString(),
+        gitSha: process.env.GITHUB_SHA || 'local',
+        appVersion: 'preview-capture',
+        flutterPreviewBaseUrl: '/app/',
+        device: {
+          name: 'phone',
+          width: device.width,
+          height: device.height,
+          pixelRatio: deviceScaleFactor,
+        },
+        locales: LOCALES,
+        themes: THEMES,
+        screens: all.map((job) => ({
+          id: job.id,
+          name: job.def.name,
+          screenKey: job.def.screenKey,
+          route: job.def.route,
+          theme: job.id.split('.').at(-2),
+          locale: job.id.split('.').at(-1),
+          state: job.def.state,
+          tags: job.def.tags,
+          group: job.def.group,
+          compareKey: `${job.def.screenKey}|${job.def.state}`,
+          imageUrl: `/screens/${job.id}.png`,
+          imageUrl2x: `/screens/2x/${job.id}.png`,
+          size: { width: device.width, height: device.height },
+        })),
+      }
+      await writeFile(path.join(root, 'public/manifest.json'), JSON.stringify(manifest, null, 2))
     }
-    await writeFile(path.join(root, 'public/manifest.json'), JSON.stringify(manifest, null, 2))
     console.log(`done. failed=${failed.length}`)
     for (const f of failed.slice(0, 30)) {
       console.error(f.id, f.error)
