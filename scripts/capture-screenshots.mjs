@@ -7,8 +7,10 @@
  * in manifest.json so the map can show an "outdated" badge.
  *
  *   PREVIEW_BASE=http://127.0.0.1:7360/app/ node --experimental-strip-types scripts/capture-screenshots.mjs
+ *   COMMIT_EACH_PACK=1  — after each locale×theme pack, git commit + push (CI)
  */
 import { chromium } from 'playwright'
+import { execSync } from 'node:child_process'
 import { access, mkdir, readFile, rename, unlink, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
@@ -21,10 +23,9 @@ const outDir = path.resolve(root, process.env.OUT_DIR || 'public/screens')
 const concurrency = Number(process.env.CONCURRENCY || 3)
 const deviceScaleFactor = Number(process.env.DEVICE_SCALE || 1)
 const device = { width: 390, height: 844 }
-const writeManifest =
-  process.env.WRITE_MANIFEST !== '0' &&
-  !process.env.LOCALE_FILTER &&
-  !process.env.THEME_FILTER
+const writeManifest = process.env.WRITE_MANIFEST !== '0'
+/** After each locale×theme pack, commit + push so Netlify can update live. */
+const commitEachPack = process.env.COMMIT_EACH_PACK === '1'
 const gitSha = (process.env.GITHUB_SHA || 'local').slice(0, 12)
 const settleMs = Number(process.env.SETTLE_MS || 2200)
 
@@ -70,9 +71,9 @@ async function loadPreviousManifest() {
   }
 }
 
-function jobs() {
-  const localeFilter = (process.env.LOCALE_FILTER || '').toLowerCase()
-  const themeFilter = (process.env.THEME_FILTER || '').toLowerCase()
+function jobs(options = {}) {
+  const localeFilter = (options.localeFilter ?? process.env.LOCALE_FILTER ?? '').toLowerCase()
+  const themeFilter = (options.themeFilter ?? process.env.THEME_FILTER ?? '').toLowerCase()
   const list = []
   for (const locale of LOCALES) {
     if (localeFilter && locale.code !== localeFilter) continue
@@ -86,11 +87,170 @@ function jobs() {
         url.searchParams.set('theme', theme.id)
         url.searchParams.set('locale', locale.code)
         url.searchParams.set('state', def.state)
-        list.push({ id, url: url.toString(), def })
+        list.push({
+          id,
+          url: url.toString(),
+          def,
+          locale: locale.code,
+          theme: theme.id,
+        })
       }
     }
   }
   return list
+}
+
+/** Packs = one full app matrix slice: locale × theme (e.g. English light). */
+function groupIntoPacks(jobList) {
+  const packs = []
+  const index = new Map()
+  for (const job of jobList) {
+    const key = `${job.locale}|${job.theme}`
+    let pack = index.get(key)
+    if (!pack) {
+      pack = { locale: job.locale, theme: job.theme, jobs: [] }
+      index.set(key, pack)
+      packs.push(pack)
+    }
+    pack.jobs.push(job)
+  }
+  return packs
+}
+
+async function buildScreenEntry(job, result, previous) {
+  const ok = result?.ok === true
+  const filePresent = await exists(path.join(root, 'public/screens', `${job.id}.png`))
+  const prev = previous.get(job.id)
+  return {
+    id: job.id,
+    name: job.def.name,
+    screenKey: job.def.screenKey,
+    route: job.def.route,
+    theme: job.theme,
+    locale: job.locale,
+    state: job.def.state,
+    tags: job.def.tags,
+    group: job.def.group,
+    compareKey: `${job.def.screenKey}|${job.def.state}`,
+    imageUrl: `/screens/${job.id}.png`,
+    size: { width: device.width, height: device.height },
+    stale: !ok && filePresent,
+    missing: !filePresent,
+    captureError: ok ? undefined : result?.error || (filePresent ? undefined : 'no screenshot yet'),
+    lastSuccessSha: ok
+      ? gitSha
+      : prev?.lastSuccessSha || undefined,
+    attemptSha: result ? gitSha : prev?.attemptSha,
+  }
+}
+
+async function writeMergedManifest(catalogJobs, entryById, packFailures) {
+  const screens = []
+  for (const job of catalogJobs) {
+    const entry = entryById.get(job.id)
+    if (entry) {
+      screens.push(entry)
+      continue
+    }
+    screens.push(await buildScreenEntry(job, null, entryById))
+  }
+  const missing = screens.filter((s) => s.missing).length
+  const stale = screens.filter((s) => s.stale).length
+  const manifest = {
+    version: 3,
+    generatedAt: new Date().toISOString(),
+    gitSha,
+    appVersion: 'preview-capture',
+    flutterPreviewBaseUrl: '/app/',
+    captureSummary: {
+      total: screens.length,
+      failed: stale,
+      keptOld: packFailures.filter((f) => f.keptOld).length,
+      missing,
+    },
+    device: {
+      name: 'phone',
+      width: device.width,
+      height: device.height,
+      pixelRatio: 1,
+    },
+    locales: LOCALES,
+    themes: THEMES,
+    screens,
+  }
+  await writeFile(path.join(root, 'public/manifest.json'), JSON.stringify(manifest, null, 2))
+  await writeFile(
+    path.join(root, 'public/capture-report.json'),
+    JSON.stringify(
+      {
+        generatedAt: manifest.generatedAt,
+        gitSha,
+        failed: packFailures.map((f) => ({
+          id: f.id,
+          keptOld: f.keptOld,
+          error: f.error,
+        })),
+      },
+      null,
+      2,
+    ),
+  )
+  return manifest
+}
+
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms))
+}
+
+async function commitAndPushPack(packLabel) {
+  const short = String(gitSha).slice(0, 7)
+  const message = `chore: UI map pack ${packLabel} from studdly@${short}`
+  // Screens + manifest only — Flutter web build is committed once at the end of CI.
+  execSync('git add public/screens public/manifest.json public/capture-report.json', {
+    cwd: root,
+    stdio: 'inherit',
+  })
+  const porcelain = execSync('git status --porcelain', { cwd: root, encoding: 'utf8' }).trim()
+  if (!porcelain) {
+    console.log(`[pack ${packLabel}] nothing new to commit`)
+    return
+  }
+  execSync(`git commit -m ${JSON.stringify(message)}`, { cwd: root, stdio: 'inherit' })
+
+  for (let attempt = 1; attempt <= 5; attempt++) {
+    try {
+      execSync('git fetch origin main', { cwd: root, stdio: 'inherit' })
+      execSync('git rebase origin/main', { cwd: root, stdio: 'inherit' })
+      execSync('git push origin HEAD:main', { cwd: root, stdio: 'inherit' })
+      console.log(`[pack ${packLabel}] pushed (attempt ${attempt})`)
+      return
+    } catch (err) {
+      console.warn(
+        `[pack ${packLabel}] push/rebase failed attempt ${attempt}:`,
+        String(err).slice(0, 200),
+      )
+      try {
+        execSync(
+          'git checkout --theirs -- public/screens public/manifest.json public/capture-report.json || true',
+          { cwd: root, stdio: 'inherit', shell: '/bin/bash' },
+        )
+        execSync('git add -A', { cwd: root, stdio: 'inherit' })
+        execSync('git rebase --continue', {
+          cwd: root,
+          stdio: 'inherit',
+          env: { ...process.env, GIT_EDITOR: 'true' },
+        })
+      } catch {
+        try {
+          execSync('git rebase --abort', { cwd: root, stdio: 'inherit' })
+        } catch {
+          // ignore
+        }
+      }
+      await sleep(10_000)
+    }
+  }
+  throw new Error(`Failed to push pack ${packLabel} after retries`)
 }
 
 async function captureOne(browser, job) {
@@ -111,7 +271,11 @@ async function captureOne(browser, job) {
       { timeout: 60000 },
     )
     await page.waitForTimeout(settleMs)
-    if (/dialog|scrolled|menu|rename|ocr|creating|advancement|wrong_with_cta|clear_confirm|permission|suggested|expanded/.test(job.id)) {
+    if (
+      /dialog|scrolled|menu|rename|ocr|creating|advancement|wrong_with_cta|clear_confirm|permission|suggested|expanded/.test(
+        job.id,
+      )
+    ) {
       await page.waitForTimeout(Math.min(settleMs, 1200))
     }
     await page.screenshot({ path: tempPath, type: 'png' })
@@ -146,11 +310,12 @@ function formatDuration(ms) {
   return remMin ? `${hr}h ${remMin}m` : `${hr}h`
 }
 
-async function pool(items, limit, worker) {
+async function pool(items, limit, worker, label = '') {
   const results = []
   let i = 0
   let completed = 0
   const startedAt = Date.now()
+  const prefix = label ? `[${label}] ` : ''
   async function run() {
     while (i < items.length) {
       const idx = i++
@@ -159,11 +324,11 @@ async function pool(items, limit, worker) {
       const done = completed
       if (done % 10 === 0 || done === items.length) {
         const elapsed = Date.now() - startedAt
-        const rate = done / elapsed // items per ms
+        const rate = done / elapsed
         const remaining = items.length - done
         const etaMs = rate > 0 ? remaining / rate : NaN
         console.log(
-          `progress ${done}/${items.length} · elapsed ${formatDuration(elapsed)} · ETA ${formatDuration(etaMs)}`,
+          `${prefix}progress ${done}/${items.length} · elapsed ${formatDuration(elapsed)} · ETA ${formatDuration(etaMs)}`,
         )
       }
     }
@@ -175,92 +340,56 @@ async function pool(items, limit, worker) {
 async function main() {
   await mkdir(outDir, { recursive: true })
   const previous = await loadPreviousManifest()
-  const all = jobs()
+  const catalogJobs = jobs({ localeFilter: '', themeFilter: '' })
+  const captureJobs = jobs()
+  const packs = groupIntoPacks(captureJobs)
+
+  // Seed entries from previous manifest so partial packs don't wipe other locales.
+  const entryById = new Map()
+  for (const screen of previous.values()) {
+    entryById.set(screen.id, screen)
+  }
+
   console.log(
-    `Capturing ${all.length} screens from ${previewBase} (scale=${deviceScaleFactor}) → ${outDir}`,
+    `Capturing ${captureJobs.length} screens in ${packs.length} packs (locale×theme) from ${previewBase} → ${outDir}`,
   )
+  if (commitEachPack) console.log('COMMIT_EACH_PACK=1 — will push after each pack')
+
   const browser = await chromium.launch({ headless: true })
+  const allFailures = []
   try {
-    const results = await pool(all, concurrency, (job) => captureOne(browser, job))
-    const byId = new Map(results.map((r) => [r.id, r]))
-    const failed = results.filter((r) => !r.ok)
-    const keptOld = failed.filter((r) => r.keptOld).length
-
-    if (writeManifest) {
-      const screens = []
-      for (const job of all) {
-        const result = byId.get(job.id)
-        const prev = previous.get(job.id)
-        const ok = result?.ok === true
-        const filePresent = await exists(path.join(root, 'public/screens', `${job.id}.png`))
-        const stale = !ok
-        screens.push({
-          id: job.id,
-          name: job.def.name,
-          screenKey: job.def.screenKey,
-          route: job.def.route,
-          theme: job.id.split('.').at(-2),
-          locale: job.id.split('.').at(-1),
-          state: job.def.state,
-          tags: job.def.tags,
-          group: job.def.group,
-          compareKey: `${job.def.screenKey}|${job.def.state}`,
-          imageUrl: `/screens/${job.id}.png`,
-          size: { width: device.width, height: device.height },
-          stale,
-          missing: !filePresent,
-          captureError: ok ? undefined : result?.error || 'capture failed',
-          lastSuccessSha: ok
-            ? gitSha
-            : prev?.lastSuccessSha || prev?.gitSha || undefined,
-          attemptSha: gitSha,
-        })
-      }
-
-      const staleCount = screens.filter((s) => s.stale).length
-      const manifest = {
-        version: 3,
-        generatedAt: new Date().toISOString(),
-        gitSha,
-        appVersion: 'preview-capture',
-        flutterPreviewBaseUrl: '/app/',
-        captureSummary: {
-          total: screens.length,
-          failed: staleCount,
-          keptOld,
-          missing: screens.filter((s) => s.missing).length,
-        },
-        device: {
-          name: 'phone',
-          width: device.width,
-          height: device.height,
-          pixelRatio: 1,
-        },
-        locales: LOCALES,
-        themes: THEMES,
-        screens,
-      }
-      await writeFile(path.join(root, 'public/manifest.json'), JSON.stringify(manifest, null, 2))
-      await writeFile(
-        path.join(root, 'public/capture-report.json'),
-        JSON.stringify(
-          {
-            generatedAt: manifest.generatedAt,
-            gitSha,
-            failed: failed.map((f) => ({
-              id: f.id,
-              keptOld: f.keptOld,
-              error: f.error,
-            })),
-          },
-          null,
-          2,
-        ),
+    let packIndex = 0
+    for (const pack of packs) {
+      packIndex++
+      const label = `${pack.theme}.${pack.locale}`
+      console.log(
+        `\n=== Pack ${packIndex}/${packs.length}: ${label} (${pack.jobs.length} screens) ===`,
       )
+      const packResults = await pool(
+        pack.jobs,
+        concurrency,
+        (job) => captureOne(browser, job),
+        label,
+      )
+      for (let i = 0; i < pack.jobs.length; i++) {
+        const job = pack.jobs[i]
+        const result = packResults[i]
+        entryById.set(job.id, await buildScreenEntry(job, result, previous))
+        if (result && !result.ok) allFailures.push(result)
+      }
+
+      if (writeManifest) {
+        await writeMergedManifest(catalogJobs, entryById, allFailures)
+      }
+
+      if (commitEachPack) {
+        await commitAndPushPack(label)
+      }
     }
 
-    console.log(`done. failed=${failed.length} keptOld=${keptOld}`)
-    for (const f of failed.slice(0, 40)) {
+    const keptOld = allFailures.filter((f) => f.keptOld).length
+    console.log(`\ndone. packs=${packs.length} failed=${allFailures.length} keptOld=${keptOld}`)
+    for (const f of allFailures.slice(0, 40)) {
       console.error(`${f.id} keptOld=${f.keptOld} ${f.error}`)
     }
     // Never fail the whole CI pipeline solely due to partial screenshot errors —

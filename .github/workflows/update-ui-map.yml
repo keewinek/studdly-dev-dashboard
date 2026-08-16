@@ -48,6 +48,9 @@ jobs:
 
       - name: Checkout dashboard
         uses: actions/checkout@v4
+        with:
+          # Need full history for rebase when pack-pushing mid-run.
+          fetch-depth: 0
 
       - name: Checkout Studdly (private)
         uses: actions/checkout@v4
@@ -100,8 +103,14 @@ jobs:
           GITHUB_SHA: ${{ steps.studdly.outputs.ref }}
           CONCURRENCY: '4'
           SETTLE_MS: '2000'
+          # Push screens + manifest after each locale×theme pack (e.g. light.en)
+          # so Netlify can update the live map mid-run.
+          COMMIT_EACH_PACK: '1'
         run: |
           set -euo pipefail
+          git config user.name "studdly-ui-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           rm -rf /tmp/ui-preview-root
           mkdir -p /tmp/ui-preview-root/app
           rsync -a --delete public/app/ /tmp/ui-preview-root/app/
@@ -120,20 +129,20 @@ jobs:
 
           kill "$(cat /tmp/preview-server.pid)" || true
 
-      - name: Commit and push
+      - name: Commit remaining (Flutter web build, etc.)
         run: |
           set -euo pipefail
           git config user.name "studdly-ui-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
-            echo "No dashboard changes."
+            echo "No leftover dashboard changes (packs already pushed)."
             exit 0
           fi
           SHORT_SHA="$(echo "${{ steps.studdly.outputs.ref }}" | cut -c1-7)"
-          git commit -m "chore: refresh UI map from studdly@${SHORT_SHA}"
+          git commit -m "chore: refresh UI map app build from studdly@${SHORT_SHA}"
 
-          # Capture takes a long time — main may have moved (docs, ETA script, etc.).
+          # Capture takes a long time — main may have moved (docs, pack pushes, etc.).
           # Rebase onto latest main and retry push a few times.
           for attempt in 1 2 3 4 5; do
             git fetch origin main

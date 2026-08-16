@@ -34,7 +34,8 @@ Flow:
 
 1. Push to `studdly` `main` → tiny workflow `trigger-ui-map.yml`  
 2. That kicks off **Update UI map** here (public, free minutes)  
-3. Checkout private Studdly → build Flutter `/app` → capture screenshots → commit  
+3. Checkout private Studdly → build Flutter `/app` → capture screenshots in locale×theme packs (e.g. `light.en`), pushing each pack live → final commit for leftover `/app` build  
+
 4. Netlify rebuilds `https://dev.studdly.app` (backup: `https://studdlydev.netlify.app`)
 
 ### One-time setup (2 secrets)
@@ -91,6 +92,7 @@ mkdir -p /tmp/ui-preview-root/app && rsync -a public/app/ /tmp/ui-preview-root/a
 python3 -m http.server 7360 --directory /tmp/ui-preview-root
 
 # Terminal B — capture screenshots
+# Optional: COMMIT_EACH_PACK=1 pushes after each locale×theme pack (used in CI)
 PREVIEW_BASE=http://127.0.0.1:7360/app/ npm run capture:screens
 
 # Optional filters for faster local runs:
