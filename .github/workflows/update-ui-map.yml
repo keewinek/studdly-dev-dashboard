@@ -60,6 +60,14 @@ jobs:
           token: ${{ secrets.STUDDLY_REPO_TOKEN }}
           path: studdly
 
+      - name: Resolve Studdly commit SHA
+        id: sha
+        run: |
+          FULL="$(git -C studdly rev-parse HEAD)"
+          echo "full=$FULL" >> "$GITHUB_OUTPUT"
+          echo "short=${FULL:0:7}" >> "$GITHUB_OUTPUT"
+          echo "Resolved Studdly SHA $FULL"
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -93,6 +101,49 @@ jobs:
           SKIP_BUILD=1 SKIP_CATALOG_EXPORT=1 STUDDLY_ROOT="$GITHUB_WORKSPACE/studdly" \
             ./scripts/sync-flutter-preview.sh
 
+      - name: Commit Flutter app build early
+        run: |
+          set -euo pipefail
+          git config user.name "studdly-ui-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Ship /app before packs so mid-run screenshots match the new preview build
+          # (cancel-in-progress must not leave new screens + old /app).
+          git add public/app public/preview_catalog.json src/preview_catalog.json
+          if git diff --cached --quiet; then
+            echo "Flutter app build already up to date on main."
+            exit 0
+          fi
+          git commit -m "chore: refresh UI map app build from studdly@${{ steps.sha.outputs.short }}"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            if git rebase origin/main; then
+              if git push origin HEAD:main; then
+                echo "Pushed app build on attempt ${attempt}"
+                exit 0
+              fi
+            else
+              echo "Rebase conflict on attempt ${attempt} — keeping our app build"
+              git checkout --theirs -- public/app public/preview_catalog.json src/preview_catalog.json
+              git add public/app public/preview_catalog.json src/preview_catalog.json
+              unresolved="$(git diff --name-only --diff-filter=U || true)"
+              if [ -n "$unresolved" ]; then
+                echo "::error::Unresolved conflicts: $unresolved"
+                git rebase --abort || true
+              else
+                GIT_EDITOR=true git rebase --continue || git rebase --abort || true
+              fi
+            fi
+            # If abort dropped the commit, recreate it before retrying.
+            git add public/app public/preview_catalog.json src/preview_catalog.json
+            if ! git diff --cached --quiet; then
+              git commit -m "chore: refresh UI map app build from studdly@${{ steps.sha.outputs.short }}" || true
+            fi
+            echo "Push race; retrying in 10s…"
+            sleep 10
+          done
+          echo "::error::Failed to push app build after retries"
+          exit 1
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -103,10 +154,11 @@ jobs:
         run: |
           npm ci
           npx playwright install --with-deps chromium
+          node --check scripts/capture-screenshots.mjs
 
       - name: Serve preview and capture screenshots
         env:
-          GITHUB_SHA: ${{ steps.studdly.outputs.ref }}
+          GITHUB_SHA: ${{ steps.sha.outputs.full }}
           CONCURRENCY: '4'
           SETTLE_MS: '2000'
           # Push screens + manifest after each locale×theme pack (e.g. light.en)
@@ -122,13 +174,14 @@ jobs:
           rsync -a --delete public/app/ /tmp/ui-preview-root/app/
           python3 -m http.server 7360 --bind 127.0.0.1 --directory /tmp/ui-preview-root >/tmp/preview-server.log 2>&1 &
           echo $! > /tmp/preview-server.pid
+          trap 'kill "$(cat /tmp/preview-server.pid)" 2>/dev/null || true' EXIT
+
           ready=0
           for i in $(seq 1 30); do
             if curl -fsS "http://127.0.0.1:7360/app/" >/dev/null 2>/dev/null; then
               ready=1
               break
             fi
-            # Bail early if the server process already died.
             if ! kill -0 "$(cat /tmp/preview-server.pid)" 2>/dev/null; then
               break
             fi
@@ -144,11 +197,9 @@ jobs:
           fi
 
           PREVIEW_BASE=http://127.0.0.1:7360/app/ \
-            node --experimental-strip-types scripts/capture-screenshots.mjs
+            node scripts/capture-screenshots.mjs
 
-          kill "$(cat /tmp/preview-server.pid)" || true
-
-      - name: Commit remaining (Flutter web build, etc.)
+      - name: Commit remaining leftovers
         run: |
           set -euo pipefail
           git config user.name "studdly-ui-bot"
@@ -161,28 +212,33 @@ jobs:
             echo "No leftover dashboard changes (packs already pushed)."
             exit 0
           fi
-          SHORT_SHA="$(echo "${{ steps.studdly.outputs.ref }}" | cut -c1-7)"
-          git commit -m "chore: refresh UI map app build from studdly@${SHORT_SHA}"
+          git commit -m "chore: refresh UI map leftovers from studdly@${{ steps.sha.outputs.short }}"
 
-          # Capture takes a long time — main may have moved (docs, pack pushes, etc.).
-          # Rebase onto latest main and retry push a few times.
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             if git rebase origin/main; then
               if git push origin HEAD:main; then
-                echo "Pushed on attempt ${attempt}"
+                echo "Pushed leftovers on attempt ${attempt}"
                 exit 0
               fi
             else
               echo "Rebase conflict on attempt ${attempt} — keeping our capture artifacts"
-              # During rebase: "theirs" = our commit being replayed
               git checkout --theirs -- public/screens public/manifest.json public/capture-report.json public/app \
-                public/preview_catalog.json src/preview_catalog.json || true
+                public/preview_catalog.json src/preview_catalog.json
               git add public/screens public/manifest.json public/capture-report.json public/app \
                 public/preview_catalog.json src/preview_catalog.json
-              GIT_EDITOR=true git rebase --continue || {
+              unresolved="$(git diff --name-only --diff-filter=U || true)"
+              if [ -n "$unresolved" ]; then
+                echo "::error::Unresolved conflicts: $unresolved"
                 git rebase --abort || true
-              }
+              else
+                GIT_EDITOR=true git rebase --continue || git rebase --abort || true
+              fi
+            fi
+            git add public/app public/screens public/manifest.json public/capture-report.json \
+              public/preview_catalog.json src/preview_catalog.json
+            if ! git diff --cached --quiet; then
+              git commit -m "chore: refresh UI map leftovers from studdly@${{ steps.sha.outputs.short }}" || true
             fi
             echo "Push race; retrying in 10s…"
             sleep 10

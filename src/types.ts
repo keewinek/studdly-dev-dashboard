@@ -44,6 +44,7 @@ export interface CaptureSummary {
   failed: number
   keptOld: number
   missing: number
+  stale?: number
 }
 
 export interface UiManifest {
@@ -52,6 +53,8 @@ export interface UiManifest {
   gitSha: string
   appVersion: string
   flutterPreviewBaseUrl: string
+  /** True while locale×theme packs are still being captured/pushed mid-run. */
+  captureInProgress?: boolean
   device: DeviceSpec
   locales: { code: LocaleId; label: string; nativeName: string }[]
   themes: { id: ThemeId; label: string }[]

@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "capture:screens": "node --experimental-strip-types scripts/capture-screenshots.mjs",
+    "capture:screens": "node scripts/capture-screenshots.mjs",
     "sync:preview": "./scripts/sync-flutter-preview.sh"
   },
   "devDependencies": {

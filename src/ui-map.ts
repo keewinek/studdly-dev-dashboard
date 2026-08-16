@@ -61,8 +61,11 @@ function formatAbsoluteUtc(iso: string): string {
   return d.toISOString().replace('T', ' ').replace(/\.\d{3}Z$/, ' UTC')
 }
 
-/** Healthy PNG from an older Studdly SHA than the latest map run. */
+/** Healthy PNG from an older Studdly SHA than the latest completed map run. */
 function isBehindLatest(frame: ScreenFrame, manifest: UiManifest): boolean {
+  // Mid-run pack publishes rewrite manifest.gitSha while other locales are still
+  // on the previous SHA — suppress "Behind" until the full capture finishes.
+  if (manifest.captureInProgress) return false
   if (frame.missing || frame.stale || !frame.lastSuccessSha) return false
   return frame.lastSuccessSha !== manifest.gitSha
 }
@@ -78,6 +81,7 @@ export function createUiMap(
   const missingCount = manifest.screens.filter((s) => s.missing).length
   const behindCount = manifest.screens.filter((s) => isBehindLatest(s, manifest)).length
   const warnBits = [
+    manifest.captureInProgress ? 'capture in progress' : '',
     behindCount > 0 ? `${behindCount} behind` : '',
     keptOldCount > 0 ? `${keptOldCount} kept old` : '',
     missingCount > 0 ? `${missingCount} missing` : '',
@@ -90,7 +94,7 @@ export function createUiMap(
       <h1>Studdly UI Map</h1>
       ${
         warnBits.length
-          ? `<p class="status-warn" title="Behind = older successful capture than the latest map run. Kept old = capture failed and a previous PNG is shown. Missing = no PNG yet.">${warnBits.join(' · ')}</p>`
+          ? `<p class="status-warn" title="Capture in progress = mid-run pack publish (Behind badges suppressed). Behind = older successful capture than the latest completed map run. Kept old = capture failed and a previous PNG is shown. Missing = no PNG yet.">${warnBits.join(' · ')}</p>`
           : ''
       }
     </div>
@@ -186,6 +190,46 @@ export function createUiMap(
     tile.card.classList.add('frame-stale')
   }
 
+  const MAX_CONCURRENT_IMAGES = 12
+  let inFlightImages = 0
+  const imageQueue: Tile[] = []
+
+  const pumpImageQueue = () => {
+    while (inFlightImages < MAX_CONCURRENT_IMAGES && imageQueue.length > 0) {
+      const tile = imageQueue.shift()
+      if (!tile) break
+      inFlightImages++
+      const baseUrl = tile.frame.imageUrl
+      let attempts = 0
+
+      const finish = () => {
+        inFlightImages--
+        tile.img.onload = null
+        tile.img.onerror = null
+        pumpImageQueue()
+      }
+
+      const tryLoad = () => {
+        attempts++
+        tile.img.onload = () => finish()
+        tile.img.onerror = () => {
+          if (attempts < 3) {
+            window.setTimeout(tryLoad, 350 * attempts)
+            return
+          }
+          showFallback(tile)
+          finish()
+        }
+        const bust = attempts === 1 ? '' : `${baseUrl.includes('?') ? '&' : '?'}r=${attempts}`
+        tile.img.src = `${baseUrl}${bust}`
+      }
+
+      tile.img.hidden = false
+      tile.fallback.hidden = true
+      tryLoad()
+    }
+  }
+
   const activate = (tile: Tile) => {
     if (tile.activated) return
     tile.activated = true
@@ -193,10 +237,8 @@ export function createUiMap(
       showFallback(tile)
       return
     }
-    tile.img.hidden = false
-    tile.fallback.hidden = true
-    tile.img.onerror = () => showFallback(tile)
-    tile.img.src = tile.frame.imageUrl
+    imageQueue.push(tile)
+    pumpImageQueue()
   }
 
   /** Zoom using cheap CSS scale; layout --ms updates after gesture settles. */
@@ -643,6 +685,7 @@ function buildFrameCard(
     card.appendChild(openBtn)
   }
   card.addEventListener('pointerenter', ensureOpenControl, { once: true })
+  card.addEventListener('pointerdown', ensureOpenControl, { once: true })
   card.addEventListener('dblclick', (e) => {
     // On touch, double-tap zooms the map (Google Maps–style) instead of opening.
     if (window.matchMedia('(pointer: coarse)').matches) return

@@ -44,6 +44,9 @@ fi
 INDEX_HTML="$ROOT/public/app/index.html" python3 - <<'PY'
 from pathlib import Path
 import os
+import re
+import sys
+
 p = Path(os.environ['INDEX_HTML'])
 text = p.read_text()
 snippet = """  <script>
@@ -67,7 +70,6 @@ snippet = """  <script>
   </script>
 """
 # Remove previous bootstrap + old cleanup so we own load order.
-import re
 text = re.sub(
     r"\s*<script>\s*// Drop stale Flutter PWAs[\s\S]*?</script>\s*",
     "\n",
@@ -78,16 +80,21 @@ text = re.sub(
     "\n",
     text,
 )
-text = text.replace(
-    '  <script src="flutter_bootstrap.js" async></script>\n',
-    '',
+text, n_bootstrap = re.subn(
+    r'\s*<script[^>]*\bsrc=["\']flutter_bootstrap\.js["\'][^>]*>\s*</script>\s*',
+    "\n",
+    text,
+    count=1,
 )
-if '</body>' in text:
-    text = text.replace('</body>', snippet + '</body>')
-    p.write_text(text)
-    print('patched index.html service-worker cleanup + deferred bootstrap')
-else:
-    print('index.html missing </body>')
+if n_bootstrap != 1:
+    print(f'index.html bootstrap script not found or ambiguous (removed={n_bootstrap})', file=sys.stderr)
+    sys.exit(1)
+if '</body>' not in text:
+    print('index.html missing </body>', file=sys.stderr)
+    sys.exit(1)
+text = text.replace('</body>', snippet + '</body>', 1)
+p.write_text(text)
+print('patched index.html service-worker cleanup + deferred bootstrap')
 PY
 
 echo "Done. Commit public/app/ and push to deploy."

@@ -1,18 +1,19 @@
 #!/usr/bin/env node
-// Run with: node --experimental-strip-types scripts/capture-screenshots.mjs
+// Run with: node scripts/capture-screenshots.mjs
 /**
  * Capture Flutter UI preview screenshots into public/screens/.
  *
  * Fail-soft: on error, keep the previous PNG (if any) and mark the frame stale
  * in manifest.json so the map can show a "Kept old" badge.
  *
- *   PREVIEW_BASE=http://127.0.0.1:7360/app/ node --experimental-strip-types scripts/capture-screenshots.mjs
+ *   PREVIEW_BASE=http://127.0.0.1:7360/app/ node scripts/capture-screenshots.mjs
  *   COMMIT_EACH_PACK=1  — after each locale×theme pack, git commit + push (CI)
  */
 import { chromium } from 'playwright'
 import { execSync } from 'node:child_process'
-import { access, mkdir, readFile, rename, unlink, writeFile } from 'node:fs/promises'
-import { readFileSync } from 'node:fs'
+import { access, copyFile, mkdir, readFile, unlink, writeFile } from 'node:fs/promises'
+import { existsSync, readFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { constants as fsConstants } from 'node:fs'
@@ -165,7 +166,8 @@ async function buildScreenEntry(job, result, previous) {
   }
 }
 
-async function writeMergedManifest(catalogJobs, entryById, packFailures) {
+async function writeMergedManifest(catalogJobs, entryById, packFailures, options = {}) {
+  const captureInProgress = options.captureInProgress === true
   const screens = []
   for (const job of catalogJobs) {
     const entry = entryById.get(job.id)
@@ -177,23 +179,26 @@ async function writeMergedManifest(catalogJobs, entryById, packFailures) {
   }
   const missing = screens.filter((s) => s.missing).length
   const stale = screens.filter((s) => s.stale).length
+  const keptOld = packFailures.filter((f) => f.keptOld).length
   const manifest = {
     version: 3,
     generatedAt: new Date().toISOString(),
     gitSha,
     appVersion: 'preview-capture',
     flutterPreviewBaseUrl: '/app/',
+    captureInProgress,
     captureSummary: {
       total: screens.length,
-      failed: stale,
-      keptOld: packFailures.filter((f) => f.keptOld).length,
+      failed: packFailures.length,
+      keptOld,
       missing,
+      stale,
     },
     device: {
       name: 'phone',
       width: device.width,
       height: device.height,
-      pixelRatio: 1,
+      pixelRatio: deviceScaleFactor,
     },
     locales: LOCALES,
     themes: THEMES,
@@ -223,28 +228,109 @@ function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms))
 }
 
+const PACK_PATHS = [
+  'public/screens',
+  'public/manifest.json',
+  'public/capture-report.json',
+  'public/preview_catalog.json',
+  'src/preview_catalog.json',
+]
+
+function isRebasing() {
+  return (
+    existsSync(path.join(root, '.git/rebase-merge')) ||
+    existsSync(path.join(root, '.git/rebase-apply'))
+  )
+}
+
+function hasStagedChanges() {
+  try {
+    execSync('git diff --cached --quiet', { cwd: root })
+    return false
+  } catch {
+    return true
+  }
+}
+
+function stagePackPaths() {
+  execSync(`git add -- ${PACK_PATHS.map((p) => JSON.stringify(p)).join(' ')}`, {
+    cwd: root,
+    stdio: 'inherit',
+    shell: '/bin/bash',
+  })
+  // Never publish in-progress screenshot temps (if any land under public/screens).
+  try {
+    execSync('git reset HEAD -- public/screens/.tmp-*', {
+      cwd: root,
+      stdio: 'pipe',
+      shell: '/bin/bash',
+    })
+  } catch {
+    // no temps staged
+  }
+}
+
+function ensurePackCommit(message) {
+  stagePackPaths()
+  if (!hasStagedChanges()) return false
+  execSync(`git commit -m ${JSON.stringify(message)}`, { cwd: root, stdio: 'inherit' })
+  return true
+}
+
+function resolveRebaseConflicts() {
+  execSync(`git checkout --theirs -- ${PACK_PATHS.map((p) => JSON.stringify(p)).join(' ')}`, {
+    cwd: root,
+    stdio: 'inherit',
+    shell: '/bin/bash',
+  })
+  execSync(`git add -- ${PACK_PATHS.map((p) => JSON.stringify(p)).join(' ')}`, {
+    cwd: root,
+    stdio: 'inherit',
+    shell: '/bin/bash',
+  })
+  const unmerged = execSync('git diff --name-only --diff-filter=U', {
+    cwd: root,
+    encoding: 'utf8',
+  }).trim()
+  if (unmerged) {
+    throw new Error(`Unresolved rebase conflicts:\n${unmerged}`)
+  }
+  execSync('git rebase --continue', {
+    cwd: root,
+    stdio: 'inherit',
+    env: { ...process.env, GIT_EDITOR: 'true' },
+  })
+}
+
 async function commitAndPushPack(packLabel) {
   const short = String(gitSha).slice(0, 7)
   const message = `chore: UI map pack ${packLabel} from studdly@${short}`
-  // Screens + manifest only — Flutter web build is committed once at the end of CI.
-  execSync(
-    'git add public/screens public/manifest.json public/capture-report.json public/preview_catalog.json src/preview_catalog.json',
-    {
-      cwd: root,
-      stdio: 'inherit',
-    },
-  )
-  const porcelain = execSync('git status --porcelain', { cwd: root, encoding: 'utf8' }).trim()
-  if (!porcelain) {
+  // Screens + manifest only — Flutter web build is committed before packs in CI.
+  if (!ensurePackCommit(message)) {
     console.log(`[pack ${packLabel}] nothing new to commit`)
     return
   }
-  execSync(`git commit -m ${JSON.stringify(message)}`, { cwd: root, stdio: 'inherit' })
 
   for (let attempt = 1; attempt <= 5; attempt++) {
     try {
       execSync('git fetch origin main', { cwd: root, stdio: 'inherit' })
-      execSync('git rebase origin/main', { cwd: root, stdio: 'inherit' })
+      try {
+        execSync('git rebase origin/main', { cwd: root, stdio: 'inherit' })
+      } catch (rebaseErr) {
+        if (!isRebasing()) throw rebaseErr
+        try {
+          resolveRebaseConflicts()
+        } catch (resolveErr) {
+          try {
+            execSync('git rebase --abort', { cwd: root, stdio: 'inherit' })
+          } catch {
+            // ignore
+          }
+          // Abort drops the pack commit — recreate it before retrying.
+          ensurePackCommit(message)
+          throw resolveErr
+        }
+      }
       execSync('git push origin HEAD:main', { cwd: root, stdio: 'inherit' })
       console.log(`[pack ${packLabel}] pushed (attempt ${attempt})`)
       return
@@ -253,26 +339,13 @@ async function commitAndPushPack(packLabel) {
         `[pack ${packLabel}] push/rebase failed attempt ${attempt}:`,
         String(err).slice(0, 200),
       )
-      try {
-        execSync(
-          'git checkout --theirs -- public/screens public/manifest.json public/capture-report.json public/preview_catalog.json src/preview_catalog.json || true',
-          { cwd: root, stdio: 'inherit', shell: '/bin/bash' },
-        )
-        execSync(
-          'git add public/screens public/manifest.json public/capture-report.json public/preview_catalog.json src/preview_catalog.json',
-          { cwd: root, stdio: 'inherit' },
-        )
-        execSync('git rebase --continue', {
-          cwd: root,
-          stdio: 'inherit',
-          env: { ...process.env, GIT_EDITOR: 'true' },
-        })
-      } catch {
+      if (isRebasing()) {
         try {
           execSync('git rebase --abort', { cwd: root, stdio: 'inherit' })
         } catch {
           // ignore
         }
+        ensurePackCommit(message)
       }
       await sleep(10_000)
     }
@@ -282,7 +355,7 @@ async function commitAndPushPack(packLabel) {
 
 async function captureOne(browser, job) {
   const finalPath = path.join(outDir, `${job.id}.png`)
-  const tempPath = path.join(outDir, `.tmp-${job.id}.${process.pid}.png`)
+  const tempPath = path.join(tmpdir(), `studdly-ui-${job.id}.${process.pid}.png`)
   const hadPrevious = await exists(finalPath)
   const context = await browser.newContext({
     viewport: device,
@@ -306,7 +379,8 @@ async function captureOne(browser, job) {
       await page.waitForTimeout(Math.min(settleMs, 1200))
     }
     await page.screenshot({ path: tempPath, type: 'png' })
-    await rename(tempPath, finalPath)
+    await copyFile(tempPath, finalPath)
+    await unlink(tempPath).catch(() => {})
     return { ok: true, id: job.id, keptOld: false }
   } catch (error) {
     try {
@@ -406,7 +480,9 @@ async function main() {
       }
 
       if (writeManifest) {
-        await writeMergedManifest(catalogJobs, entryById, allFailures)
+        await writeMergedManifest(catalogJobs, entryById, allFailures, {
+          captureInProgress: packIndex < packs.length,
+        })
       }
 
       if (commitEachPack) {
@@ -419,8 +495,10 @@ async function main() {
     for (const f of allFailures.slice(0, 40)) {
       console.error(`${f.id} keptOld=${f.keptOld} ${f.error}`)
     }
-    // Never fail the whole CI pipeline solely due to partial screenshot errors —
-    // old frames are retained and marked stale for the map UI.
+    // Fail CI only when every frame in this run failed (nothing useful captured).
+    if (captureJobs.length > 0 && allFailures.length === captureJobs.length) {
+      throw new Error(`All ${captureJobs.length} screenshot captures failed`)
+    }
   } finally {
     await browser.close()
   }

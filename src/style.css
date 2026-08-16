@@ -298,6 +298,14 @@ body,
   pointer-events: auto;
 }
 
+/* Touch / coarse pointers have no hover — keep Open usable when chrome is shown. */
+@media (hover: none), (pointer: coarse) {
+  .viewport.show-chrome:not(.panning) .open-btn {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
 .open-btn:hover {
   background: var(--ocean);
 }
@@ -312,8 +320,8 @@ body,
   max-width: calc(100% + (8px * var(--ms)));
   padding: calc(2px * var(--ms)) calc(6px * var(--ms));
   border-radius: calc(6px * var(--ms));
-  background: transparent;
-  color: rgba(255, 255, 255, 0.78);
+  background: rgba(12, 12, 12, 0.82);
+  color: rgba(255, 255, 255, 0.9);
   font-size: calc(9px * var(--ms));
   font-weight: 500;
   line-height: 1.25;
@@ -371,7 +379,7 @@ body,
 }
 
 .theme-block[data-theme='light'] .frame-caption {
-  background: transparent;
+  background: rgba(245, 245, 245, 0.94);
   color: var(--muted);
 }
 
@@ -392,11 +400,11 @@ body,
   border-radius: var(--radius-frame);
   border: 0;
   overflow: hidden;
-  background: transparent;
+  background: #141414;
   user-select: none;
   contain: strict;
   content-visibility: auto;
-  contain-intrinsic-size: auto 338px 156px;
+  contain-intrinsic-size: auto 156px 338px;
 }
 
 .frame img {
@@ -417,11 +425,11 @@ body,
   flex-direction: column;
   justify-content: flex-end;
   padding: calc(12px * var(--ms));
-  background: transparent;
+  background: #1a1a1a;
 }
 
 .theme-block[data-theme='light'] .frame-fallback {
-  background: transparent;
+  background: #eceae7;
 }
 
 .frame-fallback strong {
