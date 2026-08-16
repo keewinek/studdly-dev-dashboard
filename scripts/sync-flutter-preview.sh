@@ -13,7 +13,7 @@ fi
 echo "Building Flutter web preview from $STUDDLY_ROOT ..."
 (
   cd "$STUDDLY_ROOT"
-  flutter build web -t lib/ui_preview_main.dart --base-href /app/ --release --no-wasm-dry-run
+  flutter build web -t lib/ui_preview_main.dart --base-href /app/ --release --pwa-strategy=none --no-wasm-dry-run
 )
 
 echo "Syncing into $ROOT/public/app ..."
