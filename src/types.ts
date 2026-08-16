@@ -28,6 +28,16 @@ export interface ScreenFrame {
   /** Optional 2× screenshot for zoomed-in LOD. */
   imageUrl2x?: string
   size: { width: number; height: number }
+  /** True when this commit's capture failed and we kept an older PNG. */
+  stale?: boolean
+  /** True when no PNG exists at all. */
+  missing?: boolean
+  /** Capture error message when stale/missing. */
+  captureError?: string
+  /** Last git SHA that successfully captured this frame. */
+  lastSuccessSha?: string
+  /** Git SHA of the capture attempt that produced this manifest entry. */
+  attemptSha?: string
 }
 
 /** World-zoom → texture LOD. Higher zoom loads sharper assets. */
@@ -44,6 +54,13 @@ export function frameImageUrl(frame: ScreenFrame, lod: ImageLod): string {
   return frame.imageUrl
 }
 
+export interface CaptureSummary {
+  total: number
+  failed: number
+  keptOld: number
+  missing: number
+}
+
 export interface UiManifest {
   version: number
   generatedAt: string
@@ -54,6 +71,7 @@ export interface UiManifest {
   locales: { code: LocaleId; label: string; nativeName: string }[]
   themes: { id: ThemeId; label: string }[]
   screens: ScreenFrame[]
+  captureSummary?: CaptureSummary
 }
 
 export function previewUrl(

@@ -3,7 +3,7 @@
 Public open-startup UI map for Studdly.
 
 - **Live path:** `https://dev.studdly.app/ui`
-- **Host:** Netlify (static Vite SPA)
+- **Host:** Netlify free plan (static Vite SPA only)
 - **Auth:** none — link is enough
 
 ## What `/ui` is
@@ -22,6 +22,31 @@ Hover a tile → **Open in new tab** → Flutter web preview with that `screen`,
 /app/?preview=1&screen=home&theme=dark&locale=pl&state=empty
 ```
 
+If a screenshot fails on the latest commit, the map **keeps the previous PNG** and shows an **Outdated** badge (plus a top-bar warning).
+
+## Automation (free)
+
+Netlify free only builds this Vite site. Flutter + Playwright run on **GitHub Actions** in the Studdly repo (free minutes), then push assets here.
+
+Flow:
+
+1. Push to `studdly` `main` → workflow `.github/workflows/update-ui-map.yml`
+2. Build Flutter web UI preview → sync into `public/app/`
+3. Capture 1× + 2× screenshots (fail-soft: keep old PNGs, mark `stale` in `manifest.json`)
+4. Commit + push this repo → Netlify rebuilds `https://dev.studdly.app`
+
+### One-time setup: `DASHBOARD_REPO_TOKEN`
+
+In the **Studdly** GitHub repo → Settings → Secrets and variables → Actions, add:
+
+| Secret | Value |
+|--------|--------|
+| `DASHBOARD_REPO_TOKEN` | Fine-grained PAT (or classic) with **Contents: Read and write** on `keewinek/studdly-dev-dashboard` |
+
+Without this secret, the workflow cannot push screenshot/preview updates.
+
+You can also run the workflow manually: Actions → **Update UI map** → Run workflow.
+
 ## Develop
 
 ```bash
@@ -37,33 +62,26 @@ npm run build
 
 Optional: copy `.env.example` → `.env` and set `VITE_FLUTTER_PREVIEW_URL`.
 
-## Screenshots
+## Screenshots (local)
 
-Until CI publishes real PNGs under `/public/screens/` + `/public/manifest.json`, the map generates the full catalog client-side and shows labeled placeholders when images 404.
+```bash
+# Terminal A — serve preview at /app/
+mkdir -p /tmp/ui-preview-root/app && rsync -a public/app/ /tmp/ui-preview-root/app/
+python3 -m http.server 7360 --directory /tmp/ui-preview-root
 
-Screenshot generation lives in the Flutter repo (`test/ui_catalog/` + CI), then assets are copied here for deploy.
+# Terminal B
+PREVIEW_BASE=http://127.0.0.1:7360/app/ npm run capture:screens
+PREVIEW_BASE=http://127.0.0.1:7360/app/ npm run capture:screens:2x
+```
+
+Failed frames keep the previous file and set `stale` / `captureError` / `lastSuccessSha` in `public/manifest.json`.
 
 ## Flutter preview
 
-Build + sync into this repo (deploys with Netlify):
+Build + sync into this repo (or let CI do it):
 
 ```bash
 ./scripts/sync-flutter-preview.sh
-git add public/app && git commit -m "Update Flutter UI preview" && git push
 ```
 
-Or manually:
-
-```bash
-cd ../studdly
-flutter build web -t lib/ui_preview_main.dart --base-href /app/ --release
-rsync -a --delete --exclude '.last_build_id' build/web/ ../studdly-dev-dashboard/public/app/
-```
-
-Preview URLs look like:
-
-```
-https://dev.studdly.app/app/?preview=1&screen=home&theme=dark&locale=pl&state=empty
-```
-
-`VITE_FLUTTER_PREVIEW_URL` defaults to `/app/` (same origin). Override in Netlify env only if the preview is hosted elsewhere.
+`VITE_FLUTTER_PREVIEW_URL` defaults to `/app/` (same origin).

@@ -25,9 +25,15 @@ export function createUiMap(
 
   const topbar = document.createElement('div')
   topbar.className = 'topbar'
+  const staleCount = manifest.screens.filter((s) => s.stale || s.missing).length
   topbar.innerHTML = `
     <div class="brand">
       <h1>Studdly UI Map</h1>
+      ${
+        staleCount > 0
+          ? `<p class="status-warn" title="Some screens failed to capture on the latest commit; older screenshots are shown.">${staleCount} outdated · capture error</p>`
+          : ''
+      }
     </div>
   `
 
@@ -378,6 +384,24 @@ function buildFrameCard(
 
   overlay.appendChild(openBtn)
   card.append(img, fallback, overlay)
+
+  if (frame.stale || frame.missing) {
+    card.classList.add('frame-stale')
+    const badge = document.createElement('div')
+    badge.className = 'stale-badge'
+    badge.title = frame.captureError
+      ? `Capture failed on ${frame.attemptSha || 'latest'}: ${frame.captureError}`
+      : 'Capture failed on the latest commit'
+    badge.textContent = frame.missing ? 'Missing' : 'Outdated'
+    const detail = document.createElement('span')
+    detail.className = 'stale-detail'
+    detail.textContent = frame.missing
+      ? 'No screenshot yet'
+      : `Old build${frame.lastSuccessSha ? ` · ${frame.lastSuccessSha.slice(0, 7)}` : ''}`
+    badge.appendChild(detail)
+    card.appendChild(badge)
+  }
+
   lodFrames.push({ img, frame, lod: 1 })
   return card
 }

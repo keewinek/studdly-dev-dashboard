@@ -10,11 +10,19 @@ if [[ ! -f "$STUDDLY_ROOT/lib/ui_preview_main.dart" ]]; then
   exit 1
 fi
 
-echo "Building Flutter web preview from $STUDDLY_ROOT ..."
-(
-  cd "$STUDDLY_ROOT"
-  flutter build web -t lib/ui_preview_main.dart --base-href /app/ --release --pwa-strategy=none --no-wasm-dry-run --no-tree-shake-icons
-)
+if [[ "${SKIP_BUILD:-0}" == "1" ]]; then
+  echo "SKIP_BUILD=1 — using existing $STUDDLY_ROOT/build/web"
+  if [[ ! -d "$STUDDLY_ROOT/build/web" ]]; then
+    echo "Missing $STUDDLY_ROOT/build/web (build Flutter first)" >&2
+    exit 1
+  fi
+else
+  echo "Building Flutter web preview from $STUDDLY_ROOT ..."
+  (
+    cd "$STUDDLY_ROOT"
+    flutter build web -t lib/ui_preview_main.dart --base-href /app/ --release --pwa-strategy=none --no-wasm-dry-run --no-tree-shake-icons
+  )
+fi
 
 echo "Syncing into $ROOT/public/app ..."
 rm -rf "$ROOT/public/app"
