@@ -266,6 +266,9 @@ body,
   right: calc(6px * var(--ms));
   bottom: calc(6px * var(--ms));
   z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: calc(5px * var(--ms));
   border: 0;
   border-radius: calc(8px * var(--ms));
   background: rgba(12, 12, 12, 0.72);
@@ -279,6 +282,11 @@ body,
   opacity: 0;
   pointer-events: none;
   transition: opacity 100ms ease, background 100ms ease;
+}
+
+.open-btn i {
+  font-size: 0.95em;
+  line-height: 1;
 }
 
 .viewport.show-chrome:not(.panning) .frame-cell:hover .open-btn,

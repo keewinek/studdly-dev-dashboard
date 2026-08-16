@@ -500,8 +500,9 @@ function buildFrameCard(
     const openBtn = document.createElement('button')
     openBtn.type = 'button'
     openBtn.className = 'open-btn'
-    openBtn.textContent = 'Open'
     openBtn.title = 'Open live preview in a new tab (or double-click the screenshot)'
+    openBtn.innerHTML =
+      '<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i><span>Open</span>'
     openBtn.addEventListener('click', (e) => {
       e.preventDefault()
       e.stopPropagation()
