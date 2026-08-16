@@ -252,6 +252,41 @@ body,
   display: grid;
   grid-template-columns: repeat(4, var(--frame-w));
   gap: var(--gap);
+  /* Room for hover filename under tiles without crushing the next row. */
+  row-gap: calc(var(--gap) + (18px * var(--ms)));
+}
+
+.frame-cell {
+  position: relative;
+  width: var(--frame-w);
+}
+
+.frame-filename {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + (4px * var(--ms)));
+  margin: 0;
+  padding: 0;
+  font-size: calc(9px * var(--ms));
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--muted);
+  word-break: break-all;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 100ms ease;
+  z-index: 3;
+}
+
+.frame-cell:hover .frame-filename,
+.frame-cell:focus-within .frame-filename {
+  opacity: 1;
+}
+
+.theme-block[data-theme='light'] .frame-filename {
+  color: #5a5a5a;
 }
 
 .frame {

@@ -485,7 +485,15 @@ function buildFrameCard(
     frame,
     activated: !!frame.missing,
   })
-  return card
+
+  const cell = document.createElement('div')
+  cell.className = 'frame-cell'
+  const filename = document.createElement('p')
+  filename.className = 'frame-filename'
+  filename.textContent = `${frame.id}.png`
+  filename.title = `${frame.id}.png`
+  cell.append(card, filename)
+  return cell
 }
 
 function groupBy<T>(items: T[], keyFn: (item: T) => string): Map<string, T[]> {
