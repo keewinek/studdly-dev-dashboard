@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-08-16T21:24:09.742Z",
+  "generatedAt": "2026-08-16T21:26:08.645Z",
   "gitSha": "521d5746eaed",
   "appVersion": "preview-capture",
   "flutterPreviewBaseUrl": "/app/",
@@ -9,7 +9,7 @@
     "total": 1332,
     "failed": 0,
     "keptOld": 0,
-    "missing": 11,
+    "missing": 10,
     "stale": 0
   },
   "device": {
@@ -2965,9 +2965,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.417Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.508Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_language.other_highlighted.dark.en",
@@ -2990,9 +2990,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.417Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.508Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "language_picker.default.dark.en",
@@ -3015,9 +3015,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.508Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "language_picker.no_selection.dark.en",
@@ -3041,9 +3041,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.508Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "language_picker.search.dark.en",
@@ -3067,9 +3067,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.508Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "language_picker.search_empty.dark.en",
@@ -3094,9 +3094,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.508Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "language_picker.scrolled_mid.dark.en",
@@ -3120,9 +3120,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.508Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_q1.default.dark.en",
@@ -3145,9 +3145,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.508Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_q1.option_selected.dark.en",
@@ -3170,9 +3170,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.509Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_q2.default.dark.en",
@@ -3195,9 +3195,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.509Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_q2.option_selected.dark.en",
@@ -3220,9 +3220,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.509Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_q3.default.dark.en",
@@ -3245,9 +3245,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.509Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_q3.option_selected.dark.en",
@@ -3270,9 +3270,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.509Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_name.empty.dark.en",
@@ -3296,9 +3296,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.509Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_name.filled.dark.en",
@@ -3321,9 +3321,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.509Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_video.video_google_ai_studio.dark.en",
@@ -3349,9 +3349,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.418Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.509Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_video.video_groq.dark.en",
@@ -3377,9 +3377,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.419Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.509Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_video.video_cerebras.dark.en",
@@ -3405,9 +3405,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.419Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.509Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_video.video_open_router.dark.en",
@@ -3433,9 +3433,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.419Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.510Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_video.video_openai.dark.en",
@@ -3461,9 +3461,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.419Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.510Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_video.video_sambanova.dark.en",
@@ -3489,9 +3489,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.419Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.510Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_video.video_mistral.dark.en",
@@ -3517,9 +3517,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.419Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.510Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_video.video_zai.dark.en",
@@ -3545,9 +3545,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.419Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.510Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_google_ai_studio.dark.en",
@@ -3573,9 +3573,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.419Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.510Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_groq.dark.en",
@@ -3601,9 +3601,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.419Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.510Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_cerebras.dark.en",
@@ -3629,9 +3629,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.419Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.511Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_open_router.dark.en",
@@ -3657,9 +3657,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.419Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.511Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_openai.dark.en",
@@ -3685,9 +3685,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.420Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.511Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_sambanova.dark.en",
@@ -3713,9 +3713,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.420Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.511Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_mistral.dark.en",
@@ -3741,9 +3741,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.420Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.511Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_zai.dark.en",
@@ -3769,9 +3769,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.420Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.511Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_api_key.testing.dark.en",
@@ -3796,9 +3796,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.420Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.511Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_api_key.error.dark.en",
@@ -3824,9 +3824,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.420Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.511Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_api_key.visible.dark.en",
@@ -3851,9 +3851,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.420Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.511Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_api_key.provider_dialog.dark.en",
@@ -3879,9 +3879,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.420Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.511Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_easy.default.dark.en",
@@ -3904,9 +3904,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.420Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.512Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_dialogue_final.default.dark.en",
@@ -3929,9 +3929,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.420Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.512Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.empty.dark.en",
@@ -3955,9 +3955,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.420Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.512Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.ready.dark.en",
@@ -3980,9 +3980,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.512Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.ready_scrolled_mid.dark.en",
@@ -4006,9 +4006,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.512Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.ready_scrolled_bottom.dark.en",
@@ -4032,9 +4032,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.512Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.empty_ready.dark.en",
@@ -4058,9 +4058,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.512Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.partial_progress.dark.en",
@@ -4083,9 +4083,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.512Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.analyzing.dark.en",
@@ -4108,9 +4108,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.512Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.queued.dark.en",
@@ -4133,9 +4133,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.512Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.mixed_statuses.dark.en",
@@ -4158,9 +4158,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.512Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.mixed_scrolled_mid.dark.en",
@@ -4184,9 +4184,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.513Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.search_no_results.dark.en",
@@ -4211,9 +4211,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.513Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.context_menu.dark.en",
@@ -4237,9 +4237,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.513Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.rename.dark.en",
@@ -4262,9 +4262,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.513Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "home.delete_dialog.dark.en",
@@ -4288,9 +4288,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.513Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "create_topic.empty.dark.en",
@@ -4314,9 +4314,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.513Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "create_topic.title_only.dark.en",
@@ -4339,9 +4339,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.513Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "create_topic.with_pages.dark.en",
@@ -4364,9 +4364,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.513Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "create_topic.pages_one.dark.en",
@@ -4389,9 +4389,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.513Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "create_topic.ocr.dark.en",
@@ -4414,9 +4414,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.513Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "create_topic.ocr_start.dark.en",
@@ -4439,9 +4439,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.514Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "create_topic.creating.dark.en",
@@ -4464,9 +4464,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.514Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "create_topic.pages_many_scrolled_mid.dark.en",
@@ -4490,9 +4490,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.421Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.514Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "create_topic.advancement_open.dark.en",
@@ -4515,9 +4515,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.514Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "create_topic.permission_dialog.dark.en",
@@ -4541,9 +4541,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.514Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "create_topic.suggested_title_dialog.dark.en",
@@ -4567,9 +4567,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.514Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "create_topic.add_page_sheet.dark.en",
@@ -4593,9 +4593,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.514Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "topic_path.empty.dark.en",
@@ -4619,9 +4619,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.514Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "topic_path.partial.dark.en",
@@ -4644,9 +4644,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.514Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "topic_path.ready.dark.en",
@@ -4669,9 +4669,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.514Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "topic_path.expanded.dark.en",
@@ -4694,9 +4694,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.515Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "topic_path.completed_nodes.dark.en",
@@ -4719,9 +4719,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.515Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "topic_path.completed_nodes_expanded.dark.en",
@@ -4744,9 +4744,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.515Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "topic_path.analyzing_with_path.dark.en",
@@ -4769,9 +4769,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.515Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "topic_path.scrolled.dark.en",
@@ -4795,9 +4795,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.515Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "topic_path.ready_scrolled_bottom.dark.en",
@@ -4821,9 +4821,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.515Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "topic_path.empty_content_dialog.dark.en",
@@ -4847,9 +4847,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.515Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "read_text.quiz_disabled.dark.en",
@@ -4872,9 +4872,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.515Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "read_text.quiz_enabled.dark.en",
@@ -4897,9 +4897,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.515Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "read_text.empty_content.dark.en",
@@ -4923,9 +4923,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.515Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "read_text.reading_aloud.dark.en",
@@ -4948,9 +4948,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.516Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "read_text.scrolled.dark.en",
@@ -4974,9 +4974,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.516Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "read_text.scrolled_bottom.dark.en",
@@ -5000,9 +5000,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.516Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "quiz.unanswered.dark.en",
@@ -5025,9 +5025,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.422Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.516Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "quiz.correct.dark.en",
@@ -5050,9 +5050,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.516Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "quiz.wrong.dark.en",
@@ -5075,9 +5075,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.516Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "quiz.completed.dark.en",
@@ -5100,9 +5100,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.516Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "quiz.mid_progress.dark.en",
@@ -5125,9 +5125,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.516Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "quiz.mid_progress_wrong.dark.en",
@@ -5142,15 +5142,17 @@
       ],
       "group": "Quiz",
       "compareKey": "quiz|mid_progress_wrong",
-      "imageUrl": "/screens/quiz.mid_progress_wrong.dark.en.png",
+      "imageUrl": "/screens/thumbs/quiz.mid_progress_wrong.dark.en.webp",
       "fullImageUrl": "/screens/quiz.mid_progress_wrong.dark.en.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.516Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "quiz.revision.dark.en",
@@ -5173,9 +5175,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.517Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "quiz.revision_wrong.dark.en",
@@ -5198,9 +5200,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.517Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "quiz.no_questions.dark.en",
@@ -5224,9 +5226,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.518Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "quiz.long_options.dark.en",
@@ -5249,9 +5251,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.518Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "quiz.long_options_scrolled_mid.dark.en",
@@ -5275,9 +5277,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.518Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "ai_analysis.analyzing_start.dark.en",
@@ -5300,9 +5302,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.518Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "ai_analysis.analyzing_mid.dark.en",
@@ -5325,9 +5327,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.518Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "download_prompt.default.dark.en",
@@ -5350,9 +5352,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.518Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.default.dark.en",
@@ -5375,9 +5377,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.518Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.no_api_key.dark.en",
@@ -5402,9 +5404,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.518Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.key_visible.dark.en",
@@ -5428,9 +5430,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.423Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.519Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.sound_muted.dark.en",
@@ -5453,9 +5455,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.424Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.519Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.scrolled_mid.dark.en",
@@ -5479,9 +5481,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.424Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.519Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.scrolled_bottom.dark.en",
@@ -5505,9 +5507,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.424Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.519Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.provider_google_ai_studio.dark.en",
@@ -5531,9 +5533,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.424Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.519Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.provider_groq.dark.en",
@@ -5557,9 +5559,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.424Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.519Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.provider_cerebras.dark.en",
@@ -5583,9 +5585,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.424Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.519Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.provider_open_router.dark.en",
@@ -5609,9 +5611,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.424Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.519Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.provider_openai.dark.en",
@@ -5635,9 +5637,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.425Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.519Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.provider_sambanova.dark.en",
@@ -5661,9 +5663,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.425Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.520Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.provider_mistral.dark.en",
@@ -5687,9 +5689,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.425Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.520Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "settings.provider_zai.dark.en",
@@ -5713,9 +5715,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.425Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.520Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "ai_provider_dialog.default.dark.en",
@@ -5740,9 +5742,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.425Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.520Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "ai_provider_dialog.scrolled_mid.dark.en",
@@ -5768,9 +5770,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.425Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.520Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "logs.empty.dark.en",
@@ -5795,9 +5797,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.425Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.520Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "logs.with_entries.dark.en",
@@ -5821,9 +5823,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "f6a32efc96b1",
-      "lastSuccessAt": "2026-08-16T21:04:21.425Z",
-      "attemptSha": "f6a32efc96b1"
+      "lastSuccessSha": "521d5746eaed",
+      "lastSuccessAt": "2026-08-16T21:26:08.520Z",
+      "attemptSha": "521d5746eaed"
     },
     {
       "id": "onboarding_language.default.light.pl",
