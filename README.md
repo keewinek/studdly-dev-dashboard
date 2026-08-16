@@ -17,7 +17,7 @@ Layout:
 - Within each column: **Light** block on top, **Dark** block below
 - Each block = screenshot tiles grouped by flow (Onboarding, Home, …)
 
-Hover a tile → **Open in new tab** → Flutter web preview with that `screen`, `theme`, `locale`, and `state`:
+Hover a tile (or tap it on mobile) → **Open** → Flutter web preview with that `screen`, `theme`, `locale`, and `state`:
 
 ```
 /app/?preview=1&screen=home&theme=dark&locale=pl&state=empty

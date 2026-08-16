@@ -468,21 +468,57 @@ export function createUiMap(
   let lastChromeX = Number.NaN
   let lastChromeY = Number.NaN
   let chromeVisible = false
+  let openActiveCell: HTMLElement | null = null
+
+  const clearOpenActive = () => {
+    if (!openActiveCell) return
+    openActiveCell.classList.remove('open-active')
+    openActiveCell = null
+  }
+
+  const setOpenActive = (cell: HTMLElement | null) => {
+    if (openActiveCell === cell) return
+    clearOpenActive()
+    if (!cell) return
+    openActiveCell = cell
+    cell.classList.add('open-active')
+  }
 
   const hideChrome = () => {
     if (chromeTimer != null) {
       window.clearTimeout(chromeTimer)
       chromeTimer = null
     }
+    clearOpenActive()
     if (chromeVisible) {
       chromeVisible = false
       viewport.classList.remove('show-chrome')
     }
   }
 
+  const showChromeSticky = () => {
+    if (gestureMode !== 'none') {
+      hideChrome()
+      return
+    }
+    if (chromeTimer != null) {
+      window.clearTimeout(chromeTimer)
+      chromeTimer = null
+    }
+    if (!chromeVisible) {
+      chromeVisible = true
+      viewport.classList.add('show-chrome')
+    }
+  }
+
   const bumpChrome = () => {
     if (gestureMode !== 'none') {
       hideChrome()
+      return
+    }
+    // Touch selection stays until the user taps elsewhere / pans.
+    if (openActiveCell) {
+      showChromeSticky()
       return
     }
     if (!chromeVisible) {
@@ -492,6 +528,7 @@ export function createUiMap(
     if (chromeTimer != null) window.clearTimeout(chromeTimer)
     chromeTimer = window.setTimeout(() => {
       chromeTimer = null
+      if (openActiveCell) return
       // Avoid scanning the whole viewport — only check :hover on cheap pseudo.
       if (viewport.matches(':hover') && document.querySelector('.open-btn:hover, .frame-caption:hover')) {
         bumpChrome()
@@ -645,13 +682,21 @@ export function createUiMap(
       const dist = Math.hypot(released.x - lastTapX, released.y - lastTapY)
       if (dt < 320 && dist < 28) {
         // Double-tap zoom in (Google Maps–style).
+        hideChrome()
         zoomAt(released.x, released.y, visualScale() * 1.8)
         lastTapAt = 0
       } else {
         lastTapAt = now
         lastTapX = released.x
         lastTapY = released.y
-        bumpChrome()
+        const hit = document.elementFromPoint(released.x, released.y) as HTMLElement | null
+        const cell = hit?.closest('.frame-cell') as HTMLElement | null
+        if (cell) {
+          setOpenActive(cell)
+          showChromeSticky()
+        } else {
+          hideChrome()
+        }
       }
     }
 

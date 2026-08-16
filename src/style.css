@@ -262,7 +262,8 @@ body,
 }
 
 .viewport.show-chrome:not(.panning) .frame-cell:hover,
-.viewport.show-chrome:not(.panning) .frame-cell:focus-within {
+.viewport.show-chrome:not(.panning) .frame-cell:focus-within,
+.viewport.show-chrome:not(.panning) .frame-cell.open-active {
   z-index: 20;
 }
 
@@ -296,17 +297,10 @@ body,
 }
 
 .viewport.show-chrome:not(.panning) .frame-cell:hover .open-btn,
-.viewport.show-chrome:not(.panning) .frame-cell:focus-within .open-btn {
+.viewport.show-chrome:not(.panning) .frame-cell:focus-within .open-btn,
+.viewport.show-chrome:not(.panning) .frame-cell.open-active .open-btn {
   opacity: 1;
   pointer-events: auto;
-}
-
-/* Touch / coarse pointers have no hover — keep Open usable when chrome is shown. */
-@media (hover: none), (pointer: coarse) {
-  .viewport.show-chrome:not(.panning) .open-btn {
-    opacity: 1;
-    pointer-events: auto;
-  }
 }
 
 .open-btn:hover {
@@ -341,7 +335,8 @@ body,
 }
 
 .viewport.show-chrome:not(.panning) .frame-cell:hover .frame-caption,
-.viewport.show-chrome:not(.panning) .frame-cell:focus-within .frame-caption {
+.viewport.show-chrome:not(.panning) .frame-cell:focus-within .frame-caption,
+.viewport.show-chrome:not(.panning) .frame-cell.open-active .frame-caption {
   opacity: 1;
   pointer-events: auto;
 }
