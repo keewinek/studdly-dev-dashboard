@@ -433,30 +433,38 @@ function buildFrameCard(
 
   card.append(img, fallback)
 
-  // Build Open button on first hover — saves ~1080 overlay nodes at rest.
-  let overlayReady = false
-  const ensureOverlay = () => {
-    if (overlayReady) return
-    overlayReady = true
-    const overlay = document.createElement('div')
-    overlay.className = 'frame-overlay'
+  const openPreview = () => {
+    window.open(
+      previewUrl(manifest.flutterPreviewBaseUrl, frame),
+      '_blank',
+      'noopener,noreferrer',
+    )
+  }
+
+  // Small corner chip — no full-screen dim overlay (keeps UI readable while browsing).
+  let openReady = false
+  const ensureOpenControl = () => {
+    if (openReady) return
+    openReady = true
     const openBtn = document.createElement('button')
     openBtn.type = 'button'
     openBtn.className = 'open-btn'
-    openBtn.textContent = 'Open in new tab'
+    openBtn.textContent = 'Open'
+    openBtn.title = 'Open live preview in a new tab (or double-click the screenshot)'
     openBtn.addEventListener('click', (e) => {
       e.preventDefault()
       e.stopPropagation()
-      window.open(
-        previewUrl(manifest.flutterPreviewBaseUrl, frame),
-        '_blank',
-        'noopener,noreferrer',
-      )
+      openPreview()
     })
-    overlay.appendChild(openBtn)
-    card.appendChild(overlay)
+    card.appendChild(openBtn)
   }
-  card.addEventListener('pointerenter', ensureOverlay, { once: true })
+  card.addEventListener('pointerenter', ensureOpenControl, { once: true })
+  card.addEventListener('dblclick', (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    ensureOpenControl()
+    openPreview()
+  })
 
   if (frame.stale || frame.missing) {
     card.classList.add('frame-stale')
@@ -488,10 +496,16 @@ function buildFrameCard(
 
   const cell = document.createElement('div')
   cell.className = 'frame-cell'
-  const filename = document.createElement('p')
+  const filename = document.createElement('button')
+  filename.type = 'button'
   filename.className = 'frame-filename'
   filename.textContent = `${frame.id}.png`
-  filename.title = `${frame.id}.png`
+  filename.title = `Open preview · ${frame.id}.png`
+  filename.addEventListener('click', (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    openPreview()
+  })
   cell.append(card, filename)
   return cell
 }

@@ -135,7 +135,7 @@ body,
   cursor: grabbing;
 }
 
-.viewport.panning .frame-overlay {
+.viewport.panning .open-btn {
   display: none;
 }
 
@@ -260,28 +260,71 @@ body,
   width: var(--frame-w);
 }
 
+.open-btn {
+  appearance: none;
+  position: absolute;
+  right: calc(6px * var(--ms));
+  bottom: calc(6px * var(--ms));
+  z-index: 4;
+  border: 0;
+  border-radius: calc(8px * var(--ms));
+  background: rgba(12, 12, 12, 0.72);
+  color: #fff;
+  font: inherit;
+  font-size: calc(10px * var(--ms));
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: calc(5px * var(--ms)) calc(8px * var(--ms));
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 100ms ease, background 100ms ease;
+}
+
+.frame-cell:hover .open-btn,
+.frame-cell:focus-within .open-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.open-btn:hover {
+  background: var(--ocean);
+}
+
 .frame-filename {
+  appearance: none;
   position: absolute;
   left: 0;
   right: 0;
   top: calc(100% + (4px * var(--ms)));
   margin: 0;
   padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
   font-size: calc(9px * var(--ms));
   font-weight: 500;
   line-height: 1.25;
   letter-spacing: -0.01em;
+  text-align: left;
   color: var(--muted);
   word-break: break-all;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 100ms ease;
+  transition: opacity 100ms ease, color 100ms ease;
   z-index: 3;
+  cursor: pointer;
 }
 
 .frame-cell:hover .frame-filename,
 .frame-cell:focus-within .frame-filename {
   opacity: 1;
+  pointer-events: auto;
+}
+
+.frame-filename:hover {
+  color: var(--ocean);
+  text-decoration: underline;
 }
 
 .theme-block[data-theme='light'] .frame-filename {
@@ -350,42 +393,6 @@ body,
 
 .theme-block[data-theme='light'] .frame-fallback span {
   color: rgba(26, 26, 26, 0.65);
-}
-
-.frame-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.45);
-  opacity: 0;
-  transition: opacity 120ms ease;
-  pointer-events: none;
-}
-
-.frame:hover .frame-overlay,
-.frame:focus-within .frame-overlay {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.open-btn {
-  appearance: none;
-  border: 0;
-  border-radius: var(--open-radius);
-  background: var(--ocean);
-  color: #fff;
-  font: inherit;
-  font-size: var(--open-fs);
-  font-weight: 600;
-  padding: var(--open-pad-y) var(--open-pad-x);
-  cursor: pointer;
-  box-shadow: 0 calc(8px * var(--ms)) calc(24px * var(--ms)) rgba(0, 0, 0, 0.35);
-}
-
-.open-btn:hover {
-  filter: brightness(1.08);
 }
 
 .frame-stale {
