@@ -103,7 +103,8 @@ One PNG per frame (`/screens/{id}.png`). Zoom uses layout size (`--ms`), not CSS
 
 Screen states are generated algorithmically from `src/catalog-spec.ts` (scroll positions, overlays, empty/full, CTA chrome, …) — currently ~90 unique layouts × theme × locale.
 
-Failed frames keep the previous file and set `stale` / `captureError` / `lastSuccessSha` in `public/manifest.json`.
+Failed frames keep the previous file and set `stale` / `captureError` / `lastSuccessSha` / `lastSuccessAt` in `public/manifest.json`.
+The map shows a caption under each shot (`relative time · short SHA`) and badges **Kept old** (capture failed), **Behind** (older successful SHA than the latest map run), or **Missing**.
 
 ## Flutter preview
 

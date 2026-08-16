@@ -4,7 +4,7 @@
  * Capture Flutter UI preview screenshots into public/screens/.
  *
  * Fail-soft: on error, keep the previous PNG (if any) and mark the frame stale
- * in manifest.json so the map can show an "outdated" badge.
+ * in manifest.json so the map can show a "Kept old" badge.
  *
  *   PREVIEW_BASE=http://127.0.0.1:7360/app/ node --experimental-strip-types scripts/capture-screenshots.mjs
  *   COMMIT_EACH_PACK=1  — after each locale×theme pack, git commit + push (CI)
@@ -140,6 +140,9 @@ async function buildScreenEntry(job, result, previous) {
     lastSuccessSha: ok
       ? gitSha
       : prev?.lastSuccessSha || undefined,
+    lastSuccessAt: ok
+      ? new Date().toISOString()
+      : prev?.lastSuccessAt || undefined,
     attemptSha: result ? gitSha : prev?.attemptSha,
   }
 }

@@ -33,6 +33,8 @@ export interface ScreenFrame {
   captureError?: string
   /** Last git SHA that successfully captured this frame. */
   lastSuccessSha?: string
+  /** ISO timestamp of the last successful capture for this frame. */
+  lastSuccessAt?: string
   /** Git SHA of the capture attempt that produced this manifest entry. */
   attemptSha?: string
 }

@@ -22,6 +22,50 @@ interface Tile {
 const MIN_SCALE = 0.15
 const MAX_SCALE = 5
 const ZOOM_SETTLE_MS = 140
+const STUDDLY_COMMIT_URL = 'https://github.com/keewinek/studdly/commit'
+
+function shortSha(sha: string | undefined): string {
+  return sha ? sha.slice(0, 7) : ''
+}
+
+/** Prefer per-frame timestamp; fall back to manifest time when SHA matches the latest run. */
+function frameSuccessAt(frame: ScreenFrame, manifest: UiManifest): string | undefined {
+  if (frame.lastSuccessAt) return frame.lastSuccessAt
+  if (frame.lastSuccessSha && frame.lastSuccessSha === manifest.gitSha) {
+    return manifest.generatedAt
+  }
+  return undefined
+}
+
+function formatRelativeTime(iso: string, now = Date.now()): string {
+  const then = Date.parse(iso)
+  if (!Number.isFinite(then)) return 'unknown'
+  const deltaSec = Math.round((then - now) / 1000)
+  const abs = Math.abs(deltaSec)
+  const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' })
+  if (abs < 60) return rtf.format(deltaSec, 'second')
+  const deltaMin = Math.round(deltaSec / 60)
+  if (Math.abs(deltaMin) < 60) return rtf.format(deltaMin, 'minute')
+  const deltaHr = Math.round(deltaMin / 60)
+  if (Math.abs(deltaHr) < 48) return rtf.format(deltaHr, 'hour')
+  const deltaDay = Math.round(deltaHr / 24)
+  if (Math.abs(deltaDay) < 30) return rtf.format(deltaDay, 'day')
+  const deltaMonth = Math.round(deltaDay / 30)
+  if (Math.abs(deltaMonth) < 12) return rtf.format(deltaMonth, 'month')
+  return rtf.format(Math.round(deltaDay / 365), 'year')
+}
+
+function formatAbsoluteUtc(iso: string): string {
+  const d = new Date(iso)
+  if (!Number.isFinite(d.getTime())) return iso
+  return d.toISOString().replace('T', ' ').replace(/\.\d{3}Z$/, ' UTC')
+}
+
+/** Healthy PNG from an older Studdly SHA than the latest map run. */
+function isBehindLatest(frame: ScreenFrame, manifest: UiManifest): boolean {
+  if (frame.missing || frame.stale || !frame.lastSuccessSha) return false
+  return frame.lastSuccessSha !== manifest.gitSha
+}
 
 export function createUiMap(
   host: HTMLElement,
@@ -30,10 +74,12 @@ export function createUiMap(
   host.innerHTML = ''
   host.classList.add('shell')
 
-  const staleCount = manifest.screens.filter((s) => s.stale && !s.missing).length
+  const keptOldCount = manifest.screens.filter((s) => s.stale && !s.missing).length
   const missingCount = manifest.screens.filter((s) => s.missing).length
+  const behindCount = manifest.screens.filter((s) => isBehindLatest(s, manifest)).length
   const warnBits = [
-    staleCount > 0 ? `${staleCount} outdated` : '',
+    behindCount > 0 ? `${behindCount} behind` : '',
+    keptOldCount > 0 ? `${keptOldCount} kept old` : '',
     missingCount > 0 ? `${missingCount} missing` : '',
   ].filter(Boolean)
 
@@ -44,7 +90,7 @@ export function createUiMap(
       <h1>Studdly UI Map</h1>
       ${
         warnBits.length
-          ? `<p class="status-warn" title="Outdated = capture failed and an older PNG is shown. Missing = no PNG yet.">${warnBits.join(' · ')}</p>`
+          ? `<p class="status-warn" title="Behind = older successful capture than the latest map run. Kept old = capture failed and a previous PNG is shown. Missing = no PNG yet.">${warnBits.join(' · ')}</p>`
           : ''
       }
     </div>
@@ -247,7 +293,7 @@ export function createUiMap(
     if (chromeTimer != null) window.clearTimeout(chromeTimer)
     chromeTimer = window.setTimeout(() => {
       chromeTimer = null
-      if (viewport.querySelector('.open-btn:hover, .frame-filename:hover, .open-btn:focus-visible')) {
+      if (viewport.querySelector('.open-btn:hover, .frame-filename:hover, .frame-meta:hover, .open-btn:focus-visible, .frame-meta:focus-within')) {
         bumpChrome()
         return
       }
@@ -301,7 +347,11 @@ export function createUiMap(
   const onPointerDown = (e: PointerEvent) => {
     if (e.pointerType === 'mouse' && e.button !== 0) return
     const target = e.target as HTMLElement
-    if (target.closest('.open-btn') || target.closest('.frame-filename')) {
+    if (
+      target.closest('.open-btn') ||
+      target.closest('.frame-filename') ||
+      target.closest('.frame-meta')
+    ) {
       moved = false
       bumpChrome()
       return
@@ -442,6 +492,7 @@ export function createUiMap(
       if (!moved) return
       if ((e.target as HTMLElement).closest('.open-btn')) return
       if ((e.target as HTMLElement).closest('.frame-filename')) return
+      if ((e.target as HTMLElement).closest('.frame-meta')) return
       e.preventDefault()
       e.stopPropagation()
     },
@@ -606,6 +657,8 @@ function buildFrameCard(
     openPreview()
   })
 
+  const behind = isBehindLatest(frame, manifest)
+
   if (frame.stale || frame.missing) {
     card.classList.add('frame-stale')
     const badge = document.createElement('div')
@@ -614,14 +667,27 @@ function buildFrameCard(
       ? `Capture failed on ${frame.attemptSha || 'latest'}: ${frame.captureError}`
       : frame.missing
         ? 'No screenshot for this state yet'
-        : 'Capture failed on the latest commit'
+        : 'Capture failed on the latest commit; showing the last good shot'
     const label = document.createElement('span')
-    label.textContent = frame.missing ? 'Missing' : 'Outdated'
+    label.textContent = frame.missing ? 'Missing' : 'Kept old'
     const detail = document.createElement('span')
     detail.className = 'stale-detail'
     detail.textContent = frame.missing
       ? 'No screenshot yet'
-      : `Old build${frame.lastSuccessSha ? ` · ${frame.lastSuccessSha.slice(0, 7)}` : ''}`
+      : `Last good${frame.lastSuccessSha ? ` · ${shortSha(frame.lastSuccessSha)}` : ''}`
+    badge.append(label, detail)
+    card.appendChild(badge)
+  } else if (behind) {
+    card.classList.add('frame-behind')
+    const badge = document.createElement('div')
+    badge.className = 'stale-badge behind-badge'
+    badge.title =
+      'This PNG is from an older Studdly commit than the latest UI map run. Newer shots exist for other screens.'
+    const label = document.createElement('span')
+    label.textContent = 'Behind'
+    const detail = document.createElement('span')
+    detail.className = 'stale-detail'
+    detail.textContent = `from ${shortSha(frame.lastSuccessSha)}`
     badge.append(label, detail)
     card.appendChild(badge)
   }
@@ -636,6 +702,51 @@ function buildFrameCard(
 
   const cell = document.createElement('div')
   cell.className = 'frame-cell'
+
+  const meta = document.createElement('div')
+  meta.className = 'frame-meta'
+  const successAt = frameSuccessAt(frame, manifest)
+  const sha = shortSha(frame.lastSuccessSha)
+  const timeLabel = frame.missing
+    ? 'not captured'
+    : successAt
+      ? formatRelativeTime(successAt)
+      : sha
+        ? 'older commit'
+        : 'unknown'
+
+  const timeEl = document.createElement('span')
+  timeEl.className = 'frame-meta-time'
+  timeEl.textContent = timeLabel
+  if (successAt) {
+    timeEl.title = formatAbsoluteUtc(successAt)
+  }
+
+  meta.appendChild(timeEl)
+
+  if (sha) {
+    const sep = document.createElement('span')
+    sep.className = 'frame-meta-sep'
+    sep.textContent = ' · '
+    meta.appendChild(sep)
+
+    const shaLink = document.createElement('a')
+    shaLink.className = 'frame-meta-sha'
+    shaLink.href = `${STUDDLY_COMMIT_URL}/${frame.lastSuccessSha}`
+    shaLink.target = '_blank'
+    shaLink.rel = 'noopener noreferrer'
+    shaLink.textContent = sha
+    shaLink.title = `Capture from ${frame.lastSuccessSha} · Open commit`
+    shaLink.addEventListener('click', (e) => e.stopPropagation())
+    meta.appendChild(shaLink)
+  }
+
+  if (behind) {
+    meta.classList.add('frame-meta-behind')
+  } else if (frame.stale) {
+    meta.classList.add('frame-meta-stale')
+  }
+
   const filename = document.createElement('button')
   filename.type = 'button'
   filename.className = 'frame-filename'
@@ -646,7 +757,7 @@ function buildFrameCard(
     e.stopPropagation()
     openPreview()
   })
-  cell.append(card, filename)
+  cell.append(card, meta, filename)
   return cell
 }
 
