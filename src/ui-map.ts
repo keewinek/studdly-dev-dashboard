@@ -211,7 +211,7 @@ export function createUiMap(
   let moved = false
 
   // Tile chrome (Open + filename): only while the pointer is moving, then idle-hide.
-  const CHROME_IDLE_MS = 1400
+  const CHROME_IDLE_MS = 467
   let chromeTimer: number | null = null
   let lastChromeX = Number.NaN
   let lastChromeY = Number.NaN
