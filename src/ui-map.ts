@@ -20,7 +20,14 @@ interface Tile {
   activated: boolean
   /** True while a decode is in-flight or queued. */
   loading: boolean
+  /** True when the visible <img> is the full PNG (not the WebP thumb). */
+  hiRes: boolean
+  /** Background full-PNG upgrade in flight. */
+  upgrading: boolean
 }
+
+/** Above this visual zoom, load full PNGs so tiles stay sharp (156×1.5 ≈ thumb width). */
+const CRISP_ZOOM = 1.5
 
 const MIN_SCALE = 0.15
 const MAX_SCALE = 5
@@ -43,10 +50,10 @@ function frameAssetVersion(frame: ScreenFrame, manifest: UiManifest): string | u
 }
 
 /**
- * Map tiles always prefer WebP thumbs even if a pack race rewrote imageUrl → PNG.
- * Order: thumb → declared imageUrl → full PNG. Deduped.
+ * Map tiles prefer WebP thumbs for overview bandwidth.
+ * When preferFull (zoom ≳150%), try the full PNG first for sharpness.
  */
-function frameImageCandidates(frame: ScreenFrame): string[] {
+function frameImageCandidates(frame: ScreenFrame, preferFull = false): string[] {
   const thumb = `/screens/thumbs/${frame.id}.webp`
   const full = frame.fullImageUrl || `/screens/${frame.id}.png`
   const declared = frame.imageUrl
@@ -54,6 +61,15 @@ function frameImageCandidates(frame: ScreenFrame): string[] {
   const push = (u: string | undefined) => {
     if (!u || out.includes(u)) return
     out.push(u)
+  }
+  if (preferFull) {
+    push(full)
+    if (declared?.includes('/thumbs/')) push(declared)
+    else {
+      push(thumb)
+      push(declared)
+    }
+    return out
   }
   if (declared?.includes('/thumbs/')) {
     push(declared)
@@ -184,6 +200,7 @@ export function createUiMap(
   let lastLayoutWritten = -1
 
   const visualScale = () => state.layout * state.transient
+  const wantsCrisp = () => visualScale() >= CRISP_ZOOM
 
   const paintNow = () => {
     paintRaf = 0
@@ -197,6 +214,7 @@ export function createUiMap(
       world.style.setProperty('--ms', String(state.layout))
     }
     zoomLabel.textContent = `${Math.round(visualScale() * 100)}%`
+    if (wantsCrisp()) scheduleFullUpgrade()
   }
 
   const schedulePaint = () => {
@@ -206,10 +224,14 @@ export function createUiMap(
 
   /** Fold transient CSS scale into layout --ms (crisp settle). Translate stays put at origin 0,0. */
   const bakeTransient = () => {
-    if (state.transient === 1) return
+    if (state.transient === 1) {
+      if (wantsCrisp()) scheduleFullUpgrade()
+      return
+    }
     state.layout = Math.min(MAX_SCALE, Math.max(MIN_SCALE, state.layout * state.transient))
     state.transient = 1
     schedulePaint()
+    if (wantsCrisp()) scheduleFullUpgrade()
   }
 
   const scheduleBake = () => {
@@ -230,6 +252,7 @@ export function createUiMap(
   const MAX_CONCURRENT_IMAGES = 16
   let inFlightImages = 0
   const imageQueue: Tile[] = []
+  let upgradeRaf = 0
 
   const unloadTileImage = (tile: Tile) => {
     if (tile.frame.missing) return
@@ -245,10 +268,47 @@ export function createUiMap(
     tile.fallback.hidden = true
     tile.activated = false
     tile.loading = false
+    tile.hiRes = false
+    tile.upgrading = false
     if (wasLoading) {
       inFlightImages = Math.max(0, inFlightImages - 1)
       pumpImageQueue()
     }
+  }
+
+  /** Decode full PNGs off-thread and swap in when ready (no flash off the thumb). */
+  const upgradeVisibleToFull = () => {
+    for (const tile of tilesById.values()) {
+      if (!tile.activated || tile.hiRes || tile.upgrading || tile.frame.missing || tile.loading) {
+        continue
+      }
+      tile.upgrading = true
+      const version = frameAssetVersion(tile.frame, manifest)
+      const full = withAssetVersion(
+        tile.frame.fullImageUrl || `/screens/${tile.frame.id}.png`,
+        version,
+      )
+      const probe = new Image()
+      probe.decoding = 'async'
+      probe.onload = () => {
+        tile.upgrading = false
+        if (!tile.activated) return
+        tile.img.src = full
+        tile.hiRes = true
+      }
+      probe.onerror = () => {
+        tile.upgrading = false
+      }
+      probe.src = full
+    }
+  }
+
+  const scheduleFullUpgrade = () => {
+    if (upgradeRaf) return
+    upgradeRaf = requestAnimationFrame(() => {
+      upgradeRaf = 0
+      if (wantsCrisp()) upgradeVisibleToFull()
+    })
   }
 
   const pumpImageQueue = () => {
@@ -258,7 +318,10 @@ export function createUiMap(
       inFlightImages++
       tile.loading = true
       const version = frameAssetVersion(tile.frame, manifest)
-      const candidates = frameImageCandidates(tile.frame).map((u) => withAssetVersion(u, version))
+      const preferFull = wantsCrisp() || tile.hiRes
+      const candidates = frameImageCandidates(tile.frame, preferFull).map((u) =>
+        withAssetVersion(u, version),
+      )
       let candidateIdx = 0
       let attemptsOnCandidate = 0
 
@@ -267,6 +330,8 @@ export function createUiMap(
         tile.loading = false
         tile.img.onload = null
         tile.img.onerror = null
+        if (preferFull && tile.activated) tile.hiRes = true
+        else if (tile.activated && wantsCrisp()) scheduleFullUpgrade()
         pumpImageQueue()
       }
 
@@ -890,6 +955,8 @@ function buildFrameCard(
     frame,
     activated: !!frame.missing,
     loading: false,
+    hiRes: false,
+    upgrading: false,
   })
 
   cell.appendChild(card)
