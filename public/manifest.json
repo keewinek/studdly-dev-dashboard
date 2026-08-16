@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-08-16T20:44:00.048Z",
+  "generatedAt": "2026-08-16T20:45:44.566Z",
   "gitSha": "a67a4cc05cba",
   "appVersion": "preview-capture",
   "flutterPreviewBaseUrl": "/app/",
@@ -29155,16 +29155,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_language|default",
       "imageUrl": "/screens/thumbs/onboarding_language.default.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_language.default.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.167Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_language.default.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.516Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_language.other_highlighted.light.uk",
@@ -29180,16 +29180,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_language|other_highlighted",
       "imageUrl": "/screens/thumbs/onboarding_language.other_highlighted.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_language.other_highlighted.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.167Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_language.other_highlighted.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.516Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "language_picker.default.light.uk",
@@ -29205,16 +29205,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|default",
       "imageUrl": "/screens/thumbs/language_picker.default.light.uk.webp",
+      "fullImageUrl": "/screens/language_picker.default.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.167Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.default.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.516Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "language_picker.no_selection.light.uk",
@@ -29231,16 +29231,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|no_selection",
       "imageUrl": "/screens/thumbs/language_picker.no_selection.light.uk.webp",
+      "fullImageUrl": "/screens/language_picker.no_selection.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.167Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.no_selection.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "language_picker.search.light.uk",
@@ -29257,16 +29257,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|search",
       "imageUrl": "/screens/thumbs/language_picker.search.light.uk.webp",
+      "fullImageUrl": "/screens/language_picker.search.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.search.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "language_picker.search_empty.light.uk",
@@ -29284,16 +29284,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|search_empty",
       "imageUrl": "/screens/thumbs/language_picker.search_empty.light.uk.webp",
+      "fullImageUrl": "/screens/language_picker.search_empty.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.search_empty.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "language_picker.scrolled_mid.light.uk",
@@ -29310,16 +29310,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|scrolled_mid",
       "imageUrl": "/screens/thumbs/language_picker.scrolled_mid.light.uk.webp",
+      "fullImageUrl": "/screens/language_picker.scrolled_mid.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.scrolled_mid.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_q1.default.light.uk",
@@ -29334,17 +29334,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q1|default",
-      "imageUrl": "/screens/onboarding_dialogue_q1.default.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_q1.default.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q1.default.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q1.default.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_q1.option_selected.light.uk",
@@ -29360,16 +29360,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q1|option_selected",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q1.option_selected.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q1.option_selected.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q1.option_selected.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_q2.default.light.uk",
@@ -29384,17 +29384,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q2|default",
-      "imageUrl": "/screens/onboarding_dialogue_q2.default.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_q2.default.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q2.default.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q2.default.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_q2.option_selected.light.uk",
@@ -29409,17 +29409,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q2|option_selected",
-      "imageUrl": "/screens/onboarding_dialogue_q2.option_selected.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_q2.option_selected.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q2.option_selected.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q2.option_selected.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_q3.default.light.uk",
@@ -29434,17 +29434,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q3|default",
-      "imageUrl": "/screens/onboarding_dialogue_q3.default.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_q3.default.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q3.default.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q3.default.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_q3.option_selected.light.uk",
@@ -29459,17 +29459,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q3|option_selected",
-      "imageUrl": "/screens/onboarding_dialogue_q3.option_selected.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_q3.option_selected.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q3.option_selected.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q3.option_selected.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_name.empty.light.uk",
@@ -29485,17 +29485,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_name|empty",
-      "imageUrl": "/screens/onboarding_dialogue_name.empty.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_name.empty.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_name.empty.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_name.empty.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_name.filled.light.uk",
@@ -29510,17 +29510,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_name|filled",
-      "imageUrl": "/screens/onboarding_dialogue_name.filled.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_name.filled.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_name.filled.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_name.filled.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_google_ai_studio.light.uk",
@@ -29538,17 +29538,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_google_ai_studio",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_google_ai_studio.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_google_ai_studio.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_google_ai_studio.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_google_ai_studio.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_groq.light.uk",
@@ -29566,17 +29566,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_groq",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_groq.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_groq.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_groq.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_groq.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_cerebras.light.uk",
@@ -29594,17 +29594,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_cerebras",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_cerebras.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_cerebras.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_cerebras.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_cerebras.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.517Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_open_router.light.uk",
@@ -29622,17 +29622,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_open_router",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_open_router.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_open_router.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_open_router.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_open_router.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_openai.light.uk",
@@ -29650,17 +29650,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_openai",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_openai.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_openai.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_openai.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.168Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_openai.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_sambanova.light.uk",
@@ -29678,17 +29678,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_sambanova",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_sambanova.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_sambanova.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_sambanova.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_sambanova.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_mistral.light.uk",
@@ -29706,17 +29706,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_mistral",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_mistral.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_mistral.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_mistral.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_mistral.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_zai.light.uk",
@@ -29734,17 +29734,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_zai",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_zai.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_zai.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_zai.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_zai.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_google_ai_studio.light.uk",
@@ -29762,17 +29762,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_google_ai_studio",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_google_ai_studio.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_google_ai_studio.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_google_ai_studio.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_google_ai_studio.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_groq.light.uk",
@@ -29790,17 +29790,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_groq",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_groq.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_groq.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_groq.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_groq.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_cerebras.light.uk",
@@ -29818,17 +29818,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_cerebras",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_cerebras.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_cerebras.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_cerebras.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_cerebras.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_open_router.light.uk",
@@ -29846,17 +29846,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_open_router",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_open_router.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_open_router.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_open_router.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_open_router.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_openai.light.uk",
@@ -29874,17 +29874,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_openai",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_openai.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_openai.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_openai.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_openai.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_sambanova.light.uk",
@@ -29902,17 +29902,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_sambanova",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_sambanova.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_sambanova.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_sambanova.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_sambanova.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_mistral.light.uk",
@@ -29930,17 +29930,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_mistral",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_mistral.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_mistral.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_mistral.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_mistral.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_zai.light.uk",
@@ -29958,17 +29958,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_zai",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_zai.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_zai.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_zai.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_zai.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.testing.light.uk",
@@ -29986,16 +29986,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|testing",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.testing.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.testing.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.testing.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.error.light.uk",
@@ -30014,16 +30014,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|error",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.error.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.error.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.error.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.visible.light.uk",
@@ -30041,16 +30041,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|visible",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.visible.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.visible.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.visible.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.provider_dialog.light.uk",
@@ -30068,17 +30068,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|provider_dialog",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.provider_dialog.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.provider_dialog.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.provider_dialog.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.provider_dialog.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_easy.default.light.uk",
@@ -30093,17 +30093,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_easy|default",
-      "imageUrl": "/screens/onboarding_dialogue_easy.default.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_easy.default.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_easy.default.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_easy.default.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_final.default.light.uk",
@@ -30118,17 +30118,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_final|default",
-      "imageUrl": "/screens/onboarding_dialogue_final.default.light.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_final.default.light.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_final.default.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_final.default.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.518Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.empty.light.uk",
@@ -30145,16 +30145,16 @@
       "group": "Home",
       "compareKey": "home|empty",
       "imageUrl": "/screens/thumbs/home.empty.light.uk.webp",
+      "fullImageUrl": "/screens/home.empty.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.empty.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.ready.light.uk",
@@ -30170,16 +30170,16 @@
       "group": "Home",
       "compareKey": "home|ready",
       "imageUrl": "/screens/thumbs/home.ready.light.uk.webp",
+      "fullImageUrl": "/screens/home.ready.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.ready.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.ready_scrolled_mid.light.uk",
@@ -30196,16 +30196,16 @@
       "group": "Home",
       "compareKey": "home|ready_scrolled_mid",
       "imageUrl": "/screens/thumbs/home.ready_scrolled_mid.light.uk.webp",
+      "fullImageUrl": "/screens/home.ready_scrolled_mid.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.ready_scrolled_mid.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.ready_scrolled_bottom.light.uk",
@@ -30222,16 +30222,16 @@
       "group": "Home",
       "compareKey": "home|ready_scrolled_bottom",
       "imageUrl": "/screens/thumbs/home.ready_scrolled_bottom.light.uk.webp",
+      "fullImageUrl": "/screens/home.ready_scrolled_bottom.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.ready_scrolled_bottom.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.empty_ready.light.uk",
@@ -30248,16 +30248,16 @@
       "group": "Home",
       "compareKey": "home|empty_ready",
       "imageUrl": "/screens/thumbs/home.empty_ready.light.uk.webp",
+      "fullImageUrl": "/screens/home.empty_ready.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.empty_ready.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.partial_progress.light.uk",
@@ -30273,16 +30273,16 @@
       "group": "Home",
       "compareKey": "home|partial_progress",
       "imageUrl": "/screens/thumbs/home.partial_progress.light.uk.webp",
+      "fullImageUrl": "/screens/home.partial_progress.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.partial_progress.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.analyzing.light.uk",
@@ -30298,16 +30298,16 @@
       "group": "Home",
       "compareKey": "home|analyzing",
       "imageUrl": "/screens/thumbs/home.analyzing.light.uk.webp",
+      "fullImageUrl": "/screens/home.analyzing.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.169Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.analyzing.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.queued.light.uk",
@@ -30323,16 +30323,16 @@
       "group": "Home",
       "compareKey": "home|queued",
       "imageUrl": "/screens/thumbs/home.queued.light.uk.webp",
+      "fullImageUrl": "/screens/home.queued.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.queued.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.mixed_statuses.light.uk",
@@ -30348,16 +30348,16 @@
       "group": "Home",
       "compareKey": "home|mixed_statuses",
       "imageUrl": "/screens/thumbs/home.mixed_statuses.light.uk.webp",
+      "fullImageUrl": "/screens/home.mixed_statuses.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.mixed_statuses.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.mixed_scrolled_mid.light.uk",
@@ -30374,16 +30374,16 @@
       "group": "Home",
       "compareKey": "home|mixed_scrolled_mid",
       "imageUrl": "/screens/thumbs/home.mixed_scrolled_mid.light.uk.webp",
+      "fullImageUrl": "/screens/home.mixed_scrolled_mid.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.mixed_scrolled_mid.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.search_no_results.light.uk",
@@ -30401,16 +30401,16 @@
       "group": "Home",
       "compareKey": "home|search_no_results",
       "imageUrl": "/screens/thumbs/home.search_no_results.light.uk.webp",
+      "fullImageUrl": "/screens/home.search_no_results.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.search_no_results.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.context_menu.light.uk",
@@ -30427,16 +30427,16 @@
       "group": "Home",
       "compareKey": "home|context_menu",
       "imageUrl": "/screens/thumbs/home.context_menu.light.uk.webp",
+      "fullImageUrl": "/screens/home.context_menu.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.context_menu.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.rename.light.uk",
@@ -30452,16 +30452,16 @@
       "group": "Home",
       "compareKey": "home|rename",
       "imageUrl": "/screens/thumbs/home.rename.light.uk.webp",
+      "fullImageUrl": "/screens/home.rename.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.rename.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.delete_dialog.light.uk",
@@ -30478,16 +30478,16 @@
       "group": "Home",
       "compareKey": "home|delete_dialog",
       "imageUrl": "/screens/thumbs/home.delete_dialog.light.uk.webp",
+      "fullImageUrl": "/screens/home.delete_dialog.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.delete_dialog.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.empty.light.uk",
@@ -30504,16 +30504,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|empty",
       "imageUrl": "/screens/thumbs/create_topic.empty.light.uk.webp",
+      "fullImageUrl": "/screens/create_topic.empty.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.empty.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.title_only.light.uk",
@@ -30529,16 +30529,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|title_only",
       "imageUrl": "/screens/thumbs/create_topic.title_only.light.uk.webp",
+      "fullImageUrl": "/screens/create_topic.title_only.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.title_only.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.with_pages.light.uk",
@@ -30554,16 +30554,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|with_pages",
       "imageUrl": "/screens/thumbs/create_topic.with_pages.light.uk.webp",
+      "fullImageUrl": "/screens/create_topic.with_pages.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.with_pages.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.pages_one.light.uk",
@@ -30579,16 +30579,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|pages_one",
       "imageUrl": "/screens/thumbs/create_topic.pages_one.light.uk.webp",
+      "fullImageUrl": "/screens/create_topic.pages_one.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.pages_one.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.ocr.light.uk",
@@ -30604,16 +30604,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|ocr",
       "imageUrl": "/screens/thumbs/create_topic.ocr.light.uk.webp",
+      "fullImageUrl": "/screens/create_topic.ocr.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.ocr.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.ocr_start.light.uk",
@@ -30629,16 +30629,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|ocr_start",
       "imageUrl": "/screens/thumbs/create_topic.ocr_start.light.uk.webp",
+      "fullImageUrl": "/screens/create_topic.ocr_start.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.ocr_start.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.519Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.creating.light.uk",
@@ -30654,16 +30654,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|creating",
       "imageUrl": "/screens/thumbs/create_topic.creating.light.uk.webp",
+      "fullImageUrl": "/screens/create_topic.creating.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.creating.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.pages_many_scrolled_mid.light.uk",
@@ -30680,16 +30680,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|pages_many_scrolled_mid",
       "imageUrl": "/screens/thumbs/create_topic.pages_many_scrolled_mid.light.uk.webp",
+      "fullImageUrl": "/screens/create_topic.pages_many_scrolled_mid.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.pages_many_scrolled_mid.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.advancement_open.light.uk",
@@ -30705,16 +30705,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|advancement_open",
       "imageUrl": "/screens/thumbs/create_topic.advancement_open.light.uk.webp",
+      "fullImageUrl": "/screens/create_topic.advancement_open.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.advancement_open.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.permission_dialog.light.uk",
@@ -30731,16 +30731,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|permission_dialog",
       "imageUrl": "/screens/thumbs/create_topic.permission_dialog.light.uk.webp",
+      "fullImageUrl": "/screens/create_topic.permission_dialog.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.permission_dialog.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.suggested_title_dialog.light.uk",
@@ -30757,16 +30757,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|suggested_title_dialog",
       "imageUrl": "/screens/thumbs/create_topic.suggested_title_dialog.light.uk.webp",
+      "fullImageUrl": "/screens/create_topic.suggested_title_dialog.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.suggested_title_dialog.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.add_page_sheet.light.uk",
@@ -30782,17 +30782,17 @@
       ],
       "group": "Create Topic",
       "compareKey": "create_topic|add_page_sheet",
-      "imageUrl": "/screens/create_topic.add_page_sheet.light.uk.png",
+      "imageUrl": "/screens/thumbs/create_topic.add_page_sheet.light.uk.webp",
+      "fullImageUrl": "/screens/create_topic.add_page_sheet.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.add_page_sheet.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.empty.light.uk",
@@ -30809,16 +30809,16 @@
       "group": "Learning",
       "compareKey": "topic_path|empty",
       "imageUrl": "/screens/thumbs/topic_path.empty.light.uk.webp",
+      "fullImageUrl": "/screens/topic_path.empty.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.empty.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.partial.light.uk",
@@ -30834,16 +30834,16 @@
       "group": "Learning",
       "compareKey": "topic_path|partial",
       "imageUrl": "/screens/thumbs/topic_path.partial.light.uk.webp",
+      "fullImageUrl": "/screens/topic_path.partial.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.partial.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.ready.light.uk",
@@ -30859,16 +30859,16 @@
       "group": "Learning",
       "compareKey": "topic_path|ready",
       "imageUrl": "/screens/thumbs/topic_path.ready.light.uk.webp",
+      "fullImageUrl": "/screens/topic_path.ready.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.ready.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.expanded.light.uk",
@@ -30884,16 +30884,16 @@
       "group": "Learning",
       "compareKey": "topic_path|expanded",
       "imageUrl": "/screens/thumbs/topic_path.expanded.light.uk.webp",
+      "fullImageUrl": "/screens/topic_path.expanded.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.expanded.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.completed_nodes.light.uk",
@@ -30909,16 +30909,16 @@
       "group": "Learning",
       "compareKey": "topic_path|completed_nodes",
       "imageUrl": "/screens/thumbs/topic_path.completed_nodes.light.uk.webp",
+      "fullImageUrl": "/screens/topic_path.completed_nodes.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.completed_nodes.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.completed_nodes_expanded.light.uk",
@@ -30934,16 +30934,16 @@
       "group": "Learning",
       "compareKey": "topic_path|completed_nodes_expanded",
       "imageUrl": "/screens/thumbs/topic_path.completed_nodes_expanded.light.uk.webp",
+      "fullImageUrl": "/screens/topic_path.completed_nodes_expanded.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.170Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.completed_nodes_expanded.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.analyzing_with_path.light.uk",
@@ -30959,16 +30959,16 @@
       "group": "Learning",
       "compareKey": "topic_path|analyzing_with_path",
       "imageUrl": "/screens/thumbs/topic_path.analyzing_with_path.light.uk.webp",
+      "fullImageUrl": "/screens/topic_path.analyzing_with_path.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.analyzing_with_path.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.scrolled.light.uk",
@@ -30985,16 +30985,16 @@
       "group": "Learning",
       "compareKey": "topic_path|scrolled",
       "imageUrl": "/screens/thumbs/topic_path.scrolled.light.uk.webp",
+      "fullImageUrl": "/screens/topic_path.scrolled.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.scrolled.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.ready_scrolled_bottom.light.uk",
@@ -31011,16 +31011,16 @@
       "group": "Learning",
       "compareKey": "topic_path|ready_scrolled_bottom",
       "imageUrl": "/screens/thumbs/topic_path.ready_scrolled_bottom.light.uk.webp",
+      "fullImageUrl": "/screens/topic_path.ready_scrolled_bottom.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.ready_scrolled_bottom.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.empty_content_dialog.light.uk",
@@ -31037,16 +31037,16 @@
       "group": "Learning",
       "compareKey": "topic_path|empty_content_dialog",
       "imageUrl": "/screens/thumbs/topic_path.empty_content_dialog.light.uk.webp",
+      "fullImageUrl": "/screens/topic_path.empty_content_dialog.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.empty_content_dialog.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "read_text.quiz_disabled.light.uk",
@@ -31062,16 +31062,16 @@
       "group": "Learning",
       "compareKey": "read_text|quiz_disabled",
       "imageUrl": "/screens/thumbs/read_text.quiz_disabled.light.uk.webp",
+      "fullImageUrl": "/screens/read_text.quiz_disabled.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.quiz_disabled.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "read_text.quiz_enabled.light.uk",
@@ -31087,16 +31087,16 @@
       "group": "Learning",
       "compareKey": "read_text|quiz_enabled",
       "imageUrl": "/screens/thumbs/read_text.quiz_enabled.light.uk.webp",
+      "fullImageUrl": "/screens/read_text.quiz_enabled.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.quiz_enabled.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "read_text.empty_content.light.uk",
@@ -31113,16 +31113,16 @@
       "group": "Learning",
       "compareKey": "read_text|empty_content",
       "imageUrl": "/screens/thumbs/read_text.empty_content.light.uk.webp",
+      "fullImageUrl": "/screens/read_text.empty_content.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.empty_content.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "read_text.reading_aloud.light.uk",
@@ -31138,16 +31138,16 @@
       "group": "Learning",
       "compareKey": "read_text|reading_aloud",
       "imageUrl": "/screens/thumbs/read_text.reading_aloud.light.uk.webp",
+      "fullImageUrl": "/screens/read_text.reading_aloud.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.reading_aloud.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "read_text.scrolled.light.uk",
@@ -31164,16 +31164,16 @@
       "group": "Learning",
       "compareKey": "read_text|scrolled",
       "imageUrl": "/screens/thumbs/read_text.scrolled.light.uk.webp",
+      "fullImageUrl": "/screens/read_text.scrolled.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.scrolled.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.520Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "read_text.scrolled_bottom.light.uk",
@@ -31190,16 +31190,16 @@
       "group": "Learning",
       "compareKey": "read_text|scrolled_bottom",
       "imageUrl": "/screens/thumbs/read_text.scrolled_bottom.light.uk.webp",
+      "fullImageUrl": "/screens/read_text.scrolled_bottom.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.scrolled_bottom.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.unanswered.light.uk",
@@ -31215,16 +31215,16 @@
       "group": "Quiz",
       "compareKey": "quiz|unanswered",
       "imageUrl": "/screens/thumbs/quiz.unanswered.light.uk.webp",
+      "fullImageUrl": "/screens/quiz.unanswered.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.unanswered.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.correct.light.uk",
@@ -31240,16 +31240,16 @@
       "group": "Quiz",
       "compareKey": "quiz|correct",
       "imageUrl": "/screens/thumbs/quiz.correct.light.uk.webp",
+      "fullImageUrl": "/screens/quiz.correct.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.correct.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.wrong.light.uk",
@@ -31265,16 +31265,16 @@
       "group": "Quiz",
       "compareKey": "quiz|wrong",
       "imageUrl": "/screens/thumbs/quiz.wrong.light.uk.webp",
+      "fullImageUrl": "/screens/quiz.wrong.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.wrong.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.wrong_with_cta.light.uk",
@@ -31290,16 +31290,16 @@
       "group": "Quiz",
       "compareKey": "quiz|wrong_with_cta",
       "imageUrl": "/screens/thumbs/quiz.wrong_with_cta.light.uk.webp",
+      "fullImageUrl": "/screens/quiz.wrong_with_cta.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.wrong_with_cta.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.completed.light.uk",
@@ -31315,16 +31315,16 @@
       "group": "Quiz",
       "compareKey": "quiz|completed",
       "imageUrl": "/screens/thumbs/quiz.completed.light.uk.webp",
+      "fullImageUrl": "/screens/quiz.completed.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.completed.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.mid_progress.light.uk",
@@ -31340,16 +31340,16 @@
       "group": "Quiz",
       "compareKey": "quiz|mid_progress",
       "imageUrl": "/screens/thumbs/quiz.mid_progress.light.uk.webp",
+      "fullImageUrl": "/screens/quiz.mid_progress.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.mid_progress.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.mid_progress_wrong_with_cta.light.uk",
@@ -31365,16 +31365,16 @@
       "group": "Quiz",
       "compareKey": "quiz|mid_progress_wrong_with_cta",
       "imageUrl": "/screens/thumbs/quiz.mid_progress_wrong_with_cta.light.uk.webp",
+      "fullImageUrl": "/screens/quiz.mid_progress_wrong_with_cta.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.mid_progress_wrong_with_cta.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.revision.light.uk",
@@ -31390,16 +31390,16 @@
       "group": "Quiz",
       "compareKey": "quiz|revision",
       "imageUrl": "/screens/thumbs/quiz.revision.light.uk.webp",
+      "fullImageUrl": "/screens/quiz.revision.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.revision.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.revision_wrong.light.uk",
@@ -31415,16 +31415,16 @@
       "group": "Quiz",
       "compareKey": "quiz|revision_wrong",
       "imageUrl": "/screens/thumbs/quiz.revision_wrong.light.uk.webp",
+      "fullImageUrl": "/screens/quiz.revision_wrong.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.revision_wrong.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.no_questions.light.uk",
@@ -31441,16 +31441,16 @@
       "group": "Quiz",
       "compareKey": "quiz|no_questions",
       "imageUrl": "/screens/thumbs/quiz.no_questions.light.uk.webp",
+      "fullImageUrl": "/screens/quiz.no_questions.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.no_questions.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.long_options.light.uk",
@@ -31466,16 +31466,16 @@
       "group": "Quiz",
       "compareKey": "quiz|long_options",
       "imageUrl": "/screens/thumbs/quiz.long_options.light.uk.webp",
+      "fullImageUrl": "/screens/quiz.long_options.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.long_options.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.long_options_scrolled_mid.light.uk",
@@ -31492,16 +31492,16 @@
       "group": "Quiz",
       "compareKey": "quiz|long_options_scrolled_mid",
       "imageUrl": "/screens/thumbs/quiz.long_options_scrolled_mid.light.uk.webp",
+      "fullImageUrl": "/screens/quiz.long_options_scrolled_mid.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.long_options_scrolled_mid.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "ai_analysis.analyzing_start.light.uk",
@@ -31516,17 +31516,17 @@
       ],
       "group": "Learning",
       "compareKey": "ai_analysis|analyzing_start",
-      "imageUrl": "/screens/ai_analysis.analyzing_start.light.uk.png",
+      "imageUrl": "/screens/thumbs/ai_analysis.analyzing_start.light.uk.webp",
+      "fullImageUrl": "/screens/ai_analysis.analyzing_start.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_analysis.analyzing_start.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "ai_analysis.analyzing_mid.light.uk",
@@ -31541,17 +31541,17 @@
       ],
       "group": "Learning",
       "compareKey": "ai_analysis|analyzing_mid",
-      "imageUrl": "/screens/ai_analysis.analyzing_mid.light.uk.png",
+      "imageUrl": "/screens/thumbs/ai_analysis.analyzing_mid.light.uk.webp",
+      "fullImageUrl": "/screens/ai_analysis.analyzing_mid.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_analysis.analyzing_mid.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "download_prompt.default.light.uk",
@@ -31566,17 +31566,17 @@
       ],
       "group": "System",
       "compareKey": "download_prompt|default",
-      "imageUrl": "/screens/download_prompt.default.light.uk.png",
+      "imageUrl": "/screens/thumbs/download_prompt.default.light.uk.webp",
+      "fullImageUrl": "/screens/download_prompt.default.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/download_prompt.default.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.default.light.uk",
@@ -31592,16 +31592,16 @@
       "group": "Settings",
       "compareKey": "settings|default",
       "imageUrl": "/screens/thumbs/settings.default.light.uk.webp",
+      "fullImageUrl": "/screens/settings.default.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.171Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.default.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.no_api_key.light.uk",
@@ -31619,16 +31619,16 @@
       "group": "Settings",
       "compareKey": "settings|no_api_key",
       "imageUrl": "/screens/thumbs/settings.no_api_key.light.uk.webp",
+      "fullImageUrl": "/screens/settings.no_api_key.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.no_api_key.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.key_visible.light.uk",
@@ -31645,16 +31645,16 @@
       "group": "Settings",
       "compareKey": "settings|key_visible",
       "imageUrl": "/screens/thumbs/settings.key_visible.light.uk.webp",
+      "fullImageUrl": "/screens/settings.key_visible.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.key_visible.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.sound_muted.light.uk",
@@ -31670,16 +31670,16 @@
       "group": "Settings",
       "compareKey": "settings|sound_muted",
       "imageUrl": "/screens/thumbs/settings.sound_muted.light.uk.webp",
+      "fullImageUrl": "/screens/settings.sound_muted.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.sound_muted.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.521Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.scrolled_mid.light.uk",
@@ -31695,17 +31695,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|scrolled_mid",
-      "imageUrl": "/screens/settings.scrolled_mid.light.uk.png",
+      "imageUrl": "/screens/thumbs/settings.scrolled_mid.light.uk.webp",
+      "fullImageUrl": "/screens/settings.scrolled_mid.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.scrolled_mid.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.scrolled_bottom.light.uk",
@@ -31722,16 +31722,16 @@
       "group": "Settings",
       "compareKey": "settings|scrolled_bottom",
       "imageUrl": "/screens/thumbs/settings.scrolled_bottom.light.uk.webp",
+      "fullImageUrl": "/screens/settings.scrolled_bottom.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.scrolled_bottom.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_google_ai_studio.light.uk",
@@ -31747,17 +31747,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_google_ai_studio",
-      "imageUrl": "/screens/settings.provider_google_ai_studio.light.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_google_ai_studio.light.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_google_ai_studio.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_google_ai_studio.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_groq.light.uk",
@@ -31773,17 +31773,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_groq",
-      "imageUrl": "/screens/settings.provider_groq.light.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_groq.light.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_groq.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_groq.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_cerebras.light.uk",
@@ -31799,17 +31799,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_cerebras",
-      "imageUrl": "/screens/settings.provider_cerebras.light.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_cerebras.light.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_cerebras.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_cerebras.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_open_router.light.uk",
@@ -31825,17 +31825,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_open_router",
-      "imageUrl": "/screens/settings.provider_open_router.light.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_open_router.light.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_open_router.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_open_router.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_openai.light.uk",
@@ -31851,17 +31851,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_openai",
-      "imageUrl": "/screens/settings.provider_openai.light.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_openai.light.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_openai.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_openai.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_sambanova.light.uk",
@@ -31877,17 +31877,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_sambanova",
-      "imageUrl": "/screens/settings.provider_sambanova.light.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_sambanova.light.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_sambanova.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_sambanova.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_mistral.light.uk",
@@ -31903,17 +31903,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_mistral",
-      "imageUrl": "/screens/settings.provider_mistral.light.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_mistral.light.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_mistral.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_mistral.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_zai.light.uk",
@@ -31929,17 +31929,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_zai",
-      "imageUrl": "/screens/settings.provider_zai.light.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_zai.light.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_zai.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_zai.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "ai_provider_dialog.default.light.uk",
@@ -31956,17 +31956,17 @@
       ],
       "group": "Settings",
       "compareKey": "ai_provider_dialog|default",
-      "imageUrl": "/screens/ai_provider_dialog.default.light.uk.png",
+      "imageUrl": "/screens/thumbs/ai_provider_dialog.default.light.uk.webp",
+      "fullImageUrl": "/screens/ai_provider_dialog.default.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_provider_dialog.default.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "ai_provider_dialog.scrolled_mid.light.uk",
@@ -31984,17 +31984,17 @@
       ],
       "group": "Settings",
       "compareKey": "ai_provider_dialog|scrolled_mid",
-      "imageUrl": "/screens/ai_provider_dialog.scrolled_mid.light.uk.png",
+      "imageUrl": "/screens/thumbs/ai_provider_dialog.scrolled_mid.light.uk.webp",
+      "fullImageUrl": "/screens/ai_provider_dialog.scrolled_mid.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_provider_dialog.scrolled_mid.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "logs.empty.light.uk",
@@ -32011,17 +32011,17 @@
       ],
       "group": "Settings",
       "compareKey": "logs|empty",
-      "imageUrl": "/screens/logs.empty.light.uk.png",
+      "imageUrl": "/screens/thumbs/logs.empty.light.uk.webp",
+      "fullImageUrl": "/screens/logs.empty.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/logs.empty.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "logs.with_entries.light.uk",
@@ -32037,17 +32037,17 @@
       ],
       "group": "Settings",
       "compareKey": "logs|with_entries",
-      "imageUrl": "/screens/logs.with_entries.light.uk.png",
+      "imageUrl": "/screens/thumbs/logs.with_entries.light.uk.webp",
+      "fullImageUrl": "/screens/logs.with_entries.light.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:32:08.172Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/logs.with_entries.light.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:45:44.522Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_language.default.dark.uk",
