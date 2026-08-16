@@ -95,6 +95,7 @@
   "searchTopic": "Шукай свою тему",
   "emptyState": "Тут трохи порожньо.",
   "createFirstTopic": "Створи свою першу тему.",
+  "searchNoResults": "Шукали за горами і за лісами, нічого не знайшли.",
   "page": "сторінка",
   "selectPagesFromPDF": "Вибери сторінки з PDF",
   "selectedPages": "Вибрано: {count} сторінок",

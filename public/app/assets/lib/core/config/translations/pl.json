@@ -122,6 +122,7 @@
   "searchTopic": "Wyszukaj wsród swoich tematów",
   "emptyState": "Jest tu trochę pusto.",
   "createFirstTopic": "Utwórz swój pierwszy temat.",
+  "searchNoResults": "Szukaliśmy za górami i za lasami, nic nie znaleźliśmy.",
   "page": "strona",
   "selectPagesFromPDF": "Wybierz strony z PDF",
   "selectedPages": "Wybrano: {count} stron",

@@ -95,6 +95,7 @@
   "searchTopic": "Suche dein Thema",
   "emptyState": "Hier ist es etwas leer.",
   "createFirstTopic": "Erstelle dein erstes Thema.",
+  "searchNoResults": "Wir haben hinter den sieben Bergen gesucht und nichts gefunden.",
   "page": "Seite",
   "selectPagesFromPDF": "Seiten aus PDF auswählen",
   "selectedPages": "Ausgewählt: {count} Seiten",

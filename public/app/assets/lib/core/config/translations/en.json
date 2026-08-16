@@ -122,6 +122,7 @@
   "searchTopic": "Search your topic",
   "emptyState": "It's a bit empty here.",
   "createFirstTopic": "Create your first topic.",
+  "searchNoResults": "We searched high and low, and found nothing.",
   "page": "page",
   "selectPagesFromPDF": "Select pages from PDF",
   "selectedPages": "Selected: {count} pages",

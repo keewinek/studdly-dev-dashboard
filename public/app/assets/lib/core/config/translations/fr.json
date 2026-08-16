@@ -95,6 +95,7 @@
   "searchTopic": "Recherche ton sujet",
   "emptyState": "C'est un peu vide ici.",
   "createFirstTopic": "Crée ton premier sujet.",
+  "searchNoResults": "On a cherché par monts et par vaux, et on n'a rien trouvé.",
   "page": "page",
   "selectPagesFromPDF": "Sélectionne des pages du PDF",
   "selectedPages": "Sélectionnées : {count} pages",

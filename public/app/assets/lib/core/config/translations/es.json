@@ -95,6 +95,7 @@
   "searchTopic": "Busca tu tema",
   "emptyState": "Esto está un poco vacío.",
   "createFirstTopic": "Crea tu primer tema.",
+  "searchNoResults": "Buscamos detrás de las montañas y los bosques y no encontramos nada.",
   "page": "página",
   "selectPagesFromPDF": "Selecciona páginas del PDF",
   "selectedPages": "Seleccionadas: {count} páginas",
