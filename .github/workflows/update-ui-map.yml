@@ -120,15 +120,28 @@ jobs:
           rm -rf /tmp/ui-preview-root
           mkdir -p /tmp/ui-preview-root/app
           rsync -a --delete public/app/ /tmp/ui-preview-root/app/
-          python3 -m http.server 7360 --directory /tmp/ui-preview-root >/tmp/preview-server.log 2>&1 &
+          python3 -m http.server 7360 --bind 127.0.0.1 --directory /tmp/ui-preview-root >/tmp/preview-server.log 2>&1 &
           echo $! > /tmp/preview-server.pid
+          ready=0
           for i in $(seq 1 30); do
-            if curl -fsS "http://127.0.0.1:7360/app/" >/dev/null; then
+            if curl -fsS "http://127.0.0.1:7360/app/" >/dev/null 2>/dev/null; then
+              ready=1
+              break
+            fi
+            # Bail early if the server process already died.
+            if ! kill -0 "$(cat /tmp/preview-server.pid)" 2>/dev/null; then
               break
             fi
             sleep 1
           done
-          curl -fsS "http://127.0.0.1:7360/app/" >/dev/null
+          if [ "$ready" -ne 1 ]; then
+            echo "::error::Preview server on :7360 never became ready"
+            echo "--- preview-server.log ---"
+            cat /tmp/preview-server.log || true
+            echo "--- /tmp/ui-preview-root ---"
+            ls -la /tmp/ui-preview-root /tmp/ui-preview-root/app || true
+            exit 1
+          fi
 
           PREVIEW_BASE=http://127.0.0.1:7360/app/ \
             node --experimental-strip-types scripts/capture-screenshots.mjs

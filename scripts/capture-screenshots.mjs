@@ -233,7 +233,8 @@ async function commitAndPushPack(packLabel) {
       cwd: root,
       stdio: 'inherit',
     },
-  )  const porcelain = execSync('git status --porcelain', { cwd: root, encoding: 'utf8' }).trim()
+  )
+  const porcelain = execSync('git status --porcelain', { cwd: root, encoding: 'utf8' }).trim()
   if (!porcelain) {
     console.log(`[pack ${packLabel}] nothing new to commit`)
     return
@@ -260,7 +261,8 @@ async function commitAndPushPack(packLabel) {
         execSync(
           'git add public/screens public/manifest.json public/capture-report.json public/preview_catalog.json src/preview_catalog.json',
           { cwd: root, stdio: 'inherit' },
-        )        execSync('git rebase --continue', {
+        )
+        execSync('git rebase --continue', {
           cwd: root,
           stdio: 'inherit',
           env: { ...process.env, GIT_EDITOR: 'true' },
