@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-08-16T19:17:07.064Z",
+  "generatedAt": "2026-08-16T19:19:03.457Z",
   "gitSha": "b91b00e1c467",
   "appVersion": "preview-capture",
   "flutterPreviewBaseUrl": "/app/",
@@ -14615,16 +14615,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_language|default",
       "imageUrl": "/screens/thumbs/onboarding_language.default.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_language.default.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.816Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_language.default.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.394Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_language.other_highlighted.dark.es",
@@ -14640,16 +14640,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_language|other_highlighted",
       "imageUrl": "/screens/thumbs/onboarding_language.other_highlighted.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_language.other_highlighted.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.816Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_language.other_highlighted.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.395Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "language_picker.default.dark.es",
@@ -14665,16 +14665,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|default",
       "imageUrl": "/screens/thumbs/language_picker.default.dark.es.webp",
+      "fullImageUrl": "/screens/language_picker.default.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.default.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.395Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "language_picker.no_selection.dark.es",
@@ -14691,16 +14691,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|no_selection",
       "imageUrl": "/screens/thumbs/language_picker.no_selection.dark.es.webp",
+      "fullImageUrl": "/screens/language_picker.no_selection.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.no_selection.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.395Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "language_picker.search.dark.es",
@@ -14717,16 +14717,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|search",
       "imageUrl": "/screens/thumbs/language_picker.search.dark.es.webp",
+      "fullImageUrl": "/screens/language_picker.search.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.search.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.395Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "language_picker.search_empty.dark.es",
@@ -14744,16 +14744,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|search_empty",
       "imageUrl": "/screens/thumbs/language_picker.search_empty.dark.es.webp",
+      "fullImageUrl": "/screens/language_picker.search_empty.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.search_empty.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.395Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "language_picker.scrolled_mid.dark.es",
@@ -14770,16 +14770,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|scrolled_mid",
       "imageUrl": "/screens/thumbs/language_picker.scrolled_mid.dark.es.webp",
+      "fullImageUrl": "/screens/language_picker.scrolled_mid.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.scrolled_mid.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.395Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_q1.default.dark.es",
@@ -14795,16 +14795,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q1|default",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q1.default.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q1.default.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q1.default.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.395Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_q1.option_selected.dark.es",
@@ -14820,16 +14820,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q1|option_selected",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q1.option_selected.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q1.option_selected.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q1.option_selected.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.395Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_q2.default.dark.es",
@@ -14845,16 +14845,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q2|default",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q2.default.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q2.default.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q2.default.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.395Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_q2.option_selected.dark.es",
@@ -14870,16 +14870,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q2|option_selected",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q2.option_selected.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q2.option_selected.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q2.option_selected.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.395Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_q3.default.dark.es",
@@ -14895,16 +14895,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q3|default",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q3.default.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q3.default.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q3.default.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.395Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_q3.option_selected.dark.es",
@@ -14920,16 +14920,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q3|option_selected",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q3.option_selected.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q3.option_selected.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q3.option_selected.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.395Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_name.empty.dark.es",
@@ -14946,16 +14946,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_name|empty",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_name.empty.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_name.empty.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_name.empty.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_name.filled.dark.es",
@@ -14971,16 +14971,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_name|filled",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_name.filled.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_name.filled.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.817Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_name.filled.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_video.video_google_ai_studio.dark.es",
@@ -14999,16 +14999,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_google_ai_studio",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_google_ai_studio.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_google_ai_studio.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.820Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_google_ai_studio.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_video.video_groq.dark.es",
@@ -15027,16 +15027,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_groq",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_groq.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_groq.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.821Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_groq.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_video.video_cerebras.dark.es",
@@ -15055,16 +15055,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_cerebras",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_cerebras.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_cerebras.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.823Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_cerebras.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_video.video_open_router.dark.es",
@@ -15083,16 +15083,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_open_router",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_open_router.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_open_router.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.826Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_open_router.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_video.video_openai.dark.es",
@@ -15111,16 +15111,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_openai",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_openai.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_openai.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.826Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_openai.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_video.video_sambanova.dark.es",
@@ -15139,16 +15139,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_sambanova",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_sambanova.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_sambanova.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.828Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_sambanova.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_video.video_mistral.dark.es",
@@ -15167,16 +15167,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_mistral",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_mistral.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_mistral.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.828Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_mistral.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_video.video_zai.dark.es",
@@ -15195,16 +15195,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_zai",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_zai.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_zai.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.828Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_zai.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_google_ai_studio.dark.es",
@@ -15223,16 +15223,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_google_ai_studio",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_google_ai_studio.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_google_ai_studio.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.831Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_google_ai_studio.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_groq.dark.es",
@@ -15251,16 +15251,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_groq",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_groq.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_groq.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.831Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_groq.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_cerebras.dark.es",
@@ -15279,16 +15279,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_cerebras",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_cerebras.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_cerebras.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.831Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_cerebras.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.396Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_open_router.dark.es",
@@ -15307,16 +15307,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_open_router",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_open_router.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_open_router.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.831Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_open_router.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_openai.dark.es",
@@ -15335,16 +15335,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_openai",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_openai.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_openai.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.831Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_openai.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_sambanova.dark.es",
@@ -15363,16 +15363,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_sambanova",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_sambanova.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_sambanova.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.831Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_sambanova.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_mistral.dark.es",
@@ -15391,16 +15391,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_mistral",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_mistral.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_mistral.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.831Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_mistral.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_zai.dark.es",
@@ -15419,16 +15419,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_zai",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_zai.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_zai.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.831Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_zai.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_api_key.testing.dark.es",
@@ -15446,16 +15446,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|testing",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.testing.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.testing.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.832Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.testing.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_api_key.error.dark.es",
@@ -15474,16 +15474,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|error",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.error.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.error.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.832Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.error.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_api_key.visible.dark.es",
@@ -15501,16 +15501,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|visible",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.visible.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.visible.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.832Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.visible.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_api_key.provider_dialog.dark.es",
@@ -15529,16 +15529,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|provider_dialog",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.provider_dialog.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.provider_dialog.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.832Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.provider_dialog.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_easy.default.dark.es",
@@ -15554,16 +15554,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_easy|default",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_easy.default.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_easy.default.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.832Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_easy.default.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_dialogue_final.default.dark.es",
@@ -15579,16 +15579,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_final|default",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_final.default.dark.es.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_final.default.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.832Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_final.default.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.empty.dark.es",
@@ -15605,16 +15605,16 @@
       "group": "Home",
       "compareKey": "home|empty",
       "imageUrl": "/screens/thumbs/home.empty.dark.es.webp",
+      "fullImageUrl": "/screens/home.empty.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.832Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.empty.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.ready.dark.es",
@@ -15630,16 +15630,16 @@
       "group": "Home",
       "compareKey": "home|ready",
       "imageUrl": "/screens/thumbs/home.ready.dark.es.webp",
+      "fullImageUrl": "/screens/home.ready.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.832Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.ready.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.ready_scrolled_mid.dark.es",
@@ -15656,16 +15656,16 @@
       "group": "Home",
       "compareKey": "home|ready_scrolled_mid",
       "imageUrl": "/screens/thumbs/home.ready_scrolled_mid.dark.es.webp",
+      "fullImageUrl": "/screens/home.ready_scrolled_mid.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.832Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.ready_scrolled_mid.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.397Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.ready_scrolled_bottom.dark.es",
@@ -15682,16 +15682,16 @@
       "group": "Home",
       "compareKey": "home|ready_scrolled_bottom",
       "imageUrl": "/screens/thumbs/home.ready_scrolled_bottom.dark.es.webp",
+      "fullImageUrl": "/screens/home.ready_scrolled_bottom.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.833Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.ready_scrolled_bottom.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.empty_ready.dark.es",
@@ -15708,16 +15708,16 @@
       "group": "Home",
       "compareKey": "home|empty_ready",
       "imageUrl": "/screens/thumbs/home.empty_ready.dark.es.webp",
+      "fullImageUrl": "/screens/home.empty_ready.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.833Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.empty_ready.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.partial_progress.dark.es",
@@ -15733,16 +15733,16 @@
       "group": "Home",
       "compareKey": "home|partial_progress",
       "imageUrl": "/screens/thumbs/home.partial_progress.dark.es.webp",
+      "fullImageUrl": "/screens/home.partial_progress.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.833Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.partial_progress.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.analyzing.dark.es",
@@ -15758,16 +15758,16 @@
       "group": "Home",
       "compareKey": "home|analyzing",
       "imageUrl": "/screens/thumbs/home.analyzing.dark.es.webp",
+      "fullImageUrl": "/screens/home.analyzing.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.833Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.analyzing.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.queued.dark.es",
@@ -15783,16 +15783,16 @@
       "group": "Home",
       "compareKey": "home|queued",
       "imageUrl": "/screens/thumbs/home.queued.dark.es.webp",
+      "fullImageUrl": "/screens/home.queued.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.833Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.queued.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.mixed_statuses.dark.es",
@@ -15808,16 +15808,16 @@
       "group": "Home",
       "compareKey": "home|mixed_statuses",
       "imageUrl": "/screens/thumbs/home.mixed_statuses.dark.es.webp",
+      "fullImageUrl": "/screens/home.mixed_statuses.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.833Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.mixed_statuses.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.mixed_scrolled_mid.dark.es",
@@ -15834,16 +15834,16 @@
       "group": "Home",
       "compareKey": "home|mixed_scrolled_mid",
       "imageUrl": "/screens/thumbs/home.mixed_scrolled_mid.dark.es.webp",
+      "fullImageUrl": "/screens/home.mixed_scrolled_mid.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.833Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.mixed_scrolled_mid.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.search_no_results.dark.es",
@@ -15861,16 +15861,16 @@
       "group": "Home",
       "compareKey": "home|search_no_results",
       "imageUrl": "/screens/thumbs/home.search_no_results.dark.es.webp",
+      "fullImageUrl": "/screens/home.search_no_results.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.833Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.search_no_results.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.context_menu.dark.es",
@@ -15887,16 +15887,16 @@
       "group": "Home",
       "compareKey": "home|context_menu",
       "imageUrl": "/screens/thumbs/home.context_menu.dark.es.webp",
+      "fullImageUrl": "/screens/home.context_menu.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.833Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.context_menu.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.rename.dark.es",
@@ -15912,16 +15912,16 @@
       "group": "Home",
       "compareKey": "home|rename",
       "imageUrl": "/screens/thumbs/home.rename.dark.es.webp",
+      "fullImageUrl": "/screens/home.rename.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.833Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.rename.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "home.delete_dialog.dark.es",
@@ -15938,16 +15938,16 @@
       "group": "Home",
       "compareKey": "home|delete_dialog",
       "imageUrl": "/screens/thumbs/home.delete_dialog.dark.es.webp",
+      "fullImageUrl": "/screens/home.delete_dialog.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.833Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.delete_dialog.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "create_topic.empty.dark.es",
@@ -15964,16 +15964,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|empty",
       "imageUrl": "/screens/thumbs/create_topic.empty.dark.es.webp",
+      "fullImageUrl": "/screens/create_topic.empty.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.833Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.empty.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "create_topic.title_only.dark.es",
@@ -15989,16 +15989,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|title_only",
       "imageUrl": "/screens/thumbs/create_topic.title_only.dark.es.webp",
+      "fullImageUrl": "/screens/create_topic.title_only.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.834Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.title_only.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.398Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "create_topic.with_pages.dark.es",
@@ -16014,16 +16014,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|with_pages",
       "imageUrl": "/screens/thumbs/create_topic.with_pages.dark.es.webp",
+      "fullImageUrl": "/screens/create_topic.with_pages.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.834Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.with_pages.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "create_topic.pages_one.dark.es",
@@ -16039,16 +16039,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|pages_one",
       "imageUrl": "/screens/thumbs/create_topic.pages_one.dark.es.webp",
+      "fullImageUrl": "/screens/create_topic.pages_one.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.834Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.pages_one.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "create_topic.ocr.dark.es",
@@ -16064,16 +16064,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|ocr",
       "imageUrl": "/screens/thumbs/create_topic.ocr.dark.es.webp",
+      "fullImageUrl": "/screens/create_topic.ocr.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.834Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.ocr.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "create_topic.ocr_start.dark.es",
@@ -16089,16 +16089,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|ocr_start",
       "imageUrl": "/screens/thumbs/create_topic.ocr_start.dark.es.webp",
+      "fullImageUrl": "/screens/create_topic.ocr_start.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.834Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.ocr_start.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "create_topic.creating.dark.es",
@@ -16114,16 +16114,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|creating",
       "imageUrl": "/screens/thumbs/create_topic.creating.dark.es.webp",
+      "fullImageUrl": "/screens/create_topic.creating.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.834Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.creating.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "create_topic.pages_many_scrolled_mid.dark.es",
@@ -16140,16 +16140,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|pages_many_scrolled_mid",
       "imageUrl": "/screens/thumbs/create_topic.pages_many_scrolled_mid.dark.es.webp",
+      "fullImageUrl": "/screens/create_topic.pages_many_scrolled_mid.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.834Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.pages_many_scrolled_mid.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "create_topic.advancement_open.dark.es",
@@ -16165,16 +16165,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|advancement_open",
       "imageUrl": "/screens/thumbs/create_topic.advancement_open.dark.es.webp",
+      "fullImageUrl": "/screens/create_topic.advancement_open.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.834Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.advancement_open.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "create_topic.permission_dialog.dark.es",
@@ -16191,16 +16191,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|permission_dialog",
       "imageUrl": "/screens/thumbs/create_topic.permission_dialog.dark.es.webp",
+      "fullImageUrl": "/screens/create_topic.permission_dialog.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.834Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.permission_dialog.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "create_topic.suggested_title_dialog.dark.es",
@@ -16217,16 +16217,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|suggested_title_dialog",
       "imageUrl": "/screens/thumbs/create_topic.suggested_title_dialog.dark.es.webp",
+      "fullImageUrl": "/screens/create_topic.suggested_title_dialog.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.834Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.suggested_title_dialog.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "create_topic.add_page_sheet.dark.es",
@@ -16243,16 +16243,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|add_page_sheet",
       "imageUrl": "/screens/thumbs/create_topic.add_page_sheet.dark.es.webp",
+      "fullImageUrl": "/screens/create_topic.add_page_sheet.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.834Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.add_page_sheet.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "topic_path.empty.dark.es",
@@ -16269,16 +16269,16 @@
       "group": "Learning",
       "compareKey": "topic_path|empty",
       "imageUrl": "/screens/thumbs/topic_path.empty.dark.es.webp",
+      "fullImageUrl": "/screens/topic_path.empty.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.834Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.empty.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "topic_path.partial.dark.es",
@@ -16294,16 +16294,16 @@
       "group": "Learning",
       "compareKey": "topic_path|partial",
       "imageUrl": "/screens/thumbs/topic_path.partial.dark.es.webp",
+      "fullImageUrl": "/screens/topic_path.partial.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.835Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.partial.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "topic_path.ready.dark.es",
@@ -16319,16 +16319,16 @@
       "group": "Learning",
       "compareKey": "topic_path|ready",
       "imageUrl": "/screens/thumbs/topic_path.ready.dark.es.webp",
+      "fullImageUrl": "/screens/topic_path.ready.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.835Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.ready.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "topic_path.expanded.dark.es",
@@ -16344,16 +16344,16 @@
       "group": "Learning",
       "compareKey": "topic_path|expanded",
       "imageUrl": "/screens/thumbs/topic_path.expanded.dark.es.webp",
+      "fullImageUrl": "/screens/topic_path.expanded.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.835Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.expanded.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.399Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "topic_path.completed_nodes.dark.es",
@@ -16369,16 +16369,16 @@
       "group": "Learning",
       "compareKey": "topic_path|completed_nodes",
       "imageUrl": "/screens/thumbs/topic_path.completed_nodes.dark.es.webp",
+      "fullImageUrl": "/screens/topic_path.completed_nodes.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.835Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.completed_nodes.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "topic_path.completed_nodes_expanded.dark.es",
@@ -16394,16 +16394,16 @@
       "group": "Learning",
       "compareKey": "topic_path|completed_nodes_expanded",
       "imageUrl": "/screens/thumbs/topic_path.completed_nodes_expanded.dark.es.webp",
+      "fullImageUrl": "/screens/topic_path.completed_nodes_expanded.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.835Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.completed_nodes_expanded.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "topic_path.analyzing_with_path.dark.es",
@@ -16419,16 +16419,16 @@
       "group": "Learning",
       "compareKey": "topic_path|analyzing_with_path",
       "imageUrl": "/screens/thumbs/topic_path.analyzing_with_path.dark.es.webp",
+      "fullImageUrl": "/screens/topic_path.analyzing_with_path.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.835Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.analyzing_with_path.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "topic_path.scrolled.dark.es",
@@ -16445,16 +16445,16 @@
       "group": "Learning",
       "compareKey": "topic_path|scrolled",
       "imageUrl": "/screens/thumbs/topic_path.scrolled.dark.es.webp",
+      "fullImageUrl": "/screens/topic_path.scrolled.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.835Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.scrolled.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "topic_path.ready_scrolled_bottom.dark.es",
@@ -16471,16 +16471,16 @@
       "group": "Learning",
       "compareKey": "topic_path|ready_scrolled_bottom",
       "imageUrl": "/screens/thumbs/topic_path.ready_scrolled_bottom.dark.es.webp",
+      "fullImageUrl": "/screens/topic_path.ready_scrolled_bottom.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.835Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.ready_scrolled_bottom.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "topic_path.empty_content_dialog.dark.es",
@@ -16497,16 +16497,16 @@
       "group": "Learning",
       "compareKey": "topic_path|empty_content_dialog",
       "imageUrl": "/screens/thumbs/topic_path.empty_content_dialog.dark.es.webp",
+      "fullImageUrl": "/screens/topic_path.empty_content_dialog.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.835Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.empty_content_dialog.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "read_text.quiz_disabled.dark.es",
@@ -16522,16 +16522,16 @@
       "group": "Learning",
       "compareKey": "read_text|quiz_disabled",
       "imageUrl": "/screens/thumbs/read_text.quiz_disabled.dark.es.webp",
+      "fullImageUrl": "/screens/read_text.quiz_disabled.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.835Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.quiz_disabled.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "read_text.quiz_enabled.dark.es",
@@ -16547,16 +16547,16 @@
       "group": "Learning",
       "compareKey": "read_text|quiz_enabled",
       "imageUrl": "/screens/thumbs/read_text.quiz_enabled.dark.es.webp",
+      "fullImageUrl": "/screens/read_text.quiz_enabled.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.835Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.quiz_enabled.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "read_text.empty_content.dark.es",
@@ -16573,16 +16573,16 @@
       "group": "Learning",
       "compareKey": "read_text|empty_content",
       "imageUrl": "/screens/thumbs/read_text.empty_content.dark.es.webp",
+      "fullImageUrl": "/screens/read_text.empty_content.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.empty_content.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "read_text.reading_aloud.dark.es",
@@ -16598,16 +16598,16 @@
       "group": "Learning",
       "compareKey": "read_text|reading_aloud",
       "imageUrl": "/screens/thumbs/read_text.reading_aloud.dark.es.webp",
+      "fullImageUrl": "/screens/read_text.reading_aloud.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.reading_aloud.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "read_text.scrolled.dark.es",
@@ -16624,16 +16624,16 @@
       "group": "Learning",
       "compareKey": "read_text|scrolled",
       "imageUrl": "/screens/thumbs/read_text.scrolled.dark.es.webp",
+      "fullImageUrl": "/screens/read_text.scrolled.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.scrolled.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "read_text.scrolled_bottom.dark.es",
@@ -16650,16 +16650,16 @@
       "group": "Learning",
       "compareKey": "read_text|scrolled_bottom",
       "imageUrl": "/screens/thumbs/read_text.scrolled_bottom.dark.es.webp",
+      "fullImageUrl": "/screens/read_text.scrolled_bottom.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.scrolled_bottom.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "quiz.unanswered.dark.es",
@@ -16675,16 +16675,16 @@
       "group": "Quiz",
       "compareKey": "quiz|unanswered",
       "imageUrl": "/screens/thumbs/quiz.unanswered.dark.es.webp",
+      "fullImageUrl": "/screens/quiz.unanswered.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.unanswered.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "quiz.correct.dark.es",
@@ -16700,16 +16700,16 @@
       "group": "Quiz",
       "compareKey": "quiz|correct",
       "imageUrl": "/screens/thumbs/quiz.correct.dark.es.webp",
+      "fullImageUrl": "/screens/quiz.correct.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.correct.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.400Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "quiz.wrong.dark.es",
@@ -16725,16 +16725,16 @@
       "group": "Quiz",
       "compareKey": "quiz|wrong",
       "imageUrl": "/screens/thumbs/quiz.wrong.dark.es.webp",
+      "fullImageUrl": "/screens/quiz.wrong.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.wrong.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "quiz.wrong_with_cta.dark.es",
@@ -16750,16 +16750,16 @@
       "group": "Quiz",
       "compareKey": "quiz|wrong_with_cta",
       "imageUrl": "/screens/thumbs/quiz.wrong_with_cta.dark.es.webp",
+      "fullImageUrl": "/screens/quiz.wrong_with_cta.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.wrong_with_cta.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "quiz.completed.dark.es",
@@ -16775,16 +16775,16 @@
       "group": "Quiz",
       "compareKey": "quiz|completed",
       "imageUrl": "/screens/thumbs/quiz.completed.dark.es.webp",
+      "fullImageUrl": "/screens/quiz.completed.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.completed.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "quiz.mid_progress.dark.es",
@@ -16800,16 +16800,16 @@
       "group": "Quiz",
       "compareKey": "quiz|mid_progress",
       "imageUrl": "/screens/thumbs/quiz.mid_progress.dark.es.webp",
+      "fullImageUrl": "/screens/quiz.mid_progress.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.mid_progress.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "quiz.mid_progress_wrong_with_cta.dark.es",
@@ -16825,16 +16825,16 @@
       "group": "Quiz",
       "compareKey": "quiz|mid_progress_wrong_with_cta",
       "imageUrl": "/screens/thumbs/quiz.mid_progress_wrong_with_cta.dark.es.webp",
+      "fullImageUrl": "/screens/quiz.mid_progress_wrong_with_cta.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.mid_progress_wrong_with_cta.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "quiz.revision.dark.es",
@@ -16850,16 +16850,16 @@
       "group": "Quiz",
       "compareKey": "quiz|revision",
       "imageUrl": "/screens/thumbs/quiz.revision.dark.es.webp",
+      "fullImageUrl": "/screens/quiz.revision.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.revision.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "quiz.revision_wrong.dark.es",
@@ -16875,16 +16875,16 @@
       "group": "Quiz",
       "compareKey": "quiz|revision_wrong",
       "imageUrl": "/screens/thumbs/quiz.revision_wrong.dark.es.webp",
+      "fullImageUrl": "/screens/quiz.revision_wrong.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.revision_wrong.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "quiz.no_questions.dark.es",
@@ -16901,16 +16901,16 @@
       "group": "Quiz",
       "compareKey": "quiz|no_questions",
       "imageUrl": "/screens/thumbs/quiz.no_questions.dark.es.webp",
+      "fullImageUrl": "/screens/quiz.no_questions.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.836Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.no_questions.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "quiz.long_options.dark.es",
@@ -16926,16 +16926,16 @@
       "group": "Quiz",
       "compareKey": "quiz|long_options",
       "imageUrl": "/screens/thumbs/quiz.long_options.dark.es.webp",
+      "fullImageUrl": "/screens/quiz.long_options.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.837Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.long_options.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "quiz.long_options_scrolled_mid.dark.es",
@@ -16952,16 +16952,16 @@
       "group": "Quiz",
       "compareKey": "quiz|long_options_scrolled_mid",
       "imageUrl": "/screens/thumbs/quiz.long_options_scrolled_mid.dark.es.webp",
+      "fullImageUrl": "/screens/quiz.long_options_scrolled_mid.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.837Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.long_options_scrolled_mid.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "ai_analysis.analyzing_start.dark.es",
@@ -16977,16 +16977,16 @@
       "group": "Learning",
       "compareKey": "ai_analysis|analyzing_start",
       "imageUrl": "/screens/thumbs/ai_analysis.analyzing_start.dark.es.webp",
+      "fullImageUrl": "/screens/ai_analysis.analyzing_start.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.837Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_analysis.analyzing_start.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "ai_analysis.analyzing_mid.dark.es",
@@ -17002,16 +17002,16 @@
       "group": "Learning",
       "compareKey": "ai_analysis|analyzing_mid",
       "imageUrl": "/screens/thumbs/ai_analysis.analyzing_mid.dark.es.webp",
+      "fullImageUrl": "/screens/ai_analysis.analyzing_mid.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.837Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_analysis.analyzing_mid.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "download_prompt.default.dark.es",
@@ -17027,16 +17027,16 @@
       "group": "System",
       "compareKey": "download_prompt|default",
       "imageUrl": "/screens/thumbs/download_prompt.default.dark.es.webp",
+      "fullImageUrl": "/screens/download_prompt.default.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.837Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/download_prompt.default.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.default.dark.es",
@@ -17052,16 +17052,16 @@
       "group": "Settings",
       "compareKey": "settings|default",
       "imageUrl": "/screens/thumbs/settings.default.dark.es.webp",
+      "fullImageUrl": "/screens/settings.default.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.837Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.default.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.401Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.no_api_key.dark.es",
@@ -17079,16 +17079,16 @@
       "group": "Settings",
       "compareKey": "settings|no_api_key",
       "imageUrl": "/screens/thumbs/settings.no_api_key.dark.es.webp",
+      "fullImageUrl": "/screens/settings.no_api_key.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.837Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.no_api_key.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.key_visible.dark.es",
@@ -17105,16 +17105,16 @@
       "group": "Settings",
       "compareKey": "settings|key_visible",
       "imageUrl": "/screens/thumbs/settings.key_visible.dark.es.webp",
+      "fullImageUrl": "/screens/settings.key_visible.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.837Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.key_visible.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.sound_muted.dark.es",
@@ -17130,16 +17130,16 @@
       "group": "Settings",
       "compareKey": "settings|sound_muted",
       "imageUrl": "/screens/thumbs/settings.sound_muted.dark.es.webp",
+      "fullImageUrl": "/screens/settings.sound_muted.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.837Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.sound_muted.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.scrolled_mid.dark.es",
@@ -17156,16 +17156,16 @@
       "group": "Settings",
       "compareKey": "settings|scrolled_mid",
       "imageUrl": "/screens/thumbs/settings.scrolled_mid.dark.es.webp",
+      "fullImageUrl": "/screens/settings.scrolled_mid.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.837Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.scrolled_mid.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.scrolled_bottom.dark.es",
@@ -17182,16 +17182,16 @@
       "group": "Settings",
       "compareKey": "settings|scrolled_bottom",
       "imageUrl": "/screens/thumbs/settings.scrolled_bottom.dark.es.webp",
+      "fullImageUrl": "/screens/settings.scrolled_bottom.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.837Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.scrolled_bottom.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.provider_google_ai_studio.dark.es",
@@ -17208,16 +17208,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_google_ai_studio",
       "imageUrl": "/screens/thumbs/settings.provider_google_ai_studio.dark.es.webp",
+      "fullImageUrl": "/screens/settings.provider_google_ai_studio.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.837Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_google_ai_studio.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.provider_groq.dark.es",
@@ -17234,16 +17234,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_groq",
       "imageUrl": "/screens/thumbs/settings.provider_groq.dark.es.webp",
+      "fullImageUrl": "/screens/settings.provider_groq.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.838Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_groq.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.provider_cerebras.dark.es",
@@ -17260,16 +17260,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_cerebras",
       "imageUrl": "/screens/thumbs/settings.provider_cerebras.dark.es.webp",
+      "fullImageUrl": "/screens/settings.provider_cerebras.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.838Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_cerebras.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.provider_open_router.dark.es",
@@ -17286,16 +17286,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_open_router",
       "imageUrl": "/screens/thumbs/settings.provider_open_router.dark.es.webp",
+      "fullImageUrl": "/screens/settings.provider_open_router.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.838Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_open_router.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.provider_openai.dark.es",
@@ -17312,16 +17312,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_openai",
       "imageUrl": "/screens/thumbs/settings.provider_openai.dark.es.webp",
+      "fullImageUrl": "/screens/settings.provider_openai.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.838Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_openai.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.provider_sambanova.dark.es",
@@ -17338,16 +17338,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_sambanova",
       "imageUrl": "/screens/thumbs/settings.provider_sambanova.dark.es.webp",
+      "fullImageUrl": "/screens/settings.provider_sambanova.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.838Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_sambanova.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.provider_mistral.dark.es",
@@ -17364,16 +17364,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_mistral",
       "imageUrl": "/screens/thumbs/settings.provider_mistral.dark.es.webp",
+      "fullImageUrl": "/screens/settings.provider_mistral.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.838Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_mistral.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "settings.provider_zai.dark.es",
@@ -17390,16 +17390,16 @@
       "group": "Settings",
       "compareKey": "settings|provider_zai",
       "imageUrl": "/screens/thumbs/settings.provider_zai.dark.es.webp",
+      "fullImageUrl": "/screens/settings.provider_zai.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.838Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_zai.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "ai_provider_dialog.default.dark.es",
@@ -17417,16 +17417,16 @@
       "group": "Settings",
       "compareKey": "ai_provider_dialog|default",
       "imageUrl": "/screens/thumbs/ai_provider_dialog.default.dark.es.webp",
+      "fullImageUrl": "/screens/ai_provider_dialog.default.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.838Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_provider_dialog.default.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.402Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "ai_provider_dialog.scrolled_mid.dark.es",
@@ -17445,16 +17445,16 @@
       "group": "Settings",
       "compareKey": "ai_provider_dialog|scrolled_mid",
       "imageUrl": "/screens/thumbs/ai_provider_dialog.scrolled_mid.dark.es.webp",
+      "fullImageUrl": "/screens/ai_provider_dialog.scrolled_mid.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.838Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_provider_dialog.scrolled_mid.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.403Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "logs.empty.dark.es",
@@ -17472,16 +17472,16 @@
       "group": "Settings",
       "compareKey": "logs|empty",
       "imageUrl": "/screens/thumbs/logs.empty.dark.es.webp",
+      "fullImageUrl": "/screens/logs.empty.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.838Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/logs.empty.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.403Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "logs.with_entries.dark.es",
@@ -17498,16 +17498,16 @@
       "group": "Settings",
       "compareKey": "logs|with_entries",
       "imageUrl": "/screens/thumbs/logs.with_entries.dark.es.webp",
+      "fullImageUrl": "/screens/logs.with_entries.dark.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:22:45.838Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/logs.with_entries.dark.es.png"
+      "lastSuccessSha": "b91b00e1c467",
+      "lastSuccessAt": "2026-08-16T19:19:03.403Z",
+      "attemptSha": "b91b00e1c467"
     },
     {
       "id": "onboarding_language.default.light.de",
