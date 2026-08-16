@@ -28,19 +28,17 @@ export function createUiMap(
   topbar.innerHTML = `
     <div class="brand">
       <h1>Studdly UI Map</h1>
-      <p>Every screen · every theme · every language</p>
-    </div>
-    <div class="toolbar">
-      <button type="button" data-action="zoom-out" aria-label="Zoom out">−</button>
-      <span class="meta" data-zoom>100%</span>
-      <button type="button" data-action="zoom-in" aria-label="Zoom in">+</button>
-      <button type="button" data-action="reset">Reset</button>
     </div>
   `
 
-  const hint = document.createElement('div')
-  hint.className = 'hint'
-  hint.textContent = 'Drag to pan · scroll / pinch to zoom · hover a screen to open live preview'
+  const toolbar = document.createElement('div')
+  toolbar.className = 'toolbar'
+  toolbar.innerHTML = `
+    <button type="button" data-action="zoom-out" aria-label="Zoom out">−</button>
+    <span class="meta" data-zoom>100%</span>
+    <button type="button" data-action="zoom-in" aria-label="Zoom in">+</button>
+    <button type="button" data-action="reset" aria-label="Reset zoom">⟲</button>
+  `
 
   const viewport = document.createElement('div')
   viewport.className = 'viewport'
@@ -56,16 +54,16 @@ export function createUiMap(
 
   for (const locale of manifest.locales) {
     columns.appendChild(
-      buildLocaleColumn(manifest, locale.code, locale.label, locale.nativeName, lodFrames),
+      buildLocaleColumn(manifest, locale.code, locale.nativeName, lodFrames),
     )
   }
 
   world.appendChild(columns)
   viewport.appendChild(world)
-  host.append(topbar, viewport, hint)
+  host.append(topbar, viewport, toolbar)
 
   const state: PanZoomState = { x: 48, y: 24, scale: 0.55 }
-  const zoomLabel = topbar.querySelector('[data-zoom]') as HTMLElement
+  const zoomLabel = toolbar.querySelector('[data-zoom]') as HTMLElement
   let currentLod: ImageLod = lodForScale(state.scale)
   let lodTimer: number | null = null
 
@@ -234,7 +232,7 @@ export function createUiMap(
     }
   }, true)
 
-  topbar.addEventListener('click', (e) => {
+  toolbar.addEventListener('click', (e) => {
     const btn = (e.target as HTMLElement).closest('button')
     if (!btn) return
     const action = btn.getAttribute('data-action')
@@ -256,7 +254,6 @@ export function createUiMap(
 function buildLocaleColumn(
   manifest: UiManifest,
   locale: LocaleId,
-  label: string,
   nativeName: string,
   lodFrames: LodFrame[],
 ): HTMLElement {
@@ -268,11 +265,7 @@ function buildLocaleColumn(
   heading.className = 'locale-heading'
   heading.textContent = nativeName
 
-  const sub = document.createElement('p')
-  sub.className = 'locale-sub'
-  sub.textContent = `${label} · full UI`
-
-  col.append(heading, sub)
+  col.append(heading)
 
   for (const theme of manifest.themes) {
     col.appendChild(buildThemeBlock(manifest, locale, theme.id, theme.label, lodFrames))
