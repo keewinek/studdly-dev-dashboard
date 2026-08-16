@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "capture:screens": "node scripts/capture-screenshots.mjs",
+    "sync:preview": "./scripts/sync-flutter-preview.sh"
   },
   "devDependencies": {
     "playwright": "^1.62.1",
