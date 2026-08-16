@@ -1,10 +1,10 @@
 {
   "version": 3,
-  "generatedAt": "2026-08-16T20:45:44.566Z",
+  "generatedAt": "2026-08-16T20:47:29.056Z",
   "gitSha": "a67a4cc05cba",
   "appVersion": "preview-capture",
   "flutterPreviewBaseUrl": "/app/",
-  "captureInProgress": true,
+  "captureInProgress": false,
   "captureSummary": {
     "total": 1344,
     "failed": 0,
@@ -32063,16 +32063,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_language|default",
       "imageUrl": "/screens/thumbs/onboarding_language.default.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_language.default.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.461Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_language.default.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.010Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_language.other_highlighted.dark.uk",
@@ -32088,16 +32088,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_language|other_highlighted",
       "imageUrl": "/screens/thumbs/onboarding_language.other_highlighted.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_language.other_highlighted.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.461Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_language.other_highlighted.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.012Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "language_picker.default.dark.uk",
@@ -32113,16 +32113,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|default",
       "imageUrl": "/screens/thumbs/language_picker.default.dark.uk.webp",
+      "fullImageUrl": "/screens/language_picker.default.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.461Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.default.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.012Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "language_picker.no_selection.dark.uk",
@@ -32139,16 +32139,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|no_selection",
       "imageUrl": "/screens/thumbs/language_picker.no_selection.dark.uk.webp",
+      "fullImageUrl": "/screens/language_picker.no_selection.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.461Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.no_selection.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.012Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "language_picker.search.dark.uk",
@@ -32165,16 +32165,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|search",
       "imageUrl": "/screens/thumbs/language_picker.search.dark.uk.webp",
+      "fullImageUrl": "/screens/language_picker.search.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.461Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.search.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.012Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "language_picker.search_empty.dark.uk",
@@ -32192,16 +32192,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|search_empty",
       "imageUrl": "/screens/thumbs/language_picker.search_empty.dark.uk.webp",
+      "fullImageUrl": "/screens/language_picker.search_empty.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.461Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.search_empty.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.012Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "language_picker.scrolled_mid.dark.uk",
@@ -32218,16 +32218,16 @@
       "group": "Onboarding",
       "compareKey": "language_picker|scrolled_mid",
       "imageUrl": "/screens/thumbs/language_picker.scrolled_mid.dark.uk.webp",
+      "fullImageUrl": "/screens/language_picker.scrolled_mid.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.461Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/language_picker.scrolled_mid.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.012Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_q1.default.dark.uk",
@@ -32242,17 +32242,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q1|default",
-      "imageUrl": "/screens/onboarding_dialogue_q1.default.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_q1.default.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q1.default.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.461Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q1.default.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.012Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_q1.option_selected.dark.uk",
@@ -32268,16 +32268,16 @@
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q1|option_selected",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_q1.option_selected.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q1.option_selected.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q1.option_selected.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.012Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_q2.default.dark.uk",
@@ -32292,17 +32292,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q2|default",
-      "imageUrl": "/screens/onboarding_dialogue_q2.default.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_q2.default.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q2.default.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q2.default.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_q2.option_selected.dark.uk",
@@ -32317,17 +32317,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q2|option_selected",
-      "imageUrl": "/screens/onboarding_dialogue_q2.option_selected.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_q2.option_selected.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q2.option_selected.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q2.option_selected.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_q3.default.dark.uk",
@@ -32342,17 +32342,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q3|default",
-      "imageUrl": "/screens/onboarding_dialogue_q3.default.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_q3.default.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q3.default.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q3.default.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_q3.option_selected.dark.uk",
@@ -32367,17 +32367,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_q3|option_selected",
-      "imageUrl": "/screens/onboarding_dialogue_q3.option_selected.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_q3.option_selected.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_q3.option_selected.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_q3.option_selected.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_name.empty.dark.uk",
@@ -32393,17 +32393,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_name|empty",
-      "imageUrl": "/screens/onboarding_dialogue_name.empty.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_name.empty.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_name.empty.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_name.empty.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_name.filled.dark.uk",
@@ -32418,17 +32418,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_name|filled",
-      "imageUrl": "/screens/onboarding_dialogue_name.filled.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_name.filled.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_name.filled.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_name.filled.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_google_ai_studio.dark.uk",
@@ -32446,17 +32446,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_google_ai_studio",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_google_ai_studio.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_google_ai_studio.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_google_ai_studio.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_google_ai_studio.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_groq.dark.uk",
@@ -32474,17 +32474,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_groq",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_groq.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_groq.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_groq.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_groq.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_cerebras.dark.uk",
@@ -32502,17 +32502,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_cerebras",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_cerebras.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_cerebras.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_cerebras.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_cerebras.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_open_router.dark.uk",
@@ -32530,17 +32530,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_open_router",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_open_router.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_open_router.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_open_router.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_open_router.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_openai.dark.uk",
@@ -32558,17 +32558,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_openai",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_openai.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_openai.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_openai.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_openai.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_sambanova.dark.uk",
@@ -32586,17 +32586,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_sambanova",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_sambanova.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_sambanova.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_sambanova.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_sambanova.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_mistral.dark.uk",
@@ -32614,17 +32614,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_mistral",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_mistral.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_mistral.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_mistral.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_mistral.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_video.video_zai.dark.uk",
@@ -32642,17 +32642,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_video|video_zai",
-      "imageUrl": "/screens/onboarding_dialogue_video.video_zai.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_video.video_zai.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_video.video_zai.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_video.video_zai.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.013Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_google_ai_studio.dark.uk",
@@ -32670,17 +32670,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_google_ai_studio",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_google_ai_studio.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_google_ai_studio.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_google_ai_studio.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_google_ai_studio.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_groq.dark.uk",
@@ -32698,17 +32698,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_groq",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_groq.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_groq.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_groq.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_groq.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_cerebras.dark.uk",
@@ -32726,17 +32726,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_cerebras",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_cerebras.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_cerebras.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_cerebras.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_cerebras.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_open_router.dark.uk",
@@ -32754,17 +32754,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_open_router",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_open_router.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_open_router.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_open_router.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_open_router.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_openai.dark.uk",
@@ -32782,17 +32782,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_openai",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_openai.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_openai.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_openai.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.462Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_openai.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_sambanova.dark.uk",
@@ -32810,17 +32810,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_sambanova",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_sambanova.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_sambanova.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_sambanova.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_sambanova.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_mistral.dark.uk",
@@ -32838,17 +32838,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_mistral",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_mistral.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_mistral.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_mistral.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_mistral.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_zai.dark.uk",
@@ -32866,17 +32866,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|api_key_zai",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key_zai.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.api_key_zai.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_zai.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.api_key_zai.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.testing.dark.uk",
@@ -32894,16 +32894,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|testing",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.testing.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.testing.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.testing.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.error.dark.uk",
@@ -32922,16 +32922,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|error",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.error.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.error.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.error.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.visible.dark.uk",
@@ -32949,16 +32949,16 @@
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|visible",
       "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.visible.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.visible.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.visible.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_api_key.provider_dialog.dark.uk",
@@ -32976,17 +32976,17 @@
       ],
       "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|provider_dialog",
-      "imageUrl": "/screens/onboarding_dialogue_api_key.provider_dialog.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_api_key.provider_dialog.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_api_key.provider_dialog.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_api_key.provider_dialog.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_easy.default.dark.uk",
@@ -33001,17 +33001,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_easy|default",
-      "imageUrl": "/screens/onboarding_dialogue_easy.default.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_easy.default.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_easy.default.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_easy.default.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "onboarding_dialogue_final.default.dark.uk",
@@ -33026,17 +33026,17 @@
       ],
       "group": "Onboarding",
       "compareKey": "onboarding_dialogue_final|default",
-      "imageUrl": "/screens/onboarding_dialogue_final.default.dark.uk.png",
+      "imageUrl": "/screens/thumbs/onboarding_dialogue_final.default.dark.uk.webp",
+      "fullImageUrl": "/screens/onboarding_dialogue_final.default.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/onboarding_dialogue_final.default.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.014Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.empty.dark.uk",
@@ -33053,16 +33053,16 @@
       "group": "Home",
       "compareKey": "home|empty",
       "imageUrl": "/screens/thumbs/home.empty.dark.uk.webp",
+      "fullImageUrl": "/screens/home.empty.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.empty.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.ready.dark.uk",
@@ -33078,16 +33078,16 @@
       "group": "Home",
       "compareKey": "home|ready",
       "imageUrl": "/screens/thumbs/home.ready.dark.uk.webp",
+      "fullImageUrl": "/screens/home.ready.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.ready.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.ready_scrolled_mid.dark.uk",
@@ -33104,16 +33104,16 @@
       "group": "Home",
       "compareKey": "home|ready_scrolled_mid",
       "imageUrl": "/screens/thumbs/home.ready_scrolled_mid.dark.uk.webp",
+      "fullImageUrl": "/screens/home.ready_scrolled_mid.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.ready_scrolled_mid.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.ready_scrolled_bottom.dark.uk",
@@ -33130,16 +33130,16 @@
       "group": "Home",
       "compareKey": "home|ready_scrolled_bottom",
       "imageUrl": "/screens/thumbs/home.ready_scrolled_bottom.dark.uk.webp",
+      "fullImageUrl": "/screens/home.ready_scrolled_bottom.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.ready_scrolled_bottom.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.empty_ready.dark.uk",
@@ -33156,16 +33156,16 @@
       "group": "Home",
       "compareKey": "home|empty_ready",
       "imageUrl": "/screens/thumbs/home.empty_ready.dark.uk.webp",
+      "fullImageUrl": "/screens/home.empty_ready.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.empty_ready.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.partial_progress.dark.uk",
@@ -33181,16 +33181,16 @@
       "group": "Home",
       "compareKey": "home|partial_progress",
       "imageUrl": "/screens/thumbs/home.partial_progress.dark.uk.webp",
+      "fullImageUrl": "/screens/home.partial_progress.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.partial_progress.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.analyzing.dark.uk",
@@ -33206,16 +33206,16 @@
       "group": "Home",
       "compareKey": "home|analyzing",
       "imageUrl": "/screens/thumbs/home.analyzing.dark.uk.webp",
+      "fullImageUrl": "/screens/home.analyzing.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.analyzing.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.queued.dark.uk",
@@ -33231,16 +33231,16 @@
       "group": "Home",
       "compareKey": "home|queued",
       "imageUrl": "/screens/thumbs/home.queued.dark.uk.webp",
+      "fullImageUrl": "/screens/home.queued.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.queued.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.mixed_statuses.dark.uk",
@@ -33256,16 +33256,16 @@
       "group": "Home",
       "compareKey": "home|mixed_statuses",
       "imageUrl": "/screens/thumbs/home.mixed_statuses.dark.uk.webp",
+      "fullImageUrl": "/screens/home.mixed_statuses.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.mixed_statuses.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.mixed_scrolled_mid.dark.uk",
@@ -33282,16 +33282,16 @@
       "group": "Home",
       "compareKey": "home|mixed_scrolled_mid",
       "imageUrl": "/screens/thumbs/home.mixed_scrolled_mid.dark.uk.webp",
+      "fullImageUrl": "/screens/home.mixed_scrolled_mid.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.mixed_scrolled_mid.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.search_no_results.dark.uk",
@@ -33309,16 +33309,16 @@
       "group": "Home",
       "compareKey": "home|search_no_results",
       "imageUrl": "/screens/thumbs/home.search_no_results.dark.uk.webp",
+      "fullImageUrl": "/screens/home.search_no_results.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.search_no_results.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.context_menu.dark.uk",
@@ -33335,16 +33335,16 @@
       "group": "Home",
       "compareKey": "home|context_menu",
       "imageUrl": "/screens/thumbs/home.context_menu.dark.uk.webp",
+      "fullImageUrl": "/screens/home.context_menu.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.context_menu.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.rename.dark.uk",
@@ -33360,16 +33360,16 @@
       "group": "Home",
       "compareKey": "home|rename",
       "imageUrl": "/screens/thumbs/home.rename.dark.uk.webp",
+      "fullImageUrl": "/screens/home.rename.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.rename.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.015Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "home.delete_dialog.dark.uk",
@@ -33386,16 +33386,16 @@
       "group": "Home",
       "compareKey": "home|delete_dialog",
       "imageUrl": "/screens/thumbs/home.delete_dialog.dark.uk.webp",
+      "fullImageUrl": "/screens/home.delete_dialog.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/home.delete_dialog.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.016Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.empty.dark.uk",
@@ -33412,16 +33412,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|empty",
       "imageUrl": "/screens/thumbs/create_topic.empty.dark.uk.webp",
+      "fullImageUrl": "/screens/create_topic.empty.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.empty.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.016Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.title_only.dark.uk",
@@ -33437,16 +33437,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|title_only",
       "imageUrl": "/screens/thumbs/create_topic.title_only.dark.uk.webp",
+      "fullImageUrl": "/screens/create_topic.title_only.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.463Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.title_only.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.017Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.with_pages.dark.uk",
@@ -33462,16 +33462,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|with_pages",
       "imageUrl": "/screens/thumbs/create_topic.with_pages.dark.uk.webp",
+      "fullImageUrl": "/screens/create_topic.with_pages.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.with_pages.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.017Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.pages_one.dark.uk",
@@ -33487,16 +33487,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|pages_one",
       "imageUrl": "/screens/thumbs/create_topic.pages_one.dark.uk.webp",
+      "fullImageUrl": "/screens/create_topic.pages_one.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.pages_one.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.017Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.ocr.dark.uk",
@@ -33512,16 +33512,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|ocr",
       "imageUrl": "/screens/thumbs/create_topic.ocr.dark.uk.webp",
+      "fullImageUrl": "/screens/create_topic.ocr.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.ocr.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.017Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.ocr_start.dark.uk",
@@ -33537,16 +33537,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|ocr_start",
       "imageUrl": "/screens/thumbs/create_topic.ocr_start.dark.uk.webp",
+      "fullImageUrl": "/screens/create_topic.ocr_start.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.ocr_start.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.017Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.creating.dark.uk",
@@ -33562,16 +33562,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|creating",
       "imageUrl": "/screens/thumbs/create_topic.creating.dark.uk.webp",
+      "fullImageUrl": "/screens/create_topic.creating.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.creating.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.017Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.pages_many_scrolled_mid.dark.uk",
@@ -33588,16 +33588,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|pages_many_scrolled_mid",
       "imageUrl": "/screens/thumbs/create_topic.pages_many_scrolled_mid.dark.uk.webp",
+      "fullImageUrl": "/screens/create_topic.pages_many_scrolled_mid.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.pages_many_scrolled_mid.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.advancement_open.dark.uk",
@@ -33613,16 +33613,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|advancement_open",
       "imageUrl": "/screens/thumbs/create_topic.advancement_open.dark.uk.webp",
+      "fullImageUrl": "/screens/create_topic.advancement_open.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.advancement_open.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.permission_dialog.dark.uk",
@@ -33639,16 +33639,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|permission_dialog",
       "imageUrl": "/screens/thumbs/create_topic.permission_dialog.dark.uk.webp",
+      "fullImageUrl": "/screens/create_topic.permission_dialog.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.permission_dialog.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.suggested_title_dialog.dark.uk",
@@ -33665,16 +33665,16 @@
       "group": "Create Topic",
       "compareKey": "create_topic|suggested_title_dialog",
       "imageUrl": "/screens/thumbs/create_topic.suggested_title_dialog.dark.uk.webp",
+      "fullImageUrl": "/screens/create_topic.suggested_title_dialog.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.suggested_title_dialog.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "create_topic.add_page_sheet.dark.uk",
@@ -33690,17 +33690,17 @@
       ],
       "group": "Create Topic",
       "compareKey": "create_topic|add_page_sheet",
-      "imageUrl": "/screens/create_topic.add_page_sheet.dark.uk.png",
+      "imageUrl": "/screens/thumbs/create_topic.add_page_sheet.dark.uk.webp",
+      "fullImageUrl": "/screens/create_topic.add_page_sheet.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/create_topic.add_page_sheet.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.empty.dark.uk",
@@ -33717,16 +33717,16 @@
       "group": "Learning",
       "compareKey": "topic_path|empty",
       "imageUrl": "/screens/thumbs/topic_path.empty.dark.uk.webp",
+      "fullImageUrl": "/screens/topic_path.empty.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.empty.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.partial.dark.uk",
@@ -33742,16 +33742,16 @@
       "group": "Learning",
       "compareKey": "topic_path|partial",
       "imageUrl": "/screens/thumbs/topic_path.partial.dark.uk.webp",
+      "fullImageUrl": "/screens/topic_path.partial.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.partial.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.ready.dark.uk",
@@ -33767,16 +33767,16 @@
       "group": "Learning",
       "compareKey": "topic_path|ready",
       "imageUrl": "/screens/thumbs/topic_path.ready.dark.uk.webp",
+      "fullImageUrl": "/screens/topic_path.ready.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.ready.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.expanded.dark.uk",
@@ -33792,16 +33792,16 @@
       "group": "Learning",
       "compareKey": "topic_path|expanded",
       "imageUrl": "/screens/thumbs/topic_path.expanded.dark.uk.webp",
+      "fullImageUrl": "/screens/topic_path.expanded.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.expanded.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.completed_nodes.dark.uk",
@@ -33817,16 +33817,16 @@
       "group": "Learning",
       "compareKey": "topic_path|completed_nodes",
       "imageUrl": "/screens/thumbs/topic_path.completed_nodes.dark.uk.webp",
+      "fullImageUrl": "/screens/topic_path.completed_nodes.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.completed_nodes.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.completed_nodes_expanded.dark.uk",
@@ -33842,16 +33842,16 @@
       "group": "Learning",
       "compareKey": "topic_path|completed_nodes_expanded",
       "imageUrl": "/screens/thumbs/topic_path.completed_nodes_expanded.dark.uk.webp",
+      "fullImageUrl": "/screens/topic_path.completed_nodes_expanded.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.completed_nodes_expanded.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.analyzing_with_path.dark.uk",
@@ -33867,16 +33867,16 @@
       "group": "Learning",
       "compareKey": "topic_path|analyzing_with_path",
       "imageUrl": "/screens/thumbs/topic_path.analyzing_with_path.dark.uk.webp",
+      "fullImageUrl": "/screens/topic_path.analyzing_with_path.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.analyzing_with_path.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.scrolled.dark.uk",
@@ -33893,16 +33893,16 @@
       "group": "Learning",
       "compareKey": "topic_path|scrolled",
       "imageUrl": "/screens/thumbs/topic_path.scrolled.dark.uk.webp",
+      "fullImageUrl": "/screens/topic_path.scrolled.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.scrolled.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.ready_scrolled_bottom.dark.uk",
@@ -33919,16 +33919,16 @@
       "group": "Learning",
       "compareKey": "topic_path|ready_scrolled_bottom",
       "imageUrl": "/screens/thumbs/topic_path.ready_scrolled_bottom.dark.uk.webp",
+      "fullImageUrl": "/screens/topic_path.ready_scrolled_bottom.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.ready_scrolled_bottom.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.018Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "topic_path.empty_content_dialog.dark.uk",
@@ -33945,16 +33945,16 @@
       "group": "Learning",
       "compareKey": "topic_path|empty_content_dialog",
       "imageUrl": "/screens/thumbs/topic_path.empty_content_dialog.dark.uk.webp",
+      "fullImageUrl": "/screens/topic_path.empty_content_dialog.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/topic_path.empty_content_dialog.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.019Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "read_text.quiz_disabled.dark.uk",
@@ -33970,16 +33970,16 @@
       "group": "Learning",
       "compareKey": "read_text|quiz_disabled",
       "imageUrl": "/screens/thumbs/read_text.quiz_disabled.dark.uk.webp",
+      "fullImageUrl": "/screens/read_text.quiz_disabled.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.quiz_disabled.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.019Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "read_text.quiz_enabled.dark.uk",
@@ -33995,16 +33995,16 @@
       "group": "Learning",
       "compareKey": "read_text|quiz_enabled",
       "imageUrl": "/screens/thumbs/read_text.quiz_enabled.dark.uk.webp",
+      "fullImageUrl": "/screens/read_text.quiz_enabled.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.quiz_enabled.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.019Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "read_text.empty_content.dark.uk",
@@ -34021,16 +34021,16 @@
       "group": "Learning",
       "compareKey": "read_text|empty_content",
       "imageUrl": "/screens/thumbs/read_text.empty_content.dark.uk.webp",
+      "fullImageUrl": "/screens/read_text.empty_content.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.empty_content.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.019Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "read_text.reading_aloud.dark.uk",
@@ -34046,16 +34046,16 @@
       "group": "Learning",
       "compareKey": "read_text|reading_aloud",
       "imageUrl": "/screens/thumbs/read_text.reading_aloud.dark.uk.webp",
+      "fullImageUrl": "/screens/read_text.reading_aloud.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.reading_aloud.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.019Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "read_text.scrolled.dark.uk",
@@ -34072,16 +34072,16 @@
       "group": "Learning",
       "compareKey": "read_text|scrolled",
       "imageUrl": "/screens/thumbs/read_text.scrolled.dark.uk.webp",
+      "fullImageUrl": "/screens/read_text.scrolled.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.scrolled.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.019Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "read_text.scrolled_bottom.dark.uk",
@@ -34098,16 +34098,16 @@
       "group": "Learning",
       "compareKey": "read_text|scrolled_bottom",
       "imageUrl": "/screens/thumbs/read_text.scrolled_bottom.dark.uk.webp",
+      "fullImageUrl": "/screens/read_text.scrolled_bottom.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.464Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/read_text.scrolled_bottom.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.019Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.unanswered.dark.uk",
@@ -34123,16 +34123,16 @@
       "group": "Quiz",
       "compareKey": "quiz|unanswered",
       "imageUrl": "/screens/thumbs/quiz.unanswered.dark.uk.webp",
+      "fullImageUrl": "/screens/quiz.unanswered.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.unanswered.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.019Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.correct.dark.uk",
@@ -34148,16 +34148,16 @@
       "group": "Quiz",
       "compareKey": "quiz|correct",
       "imageUrl": "/screens/thumbs/quiz.correct.dark.uk.webp",
+      "fullImageUrl": "/screens/quiz.correct.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.correct.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.019Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.wrong.dark.uk",
@@ -34173,16 +34173,16 @@
       "group": "Quiz",
       "compareKey": "quiz|wrong",
       "imageUrl": "/screens/thumbs/quiz.wrong.dark.uk.webp",
+      "fullImageUrl": "/screens/quiz.wrong.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.wrong.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.019Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.wrong_with_cta.dark.uk",
@@ -34198,16 +34198,16 @@
       "group": "Quiz",
       "compareKey": "quiz|wrong_with_cta",
       "imageUrl": "/screens/thumbs/quiz.wrong_with_cta.dark.uk.webp",
+      "fullImageUrl": "/screens/quiz.wrong_with_cta.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.wrong_with_cta.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.019Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.completed.dark.uk",
@@ -34223,16 +34223,16 @@
       "group": "Quiz",
       "compareKey": "quiz|completed",
       "imageUrl": "/screens/thumbs/quiz.completed.dark.uk.webp",
+      "fullImageUrl": "/screens/quiz.completed.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.completed.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.019Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.mid_progress.dark.uk",
@@ -34248,16 +34248,16 @@
       "group": "Quiz",
       "compareKey": "quiz|mid_progress",
       "imageUrl": "/screens/thumbs/quiz.mid_progress.dark.uk.webp",
+      "fullImageUrl": "/screens/quiz.mid_progress.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.mid_progress.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.mid_progress_wrong_with_cta.dark.uk",
@@ -34273,16 +34273,16 @@
       "group": "Quiz",
       "compareKey": "quiz|mid_progress_wrong_with_cta",
       "imageUrl": "/screens/thumbs/quiz.mid_progress_wrong_with_cta.dark.uk.webp",
+      "fullImageUrl": "/screens/quiz.mid_progress_wrong_with_cta.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.mid_progress_wrong_with_cta.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.revision.dark.uk",
@@ -34298,16 +34298,16 @@
       "group": "Quiz",
       "compareKey": "quiz|revision",
       "imageUrl": "/screens/thumbs/quiz.revision.dark.uk.webp",
+      "fullImageUrl": "/screens/quiz.revision.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.revision.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.revision_wrong.dark.uk",
@@ -34323,16 +34323,16 @@
       "group": "Quiz",
       "compareKey": "quiz|revision_wrong",
       "imageUrl": "/screens/thumbs/quiz.revision_wrong.dark.uk.webp",
+      "fullImageUrl": "/screens/quiz.revision_wrong.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.revision_wrong.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.no_questions.dark.uk",
@@ -34349,16 +34349,16 @@
       "group": "Quiz",
       "compareKey": "quiz|no_questions",
       "imageUrl": "/screens/thumbs/quiz.no_questions.dark.uk.webp",
+      "fullImageUrl": "/screens/quiz.no_questions.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.no_questions.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.long_options.dark.uk",
@@ -34374,16 +34374,16 @@
       "group": "Quiz",
       "compareKey": "quiz|long_options",
       "imageUrl": "/screens/thumbs/quiz.long_options.dark.uk.webp",
+      "fullImageUrl": "/screens/quiz.long_options.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.long_options.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "quiz.long_options_scrolled_mid.dark.uk",
@@ -34400,16 +34400,16 @@
       "group": "Quiz",
       "compareKey": "quiz|long_options_scrolled_mid",
       "imageUrl": "/screens/thumbs/quiz.long_options_scrolled_mid.dark.uk.webp",
+      "fullImageUrl": "/screens/quiz.long_options_scrolled_mid.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/quiz.long_options_scrolled_mid.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "ai_analysis.analyzing_start.dark.uk",
@@ -34424,17 +34424,17 @@
       ],
       "group": "Learning",
       "compareKey": "ai_analysis|analyzing_start",
-      "imageUrl": "/screens/ai_analysis.analyzing_start.dark.uk.png",
+      "imageUrl": "/screens/thumbs/ai_analysis.analyzing_start.dark.uk.webp",
+      "fullImageUrl": "/screens/ai_analysis.analyzing_start.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_analysis.analyzing_start.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "ai_analysis.analyzing_mid.dark.uk",
@@ -34449,17 +34449,17 @@
       ],
       "group": "Learning",
       "compareKey": "ai_analysis|analyzing_mid",
-      "imageUrl": "/screens/ai_analysis.analyzing_mid.dark.uk.png",
+      "imageUrl": "/screens/thumbs/ai_analysis.analyzing_mid.dark.uk.webp",
+      "fullImageUrl": "/screens/ai_analysis.analyzing_mid.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_analysis.analyzing_mid.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "download_prompt.default.dark.uk",
@@ -34474,17 +34474,17 @@
       ],
       "group": "System",
       "compareKey": "download_prompt|default",
-      "imageUrl": "/screens/download_prompt.default.dark.uk.png",
+      "imageUrl": "/screens/thumbs/download_prompt.default.dark.uk.webp",
+      "fullImageUrl": "/screens/download_prompt.default.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/download_prompt.default.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.default.dark.uk",
@@ -34500,16 +34500,16 @@
       "group": "Settings",
       "compareKey": "settings|default",
       "imageUrl": "/screens/thumbs/settings.default.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.default.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.default.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.no_api_key.dark.uk",
@@ -34527,16 +34527,16 @@
       "group": "Settings",
       "compareKey": "settings|no_api_key",
       "imageUrl": "/screens/thumbs/settings.no_api_key.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.no_api_key.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.no_api_key.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.key_visible.dark.uk",
@@ -34553,16 +34553,16 @@
       "group": "Settings",
       "compareKey": "settings|key_visible",
       "imageUrl": "/screens/thumbs/settings.key_visible.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.key_visible.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.key_visible.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.sound_muted.dark.uk",
@@ -34578,16 +34578,16 @@
       "group": "Settings",
       "compareKey": "settings|sound_muted",
       "imageUrl": "/screens/thumbs/settings.sound_muted.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.sound_muted.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.sound_muted.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.020Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.scrolled_mid.dark.uk",
@@ -34603,17 +34603,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|scrolled_mid",
-      "imageUrl": "/screens/settings.scrolled_mid.dark.uk.png",
+      "imageUrl": "/screens/thumbs/settings.scrolled_mid.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.scrolled_mid.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.scrolled_mid.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.scrolled_bottom.dark.uk",
@@ -34630,16 +34630,16 @@
       "group": "Settings",
       "compareKey": "settings|scrolled_bottom",
       "imageUrl": "/screens/thumbs/settings.scrolled_bottom.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.scrolled_bottom.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.scrolled_bottom.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_google_ai_studio.dark.uk",
@@ -34655,17 +34655,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_google_ai_studio",
-      "imageUrl": "/screens/settings.provider_google_ai_studio.dark.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_google_ai_studio.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_google_ai_studio.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_google_ai_studio.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_groq.dark.uk",
@@ -34681,17 +34681,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_groq",
-      "imageUrl": "/screens/settings.provider_groq.dark.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_groq.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_groq.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_groq.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_cerebras.dark.uk",
@@ -34707,17 +34707,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_cerebras",
-      "imageUrl": "/screens/settings.provider_cerebras.dark.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_cerebras.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_cerebras.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_cerebras.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_open_router.dark.uk",
@@ -34733,17 +34733,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_open_router",
-      "imageUrl": "/screens/settings.provider_open_router.dark.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_open_router.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_open_router.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_open_router.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_openai.dark.uk",
@@ -34759,17 +34759,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_openai",
-      "imageUrl": "/screens/settings.provider_openai.dark.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_openai.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_openai.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.465Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_openai.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_sambanova.dark.uk",
@@ -34785,17 +34785,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_sambanova",
-      "imageUrl": "/screens/settings.provider_sambanova.dark.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_sambanova.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_sambanova.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.466Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_sambanova.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_mistral.dark.uk",
@@ -34811,17 +34811,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_mistral",
-      "imageUrl": "/screens/settings.provider_mistral.dark.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_mistral.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_mistral.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.466Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_mistral.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "settings.provider_zai.dark.uk",
@@ -34837,17 +34837,17 @@
       ],
       "group": "Settings",
       "compareKey": "settings|provider_zai",
-      "imageUrl": "/screens/settings.provider_zai.dark.uk.png",
+      "imageUrl": "/screens/thumbs/settings.provider_zai.dark.uk.webp",
+      "fullImageUrl": "/screens/settings.provider_zai.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.466Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/settings.provider_zai.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "ai_provider_dialog.default.dark.uk",
@@ -34864,17 +34864,17 @@
       ],
       "group": "Settings",
       "compareKey": "ai_provider_dialog|default",
-      "imageUrl": "/screens/ai_provider_dialog.default.dark.uk.png",
+      "imageUrl": "/screens/thumbs/ai_provider_dialog.default.dark.uk.webp",
+      "fullImageUrl": "/screens/ai_provider_dialog.default.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.466Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_provider_dialog.default.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "ai_provider_dialog.scrolled_mid.dark.uk",
@@ -34892,17 +34892,17 @@
       ],
       "group": "Settings",
       "compareKey": "ai_provider_dialog|scrolled_mid",
-      "imageUrl": "/screens/ai_provider_dialog.scrolled_mid.dark.uk.png",
+      "imageUrl": "/screens/thumbs/ai_provider_dialog.scrolled_mid.dark.uk.webp",
+      "fullImageUrl": "/screens/ai_provider_dialog.scrolled_mid.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.466Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/ai_provider_dialog.scrolled_mid.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "logs.empty.dark.uk",
@@ -34919,17 +34919,17 @@
       ],
       "group": "Settings",
       "compareKey": "logs|empty",
-      "imageUrl": "/screens/logs.empty.dark.uk.png",
+      "imageUrl": "/screens/thumbs/logs.empty.dark.uk.webp",
+      "fullImageUrl": "/screens/logs.empty.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.466Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/logs.empty.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     },
     {
       "id": "logs.with_entries.dark.uk",
@@ -34945,17 +34945,17 @@
       ],
       "group": "Settings",
       "compareKey": "logs|with_entries",
-      "imageUrl": "/screens/logs.with_entries.dark.uk.png",
+      "imageUrl": "/screens/thumbs/logs.with_entries.dark.uk.webp",
+      "fullImageUrl": "/screens/logs.with_entries.dark.uk.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "c117e5ad19e7",
-      "lastSuccessAt": "2026-08-16T17:34:03.466Z",
-      "attemptSha": "c117e5ad19e7",
-      "fullImageUrl": "/screens/logs.with_entries.dark.uk.png"
+      "lastSuccessSha": "a67a4cc05cba",
+      "lastSuccessAt": "2026-08-16T20:47:29.021Z",
+      "attemptSha": "a67a4cc05cba"
     }
   ]
 }
