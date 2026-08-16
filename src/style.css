@@ -321,10 +321,10 @@ body,
   gap: 0 0.35em;
   /* Full filename — do not clip with ellipsis. */
   max-width: min(92vw, calc(var(--frame-w) * 1.85));
-  padding: calc(2px * var(--ms)) calc(6px * var(--ms));
-  border-radius: calc(6px * var(--ms));
-  background: rgba(12, 12, 12, 0.82);
-  color: rgba(255, 255, 255, 0.9);
+  padding: calc(4px * var(--ms)) calc(8px * var(--ms));
+  border-radius: calc(8px * var(--ms));
+  background: #0a0a0a;
+  color: #f5f5f5;
   font-size: calc(9px * var(--ms));
   font-weight: 500;
   line-height: 1.35;
@@ -334,6 +334,7 @@ body,
   opacity: 0;
   pointer-events: none;
   transition: opacity 100ms ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
 }
 
 .viewport.show-chrome:not(.panning) .frame-cell:hover .frame-caption,
@@ -376,7 +377,7 @@ body,
 }
 
 .frame-caption-sha:hover {
-  color: var(--ocean);
+  color: #7dd3fc;
   text-decoration: underline;
 }
 
@@ -386,13 +387,18 @@ body,
   color: #e8c98a;
 }
 
+/* Same solid black pill on light theme tiles — pale captions vanish on white. */
 .theme-block[data-theme='light'] .frame-caption {
-  background: rgba(245, 245, 245, 0.94);
-  color: var(--muted);
+  background: #0a0a0a;
+  color: #f5f5f5;
 }
 
 .theme-block[data-theme='light'] .frame-caption-main:hover {
-  color: var(--text);
+  color: #fff;
+}
+
+.theme-block[data-theme='light'] .frame-caption-sha:hover {
+  color: #7dd3fc;
 }
 
 .theme-block[data-theme='light'] .frame-caption-behind,
