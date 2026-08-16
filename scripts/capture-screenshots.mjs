@@ -16,7 +16,7 @@ import { constants as fsConstants } from 'node:fs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
-const previewBase = (process.env.PREVIEW_BASE || 'https://studdlydev.netlify.app/app/').replace(/\/?$/, '/')
+const previewBase = (process.env.PREVIEW_BASE || 'https://dev.studdly.app/app/').replace(/\/?$/, '/')
 const outDir = path.resolve(root, process.env.OUT_DIR || 'public/screens')
 const concurrency = Number(process.env.CONCURRENCY || 3)
 const deviceScaleFactor = Number(process.env.DEVICE_SCALE || 1)
