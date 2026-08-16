@@ -21,4 +21,28 @@ rm -rf "$ROOT/public/app"
 mkdir -p "$ROOT/public/app"
 rsync -a --delete --exclude '.last_build_id' "$STUDDLY_ROOT/build/web/" "$ROOT/public/app/"
 
+# Ensure stale PWAs are cleared for deep-link reliability.
+INDEX_HTML="$ROOT/public/app/index.html" python3 - <<'PY'
+from pathlib import Path
+import os
+p = Path(os.environ['INDEX_HTML'])
+text = p.read_text()
+snippet = """  <script>
+    // Drop stale Flutter PWAs so deep-link previews always load the latest build.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then((regs) => {
+        for (const reg of regs) reg.unregister();
+      }).catch(() => {});
+    }
+  </script>
+"""
+needle = '  <script src="flutter_bootstrap.js" async></script>'
+if 'Drop stale Flutter PWAs' not in text and needle in text:
+    text = text.replace(needle, snippet + needle)
+    p.write_text(text)
+    print('patched index.html service-worker cleanup')
+else:
+    print('index.html already patched or needle missing')
+PY
+
 echo "Done. Commit public/app/ and push to deploy."

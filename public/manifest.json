@@ -1,0 +1,6009 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-16T11:08:00.498Z",
+  "gitSha": "local",
+  "appVersion": "preview-capture",
+  "flutterPreviewBaseUrl": "/app/",
+  "device": {
+    "name": "phone",
+    "width": 390,
+    "height": 844,
+    "pixelRatio": 1
+  },
+  "locales": [
+    {
+      "code": "en",
+      "label": "English",
+      "nativeName": "English"
+    },
+    {
+      "code": "pl",
+      "label": "Polish",
+      "nativeName": "Polski"
+    },
+    {
+      "code": "es",
+      "label": "Spanish",
+      "nativeName": "Español"
+    },
+    {
+      "code": "de",
+      "label": "German",
+      "nativeName": "Deutsch"
+    },
+    {
+      "code": "fr",
+      "label": "French",
+      "nativeName": "Français"
+    },
+    {
+      "code": "uk",
+      "label": "Ukrainian",
+      "nativeName": "Українська"
+    }
+  ],
+  "themes": [
+    {
+      "id": "light",
+      "label": "Light"
+    },
+    {
+      "id": "dark",
+      "label": "Dark"
+    }
+  ],
+  "screens": [
+    {
+      "id": "onboarding_language.default.light.en",
+      "name": "Onboarding — Language",
+      "screenKey": "onboarding_language",
+      "route": "/onboarding",
+      "theme": "light",
+      "locale": "en",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_language|default",
+      "imageUrl": "/screens/onboarding_language.default.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "language_picker.default.light.en",
+      "name": "Language Picker",
+      "screenKey": "language_picker",
+      "route": "/language-picker",
+      "theme": "light",
+      "locale": "en",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "language_picker|default",
+      "imageUrl": "/screens/language_picker.default.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q1.q1.light.en",
+      "name": "Onboarding — Q1",
+      "screenKey": "onboarding_dialogue_q1",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "en",
+      "state": "q1",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q1|q1",
+      "imageUrl": "/screens/onboarding_dialogue_q1.q1.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q2.q2.light.en",
+      "name": "Onboarding — Q2",
+      "screenKey": "onboarding_dialogue_q2",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "en",
+      "state": "q2",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q2|q2",
+      "imageUrl": "/screens/onboarding_dialogue_q2.q2.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q3.q3.light.en",
+      "name": "Onboarding — Q3",
+      "screenKey": "onboarding_dialogue_q3",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "en",
+      "state": "q3",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q3|q3",
+      "imageUrl": "/screens/onboarding_dialogue_q3.q3.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_name.name.light.en",
+      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_name",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "en",
+      "state": "name",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_name|name",
+      "imageUrl": "/screens/onboarding_dialogue_name.name.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_video.video.light.en",
+      "name": "Onboarding — Video",
+      "screenKey": "onboarding_dialogue_video",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "en",
+      "state": "video",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_video|video",
+      "imageUrl": "/screens/onboarding_dialogue_video.video.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key.light.en",
+      "name": "Onboarding — API Key",
+      "screenKey": "onboarding_dialogue_api_key",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "en",
+      "state": "api_key",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_api_key|api_key",
+      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_final.final.light.en",
+      "name": "Onboarding — Start",
+      "screenKey": "onboarding_dialogue_final",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "en",
+      "state": "final",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_final|final",
+      "imageUrl": "/screens/onboarding_dialogue_final.final.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.empty.light.en",
+      "name": "Home — Empty",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "en",
+      "state": "empty",
+      "tags": [
+        "home",
+        "empty"
+      ],
+      "group": "Home",
+      "compareKey": "home|empty",
+      "imageUrl": "/screens/home.empty.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.ready.light.en",
+      "name": "Home — Ready",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "en",
+      "state": "ready",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|ready",
+      "imageUrl": "/screens/home.ready.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.analyzing.light.en",
+      "name": "Home — Analyzing",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "en",
+      "state": "analyzing",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|analyzing",
+      "imageUrl": "/screens/home.analyzing.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.queued.light.en",
+      "name": "Home — Queued",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "en",
+      "state": "queued",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|queued",
+      "imageUrl": "/screens/home.queued.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.empty.light.en",
+      "name": "Create Topic — Empty",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "en",
+      "state": "empty",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|empty",
+      "imageUrl": "/screens/create_topic.empty.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.with_pages.light.en",
+      "name": "Create Topic — With Pages",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "en",
+      "state": "with_pages",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|with_pages",
+      "imageUrl": "/screens/create_topic.with_pages.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.ocr.light.en",
+      "name": "Create Topic — OCR",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "en",
+      "state": "ocr",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|ocr",
+      "imageUrl": "/screens/create_topic.ocr.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.empty.light.en",
+      "name": "Learning Path — Empty",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "en",
+      "state": "empty",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|empty",
+      "imageUrl": "/screens/topic_path.empty.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.ready.light.en",
+      "name": "Learning Path — Ready",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "en",
+      "state": "ready",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|ready",
+      "imageUrl": "/screens/topic_path.ready.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.partial.light.en",
+      "name": "Learning Path — Partial",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "en",
+      "state": "partial",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|partial",
+      "imageUrl": "/screens/topic_path.partial.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "read_text.default.light.en",
+      "name": "Read Text",
+      "screenKey": "read_text",
+      "route": "/read",
+      "theme": "light",
+      "locale": "en",
+      "state": "default",
+      "tags": [
+        "read"
+      ],
+      "group": "Learning",
+      "compareKey": "read_text|default",
+      "imageUrl": "/screens/read_text.default.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.unanswered.light.en",
+      "name": "Quiz — Unanswered",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "en",
+      "state": "unanswered",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|unanswered",
+      "imageUrl": "/screens/quiz.unanswered.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.correct.light.en",
+      "name": "Quiz — Correct",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "en",
+      "state": "correct",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|correct",
+      "imageUrl": "/screens/quiz.correct.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.wrong.light.en",
+      "name": "Quiz — Wrong",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "en",
+      "state": "wrong",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|wrong",
+      "imageUrl": "/screens/quiz.wrong.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.completed.light.en",
+      "name": "Quiz — Completed",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "en",
+      "state": "completed",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|completed",
+      "imageUrl": "/screens/quiz.completed.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "settings.default.light.en",
+      "name": "Settings",
+      "screenKey": "settings",
+      "route": "/settings",
+      "theme": "light",
+      "locale": "en",
+      "state": "default",
+      "tags": [
+        "settings"
+      ],
+      "group": "Settings",
+      "compareKey": "settings|default",
+      "imageUrl": "/screens/settings.default.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "ai_provider_dialog.provider_dialog.light.en",
+      "name": "AI Provider Picker",
+      "screenKey": "ai_provider_dialog",
+      "route": "/settings",
+      "theme": "light",
+      "locale": "en",
+      "state": "provider_dialog",
+      "tags": [
+        "settings",
+        "dialog"
+      ],
+      "group": "Settings",
+      "compareKey": "ai_provider_dialog|provider_dialog",
+      "imageUrl": "/screens/ai_provider_dialog.provider_dialog.light.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_language.default.dark.en",
+      "name": "Onboarding — Language",
+      "screenKey": "onboarding_language",
+      "route": "/onboarding",
+      "theme": "dark",
+      "locale": "en",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_language|default",
+      "imageUrl": "/screens/onboarding_language.default.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "language_picker.default.dark.en",
+      "name": "Language Picker",
+      "screenKey": "language_picker",
+      "route": "/language-picker",
+      "theme": "dark",
+      "locale": "en",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "language_picker|default",
+      "imageUrl": "/screens/language_picker.default.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q1.q1.dark.en",
+      "name": "Onboarding — Q1",
+      "screenKey": "onboarding_dialogue_q1",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "en",
+      "state": "q1",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q1|q1",
+      "imageUrl": "/screens/onboarding_dialogue_q1.q1.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q2.q2.dark.en",
+      "name": "Onboarding — Q2",
+      "screenKey": "onboarding_dialogue_q2",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "en",
+      "state": "q2",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q2|q2",
+      "imageUrl": "/screens/onboarding_dialogue_q2.q2.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q3.q3.dark.en",
+      "name": "Onboarding — Q3",
+      "screenKey": "onboarding_dialogue_q3",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "en",
+      "state": "q3",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q3|q3",
+      "imageUrl": "/screens/onboarding_dialogue_q3.q3.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_name.name.dark.en",
+      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_name",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "en",
+      "state": "name",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_name|name",
+      "imageUrl": "/screens/onboarding_dialogue_name.name.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_video.video.dark.en",
+      "name": "Onboarding — Video",
+      "screenKey": "onboarding_dialogue_video",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "en",
+      "state": "video",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_video|video",
+      "imageUrl": "/screens/onboarding_dialogue_video.video.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key.dark.en",
+      "name": "Onboarding — API Key",
+      "screenKey": "onboarding_dialogue_api_key",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "en",
+      "state": "api_key",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_api_key|api_key",
+      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_final.final.dark.en",
+      "name": "Onboarding — Start",
+      "screenKey": "onboarding_dialogue_final",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "en",
+      "state": "final",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_final|final",
+      "imageUrl": "/screens/onboarding_dialogue_final.final.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.empty.dark.en",
+      "name": "Home — Empty",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "en",
+      "state": "empty",
+      "tags": [
+        "home",
+        "empty"
+      ],
+      "group": "Home",
+      "compareKey": "home|empty",
+      "imageUrl": "/screens/home.empty.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.ready.dark.en",
+      "name": "Home — Ready",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "en",
+      "state": "ready",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|ready",
+      "imageUrl": "/screens/home.ready.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.analyzing.dark.en",
+      "name": "Home — Analyzing",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "en",
+      "state": "analyzing",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|analyzing",
+      "imageUrl": "/screens/home.analyzing.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.queued.dark.en",
+      "name": "Home — Queued",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "en",
+      "state": "queued",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|queued",
+      "imageUrl": "/screens/home.queued.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.empty.dark.en",
+      "name": "Create Topic — Empty",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "en",
+      "state": "empty",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|empty",
+      "imageUrl": "/screens/create_topic.empty.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.with_pages.dark.en",
+      "name": "Create Topic — With Pages",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "en",
+      "state": "with_pages",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|with_pages",
+      "imageUrl": "/screens/create_topic.with_pages.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.ocr.dark.en",
+      "name": "Create Topic — OCR",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "en",
+      "state": "ocr",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|ocr",
+      "imageUrl": "/screens/create_topic.ocr.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.empty.dark.en",
+      "name": "Learning Path — Empty",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "en",
+      "state": "empty",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|empty",
+      "imageUrl": "/screens/topic_path.empty.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.ready.dark.en",
+      "name": "Learning Path — Ready",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "en",
+      "state": "ready",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|ready",
+      "imageUrl": "/screens/topic_path.ready.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.partial.dark.en",
+      "name": "Learning Path — Partial",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "en",
+      "state": "partial",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|partial",
+      "imageUrl": "/screens/topic_path.partial.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "read_text.default.dark.en",
+      "name": "Read Text",
+      "screenKey": "read_text",
+      "route": "/read",
+      "theme": "dark",
+      "locale": "en",
+      "state": "default",
+      "tags": [
+        "read"
+      ],
+      "group": "Learning",
+      "compareKey": "read_text|default",
+      "imageUrl": "/screens/read_text.default.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.unanswered.dark.en",
+      "name": "Quiz — Unanswered",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "en",
+      "state": "unanswered",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|unanswered",
+      "imageUrl": "/screens/quiz.unanswered.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.correct.dark.en",
+      "name": "Quiz — Correct",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "en",
+      "state": "correct",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|correct",
+      "imageUrl": "/screens/quiz.correct.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.wrong.dark.en",
+      "name": "Quiz — Wrong",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "en",
+      "state": "wrong",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|wrong",
+      "imageUrl": "/screens/quiz.wrong.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.completed.dark.en",
+      "name": "Quiz — Completed",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "en",
+      "state": "completed",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|completed",
+      "imageUrl": "/screens/quiz.completed.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "settings.default.dark.en",
+      "name": "Settings",
+      "screenKey": "settings",
+      "route": "/settings",
+      "theme": "dark",
+      "locale": "en",
+      "state": "default",
+      "tags": [
+        "settings"
+      ],
+      "group": "Settings",
+      "compareKey": "settings|default",
+      "imageUrl": "/screens/settings.default.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "ai_provider_dialog.provider_dialog.dark.en",
+      "name": "AI Provider Picker",
+      "screenKey": "ai_provider_dialog",
+      "route": "/settings",
+      "theme": "dark",
+      "locale": "en",
+      "state": "provider_dialog",
+      "tags": [
+        "settings",
+        "dialog"
+      ],
+      "group": "Settings",
+      "compareKey": "ai_provider_dialog|provider_dialog",
+      "imageUrl": "/screens/ai_provider_dialog.provider_dialog.dark.en.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_language.default.light.pl",
+      "name": "Onboarding — Language",
+      "screenKey": "onboarding_language",
+      "route": "/onboarding",
+      "theme": "light",
+      "locale": "pl",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_language|default",
+      "imageUrl": "/screens/onboarding_language.default.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "language_picker.default.light.pl",
+      "name": "Language Picker",
+      "screenKey": "language_picker",
+      "route": "/language-picker",
+      "theme": "light",
+      "locale": "pl",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "language_picker|default",
+      "imageUrl": "/screens/language_picker.default.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q1.q1.light.pl",
+      "name": "Onboarding — Q1",
+      "screenKey": "onboarding_dialogue_q1",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "pl",
+      "state": "q1",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q1|q1",
+      "imageUrl": "/screens/onboarding_dialogue_q1.q1.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q2.q2.light.pl",
+      "name": "Onboarding — Q2",
+      "screenKey": "onboarding_dialogue_q2",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "pl",
+      "state": "q2",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q2|q2",
+      "imageUrl": "/screens/onboarding_dialogue_q2.q2.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q3.q3.light.pl",
+      "name": "Onboarding — Q3",
+      "screenKey": "onboarding_dialogue_q3",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "pl",
+      "state": "q3",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q3|q3",
+      "imageUrl": "/screens/onboarding_dialogue_q3.q3.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_name.name.light.pl",
+      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_name",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "pl",
+      "state": "name",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_name|name",
+      "imageUrl": "/screens/onboarding_dialogue_name.name.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_video.video.light.pl",
+      "name": "Onboarding — Video",
+      "screenKey": "onboarding_dialogue_video",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "pl",
+      "state": "video",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_video|video",
+      "imageUrl": "/screens/onboarding_dialogue_video.video.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key.light.pl",
+      "name": "Onboarding — API Key",
+      "screenKey": "onboarding_dialogue_api_key",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "pl",
+      "state": "api_key",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_api_key|api_key",
+      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_final.final.light.pl",
+      "name": "Onboarding — Start",
+      "screenKey": "onboarding_dialogue_final",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "pl",
+      "state": "final",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_final|final",
+      "imageUrl": "/screens/onboarding_dialogue_final.final.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.empty.light.pl",
+      "name": "Home — Empty",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "pl",
+      "state": "empty",
+      "tags": [
+        "home",
+        "empty"
+      ],
+      "group": "Home",
+      "compareKey": "home|empty",
+      "imageUrl": "/screens/home.empty.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.ready.light.pl",
+      "name": "Home — Ready",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "pl",
+      "state": "ready",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|ready",
+      "imageUrl": "/screens/home.ready.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.analyzing.light.pl",
+      "name": "Home — Analyzing",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "pl",
+      "state": "analyzing",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|analyzing",
+      "imageUrl": "/screens/home.analyzing.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.queued.light.pl",
+      "name": "Home — Queued",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "pl",
+      "state": "queued",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|queued",
+      "imageUrl": "/screens/home.queued.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.empty.light.pl",
+      "name": "Create Topic — Empty",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "pl",
+      "state": "empty",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|empty",
+      "imageUrl": "/screens/create_topic.empty.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.with_pages.light.pl",
+      "name": "Create Topic — With Pages",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "pl",
+      "state": "with_pages",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|with_pages",
+      "imageUrl": "/screens/create_topic.with_pages.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.ocr.light.pl",
+      "name": "Create Topic — OCR",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "pl",
+      "state": "ocr",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|ocr",
+      "imageUrl": "/screens/create_topic.ocr.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.empty.light.pl",
+      "name": "Learning Path — Empty",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "pl",
+      "state": "empty",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|empty",
+      "imageUrl": "/screens/topic_path.empty.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.ready.light.pl",
+      "name": "Learning Path — Ready",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "pl",
+      "state": "ready",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|ready",
+      "imageUrl": "/screens/topic_path.ready.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.partial.light.pl",
+      "name": "Learning Path — Partial",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "pl",
+      "state": "partial",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|partial",
+      "imageUrl": "/screens/topic_path.partial.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "read_text.default.light.pl",
+      "name": "Read Text",
+      "screenKey": "read_text",
+      "route": "/read",
+      "theme": "light",
+      "locale": "pl",
+      "state": "default",
+      "tags": [
+        "read"
+      ],
+      "group": "Learning",
+      "compareKey": "read_text|default",
+      "imageUrl": "/screens/read_text.default.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.unanswered.light.pl",
+      "name": "Quiz — Unanswered",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "pl",
+      "state": "unanswered",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|unanswered",
+      "imageUrl": "/screens/quiz.unanswered.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.correct.light.pl",
+      "name": "Quiz — Correct",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "pl",
+      "state": "correct",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|correct",
+      "imageUrl": "/screens/quiz.correct.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.wrong.light.pl",
+      "name": "Quiz — Wrong",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "pl",
+      "state": "wrong",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|wrong",
+      "imageUrl": "/screens/quiz.wrong.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.completed.light.pl",
+      "name": "Quiz — Completed",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "pl",
+      "state": "completed",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|completed",
+      "imageUrl": "/screens/quiz.completed.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "settings.default.light.pl",
+      "name": "Settings",
+      "screenKey": "settings",
+      "route": "/settings",
+      "theme": "light",
+      "locale": "pl",
+      "state": "default",
+      "tags": [
+        "settings"
+      ],
+      "group": "Settings",
+      "compareKey": "settings|default",
+      "imageUrl": "/screens/settings.default.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "ai_provider_dialog.provider_dialog.light.pl",
+      "name": "AI Provider Picker",
+      "screenKey": "ai_provider_dialog",
+      "route": "/settings",
+      "theme": "light",
+      "locale": "pl",
+      "state": "provider_dialog",
+      "tags": [
+        "settings",
+        "dialog"
+      ],
+      "group": "Settings",
+      "compareKey": "ai_provider_dialog|provider_dialog",
+      "imageUrl": "/screens/ai_provider_dialog.provider_dialog.light.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_language.default.dark.pl",
+      "name": "Onboarding — Language",
+      "screenKey": "onboarding_language",
+      "route": "/onboarding",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_language|default",
+      "imageUrl": "/screens/onboarding_language.default.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "language_picker.default.dark.pl",
+      "name": "Language Picker",
+      "screenKey": "language_picker",
+      "route": "/language-picker",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "language_picker|default",
+      "imageUrl": "/screens/language_picker.default.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q1.q1.dark.pl",
+      "name": "Onboarding — Q1",
+      "screenKey": "onboarding_dialogue_q1",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "q1",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q1|q1",
+      "imageUrl": "/screens/onboarding_dialogue_q1.q1.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q2.q2.dark.pl",
+      "name": "Onboarding — Q2",
+      "screenKey": "onboarding_dialogue_q2",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "q2",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q2|q2",
+      "imageUrl": "/screens/onboarding_dialogue_q2.q2.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q3.q3.dark.pl",
+      "name": "Onboarding — Q3",
+      "screenKey": "onboarding_dialogue_q3",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "q3",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q3|q3",
+      "imageUrl": "/screens/onboarding_dialogue_q3.q3.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_name.name.dark.pl",
+      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_name",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "name",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_name|name",
+      "imageUrl": "/screens/onboarding_dialogue_name.name.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_video.video.dark.pl",
+      "name": "Onboarding — Video",
+      "screenKey": "onboarding_dialogue_video",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "video",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_video|video",
+      "imageUrl": "/screens/onboarding_dialogue_video.video.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key.dark.pl",
+      "name": "Onboarding — API Key",
+      "screenKey": "onboarding_dialogue_api_key",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "api_key",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_api_key|api_key",
+      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_final.final.dark.pl",
+      "name": "Onboarding — Start",
+      "screenKey": "onboarding_dialogue_final",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "final",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_final|final",
+      "imageUrl": "/screens/onboarding_dialogue_final.final.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.empty.dark.pl",
+      "name": "Home — Empty",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "empty",
+      "tags": [
+        "home",
+        "empty"
+      ],
+      "group": "Home",
+      "compareKey": "home|empty",
+      "imageUrl": "/screens/home.empty.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.ready.dark.pl",
+      "name": "Home — Ready",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "ready",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|ready",
+      "imageUrl": "/screens/home.ready.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.analyzing.dark.pl",
+      "name": "Home — Analyzing",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "analyzing",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|analyzing",
+      "imageUrl": "/screens/home.analyzing.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.queued.dark.pl",
+      "name": "Home — Queued",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "queued",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|queued",
+      "imageUrl": "/screens/home.queued.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.empty.dark.pl",
+      "name": "Create Topic — Empty",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "empty",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|empty",
+      "imageUrl": "/screens/create_topic.empty.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.with_pages.dark.pl",
+      "name": "Create Topic — With Pages",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "with_pages",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|with_pages",
+      "imageUrl": "/screens/create_topic.with_pages.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.ocr.dark.pl",
+      "name": "Create Topic — OCR",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "ocr",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|ocr",
+      "imageUrl": "/screens/create_topic.ocr.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.empty.dark.pl",
+      "name": "Learning Path — Empty",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "empty",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|empty",
+      "imageUrl": "/screens/topic_path.empty.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.ready.dark.pl",
+      "name": "Learning Path — Ready",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "ready",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|ready",
+      "imageUrl": "/screens/topic_path.ready.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.partial.dark.pl",
+      "name": "Learning Path — Partial",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "partial",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|partial",
+      "imageUrl": "/screens/topic_path.partial.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "read_text.default.dark.pl",
+      "name": "Read Text",
+      "screenKey": "read_text",
+      "route": "/read",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "default",
+      "tags": [
+        "read"
+      ],
+      "group": "Learning",
+      "compareKey": "read_text|default",
+      "imageUrl": "/screens/read_text.default.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.unanswered.dark.pl",
+      "name": "Quiz — Unanswered",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "unanswered",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|unanswered",
+      "imageUrl": "/screens/quiz.unanswered.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.correct.dark.pl",
+      "name": "Quiz — Correct",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "correct",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|correct",
+      "imageUrl": "/screens/quiz.correct.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.wrong.dark.pl",
+      "name": "Quiz — Wrong",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "wrong",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|wrong",
+      "imageUrl": "/screens/quiz.wrong.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.completed.dark.pl",
+      "name": "Quiz — Completed",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "completed",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|completed",
+      "imageUrl": "/screens/quiz.completed.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "settings.default.dark.pl",
+      "name": "Settings",
+      "screenKey": "settings",
+      "route": "/settings",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "default",
+      "tags": [
+        "settings"
+      ],
+      "group": "Settings",
+      "compareKey": "settings|default",
+      "imageUrl": "/screens/settings.default.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "ai_provider_dialog.provider_dialog.dark.pl",
+      "name": "AI Provider Picker",
+      "screenKey": "ai_provider_dialog",
+      "route": "/settings",
+      "theme": "dark",
+      "locale": "pl",
+      "state": "provider_dialog",
+      "tags": [
+        "settings",
+        "dialog"
+      ],
+      "group": "Settings",
+      "compareKey": "ai_provider_dialog|provider_dialog",
+      "imageUrl": "/screens/ai_provider_dialog.provider_dialog.dark.pl.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_language.default.light.es",
+      "name": "Onboarding — Language",
+      "screenKey": "onboarding_language",
+      "route": "/onboarding",
+      "theme": "light",
+      "locale": "es",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_language|default",
+      "imageUrl": "/screens/onboarding_language.default.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "language_picker.default.light.es",
+      "name": "Language Picker",
+      "screenKey": "language_picker",
+      "route": "/language-picker",
+      "theme": "light",
+      "locale": "es",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "language_picker|default",
+      "imageUrl": "/screens/language_picker.default.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q1.q1.light.es",
+      "name": "Onboarding — Q1",
+      "screenKey": "onboarding_dialogue_q1",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "es",
+      "state": "q1",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q1|q1",
+      "imageUrl": "/screens/onboarding_dialogue_q1.q1.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q2.q2.light.es",
+      "name": "Onboarding — Q2",
+      "screenKey": "onboarding_dialogue_q2",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "es",
+      "state": "q2",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q2|q2",
+      "imageUrl": "/screens/onboarding_dialogue_q2.q2.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q3.q3.light.es",
+      "name": "Onboarding — Q3",
+      "screenKey": "onboarding_dialogue_q3",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "es",
+      "state": "q3",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q3|q3",
+      "imageUrl": "/screens/onboarding_dialogue_q3.q3.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_name.name.light.es",
+      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_name",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "es",
+      "state": "name",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_name|name",
+      "imageUrl": "/screens/onboarding_dialogue_name.name.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_video.video.light.es",
+      "name": "Onboarding — Video",
+      "screenKey": "onboarding_dialogue_video",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "es",
+      "state": "video",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_video|video",
+      "imageUrl": "/screens/onboarding_dialogue_video.video.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key.light.es",
+      "name": "Onboarding — API Key",
+      "screenKey": "onboarding_dialogue_api_key",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "es",
+      "state": "api_key",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_api_key|api_key",
+      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_final.final.light.es",
+      "name": "Onboarding — Start",
+      "screenKey": "onboarding_dialogue_final",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "es",
+      "state": "final",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_final|final",
+      "imageUrl": "/screens/onboarding_dialogue_final.final.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.empty.light.es",
+      "name": "Home — Empty",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "es",
+      "state": "empty",
+      "tags": [
+        "home",
+        "empty"
+      ],
+      "group": "Home",
+      "compareKey": "home|empty",
+      "imageUrl": "/screens/home.empty.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.ready.light.es",
+      "name": "Home — Ready",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "es",
+      "state": "ready",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|ready",
+      "imageUrl": "/screens/home.ready.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.analyzing.light.es",
+      "name": "Home — Analyzing",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "es",
+      "state": "analyzing",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|analyzing",
+      "imageUrl": "/screens/home.analyzing.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.queued.light.es",
+      "name": "Home — Queued",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "es",
+      "state": "queued",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|queued",
+      "imageUrl": "/screens/home.queued.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.empty.light.es",
+      "name": "Create Topic — Empty",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "es",
+      "state": "empty",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|empty",
+      "imageUrl": "/screens/create_topic.empty.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.with_pages.light.es",
+      "name": "Create Topic — With Pages",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "es",
+      "state": "with_pages",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|with_pages",
+      "imageUrl": "/screens/create_topic.with_pages.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.ocr.light.es",
+      "name": "Create Topic — OCR",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "es",
+      "state": "ocr",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|ocr",
+      "imageUrl": "/screens/create_topic.ocr.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.empty.light.es",
+      "name": "Learning Path — Empty",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "es",
+      "state": "empty",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|empty",
+      "imageUrl": "/screens/topic_path.empty.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.ready.light.es",
+      "name": "Learning Path — Ready",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "es",
+      "state": "ready",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|ready",
+      "imageUrl": "/screens/topic_path.ready.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.partial.light.es",
+      "name": "Learning Path — Partial",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "es",
+      "state": "partial",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|partial",
+      "imageUrl": "/screens/topic_path.partial.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "read_text.default.light.es",
+      "name": "Read Text",
+      "screenKey": "read_text",
+      "route": "/read",
+      "theme": "light",
+      "locale": "es",
+      "state": "default",
+      "tags": [
+        "read"
+      ],
+      "group": "Learning",
+      "compareKey": "read_text|default",
+      "imageUrl": "/screens/read_text.default.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.unanswered.light.es",
+      "name": "Quiz — Unanswered",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "es",
+      "state": "unanswered",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|unanswered",
+      "imageUrl": "/screens/quiz.unanswered.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.correct.light.es",
+      "name": "Quiz — Correct",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "es",
+      "state": "correct",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|correct",
+      "imageUrl": "/screens/quiz.correct.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.wrong.light.es",
+      "name": "Quiz — Wrong",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "es",
+      "state": "wrong",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|wrong",
+      "imageUrl": "/screens/quiz.wrong.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.completed.light.es",
+      "name": "Quiz — Completed",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "es",
+      "state": "completed",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|completed",
+      "imageUrl": "/screens/quiz.completed.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "settings.default.light.es",
+      "name": "Settings",
+      "screenKey": "settings",
+      "route": "/settings",
+      "theme": "light",
+      "locale": "es",
+      "state": "default",
+      "tags": [
+        "settings"
+      ],
+      "group": "Settings",
+      "compareKey": "settings|default",
+      "imageUrl": "/screens/settings.default.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "ai_provider_dialog.provider_dialog.light.es",
+      "name": "AI Provider Picker",
+      "screenKey": "ai_provider_dialog",
+      "route": "/settings",
+      "theme": "light",
+      "locale": "es",
+      "state": "provider_dialog",
+      "tags": [
+        "settings",
+        "dialog"
+      ],
+      "group": "Settings",
+      "compareKey": "ai_provider_dialog|provider_dialog",
+      "imageUrl": "/screens/ai_provider_dialog.provider_dialog.light.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_language.default.dark.es",
+      "name": "Onboarding — Language",
+      "screenKey": "onboarding_language",
+      "route": "/onboarding",
+      "theme": "dark",
+      "locale": "es",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_language|default",
+      "imageUrl": "/screens/onboarding_language.default.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "language_picker.default.dark.es",
+      "name": "Language Picker",
+      "screenKey": "language_picker",
+      "route": "/language-picker",
+      "theme": "dark",
+      "locale": "es",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "language_picker|default",
+      "imageUrl": "/screens/language_picker.default.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q1.q1.dark.es",
+      "name": "Onboarding — Q1",
+      "screenKey": "onboarding_dialogue_q1",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "es",
+      "state": "q1",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q1|q1",
+      "imageUrl": "/screens/onboarding_dialogue_q1.q1.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q2.q2.dark.es",
+      "name": "Onboarding — Q2",
+      "screenKey": "onboarding_dialogue_q2",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "es",
+      "state": "q2",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q2|q2",
+      "imageUrl": "/screens/onboarding_dialogue_q2.q2.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q3.q3.dark.es",
+      "name": "Onboarding — Q3",
+      "screenKey": "onboarding_dialogue_q3",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "es",
+      "state": "q3",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q3|q3",
+      "imageUrl": "/screens/onboarding_dialogue_q3.q3.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_name.name.dark.es",
+      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_name",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "es",
+      "state": "name",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_name|name",
+      "imageUrl": "/screens/onboarding_dialogue_name.name.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_video.video.dark.es",
+      "name": "Onboarding — Video",
+      "screenKey": "onboarding_dialogue_video",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "es",
+      "state": "video",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_video|video",
+      "imageUrl": "/screens/onboarding_dialogue_video.video.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key.dark.es",
+      "name": "Onboarding — API Key",
+      "screenKey": "onboarding_dialogue_api_key",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "es",
+      "state": "api_key",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_api_key|api_key",
+      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_final.final.dark.es",
+      "name": "Onboarding — Start",
+      "screenKey": "onboarding_dialogue_final",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "es",
+      "state": "final",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_final|final",
+      "imageUrl": "/screens/onboarding_dialogue_final.final.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.empty.dark.es",
+      "name": "Home — Empty",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "es",
+      "state": "empty",
+      "tags": [
+        "home",
+        "empty"
+      ],
+      "group": "Home",
+      "compareKey": "home|empty",
+      "imageUrl": "/screens/home.empty.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.ready.dark.es",
+      "name": "Home — Ready",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "es",
+      "state": "ready",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|ready",
+      "imageUrl": "/screens/home.ready.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.analyzing.dark.es",
+      "name": "Home — Analyzing",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "es",
+      "state": "analyzing",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|analyzing",
+      "imageUrl": "/screens/home.analyzing.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.queued.dark.es",
+      "name": "Home — Queued",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "es",
+      "state": "queued",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|queued",
+      "imageUrl": "/screens/home.queued.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.empty.dark.es",
+      "name": "Create Topic — Empty",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "es",
+      "state": "empty",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|empty",
+      "imageUrl": "/screens/create_topic.empty.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.with_pages.dark.es",
+      "name": "Create Topic — With Pages",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "es",
+      "state": "with_pages",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|with_pages",
+      "imageUrl": "/screens/create_topic.with_pages.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.ocr.dark.es",
+      "name": "Create Topic — OCR",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "es",
+      "state": "ocr",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|ocr",
+      "imageUrl": "/screens/create_topic.ocr.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.empty.dark.es",
+      "name": "Learning Path — Empty",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "es",
+      "state": "empty",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|empty",
+      "imageUrl": "/screens/topic_path.empty.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.ready.dark.es",
+      "name": "Learning Path — Ready",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "es",
+      "state": "ready",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|ready",
+      "imageUrl": "/screens/topic_path.ready.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.partial.dark.es",
+      "name": "Learning Path — Partial",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "es",
+      "state": "partial",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|partial",
+      "imageUrl": "/screens/topic_path.partial.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "read_text.default.dark.es",
+      "name": "Read Text",
+      "screenKey": "read_text",
+      "route": "/read",
+      "theme": "dark",
+      "locale": "es",
+      "state": "default",
+      "tags": [
+        "read"
+      ],
+      "group": "Learning",
+      "compareKey": "read_text|default",
+      "imageUrl": "/screens/read_text.default.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.unanswered.dark.es",
+      "name": "Quiz — Unanswered",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "es",
+      "state": "unanswered",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|unanswered",
+      "imageUrl": "/screens/quiz.unanswered.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.correct.dark.es",
+      "name": "Quiz — Correct",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "es",
+      "state": "correct",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|correct",
+      "imageUrl": "/screens/quiz.correct.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.wrong.dark.es",
+      "name": "Quiz — Wrong",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "es",
+      "state": "wrong",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|wrong",
+      "imageUrl": "/screens/quiz.wrong.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.completed.dark.es",
+      "name": "Quiz — Completed",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "es",
+      "state": "completed",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|completed",
+      "imageUrl": "/screens/quiz.completed.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "settings.default.dark.es",
+      "name": "Settings",
+      "screenKey": "settings",
+      "route": "/settings",
+      "theme": "dark",
+      "locale": "es",
+      "state": "default",
+      "tags": [
+        "settings"
+      ],
+      "group": "Settings",
+      "compareKey": "settings|default",
+      "imageUrl": "/screens/settings.default.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "ai_provider_dialog.provider_dialog.dark.es",
+      "name": "AI Provider Picker",
+      "screenKey": "ai_provider_dialog",
+      "route": "/settings",
+      "theme": "dark",
+      "locale": "es",
+      "state": "provider_dialog",
+      "tags": [
+        "settings",
+        "dialog"
+      ],
+      "group": "Settings",
+      "compareKey": "ai_provider_dialog|provider_dialog",
+      "imageUrl": "/screens/ai_provider_dialog.provider_dialog.dark.es.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_language.default.light.de",
+      "name": "Onboarding — Language",
+      "screenKey": "onboarding_language",
+      "route": "/onboarding",
+      "theme": "light",
+      "locale": "de",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_language|default",
+      "imageUrl": "/screens/onboarding_language.default.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "language_picker.default.light.de",
+      "name": "Language Picker",
+      "screenKey": "language_picker",
+      "route": "/language-picker",
+      "theme": "light",
+      "locale": "de",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "language_picker|default",
+      "imageUrl": "/screens/language_picker.default.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q1.q1.light.de",
+      "name": "Onboarding — Q1",
+      "screenKey": "onboarding_dialogue_q1",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "de",
+      "state": "q1",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q1|q1",
+      "imageUrl": "/screens/onboarding_dialogue_q1.q1.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q2.q2.light.de",
+      "name": "Onboarding — Q2",
+      "screenKey": "onboarding_dialogue_q2",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "de",
+      "state": "q2",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q2|q2",
+      "imageUrl": "/screens/onboarding_dialogue_q2.q2.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q3.q3.light.de",
+      "name": "Onboarding — Q3",
+      "screenKey": "onboarding_dialogue_q3",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "de",
+      "state": "q3",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q3|q3",
+      "imageUrl": "/screens/onboarding_dialogue_q3.q3.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_name.name.light.de",
+      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_name",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "de",
+      "state": "name",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_name|name",
+      "imageUrl": "/screens/onboarding_dialogue_name.name.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_video.video.light.de",
+      "name": "Onboarding — Video",
+      "screenKey": "onboarding_dialogue_video",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "de",
+      "state": "video",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_video|video",
+      "imageUrl": "/screens/onboarding_dialogue_video.video.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key.light.de",
+      "name": "Onboarding — API Key",
+      "screenKey": "onboarding_dialogue_api_key",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "de",
+      "state": "api_key",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_api_key|api_key",
+      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_final.final.light.de",
+      "name": "Onboarding — Start",
+      "screenKey": "onboarding_dialogue_final",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "de",
+      "state": "final",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_final|final",
+      "imageUrl": "/screens/onboarding_dialogue_final.final.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.empty.light.de",
+      "name": "Home — Empty",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "de",
+      "state": "empty",
+      "tags": [
+        "home",
+        "empty"
+      ],
+      "group": "Home",
+      "compareKey": "home|empty",
+      "imageUrl": "/screens/home.empty.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.ready.light.de",
+      "name": "Home — Ready",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "de",
+      "state": "ready",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|ready",
+      "imageUrl": "/screens/home.ready.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.analyzing.light.de",
+      "name": "Home — Analyzing",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "de",
+      "state": "analyzing",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|analyzing",
+      "imageUrl": "/screens/home.analyzing.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.queued.light.de",
+      "name": "Home — Queued",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "de",
+      "state": "queued",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|queued",
+      "imageUrl": "/screens/home.queued.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.empty.light.de",
+      "name": "Create Topic — Empty",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "de",
+      "state": "empty",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|empty",
+      "imageUrl": "/screens/create_topic.empty.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.with_pages.light.de",
+      "name": "Create Topic — With Pages",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "de",
+      "state": "with_pages",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|with_pages",
+      "imageUrl": "/screens/create_topic.with_pages.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.ocr.light.de",
+      "name": "Create Topic — OCR",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "de",
+      "state": "ocr",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|ocr",
+      "imageUrl": "/screens/create_topic.ocr.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.empty.light.de",
+      "name": "Learning Path — Empty",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "de",
+      "state": "empty",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|empty",
+      "imageUrl": "/screens/topic_path.empty.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.ready.light.de",
+      "name": "Learning Path — Ready",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "de",
+      "state": "ready",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|ready",
+      "imageUrl": "/screens/topic_path.ready.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.partial.light.de",
+      "name": "Learning Path — Partial",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "de",
+      "state": "partial",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|partial",
+      "imageUrl": "/screens/topic_path.partial.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "read_text.default.light.de",
+      "name": "Read Text",
+      "screenKey": "read_text",
+      "route": "/read",
+      "theme": "light",
+      "locale": "de",
+      "state": "default",
+      "tags": [
+        "read"
+      ],
+      "group": "Learning",
+      "compareKey": "read_text|default",
+      "imageUrl": "/screens/read_text.default.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.unanswered.light.de",
+      "name": "Quiz — Unanswered",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "de",
+      "state": "unanswered",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|unanswered",
+      "imageUrl": "/screens/quiz.unanswered.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.correct.light.de",
+      "name": "Quiz — Correct",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "de",
+      "state": "correct",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|correct",
+      "imageUrl": "/screens/quiz.correct.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.wrong.light.de",
+      "name": "Quiz — Wrong",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "de",
+      "state": "wrong",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|wrong",
+      "imageUrl": "/screens/quiz.wrong.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.completed.light.de",
+      "name": "Quiz — Completed",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "de",
+      "state": "completed",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|completed",
+      "imageUrl": "/screens/quiz.completed.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "settings.default.light.de",
+      "name": "Settings",
+      "screenKey": "settings",
+      "route": "/settings",
+      "theme": "light",
+      "locale": "de",
+      "state": "default",
+      "tags": [
+        "settings"
+      ],
+      "group": "Settings",
+      "compareKey": "settings|default",
+      "imageUrl": "/screens/settings.default.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "ai_provider_dialog.provider_dialog.light.de",
+      "name": "AI Provider Picker",
+      "screenKey": "ai_provider_dialog",
+      "route": "/settings",
+      "theme": "light",
+      "locale": "de",
+      "state": "provider_dialog",
+      "tags": [
+        "settings",
+        "dialog"
+      ],
+      "group": "Settings",
+      "compareKey": "ai_provider_dialog|provider_dialog",
+      "imageUrl": "/screens/ai_provider_dialog.provider_dialog.light.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_language.default.dark.de",
+      "name": "Onboarding — Language",
+      "screenKey": "onboarding_language",
+      "route": "/onboarding",
+      "theme": "dark",
+      "locale": "de",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_language|default",
+      "imageUrl": "/screens/onboarding_language.default.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "language_picker.default.dark.de",
+      "name": "Language Picker",
+      "screenKey": "language_picker",
+      "route": "/language-picker",
+      "theme": "dark",
+      "locale": "de",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "language_picker|default",
+      "imageUrl": "/screens/language_picker.default.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q1.q1.dark.de",
+      "name": "Onboarding — Q1",
+      "screenKey": "onboarding_dialogue_q1",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "de",
+      "state": "q1",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q1|q1",
+      "imageUrl": "/screens/onboarding_dialogue_q1.q1.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q2.q2.dark.de",
+      "name": "Onboarding — Q2",
+      "screenKey": "onboarding_dialogue_q2",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "de",
+      "state": "q2",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q2|q2",
+      "imageUrl": "/screens/onboarding_dialogue_q2.q2.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q3.q3.dark.de",
+      "name": "Onboarding — Q3",
+      "screenKey": "onboarding_dialogue_q3",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "de",
+      "state": "q3",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q3|q3",
+      "imageUrl": "/screens/onboarding_dialogue_q3.q3.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_name.name.dark.de",
+      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_name",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "de",
+      "state": "name",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_name|name",
+      "imageUrl": "/screens/onboarding_dialogue_name.name.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_video.video.dark.de",
+      "name": "Onboarding — Video",
+      "screenKey": "onboarding_dialogue_video",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "de",
+      "state": "video",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_video|video",
+      "imageUrl": "/screens/onboarding_dialogue_video.video.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key.dark.de",
+      "name": "Onboarding — API Key",
+      "screenKey": "onboarding_dialogue_api_key",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "de",
+      "state": "api_key",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_api_key|api_key",
+      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_final.final.dark.de",
+      "name": "Onboarding — Start",
+      "screenKey": "onboarding_dialogue_final",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "de",
+      "state": "final",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_final|final",
+      "imageUrl": "/screens/onboarding_dialogue_final.final.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.empty.dark.de",
+      "name": "Home — Empty",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "de",
+      "state": "empty",
+      "tags": [
+        "home",
+        "empty"
+      ],
+      "group": "Home",
+      "compareKey": "home|empty",
+      "imageUrl": "/screens/home.empty.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.ready.dark.de",
+      "name": "Home — Ready",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "de",
+      "state": "ready",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|ready",
+      "imageUrl": "/screens/home.ready.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.analyzing.dark.de",
+      "name": "Home — Analyzing",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "de",
+      "state": "analyzing",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|analyzing",
+      "imageUrl": "/screens/home.analyzing.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.queued.dark.de",
+      "name": "Home — Queued",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "de",
+      "state": "queued",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|queued",
+      "imageUrl": "/screens/home.queued.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.empty.dark.de",
+      "name": "Create Topic — Empty",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "de",
+      "state": "empty",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|empty",
+      "imageUrl": "/screens/create_topic.empty.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.with_pages.dark.de",
+      "name": "Create Topic — With Pages",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "de",
+      "state": "with_pages",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|with_pages",
+      "imageUrl": "/screens/create_topic.with_pages.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.ocr.dark.de",
+      "name": "Create Topic — OCR",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "de",
+      "state": "ocr",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|ocr",
+      "imageUrl": "/screens/create_topic.ocr.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.empty.dark.de",
+      "name": "Learning Path — Empty",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "de",
+      "state": "empty",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|empty",
+      "imageUrl": "/screens/topic_path.empty.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.ready.dark.de",
+      "name": "Learning Path — Ready",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "de",
+      "state": "ready",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|ready",
+      "imageUrl": "/screens/topic_path.ready.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.partial.dark.de",
+      "name": "Learning Path — Partial",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "de",
+      "state": "partial",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|partial",
+      "imageUrl": "/screens/topic_path.partial.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "read_text.default.dark.de",
+      "name": "Read Text",
+      "screenKey": "read_text",
+      "route": "/read",
+      "theme": "dark",
+      "locale": "de",
+      "state": "default",
+      "tags": [
+        "read"
+      ],
+      "group": "Learning",
+      "compareKey": "read_text|default",
+      "imageUrl": "/screens/read_text.default.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.unanswered.dark.de",
+      "name": "Quiz — Unanswered",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "de",
+      "state": "unanswered",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|unanswered",
+      "imageUrl": "/screens/quiz.unanswered.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.correct.dark.de",
+      "name": "Quiz — Correct",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "de",
+      "state": "correct",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|correct",
+      "imageUrl": "/screens/quiz.correct.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.wrong.dark.de",
+      "name": "Quiz — Wrong",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "de",
+      "state": "wrong",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|wrong",
+      "imageUrl": "/screens/quiz.wrong.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.completed.dark.de",
+      "name": "Quiz — Completed",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "de",
+      "state": "completed",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|completed",
+      "imageUrl": "/screens/quiz.completed.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "settings.default.dark.de",
+      "name": "Settings",
+      "screenKey": "settings",
+      "route": "/settings",
+      "theme": "dark",
+      "locale": "de",
+      "state": "default",
+      "tags": [
+        "settings"
+      ],
+      "group": "Settings",
+      "compareKey": "settings|default",
+      "imageUrl": "/screens/settings.default.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "ai_provider_dialog.provider_dialog.dark.de",
+      "name": "AI Provider Picker",
+      "screenKey": "ai_provider_dialog",
+      "route": "/settings",
+      "theme": "dark",
+      "locale": "de",
+      "state": "provider_dialog",
+      "tags": [
+        "settings",
+        "dialog"
+      ],
+      "group": "Settings",
+      "compareKey": "ai_provider_dialog|provider_dialog",
+      "imageUrl": "/screens/ai_provider_dialog.provider_dialog.dark.de.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_language.default.light.fr",
+      "name": "Onboarding — Language",
+      "screenKey": "onboarding_language",
+      "route": "/onboarding",
+      "theme": "light",
+      "locale": "fr",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_language|default",
+      "imageUrl": "/screens/onboarding_language.default.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "language_picker.default.light.fr",
+      "name": "Language Picker",
+      "screenKey": "language_picker",
+      "route": "/language-picker",
+      "theme": "light",
+      "locale": "fr",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "language_picker|default",
+      "imageUrl": "/screens/language_picker.default.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q1.q1.light.fr",
+      "name": "Onboarding — Q1",
+      "screenKey": "onboarding_dialogue_q1",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "fr",
+      "state": "q1",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q1|q1",
+      "imageUrl": "/screens/onboarding_dialogue_q1.q1.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q2.q2.light.fr",
+      "name": "Onboarding — Q2",
+      "screenKey": "onboarding_dialogue_q2",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "fr",
+      "state": "q2",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q2|q2",
+      "imageUrl": "/screens/onboarding_dialogue_q2.q2.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q3.q3.light.fr",
+      "name": "Onboarding — Q3",
+      "screenKey": "onboarding_dialogue_q3",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "fr",
+      "state": "q3",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q3|q3",
+      "imageUrl": "/screens/onboarding_dialogue_q3.q3.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_name.name.light.fr",
+      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_name",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "fr",
+      "state": "name",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_name|name",
+      "imageUrl": "/screens/onboarding_dialogue_name.name.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_video.video.light.fr",
+      "name": "Onboarding — Video",
+      "screenKey": "onboarding_dialogue_video",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "fr",
+      "state": "video",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_video|video",
+      "imageUrl": "/screens/onboarding_dialogue_video.video.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key.light.fr",
+      "name": "Onboarding — API Key",
+      "screenKey": "onboarding_dialogue_api_key",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "fr",
+      "state": "api_key",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_api_key|api_key",
+      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_final.final.light.fr",
+      "name": "Onboarding — Start",
+      "screenKey": "onboarding_dialogue_final",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "fr",
+      "state": "final",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_final|final",
+      "imageUrl": "/screens/onboarding_dialogue_final.final.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.empty.light.fr",
+      "name": "Home — Empty",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "fr",
+      "state": "empty",
+      "tags": [
+        "home",
+        "empty"
+      ],
+      "group": "Home",
+      "compareKey": "home|empty",
+      "imageUrl": "/screens/home.empty.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.ready.light.fr",
+      "name": "Home — Ready",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "fr",
+      "state": "ready",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|ready",
+      "imageUrl": "/screens/home.ready.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.analyzing.light.fr",
+      "name": "Home — Analyzing",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "fr",
+      "state": "analyzing",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|analyzing",
+      "imageUrl": "/screens/home.analyzing.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.queued.light.fr",
+      "name": "Home — Queued",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "fr",
+      "state": "queued",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|queued",
+      "imageUrl": "/screens/home.queued.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.empty.light.fr",
+      "name": "Create Topic — Empty",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "fr",
+      "state": "empty",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|empty",
+      "imageUrl": "/screens/create_topic.empty.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.with_pages.light.fr",
+      "name": "Create Topic — With Pages",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "fr",
+      "state": "with_pages",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|with_pages",
+      "imageUrl": "/screens/create_topic.with_pages.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.ocr.light.fr",
+      "name": "Create Topic — OCR",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "fr",
+      "state": "ocr",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|ocr",
+      "imageUrl": "/screens/create_topic.ocr.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.empty.light.fr",
+      "name": "Learning Path — Empty",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "fr",
+      "state": "empty",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|empty",
+      "imageUrl": "/screens/topic_path.empty.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.ready.light.fr",
+      "name": "Learning Path — Ready",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "fr",
+      "state": "ready",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|ready",
+      "imageUrl": "/screens/topic_path.ready.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.partial.light.fr",
+      "name": "Learning Path — Partial",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "fr",
+      "state": "partial",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|partial",
+      "imageUrl": "/screens/topic_path.partial.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "read_text.default.light.fr",
+      "name": "Read Text",
+      "screenKey": "read_text",
+      "route": "/read",
+      "theme": "light",
+      "locale": "fr",
+      "state": "default",
+      "tags": [
+        "read"
+      ],
+      "group": "Learning",
+      "compareKey": "read_text|default",
+      "imageUrl": "/screens/read_text.default.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.unanswered.light.fr",
+      "name": "Quiz — Unanswered",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "fr",
+      "state": "unanswered",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|unanswered",
+      "imageUrl": "/screens/quiz.unanswered.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.correct.light.fr",
+      "name": "Quiz — Correct",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "fr",
+      "state": "correct",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|correct",
+      "imageUrl": "/screens/quiz.correct.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.wrong.light.fr",
+      "name": "Quiz — Wrong",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "fr",
+      "state": "wrong",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|wrong",
+      "imageUrl": "/screens/quiz.wrong.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.completed.light.fr",
+      "name": "Quiz — Completed",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "fr",
+      "state": "completed",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|completed",
+      "imageUrl": "/screens/quiz.completed.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "settings.default.light.fr",
+      "name": "Settings",
+      "screenKey": "settings",
+      "route": "/settings",
+      "theme": "light",
+      "locale": "fr",
+      "state": "default",
+      "tags": [
+        "settings"
+      ],
+      "group": "Settings",
+      "compareKey": "settings|default",
+      "imageUrl": "/screens/settings.default.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "ai_provider_dialog.provider_dialog.light.fr",
+      "name": "AI Provider Picker",
+      "screenKey": "ai_provider_dialog",
+      "route": "/settings",
+      "theme": "light",
+      "locale": "fr",
+      "state": "provider_dialog",
+      "tags": [
+        "settings",
+        "dialog"
+      ],
+      "group": "Settings",
+      "compareKey": "ai_provider_dialog|provider_dialog",
+      "imageUrl": "/screens/ai_provider_dialog.provider_dialog.light.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_language.default.dark.fr",
+      "name": "Onboarding — Language",
+      "screenKey": "onboarding_language",
+      "route": "/onboarding",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_language|default",
+      "imageUrl": "/screens/onboarding_language.default.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "language_picker.default.dark.fr",
+      "name": "Language Picker",
+      "screenKey": "language_picker",
+      "route": "/language-picker",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "language_picker|default",
+      "imageUrl": "/screens/language_picker.default.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q1.q1.dark.fr",
+      "name": "Onboarding — Q1",
+      "screenKey": "onboarding_dialogue_q1",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "q1",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q1|q1",
+      "imageUrl": "/screens/onboarding_dialogue_q1.q1.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q2.q2.dark.fr",
+      "name": "Onboarding — Q2",
+      "screenKey": "onboarding_dialogue_q2",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "q2",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q2|q2",
+      "imageUrl": "/screens/onboarding_dialogue_q2.q2.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q3.q3.dark.fr",
+      "name": "Onboarding — Q3",
+      "screenKey": "onboarding_dialogue_q3",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "q3",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q3|q3",
+      "imageUrl": "/screens/onboarding_dialogue_q3.q3.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_name.name.dark.fr",
+      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_name",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "name",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_name|name",
+      "imageUrl": "/screens/onboarding_dialogue_name.name.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_video.video.dark.fr",
+      "name": "Onboarding — Video",
+      "screenKey": "onboarding_dialogue_video",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "video",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_video|video",
+      "imageUrl": "/screens/onboarding_dialogue_video.video.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key.dark.fr",
+      "name": "Onboarding — API Key",
+      "screenKey": "onboarding_dialogue_api_key",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "api_key",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_api_key|api_key",
+      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_final.final.dark.fr",
+      "name": "Onboarding — Start",
+      "screenKey": "onboarding_dialogue_final",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "final",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_final|final",
+      "imageUrl": "/screens/onboarding_dialogue_final.final.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.empty.dark.fr",
+      "name": "Home — Empty",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "empty",
+      "tags": [
+        "home",
+        "empty"
+      ],
+      "group": "Home",
+      "compareKey": "home|empty",
+      "imageUrl": "/screens/home.empty.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.ready.dark.fr",
+      "name": "Home — Ready",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "ready",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|ready",
+      "imageUrl": "/screens/home.ready.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.analyzing.dark.fr",
+      "name": "Home — Analyzing",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "analyzing",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|analyzing",
+      "imageUrl": "/screens/home.analyzing.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.queued.dark.fr",
+      "name": "Home — Queued",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "queued",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|queued",
+      "imageUrl": "/screens/home.queued.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.empty.dark.fr",
+      "name": "Create Topic — Empty",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "empty",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|empty",
+      "imageUrl": "/screens/create_topic.empty.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.with_pages.dark.fr",
+      "name": "Create Topic — With Pages",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "with_pages",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|with_pages",
+      "imageUrl": "/screens/create_topic.with_pages.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.ocr.dark.fr",
+      "name": "Create Topic — OCR",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "ocr",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|ocr",
+      "imageUrl": "/screens/create_topic.ocr.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.empty.dark.fr",
+      "name": "Learning Path — Empty",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "empty",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|empty",
+      "imageUrl": "/screens/topic_path.empty.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.ready.dark.fr",
+      "name": "Learning Path — Ready",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "ready",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|ready",
+      "imageUrl": "/screens/topic_path.ready.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.partial.dark.fr",
+      "name": "Learning Path — Partial",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "partial",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|partial",
+      "imageUrl": "/screens/topic_path.partial.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "read_text.default.dark.fr",
+      "name": "Read Text",
+      "screenKey": "read_text",
+      "route": "/read",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "default",
+      "tags": [
+        "read"
+      ],
+      "group": "Learning",
+      "compareKey": "read_text|default",
+      "imageUrl": "/screens/read_text.default.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.unanswered.dark.fr",
+      "name": "Quiz — Unanswered",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "unanswered",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|unanswered",
+      "imageUrl": "/screens/quiz.unanswered.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.correct.dark.fr",
+      "name": "Quiz — Correct",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "correct",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|correct",
+      "imageUrl": "/screens/quiz.correct.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.wrong.dark.fr",
+      "name": "Quiz — Wrong",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "wrong",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|wrong",
+      "imageUrl": "/screens/quiz.wrong.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.completed.dark.fr",
+      "name": "Quiz — Completed",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "completed",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|completed",
+      "imageUrl": "/screens/quiz.completed.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "settings.default.dark.fr",
+      "name": "Settings",
+      "screenKey": "settings",
+      "route": "/settings",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "default",
+      "tags": [
+        "settings"
+      ],
+      "group": "Settings",
+      "compareKey": "settings|default",
+      "imageUrl": "/screens/settings.default.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "ai_provider_dialog.provider_dialog.dark.fr",
+      "name": "AI Provider Picker",
+      "screenKey": "ai_provider_dialog",
+      "route": "/settings",
+      "theme": "dark",
+      "locale": "fr",
+      "state": "provider_dialog",
+      "tags": [
+        "settings",
+        "dialog"
+      ],
+      "group": "Settings",
+      "compareKey": "ai_provider_dialog|provider_dialog",
+      "imageUrl": "/screens/ai_provider_dialog.provider_dialog.dark.fr.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_language.default.light.uk",
+      "name": "Onboarding — Language",
+      "screenKey": "onboarding_language",
+      "route": "/onboarding",
+      "theme": "light",
+      "locale": "uk",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_language|default",
+      "imageUrl": "/screens/onboarding_language.default.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "language_picker.default.light.uk",
+      "name": "Language Picker",
+      "screenKey": "language_picker",
+      "route": "/language-picker",
+      "theme": "light",
+      "locale": "uk",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "language_picker|default",
+      "imageUrl": "/screens/language_picker.default.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q1.q1.light.uk",
+      "name": "Onboarding — Q1",
+      "screenKey": "onboarding_dialogue_q1",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "uk",
+      "state": "q1",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q1|q1",
+      "imageUrl": "/screens/onboarding_dialogue_q1.q1.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q2.q2.light.uk",
+      "name": "Onboarding — Q2",
+      "screenKey": "onboarding_dialogue_q2",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "uk",
+      "state": "q2",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q2|q2",
+      "imageUrl": "/screens/onboarding_dialogue_q2.q2.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q3.q3.light.uk",
+      "name": "Onboarding — Q3",
+      "screenKey": "onboarding_dialogue_q3",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "uk",
+      "state": "q3",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q3|q3",
+      "imageUrl": "/screens/onboarding_dialogue_q3.q3.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_name.name.light.uk",
+      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_name",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "uk",
+      "state": "name",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_name|name",
+      "imageUrl": "/screens/onboarding_dialogue_name.name.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_video.video.light.uk",
+      "name": "Onboarding — Video",
+      "screenKey": "onboarding_dialogue_video",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "uk",
+      "state": "video",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_video|video",
+      "imageUrl": "/screens/onboarding_dialogue_video.video.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key.light.uk",
+      "name": "Onboarding — API Key",
+      "screenKey": "onboarding_dialogue_api_key",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "uk",
+      "state": "api_key",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_api_key|api_key",
+      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_final.final.light.uk",
+      "name": "Onboarding — Start",
+      "screenKey": "onboarding_dialogue_final",
+      "route": "/onboarding-dialogue",
+      "theme": "light",
+      "locale": "uk",
+      "state": "final",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_final|final",
+      "imageUrl": "/screens/onboarding_dialogue_final.final.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.empty.light.uk",
+      "name": "Home — Empty",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "uk",
+      "state": "empty",
+      "tags": [
+        "home",
+        "empty"
+      ],
+      "group": "Home",
+      "compareKey": "home|empty",
+      "imageUrl": "/screens/home.empty.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.ready.light.uk",
+      "name": "Home — Ready",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "uk",
+      "state": "ready",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|ready",
+      "imageUrl": "/screens/home.ready.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.analyzing.light.uk",
+      "name": "Home — Analyzing",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "uk",
+      "state": "analyzing",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|analyzing",
+      "imageUrl": "/screens/home.analyzing.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.queued.light.uk",
+      "name": "Home — Queued",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "light",
+      "locale": "uk",
+      "state": "queued",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|queued",
+      "imageUrl": "/screens/home.queued.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.empty.light.uk",
+      "name": "Create Topic — Empty",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "uk",
+      "state": "empty",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|empty",
+      "imageUrl": "/screens/create_topic.empty.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.with_pages.light.uk",
+      "name": "Create Topic — With Pages",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "uk",
+      "state": "with_pages",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|with_pages",
+      "imageUrl": "/screens/create_topic.with_pages.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.ocr.light.uk",
+      "name": "Create Topic — OCR",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "light",
+      "locale": "uk",
+      "state": "ocr",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|ocr",
+      "imageUrl": "/screens/create_topic.ocr.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.empty.light.uk",
+      "name": "Learning Path — Empty",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "uk",
+      "state": "empty",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|empty",
+      "imageUrl": "/screens/topic_path.empty.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.ready.light.uk",
+      "name": "Learning Path — Ready",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "uk",
+      "state": "ready",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|ready",
+      "imageUrl": "/screens/topic_path.ready.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.partial.light.uk",
+      "name": "Learning Path — Partial",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "light",
+      "locale": "uk",
+      "state": "partial",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|partial",
+      "imageUrl": "/screens/topic_path.partial.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "read_text.default.light.uk",
+      "name": "Read Text",
+      "screenKey": "read_text",
+      "route": "/read",
+      "theme": "light",
+      "locale": "uk",
+      "state": "default",
+      "tags": [
+        "read"
+      ],
+      "group": "Learning",
+      "compareKey": "read_text|default",
+      "imageUrl": "/screens/read_text.default.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.unanswered.light.uk",
+      "name": "Quiz — Unanswered",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "uk",
+      "state": "unanswered",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|unanswered",
+      "imageUrl": "/screens/quiz.unanswered.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.correct.light.uk",
+      "name": "Quiz — Correct",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "uk",
+      "state": "correct",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|correct",
+      "imageUrl": "/screens/quiz.correct.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.wrong.light.uk",
+      "name": "Quiz — Wrong",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "uk",
+      "state": "wrong",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|wrong",
+      "imageUrl": "/screens/quiz.wrong.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.completed.light.uk",
+      "name": "Quiz — Completed",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "light",
+      "locale": "uk",
+      "state": "completed",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|completed",
+      "imageUrl": "/screens/quiz.completed.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "settings.default.light.uk",
+      "name": "Settings",
+      "screenKey": "settings",
+      "route": "/settings",
+      "theme": "light",
+      "locale": "uk",
+      "state": "default",
+      "tags": [
+        "settings"
+      ],
+      "group": "Settings",
+      "compareKey": "settings|default",
+      "imageUrl": "/screens/settings.default.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "ai_provider_dialog.provider_dialog.light.uk",
+      "name": "AI Provider Picker",
+      "screenKey": "ai_provider_dialog",
+      "route": "/settings",
+      "theme": "light",
+      "locale": "uk",
+      "state": "provider_dialog",
+      "tags": [
+        "settings",
+        "dialog"
+      ],
+      "group": "Settings",
+      "compareKey": "ai_provider_dialog|provider_dialog",
+      "imageUrl": "/screens/ai_provider_dialog.provider_dialog.light.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_language.default.dark.uk",
+      "name": "Onboarding — Language",
+      "screenKey": "onboarding_language",
+      "route": "/onboarding",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_language|default",
+      "imageUrl": "/screens/onboarding_language.default.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "language_picker.default.dark.uk",
+      "name": "Language Picker",
+      "screenKey": "language_picker",
+      "route": "/language-picker",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "default",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "language_picker|default",
+      "imageUrl": "/screens/language_picker.default.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q1.q1.dark.uk",
+      "name": "Onboarding — Q1",
+      "screenKey": "onboarding_dialogue_q1",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "q1",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q1|q1",
+      "imageUrl": "/screens/onboarding_dialogue_q1.q1.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q2.q2.dark.uk",
+      "name": "Onboarding — Q2",
+      "screenKey": "onboarding_dialogue_q2",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "q2",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q2|q2",
+      "imageUrl": "/screens/onboarding_dialogue_q2.q2.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_q3.q3.dark.uk",
+      "name": "Onboarding — Q3",
+      "screenKey": "onboarding_dialogue_q3",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "q3",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_q3|q3",
+      "imageUrl": "/screens/onboarding_dialogue_q3.q3.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_name.name.dark.uk",
+      "name": "Onboarding — Name",
+      "screenKey": "onboarding_dialogue_name",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "name",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_name|name",
+      "imageUrl": "/screens/onboarding_dialogue_name.name.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_video.video.dark.uk",
+      "name": "Onboarding — Video",
+      "screenKey": "onboarding_dialogue_video",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "video",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_video|video",
+      "imageUrl": "/screens/onboarding_dialogue_video.video.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key.dark.uk",
+      "name": "Onboarding — API Key",
+      "screenKey": "onboarding_dialogue_api_key",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "api_key",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_api_key|api_key",
+      "imageUrl": "/screens/onboarding_dialogue_api_key.api_key.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "onboarding_dialogue_final.final.dark.uk",
+      "name": "Onboarding — Start",
+      "screenKey": "onboarding_dialogue_final",
+      "route": "/onboarding-dialogue",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "final",
+      "tags": [
+        "onboarding"
+      ],
+      "group": "Onboarding",
+      "compareKey": "onboarding_dialogue_final|final",
+      "imageUrl": "/screens/onboarding_dialogue_final.final.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.empty.dark.uk",
+      "name": "Home — Empty",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "empty",
+      "tags": [
+        "home",
+        "empty"
+      ],
+      "group": "Home",
+      "compareKey": "home|empty",
+      "imageUrl": "/screens/home.empty.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.ready.dark.uk",
+      "name": "Home — Ready",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "ready",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|ready",
+      "imageUrl": "/screens/home.ready.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.analyzing.dark.uk",
+      "name": "Home — Analyzing",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "analyzing",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|analyzing",
+      "imageUrl": "/screens/home.analyzing.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "home.queued.dark.uk",
+      "name": "Home — Queued",
+      "screenKey": "home",
+      "route": "/home",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "queued",
+      "tags": [
+        "home"
+      ],
+      "group": "Home",
+      "compareKey": "home|queued",
+      "imageUrl": "/screens/home.queued.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.empty.dark.uk",
+      "name": "Create Topic — Empty",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "empty",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|empty",
+      "imageUrl": "/screens/create_topic.empty.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.with_pages.dark.uk",
+      "name": "Create Topic — With Pages",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "with_pages",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|with_pages",
+      "imageUrl": "/screens/create_topic.with_pages.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "create_topic.ocr.dark.uk",
+      "name": "Create Topic — OCR",
+      "screenKey": "create_topic",
+      "route": "/create-topic",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "ocr",
+      "tags": [
+        "create"
+      ],
+      "group": "Create Topic",
+      "compareKey": "create_topic|ocr",
+      "imageUrl": "/screens/create_topic.ocr.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.empty.dark.uk",
+      "name": "Learning Path — Empty",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "empty",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|empty",
+      "imageUrl": "/screens/topic_path.empty.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.ready.dark.uk",
+      "name": "Learning Path — Ready",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "ready",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|ready",
+      "imageUrl": "/screens/topic_path.ready.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "topic_path.partial.dark.uk",
+      "name": "Learning Path — Partial",
+      "screenKey": "topic_path",
+      "route": "/topic",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "partial",
+      "tags": [
+        "path"
+      ],
+      "group": "Learning",
+      "compareKey": "topic_path|partial",
+      "imageUrl": "/screens/topic_path.partial.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "read_text.default.dark.uk",
+      "name": "Read Text",
+      "screenKey": "read_text",
+      "route": "/read",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "default",
+      "tags": [
+        "read"
+      ],
+      "group": "Learning",
+      "compareKey": "read_text|default",
+      "imageUrl": "/screens/read_text.default.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.unanswered.dark.uk",
+      "name": "Quiz — Unanswered",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "unanswered",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|unanswered",
+      "imageUrl": "/screens/quiz.unanswered.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.correct.dark.uk",
+      "name": "Quiz — Correct",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "correct",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|correct",
+      "imageUrl": "/screens/quiz.correct.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.wrong.dark.uk",
+      "name": "Quiz — Wrong",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "wrong",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|wrong",
+      "imageUrl": "/screens/quiz.wrong.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "quiz.completed.dark.uk",
+      "name": "Quiz — Completed",
+      "screenKey": "quiz",
+      "route": "/quiz",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "completed",
+      "tags": [
+        "quiz"
+      ],
+      "group": "Quiz",
+      "compareKey": "quiz|completed",
+      "imageUrl": "/screens/quiz.completed.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "settings.default.dark.uk",
+      "name": "Settings",
+      "screenKey": "settings",
+      "route": "/settings",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "default",
+      "tags": [
+        "settings"
+      ],
+      "group": "Settings",
+      "compareKey": "settings|default",
+      "imageUrl": "/screens/settings.default.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "id": "ai_provider_dialog.provider_dialog.dark.uk",
+      "name": "AI Provider Picker",
+      "screenKey": "ai_provider_dialog",
+      "route": "/settings",
+      "theme": "dark",
+      "locale": "uk",
+      "state": "provider_dialog",
+      "tags": [
+        "settings",
+        "dialog"
+      ],
+      "group": "Settings",
+      "compareKey": "ai_provider_dialog|provider_dialog",
+      "imageUrl": "/screens/ai_provider_dialog.provider_dialog.dark.uk.png",
+      "size": {
+        "width": 390,
+        "height": 844
+      }
+    }
+  ]
+}

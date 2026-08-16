@@ -60,6 +60,14 @@
     cMapPacked: true,
   }
   </script>
+  <script>
+    // Drop stale Flutter PWAs so deep-link previews always load the latest build.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then((regs) => {
+        for (const reg of regs) reg.unregister();
+      }).catch(() => {});
+    }
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
