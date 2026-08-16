@@ -1,7 +1,163 @@
 {
-  "generatedAt": "2026-08-16T20:00:28.688Z",
+  "generatedAt": "2026-08-16T20:01:53.396Z",
   "gitSha": "00be2856d018",
-  "failed": [],
+  "failed": [
+    {
+      "id": "quiz.wrong.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=wrong\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=wrong\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.wrong_with_cta.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=wrong_with_cta\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=wrong_with_cta\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.completed.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=completed\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=completed\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.mid_progress.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=mid_progress\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=mid_progress\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.mid_progress_wrong_with_cta.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=mid_progress_wrong_with_cta\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=mid_progress_wrong_with_cta\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.revision.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=revision\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=revision\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.revision_wrong.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=revision_wrong\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=revision_wrong\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.no_questions.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=no_questions\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=no_questions\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.long_options.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=long_options\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=long_options\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.long_options_scrolled_mid.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=long_options_scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=dark&locale=en&state=long_options_scrolled_mid\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "ai_analysis.analyzing_start.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=ai_analysis&theme=dark&locale=en&state=analyzing_start\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=ai_analysis&theme=dark&locale=en&state=analyzing_start\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "ai_analysis.analyzing_mid.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=ai_analysis&theme=dark&locale=en&state=analyzing_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=ai_analysis&theme=dark&locale=en&state=analyzing_mid\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "download_prompt.default.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=download_prompt&theme=dark&locale=en&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=download_prompt&theme=dark&locale=en&state=default\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.default.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=default\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.no_api_key.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=no_api_key\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=no_api_key\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.key_visible.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=key_visible\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=key_visible\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.sound_muted.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=sound_muted\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=sound_muted\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.scrolled_mid.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=scrolled_mid\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.scrolled_bottom.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=scrolled_bottom\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=scrolled_bottom\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_google_ai_studio.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_google_ai_studio\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_google_ai_studio\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_groq.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_groq\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_groq\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_cerebras.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_cerebras\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_cerebras\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_open_router.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_open_router\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_open_router\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_openai.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_openai\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_openai\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_sambanova.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_sambanova\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_sambanova\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_mistral.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_mistral\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_mistral\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_zai.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_zai\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=dark&locale=en&state=provider_zai\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "ai_provider_dialog.default.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=ai_provider_dialog&theme=dark&locale=en&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=ai_provider_dialog&theme=dark&locale=en&state=default\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "ai_provider_dialog.scrolled_mid.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=ai_provider_dialog&theme=dark&locale=en&state=scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=ai_provider_dialog&theme=dark&locale=en&state=scrolled_mid\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "logs.empty.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=logs&theme=dark&locale=en&state=empty\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=logs&theme=dark&locale=en&state=empty\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "logs.with_entries.dark.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=logs&theme=dark&locale=en&state=with_entries\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=logs&theme=dark&locale=en&state=with_entries\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
   "thumbFailures": [],
   "thumbFailureCount": 0
 }
