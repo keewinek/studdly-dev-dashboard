@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-08-16T16:54:24.569Z",
+  "generatedAt": "2026-08-16T16:56:16.851Z",
   "gitSha": "ca6865e16f61",
   "appVersion": "preview-capture",
   "flutterPreviewBaseUrl": "/app/",
@@ -9,7 +9,7 @@
     "total": 1344,
     "failed": 0,
     "keptOld": 0,
-    "missing": 430,
+    "missing": 387,
     "stale": 0
   },
   "device": {
@@ -5673,13 +5673,13 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.688Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.843Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_language.other_highlighted.light.pl",
-      "name": "Onboarding — Language — Other",
+      "name": "Onboarding — Language — Other Selected",
       "screenKey": "onboarding_language",
       "route": "/onboarding",
       "theme": "light",
@@ -5697,9 +5697,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.688Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.843Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "language_picker.default.light.pl",
@@ -5721,9 +5721,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.688Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "language_picker.no_selection.light.pl",
@@ -5746,9 +5746,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.688Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "language_picker.search.light.pl",
@@ -5771,9 +5771,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.688Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "language_picker.search_empty.light.pl",
@@ -5797,9 +5797,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.688Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "language_picker.scrolled_mid.light.pl",
@@ -5822,9 +5822,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.688Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_q1.default.light.pl",
@@ -5845,8 +5845,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_q1.option_selected.light.pl",
@@ -5868,9 +5870,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.689Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_q2.default.light.pl",
@@ -5891,8 +5893,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_q2.option_selected.light.pl",
@@ -5913,8 +5917,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_q3.default.light.pl",
@@ -5935,8 +5941,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_q3.option_selected.light.pl",
@@ -5957,8 +5965,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_name.empty.light.pl",
@@ -5980,8 +5990,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_name.filled.light.pl",
@@ -6002,8 +6014,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.844Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_video.video_google_ai_studio.light.pl",
@@ -6027,8 +6041,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_video.video_groq.light.pl",
@@ -6052,8 +6068,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_video.video_cerebras.light.pl",
@@ -6077,8 +6095,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_video.video_open_router.light.pl",
@@ -6102,8 +6122,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_video.video_openai.light.pl",
@@ -6127,8 +6149,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_video.video_sambanova.light.pl",
@@ -6152,8 +6176,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_video.video_mistral.light.pl",
@@ -6177,8 +6203,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_video.video_zai.light.pl",
@@ -6202,8 +6230,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_google_ai_studio.light.pl",
@@ -6227,8 +6257,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_groq.light.pl",
@@ -6252,8 +6284,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_cerebras.light.pl",
@@ -6277,8 +6311,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_open_router.light.pl",
@@ -6302,8 +6338,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_openai.light.pl",
@@ -6327,8 +6365,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_sambanova.light.pl",
@@ -6352,8 +6392,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_mistral.light.pl",
@@ -6377,8 +6419,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_zai.light.pl",
@@ -6402,8 +6446,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_api_key.testing.light.pl",
@@ -6414,9 +6460,11 @@
       "locale": "pl",
       "state": "testing",
       "tags": [
-        "onboarding"
+        "onboarding",
+        "ai",
+        "ai"
       ],
-      "group": "Onboarding",
+      "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|testing",
       "imageUrl": "/screens/onboarding_dialogue_api_key.testing.light.pl.png",
       "size": {
@@ -6425,22 +6473,25 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.689Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.845Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_api_key.error.light.pl",
-      "name": "Onboarding — API Key — Invalid",
+      "name": "Onboarding — API Key — Invalid Key",
       "screenKey": "onboarding_dialogue_api_key",
       "route": "/onboarding-dialogue",
       "theme": "light",
       "locale": "pl",
       "state": "error",
       "tags": [
-        "onboarding"
+        "onboarding",
+        "ai",
+        "ai",
+        "error"
       ],
-      "group": "Onboarding",
+      "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|error",
       "imageUrl": "/screens/onboarding_dialogue_api_key.error.light.pl.png",
       "size": {
@@ -6449,22 +6500,24 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.689Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_api_key.visible.light.pl",
-      "name": "Onboarding — API Key — Visible",
+      "name": "Onboarding — API Key — Key Visible",
       "screenKey": "onboarding_dialogue_api_key",
       "route": "/onboarding-dialogue",
       "theme": "light",
       "locale": "pl",
       "state": "visible",
       "tags": [
-        "onboarding"
+        "onboarding",
+        "ai",
+        "ai"
       ],
-      "group": "Onboarding",
+      "group": "Onboarding · AI",
       "compareKey": "onboarding_dialogue_api_key|visible",
       "imageUrl": "/screens/onboarding_dialogue_api_key.visible.light.pl.png",
       "size": {
@@ -6473,9 +6526,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.689Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_api_key.provider_dialog.light.pl",
@@ -6499,8 +6552,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_easy.default.light.pl",
@@ -6521,8 +6576,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_dialogue_final.default.light.pl",
@@ -6543,8 +6600,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.empty.light.pl",
@@ -6567,9 +6626,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.ready.light.pl",
@@ -6591,9 +6650,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.ready_scrolled_mid.light.pl",
@@ -6616,9 +6675,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.ready_scrolled_bottom.light.pl",
@@ -6641,13 +6700,13 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.empty_ready.light.pl",
-      "name": "Home — Empty Ready",
+      "name": "Home — Empty Ready Path",
       "screenKey": "home",
       "route": "/home",
       "theme": "light",
@@ -6666,9 +6725,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.partial_progress.light.pl",
@@ -6690,9 +6749,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.analyzing.light.pl",
@@ -6714,9 +6773,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.queued.light.pl",
@@ -6738,9 +6797,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.mixed_statuses.light.pl",
@@ -6762,9 +6821,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.mixed_scrolled_mid.light.pl",
@@ -6787,9 +6846,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.search_no_results.light.pl",
@@ -6813,9 +6872,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.context_menu.light.pl",
@@ -6838,9 +6897,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.rename.light.pl",
@@ -6862,9 +6921,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "home.delete_dialog.light.pl",
@@ -6887,9 +6946,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "create_topic.empty.light.pl",
@@ -6912,9 +6971,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.846Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "create_topic.title_only.light.pl",
@@ -6936,9 +6995,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "create_topic.with_pages.light.pl",
@@ -6960,9 +7019,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "create_topic.pages_one.light.pl",
@@ -6984,9 +7043,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "create_topic.ocr.light.pl",
@@ -7008,9 +7067,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "create_topic.ocr_start.light.pl",
@@ -7032,9 +7091,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "create_topic.creating.light.pl",
@@ -7056,13 +7115,13 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "create_topic.pages_many_scrolled_mid.light.pl",
-      "name": "Create Topic — Pages Scrolled",
+      "name": "Create Topic — Many Pages Scrolled",
       "screenKey": "create_topic",
       "route": "/create-topic",
       "theme": "light",
@@ -7081,9 +7140,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "create_topic.advancement_open.light.pl",
@@ -7105,9 +7164,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.690Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "create_topic.permission_dialog.light.pl",
@@ -7130,9 +7189,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "create_topic.suggested_title_dialog.light.pl",
@@ -7155,9 +7214,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "create_topic.add_page_sheet.light.pl",
@@ -7179,8 +7238,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "topic_path.empty.light.pl",
@@ -7203,9 +7264,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "topic_path.partial.light.pl",
@@ -7227,9 +7288,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "topic_path.ready.light.pl",
@@ -7251,9 +7312,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "topic_path.expanded.light.pl",
@@ -7275,9 +7336,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "topic_path.completed_nodes.light.pl",
@@ -7299,9 +7360,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "topic_path.completed_nodes_expanded.light.pl",
@@ -7323,9 +7384,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "topic_path.analyzing_with_path.light.pl",
@@ -7347,9 +7408,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.847Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "topic_path.scrolled.light.pl",
@@ -7372,9 +7433,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "topic_path.ready_scrolled_bottom.light.pl",
@@ -7397,9 +7458,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "topic_path.empty_content_dialog.light.pl",
@@ -7422,9 +7483,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "read_text.quiz_disabled.light.pl",
@@ -7446,9 +7507,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "read_text.quiz_enabled.light.pl",
@@ -7470,9 +7531,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "read_text.empty_content.light.pl",
@@ -7495,9 +7556,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "read_text.reading_aloud.light.pl",
@@ -7519,9 +7580,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "read_text.scrolled.light.pl",
@@ -7544,9 +7605,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "read_text.scrolled_bottom.light.pl",
@@ -7569,9 +7630,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "quiz.unanswered.light.pl",
@@ -7593,9 +7654,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "quiz.correct.light.pl",
@@ -7617,9 +7678,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "quiz.wrong.light.pl",
@@ -7641,9 +7702,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "quiz.wrong_with_cta.light.pl",
@@ -7665,13 +7726,13 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "quiz.completed.light.pl",
-      "name": "Quiz — Completed",
+      "name": "Quiz — Path Completed",
       "screenKey": "quiz",
       "route": "/quiz",
       "theme": "light",
@@ -7689,9 +7750,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "quiz.mid_progress.light.pl",
@@ -7713,9 +7774,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "quiz.mid_progress_wrong_with_cta.light.pl",
@@ -7737,9 +7798,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.691Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "quiz.revision.light.pl",
@@ -7761,9 +7822,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.692Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "quiz.revision_wrong.light.pl",
@@ -7785,9 +7846,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.692Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "quiz.no_questions.light.pl",
@@ -7810,9 +7871,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.692Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.848Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "quiz.long_options.light.pl",
@@ -7834,9 +7895,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.692Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "quiz.long_options_scrolled_mid.light.pl",
@@ -7859,9 +7920,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.692Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "ai_analysis.analyzing_start.light.pl",
@@ -7882,8 +7943,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "ai_analysis.analyzing_mid.light.pl",
@@ -7904,8 +7967,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "download_prompt.default.light.pl",
@@ -7926,8 +7991,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.default.light.pl",
@@ -7949,9 +8016,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.692Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.no_api_key.light.pl",
@@ -7963,7 +8030,8 @@
       "state": "no_api_key",
       "tags": [
         "settings",
-        "empty"
+        "empty",
+        "ai"
       ],
       "group": "Settings",
       "compareKey": "settings|no_api_key",
@@ -7974,9 +8042,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.692Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.key_visible.light.pl",
@@ -7987,7 +8055,8 @@
       "locale": "pl",
       "state": "key_visible",
       "tags": [
-        "settings"
+        "settings",
+        "ai"
       ],
       "group": "Settings",
       "compareKey": "settings|key_visible",
@@ -7998,9 +8067,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.692Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.sound_muted.light.pl",
@@ -8022,9 +8091,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.692Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.scrolled_mid.light.pl",
@@ -8046,8 +8115,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.scrolled_bottom.light.pl",
@@ -8070,9 +8141,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "fe95cfdf8c3e",
-      "lastSuccessAt": "2026-08-16T16:30:58.692Z",
-      "attemptSha": "fe95cfdf8c3e"
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.provider_google_ai_studio.light.pl",
@@ -8094,8 +8165,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.provider_groq.light.pl",
@@ -8117,8 +8190,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.provider_cerebras.light.pl",
@@ -8140,8 +8215,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.provider_open_router.light.pl",
@@ -8163,8 +8240,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.provider_openai.light.pl",
@@ -8186,8 +8265,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.provider_sambanova.light.pl",
@@ -8209,8 +8290,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.849Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.provider_mistral.light.pl",
@@ -8232,8 +8315,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.850Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "settings.provider_zai.light.pl",
@@ -8255,8 +8340,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.850Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "ai_provider_dialog.default.light.pl",
@@ -8279,8 +8366,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.850Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "ai_provider_dialog.scrolled_mid.light.pl",
@@ -8304,8 +8393,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.850Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "logs.empty.light.pl",
@@ -8328,8 +8419,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.850Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "logs.with_entries.light.pl",
@@ -8351,8 +8444,10 @@
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "ca6865e16f61",
+      "lastSuccessAt": "2026-08-16T16:56:16.850Z",
+      "attemptSha": "ca6865e16f61"
     },
     {
       "id": "onboarding_language.default.dark.pl",
