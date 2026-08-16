@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-16T16:43:03.078723Z",
+  "generatedAt": "2026-08-16T16:47:41.717885Z",
   "source": "studdly/lib/ui_preview/ui_preview_catalog.dart",
   "screens": [
     {
@@ -415,28 +415,6 @@
         "ai",
         "ai",
         "dialog"
-      ]
-    },
-    {
-      "screenKey": "onboarding_dialogue_backup",
-      "name": "Onboarding — Backup Gemini Key — Empty + Skip",
-      "route": "/onboarding-dialogue",
-      "state": "empty",
-      "group": "Onboarding · AI",
-      "tags": [
-        "onboarding",
-        "ai"
-      ]
-    },
-    {
-      "screenKey": "onboarding_dialogue_backup",
-      "name": "Onboarding — Backup Gemini Key — Filled",
-      "route": "/onboarding-dialogue",
-      "state": "filled",
-      "group": "Onboarding · AI",
-      "tags": [
-        "onboarding",
-        "ai"
       ]
     },
     {
@@ -1082,29 +1060,6 @@
       "group": "Settings",
       "tags": [
         "settings",
-        "ai"
-      ]
-    },
-    {
-      "screenKey": "settings",
-      "name": "Settings — Testing Key",
-      "route": "/settings",
-      "state": "testing",
-      "group": "Settings",
-      "tags": [
-        "settings",
-        "ai"
-      ]
-    },
-    {
-      "screenKey": "settings",
-      "name": "Settings — Clear Confirm",
-      "route": "/settings",
-      "state": "clear_confirm",
-      "group": "Settings",
-      "tags": [
-        "settings",
-        "dialog",
         "ai"
       ]
     },
