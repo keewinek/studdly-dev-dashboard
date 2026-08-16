@@ -1,7 +1,518 @@
 {
-  "generatedAt": "2026-08-16T20:47:29.056Z",
-  "gitSha": "a67a4cc05cba",
-  "failed": [],
+  "generatedAt": "2026-08-16T20:53:30.608Z",
+  "gitSha": "a2bb0cc46858",
+  "failed": [
+    {
+      "id": "onboarding_dialogue_q2.option_selected.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_q2&theme=light&locale=en&state=option_selected\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_q2&theme=light&locale=en&state=option_selected\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_q3.default.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_q3&theme=light&locale=en&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_q3&theme=light&locale=en&state=default\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_q3.option_selected.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_q3&theme=light&locale=en&state=option_selected\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_q3&theme=light&locale=en&state=option_selected\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_name.empty.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_name&theme=light&locale=en&state=empty\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_name&theme=light&locale=en&state=empty\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_name.filled.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_name&theme=light&locale=en&state=filled\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_name&theme=light&locale=en&state=filled\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_video.video_google_ai_studio.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_google_ai_studio\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_google_ai_studio\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_video.video_groq.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_groq\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_groq\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_video.video_cerebras.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_cerebras\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_cerebras\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_video.video_open_router.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_open_router\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_open_router\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_video.video_openai.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_openai\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_openai\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_video.video_sambanova.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_sambanova\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_sambanova\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_video.video_mistral.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_mistral\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_mistral\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_video.video_zai.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_zai\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_video&theme=light&locale=en&state=video_zai\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key_google_ai_studio.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_google_ai_studio\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_google_ai_studio\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key_groq.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_groq\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_groq\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key_cerebras.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_cerebras\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_cerebras\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key_open_router.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_open_router\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_open_router\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key_openai.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_openai\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_openai\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key_sambanova.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_sambanova\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_sambanova\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key_mistral.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_mistral\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_mistral\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_api_key.api_key_zai.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_zai\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=api_key_zai\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_api_key.testing.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=testing\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=testing\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_api_key.error.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=error\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=error\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_api_key.visible.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=visible\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=visible\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_api_key.provider_dialog.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=provider_dialog\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_api_key&theme=light&locale=en&state=provider_dialog\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_easy.default.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_easy&theme=light&locale=en&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_easy&theme=light&locale=en&state=default\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "onboarding_dialogue_final.default.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_final&theme=light&locale=en&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=onboarding_dialogue_final&theme=light&locale=en&state=default\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.empty.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=empty\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=empty\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.ready.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=ready\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=ready\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.ready_scrolled_mid.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=ready_scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=ready_scrolled_mid\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.ready_scrolled_bottom.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=ready_scrolled_bottom\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=ready_scrolled_bottom\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.empty_ready.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=empty_ready\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=empty_ready\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.partial_progress.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=partial_progress\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=partial_progress\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.analyzing.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=analyzing\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=analyzing\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.queued.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=queued\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=queued\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.mixed_statuses.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=mixed_statuses\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=mixed_statuses\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.mixed_scrolled_mid.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=mixed_scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=mixed_scrolled_mid\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.search_no_results.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=search_no_results\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=search_no_results\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.context_menu.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=context_menu\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=context_menu\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.rename.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=rename\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=rename\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "home.delete_dialog.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=delete_dialog\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=home&theme=light&locale=en&state=delete_dialog\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "create_topic.empty.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=empty\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=empty\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "create_topic.title_only.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=title_only\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=title_only\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "create_topic.with_pages.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=with_pages\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=with_pages\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "create_topic.pages_one.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=pages_one\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=pages_one\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "create_topic.ocr.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=ocr\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=ocr\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "create_topic.ocr_start.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=ocr_start\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=ocr_start\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "create_topic.creating.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=creating\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=creating\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "create_topic.pages_many_scrolled_mid.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=pages_many_scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=pages_many_scrolled_mid\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "create_topic.advancement_open.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=advancement_open\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=advancement_open\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "create_topic.permission_dialog.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=permission_dialog\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=permission_dialog\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "create_topic.suggested_title_dialog.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=suggested_title_dialog\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=suggested_title_dialog\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "create_topic.add_page_sheet.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=add_page_sheet\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=create_topic&theme=light&locale=en&state=add_page_sheet\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "topic_path.empty.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=empty\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=empty\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "topic_path.partial.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=partial\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=partial\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "topic_path.ready.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=ready\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=ready\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "topic_path.expanded.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=expanded\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=expanded\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "topic_path.completed_nodes.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=completed_nodes\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=completed_nodes\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "topic_path.completed_nodes_expanded.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=completed_nodes_expanded\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=completed_nodes_expanded\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "topic_path.analyzing_with_path.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=analyzing_with_path\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=analyzing_with_path\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "topic_path.scrolled.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=scrolled\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=scrolled\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "topic_path.ready_scrolled_bottom.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=ready_scrolled_bottom\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=ready_scrolled_bottom\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "topic_path.empty_content_dialog.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=empty_content_dialog\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=topic_path&theme=light&locale=en&state=empty_content_dialog\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "read_text.quiz_disabled.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=en&state=quiz_disabled\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=en&state=quiz_disabled\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "read_text.quiz_enabled.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=en&state=quiz_enabled\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=en&state=quiz_enabled\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "read_text.empty_content.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=en&state=empty_content\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=en&state=empty_content\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "read_text.reading_aloud.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=en&state=reading_aloud\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=en&state=reading_aloud\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "read_text.scrolled.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=en&state=scrolled\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=en&state=scrolled\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "read_text.scrolled_bottom.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=en&state=scrolled_bottom\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=read_text&theme=light&locale=en&state=scrolled_bottom\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.unanswered.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=unanswered\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=unanswered\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.correct.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=correct\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=correct\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.wrong.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=wrong\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=wrong\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.wrong_with_cta.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=wrong_with_cta\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=wrong_with_cta\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.completed.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=completed\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=completed\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.mid_progress.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=mid_progress\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=mid_progress\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.mid_progress_wrong_with_cta.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=mid_progress_wrong_with_cta\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=mid_progress_wrong_with_cta\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.revision.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=revision\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=revision\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.revision_wrong.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=revision_wrong\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=revision_wrong\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.no_questions.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=no_questions\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=no_questions\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.long_options.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=long_options\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=long_options\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "quiz.long_options_scrolled_mid.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=long_options_scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=quiz&theme=light&locale=en&state=long_options_scrolled_mid\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "ai_analysis.analyzing_start.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=ai_analysis&theme=light&locale=en&state=analyzing_start\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=ai_analysis&theme=light&locale=en&state=analyzing_start\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "ai_analysis.analyzing_mid.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=ai_analysis&theme=light&locale=en&state=analyzing_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=ai_analysis&theme=light&locale=en&state=analyzing_mid\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "download_prompt.default.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=download_prompt&theme=light&locale=en&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=download_prompt&theme=light&locale=en&state=default\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.default.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=default\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.no_api_key.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=no_api_key\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=no_api_key\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.key_visible.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=key_visible\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=key_visible\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.sound_muted.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=sound_muted\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=sound_muted\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.scrolled_mid.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=scrolled_mid\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.scrolled_bottom.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=scrolled_bottom\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=scrolled_bottom\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_google_ai_studio.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_google_ai_studio\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_google_ai_studio\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_groq.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_groq\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_groq\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_cerebras.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_cerebras\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_cerebras\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_open_router.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_open_router\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_open_router\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_openai.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_openai\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_openai\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_sambanova.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_sambanova\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_sambanova\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_mistral.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_mistral\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_mistral\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "settings.provider_zai.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_zai\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=settings&theme=light&locale=en&state=provider_zai\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "ai_provider_dialog.default.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=ai_provider_dialog&theme=light&locale=en&state=default\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=ai_provider_dialog&theme=light&locale=en&state=default\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "ai_provider_dialog.scrolled_mid.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=ai_provider_dialog&theme=light&locale=en&state=scrolled_mid\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=ai_provider_dialog&theme=light&locale=en&state=scrolled_mid\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "logs.empty.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=logs&theme=light&locale=en&state=empty\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=logs&theme=light&locale=en&state=empty\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "logs.with_entries.light.en",
+      "keptOld": true,
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:7360/app/?preview=1&screen=logs&theme=light&locale=en&state=with_entries\nCall log:\n  - navigating to \"http://127.0.0.1:7360/app/?preview=1&screen=logs&theme=light&locale=en&state=with_entries\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
   "thumbFailures": [],
   "thumbFailureCount": 0
 }
