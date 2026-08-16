@@ -8,10 +8,12 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "capture:screens": "node scripts/capture-screenshots.mjs",
-    "sync:preview": "./scripts/sync-flutter-preview.sh"
+    "sync:preview": "./scripts/sync-flutter-preview.sh",
+    "thumbs:screens": "node scripts/generate-screen-thumbs.mjs"
   },
   "devDependencies": {
     "playwright": "^1.62.1",
+    "sharp": "^0.35.3",
     "typescript": "~6.0.2",
     "vite": "^8.2.0"
   }

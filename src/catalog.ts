@@ -37,7 +37,8 @@ function buildFrame(
     tags: def.tags,
     group: def.group,
     compareKey: `${def.screenKey}|${def.state}`,
-    imageUrl: `/screens/${id}.png`,
+    imageUrl: `/screens/thumbs/${id}.webp`,
+    fullImageUrl: `/screens/${id}.png`,
     size: { width: DEVICE.width, height: DEVICE.height },
   }
 }

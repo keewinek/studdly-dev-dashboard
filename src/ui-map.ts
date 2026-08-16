@@ -234,12 +234,16 @@ export function createUiMap(
         pumpImageQueue()
       }
 
+      const fullUrl = tile.frame.fullImageUrl
+      let useFull = false
+
       const tryLoad = () => {
         if (!tile.activated) {
           finish()
           return
         }
         attempts++
+        const url = useFull && fullUrl ? fullUrl : baseUrl
         tile.img.onload = () => finish()
         tile.img.onerror = () => {
           if (!tile.activated) {
@@ -250,11 +254,17 @@ export function createUiMap(
             window.setTimeout(tryLoad, 350 * attempts)
             return
           }
+          if (!useFull && fullUrl && fullUrl !== baseUrl) {
+            useFull = true
+            attempts = 0
+            window.setTimeout(tryLoad, 120)
+            return
+          }
           showFallback(tile)
           finish()
         }
-        const bust = attempts === 1 ? '' : `${baseUrl.includes('?') ? '&' : '?'}r=${attempts}`
-        tile.img.src = `${baseUrl}${bust}`
+        const bust = attempts === 1 ? '' : `${url.includes('?') ? '&' : '?'}r=${attempts}`
+        tile.img.src = `${url}${bust}`
       }
 
       tile.img.hidden = false

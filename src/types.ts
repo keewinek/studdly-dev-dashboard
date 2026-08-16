@@ -23,7 +23,10 @@ export interface ScreenFrame {
   group: string
   /** Identity across theme/locale for future diffs */
   compareKey: string
+  /** Map tile image (WebP thumb when available). */
   imageUrl: string
+  /** Full-resolution PNG for reference / download. */
+  fullImageUrl?: string
   size: { width: number; height: number }
   /** True when this commit's capture failed and we kept an older PNG. */
   stale?: boolean

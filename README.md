@@ -25,6 +25,8 @@ Hover a tile → **Open in new tab** → Flutter web preview with that `screen`,
 
 If a screenshot fails on the latest commit, the map **keeps the previous PNG** and shows an **Outdated** badge (plus a top-bar warning).
 
+Map tiles load **WebP thumbs** (`/screens/thumbs/*.webp`); full PNGs stay at `/screens/*.png` for reference. Regenerate with `npm run thumbs:screens`.
+
 ## Automation (free Actions on public repo)
 
 Heavy work runs on **this public repo** (`studdly-dev-dashboard`) so GitHub Actions minutes are free.

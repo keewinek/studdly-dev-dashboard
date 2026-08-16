@@ -17,10 +17,12 @@ import { tmpdir } from 'node:os'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { constants as fsConstants } from 'node:fs'
+import { writeWebpThumb } from './generate-screen-thumbs.mjs'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
 const previewBase = (process.env.PREVIEW_BASE || 'https://dev.studdly.app/app/').replace(/\/?$/, '/')
 const outDir = path.resolve(root, process.env.OUT_DIR || 'public/screens')
+const thumbsDir = path.join(outDir, 'thumbs')
 const concurrency = Number(process.env.CONCURRENCY || 3)
 const deviceScaleFactor = Number(process.env.DEVICE_SCALE || 1)
 const device = { width: 390, height: 844 }
@@ -139,7 +141,9 @@ function groupIntoPacks(jobList) {
 async function buildScreenEntry(job, result, previous) {
   const ok = result?.ok === true
   const filePresent = await exists(path.join(root, 'public/screens', `${job.id}.png`))
+  const thumbPresent = await exists(path.join(root, 'public/screens/thumbs', `${job.id}.webp`))
   const prev = previous.get(job.id)
+  const fullImageUrl = `/screens/${job.id}.png`
   return {
     id: job.id,
     name: job.def.name,
@@ -151,7 +155,8 @@ async function buildScreenEntry(job, result, previous) {
     tags: job.def.tags,
     group: job.def.group,
     compareKey: `${job.def.screenKey}|${job.def.state}`,
-    imageUrl: `/screens/${job.id}.png`,
+    imageUrl: thumbPresent ? `/screens/thumbs/${job.id}.webp` : fullImageUrl,
+    fullImageUrl,
     size: { width: device.width, height: device.height },
     stale: !ok && filePresent,
     missing: !filePresent,
@@ -381,6 +386,12 @@ async function captureOne(browser, job) {
     await page.screenshot({ path: tempPath, type: 'png' })
     await copyFile(tempPath, finalPath)
     await unlink(tempPath).catch(() => {})
+    await mkdir(thumbsDir, { recursive: true })
+    try {
+      await writeWebpThumb(finalPath, path.join(thumbsDir, `${job.id}.webp`))
+    } catch (thumbErr) {
+      console.warn(`thumb ${job.id}:`, String(thumbErr).slice(0, 180))
+    }
     return { ok: true, id: job.id, keptOld: false }
   } catch (error) {
     try {
