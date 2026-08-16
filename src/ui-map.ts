@@ -13,15 +13,18 @@ interface PanZoom {
 
 interface Tile {
   card: HTMLElement
+  cell: HTMLElement
   img: HTMLImageElement
   fallback: HTMLElement
   frame: ScreenFrame
   activated: boolean
+  /** True while a decode is in-flight or queued. */
+  loading: boolean
 }
 
 const MIN_SCALE = 0.15
 const MAX_SCALE = 5
-const ZOOM_SETTLE_MS = 140
+const ZOOM_SETTLE_MS = 180
 const STUDDLY_COMMIT_URL = 'https://github.com/keewinek/studdly/commit'
 
 function shortSha(sha: string | undefined): string {
@@ -190,29 +193,59 @@ export function createUiMap(
     tile.card.classList.add('frame-stale')
   }
 
-  const MAX_CONCURRENT_IMAGES = 12
+  const MAX_CONCURRENT_IMAGES = 8
   let inFlightImages = 0
   const imageQueue: Tile[] = []
+
+  const unloadTileImage = (tile: Tile) => {
+    if (tile.frame.missing) return
+    const qIdx = imageQueue.indexOf(tile)
+    if (qIdx >= 0) imageQueue.splice(qIdx, 1)
+    const wasLoading = tile.loading
+    tile.img.onload = null
+    tile.img.onerror = null
+    if (tile.img.getAttribute('src')) {
+      tile.img.removeAttribute('src')
+    }
+    tile.img.hidden = true
+    tile.fallback.hidden = true
+    tile.activated = false
+    tile.loading = false
+    if (wasLoading) {
+      inFlightImages = Math.max(0, inFlightImages - 1)
+      pumpImageQueue()
+    }
+  }
 
   const pumpImageQueue = () => {
     while (inFlightImages < MAX_CONCURRENT_IMAGES && imageQueue.length > 0) {
       const tile = imageQueue.shift()
-      if (!tile) break
+      if (!tile || !tile.activated) continue
       inFlightImages++
+      tile.loading = true
       const baseUrl = tile.frame.imageUrl
       let attempts = 0
 
       const finish = () => {
         inFlightImages--
+        tile.loading = false
         tile.img.onload = null
         tile.img.onerror = null
         pumpImageQueue()
       }
 
       const tryLoad = () => {
+        if (!tile.activated) {
+          finish()
+          return
+        }
         attempts++
         tile.img.onload = () => finish()
         tile.img.onerror = () => {
+          if (!tile.activated) {
+            finish()
+            return
+          }
           if (attempts < 3) {
             window.setTimeout(tryLoad, 350 * attempts)
             return
@@ -239,6 +272,11 @@ export function createUiMap(
     }
     imageQueue.push(tile)
     pumpImageQueue()
+  }
+
+  const deactivate = (tile: Tile) => {
+    if (!tile.activated || tile.frame.missing) return
+    unloadTileImage(tile)
   }
 
   /** Zoom using cheap CSS scale; layout --ms updates after gesture settles. */
@@ -283,14 +321,16 @@ export function createUiMap(
   const observer = new IntersectionObserver(
     (entries) => {
       for (const entry of entries) {
-        if (!entry.isIntersecting) continue
         const id = (entry.target as HTMLElement).dataset.id
         if (!id) continue
         const tile = tilesById.get(id)
-        if (tile) activate(tile)
+        if (!tile) continue
+        if (entry.isIntersecting) activate(tile)
+        else deactivate(tile)
       }
     },
-    { root: viewport, rootMargin: '240px', threshold: 0 },
+    // Generous margin keeps pan smooth; unload kicks in once tiles leave the band.
+    { root: viewport, rootMargin: '280px', threshold: 0 },
   )
   for (const tile of tilesById.values()) observer.observe(tile.card)
 
@@ -317,13 +357,17 @@ export function createUiMap(
   let chromeTimer: number | null = null
   let lastChromeX = Number.NaN
   let lastChromeY = Number.NaN
+  let chromeVisible = false
 
   const hideChrome = () => {
     if (chromeTimer != null) {
       window.clearTimeout(chromeTimer)
       chromeTimer = null
     }
-    viewport.classList.remove('show-chrome')
+    if (chromeVisible) {
+      chromeVisible = false
+      viewport.classList.remove('show-chrome')
+    }
   }
 
   const bumpChrome = () => {
@@ -331,15 +375,19 @@ export function createUiMap(
       hideChrome()
       return
     }
-    viewport.classList.add('show-chrome')
+    if (!chromeVisible) {
+      chromeVisible = true
+      viewport.classList.add('show-chrome')
+    }
     if (chromeTimer != null) window.clearTimeout(chromeTimer)
     chromeTimer = window.setTimeout(() => {
       chromeTimer = null
-      if (viewport.querySelector('.open-btn:hover, .frame-caption:hover, .open-btn:focus-visible, .frame-caption:focus-within')) {
+      // Avoid scanning the whole viewport — only check :hover on cheap pseudo.
+      if (viewport.matches(':hover') && document.querySelector('.open-btn:hover, .frame-caption:hover')) {
         bumpChrome()
         return
       }
-      viewport.classList.remove('show-chrome')
+      hideChrome()
     }, CHROME_IDLE_MS)
   }
 
@@ -347,8 +395,8 @@ export function createUiMap(
     if (e.pointerType !== 'mouse') return
     if (
       Number.isFinite(lastChromeX) &&
-      Math.abs(e.clientX - lastChromeX) < 1 &&
-      Math.abs(e.clientY - lastChromeY) < 1
+      Math.abs(e.clientX - lastChromeX) < 2 &&
+      Math.abs(e.clientY - lastChromeY) < 2
     ) {
       return
     }
@@ -631,6 +679,9 @@ function buildFrameCard(
   frame: ScreenFrame,
   tilesById: Map<string, Tile>,
 ): HTMLElement {
+  const cell = document.createElement('div')
+  cell.className = 'frame-cell'
+
   const card = document.createElement('article')
   card.className = 'frame'
   card.dataset.id = frame.id
@@ -643,8 +694,6 @@ function buildFrameCard(
   const fallback = document.createElement('div')
   fallback.className = 'frame-fallback'
   fallback.hidden = true
-  // Text only — avoid expensive repeating gradients until shown.
-  fallback.textContent = ''
   const strong = document.createElement('strong')
   strong.textContent = frame.name
   const span = document.createElement('span')
@@ -666,11 +715,14 @@ function buildFrameCard(
     )
   }
 
-  // Small corner chip — no full-screen dim overlay (keeps UI readable while browsing).
-  let openReady = false
-  const ensureOpenControl = () => {
-    if (openReady) return
-    openReady = true
+  const behind = isBehindLatest(frame, manifest)
+
+  // Defer Open chip + filename caption until first interaction (huge DOM savings).
+  let chromeReady = false
+  const ensureChrome = () => {
+    if (chromeReady) return
+    chromeReady = true
+
     const openBtn = document.createElement('button')
     openBtn.type = 'button'
     openBtn.className = 'open-btn'
@@ -683,19 +735,68 @@ function buildFrameCard(
       openPreview()
     })
     card.appendChild(openBtn)
+
+    const successAt = frameSuccessAt(frame, manifest)
+    const sha = shortSha(frame.lastSuccessSha)
+    const timeLabel = frame.missing
+      ? 'not captured'
+      : successAt
+        ? formatRelativeTime(successAt)
+        : sha
+          ? 'older commit'
+          : 'unknown'
+
+    const caption = document.createElement('div')
+    caption.className = 'frame-caption'
+    if (behind) caption.classList.add('frame-caption-behind')
+    else if (frame.stale) caption.classList.add('frame-caption-stale')
+
+    const mainBtn = document.createElement('button')
+    mainBtn.type = 'button'
+    mainBtn.className = 'frame-caption-main'
+    const absoluteHint = successAt ? ` · ${formatAbsoluteUtc(successAt)}` : ''
+    mainBtn.title = `Open preview · ${frame.id}.png${absoluteHint}`
+    mainBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      e.stopPropagation()
+      openPreview()
+    })
+
+    const timeEl = document.createElement('span')
+    timeEl.className = 'frame-caption-time'
+    timeEl.textContent = timeLabel
+
+    const nameEl = document.createElement('span')
+    nameEl.className = 'frame-caption-name'
+    nameEl.textContent = `${frame.id}.png`
+
+    mainBtn.append(timeEl, document.createTextNode(' · '), nameEl)
+    caption.appendChild(mainBtn)
+
+    if (sha) {
+      const shaLink = document.createElement('a')
+      shaLink.className = 'frame-caption-sha'
+      shaLink.href = `${STUDDLY_COMMIT_URL}/${frame.lastSuccessSha}`
+      shaLink.target = '_blank'
+      shaLink.rel = 'noopener noreferrer'
+      shaLink.textContent = sha
+      shaLink.title = `Capture from ${frame.lastSuccessSha} · Open commit`
+      shaLink.addEventListener('click', (e) => e.stopPropagation())
+      caption.append(document.createTextNode(' · '), shaLink)
+    }
+
+    cell.appendChild(caption)
   }
-  card.addEventListener('pointerenter', ensureOpenControl, { once: true })
-  card.addEventListener('pointerdown', ensureOpenControl, { once: true })
+
+  cell.addEventListener('pointerenter', ensureChrome, { once: true })
+  cell.addEventListener('pointerdown', ensureChrome, { once: true })
   card.addEventListener('dblclick', (e) => {
-    // On touch, double-tap zooms the map (Google Maps–style) instead of opening.
     if (window.matchMedia('(pointer: coarse)').matches) return
     e.preventDefault()
     e.stopPropagation()
-    ensureOpenControl()
+    ensureChrome()
     openPreview()
   })
-
-  const behind = isBehindLatest(frame, manifest)
 
   if (frame.stale || frame.missing) {
     card.classList.add('frame-stale')
@@ -732,68 +833,15 @@ function buildFrameCard(
 
   tilesById.set(frame.id, {
     card,
+    cell,
     img,
     fallback,
     frame,
     activated: !!frame.missing,
+    loading: false,
   })
 
-  const cell = document.createElement('div')
-  cell.className = 'frame-cell'
-  // Earlier tiles paint above later ones so captions can overlap the row below.
-  cell.style.zIndex = String(10000 - tilesById.size)
-
-  const successAt = frameSuccessAt(frame, manifest)
-  const sha = shortSha(frame.lastSuccessSha)
-  const timeLabel = frame.missing
-    ? 'not captured'
-    : successAt
-      ? formatRelativeTime(successAt)
-      : sha
-        ? 'older commit'
-        : 'unknown'
-
-  const caption = document.createElement('div')
-  caption.className = 'frame-caption'
-  if (behind) caption.classList.add('frame-caption-behind')
-  else if (frame.stale) caption.classList.add('frame-caption-stale')
-
-  const mainBtn = document.createElement('button')
-  mainBtn.type = 'button'
-  mainBtn.className = 'frame-caption-main'
-  const absoluteHint = successAt ? ` · ${formatAbsoluteUtc(successAt)}` : ''
-  mainBtn.title = `Open preview · ${frame.id}.png${absoluteHint}`
-  mainBtn.addEventListener('click', (e) => {
-    e.preventDefault()
-    e.stopPropagation()
-    openPreview()
-  })
-
-  const timeEl = document.createElement('span')
-  timeEl.className = 'frame-caption-time'
-  timeEl.textContent = timeLabel
-
-  const nameEl = document.createElement('span')
-  nameEl.className = 'frame-caption-name'
-  nameEl.textContent = `${frame.id}.png`
-
-  mainBtn.append(timeEl, document.createTextNode(' · '), nameEl)
-
-  caption.appendChild(mainBtn)
-
-  if (sha) {
-    const shaLink = document.createElement('a')
-    shaLink.className = 'frame-caption-sha'
-    shaLink.href = `${STUDDLY_COMMIT_URL}/${frame.lastSuccessSha}`
-    shaLink.target = '_blank'
-    shaLink.rel = 'noopener noreferrer'
-    shaLink.textContent = sha
-    shaLink.title = `Capture from ${frame.lastSuccessSha} · Open commit`
-    shaLink.addEventListener('click', (e) => e.stopPropagation())
-    caption.append(document.createTextNode(' · '), shaLink)
-  }
-
-  cell.append(card, caption)
+  cell.appendChild(card)
   return cell
 }
 

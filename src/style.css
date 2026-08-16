@@ -190,6 +190,8 @@ body,
   flex-direction: column;
   gap: var(--block-gap);
   min-width: max-content;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 520px 2400px;
 }
 
 .locale-heading {
@@ -204,6 +206,8 @@ body,
   border-radius: var(--radius-block);
   padding: var(--block-pad);
   background: transparent;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 480px 900px;
 }
 
 .theme-block[data-theme='light'] {
@@ -256,11 +260,12 @@ body,
 .frame-cell {
   position: relative;
   width: var(--frame-w);
+  z-index: 0;
 }
 
 .viewport.show-chrome:not(.panning) .frame-cell:hover,
 .viewport.show-chrome:not(.panning) .frame-cell:focus-within {
-  z-index: 20000 !important;
+  z-index: 20;
 }
 
 .open-btn {
