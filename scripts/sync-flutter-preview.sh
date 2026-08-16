@@ -13,7 +13,7 @@ fi
 echo "Building Flutter web preview from $STUDDLY_ROOT ..."
 (
   cd "$STUDDLY_ROOT"
-  flutter build web -t lib/ui_preview_main.dart --base-href /app/ --release --pwa-strategy=none --no-wasm-dry-run
+  flutter build web -t lib/ui_preview_main.dart --base-href /app/ --release --pwa-strategy=none --no-wasm-dry-run --no-tree-shake-icons
 )
 
 echo "Syncing into $ROOT/public/app ..."
@@ -28,21 +28,47 @@ import os
 p = Path(os.environ['INDEX_HTML'])
 text = p.read_text()
 snippet = """  <script>
-    // Drop stale Flutter PWAs so deep-link previews always load the latest build.
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then((regs) => {
-        for (const reg of regs) reg.unregister();
-      }).catch(() => {});
-    }
+    // Clear stale Flutter service workers/caches before bootstrapping.
+    (async function () {
+      try {
+        if ('serviceWorker' in navigator) {
+          const regs = await navigator.serviceWorker.getRegistrations();
+          await Promise.all(regs.map((r) => r.unregister()));
+        }
+        if (window.caches) {
+          const keys = await caches.keys();
+          await Promise.all(keys.map((k) => caches.delete(k)));
+        }
+      } catch (_) {}
+      const s = document.createElement('script');
+      s.src = 'flutter_bootstrap.js';
+      s.async = true;
+      document.body.appendChild(s);
+    })();
   </script>
 """
-needle = '  <script src="flutter_bootstrap.js" async></script>'
-if 'Drop stale Flutter PWAs' not in text and needle in text:
-    text = text.replace(needle, snippet + needle)
+# Remove previous bootstrap + old cleanup so we own load order.
+import re
+text = re.sub(
+    r"\s*<script>\s*// Drop stale Flutter PWAs[\s\S]*?</script>\s*",
+    "\n",
+    text,
+)
+text = re.sub(
+    r"\s*<script>\s*// Clear stale Flutter service workers[\s\S]*?</script>\s*",
+    "\n",
+    text,
+)
+text = text.replace(
+    '  <script src="flutter_bootstrap.js" async></script>\n',
+    '',
+)
+if '</body>' in text:
+    text = text.replace('</body>', snippet + '</body>')
     p.write_text(text)
-    print('patched index.html service-worker cleanup')
+    print('patched index.html service-worker cleanup + deferred bootstrap')
 else:
-    print('index.html already patched or needle missing')
+    print('index.html missing </body>')
 PY
 
 echo "Done. Commit public/app/ and push to deploy."
