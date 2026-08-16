@@ -23,8 +23,6 @@
   "readAloud": "Czytaj na głos",
   "readAloudFailed": "Nie udało się przeczytać na głos. Sprawdź ustawienia TTS urządzenia i spróbuj ponownie.",
   "beginQuiz": "Rozpocznij quiz",
-  "answerQuestion": "Odpowiedz na pytanie",
-  "quizQuestionProgress": "Odpowiedz na pytanie ({current}/{total}).",
   "readTextAgain": "Przeczytaj tekst ponownie",
   "nextQuestion": "Następne pytanie",
   "completeQuiz": "Zakończ quiz",
