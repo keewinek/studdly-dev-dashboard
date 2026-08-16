@@ -9,9 +9,9 @@
   --light-text: #1a1a1a;
   --frame-w: 156px;
   --frame-h: 338px;
-  --gap: 12px;
-  --block-gap: 48px;
-  --col-gap: 64px;
+  --gap: 10px;
+  --block-gap: 20px;
+  --col-gap: 28px;
   font-family: Figtree, system-ui, sans-serif;
   color: var(--text);
   background: var(--bg);
@@ -144,14 +144,14 @@ body,
   /* Layout zoom: sizes grow with --ms so text/borders re-rasterize crisp (no bitmap scale). */
   --frame-w: calc(156px * var(--ms));
   --frame-h: calc(338px * var(--ms));
-  --gap: calc(12px * var(--ms));
-  --block-gap: calc(48px * var(--ms));
-  --col-gap: calc(64px * var(--ms));
-  --world-pad-x: calc(48px * var(--ms));
-  --world-pad-top: calc(96px * var(--ms));
-  --world-pad-bottom: calc(64px * var(--ms));
-  --block-pad: calc(20px * var(--ms));
-  --radius-block: calc(16px * var(--ms));
+  --gap: calc(10px * var(--ms));
+  --block-gap: calc(20px * var(--ms));
+  --col-gap: calc(28px * var(--ms));
+  --world-pad-x: calc(20px * var(--ms));
+  --world-pad-top: calc(56px * var(--ms));
+  --world-pad-bottom: calc(24px * var(--ms));
+  --block-pad: 0;
+  --radius-block: 0;
   --radius-frame: calc(14px * var(--ms));
   --stroke-w: max(1px, calc(1px * var(--ms)));
   --fs-locale: calc(28px * var(--ms));
@@ -196,7 +196,7 @@ body,
   font-size: var(--fs-locale);
   font-weight: 600;
   letter-spacing: -0.03em;
-  margin: 0 0 calc(12px * var(--ms));
+  margin: 0 0 calc(8px * var(--ms));
 }
 
 .theme-block {
@@ -227,7 +227,7 @@ body,
 }
 
 .theme-meta {
-  margin: calc(4px * var(--ms)) 0 calc(16px * var(--ms));
+  margin: calc(2px * var(--ms)) 0 calc(8px * var(--ms));
   font-size: var(--fs-meta);
   color: var(--muted);
 }
@@ -235,11 +235,11 @@ body,
 .groups {
   display: flex;
   flex-direction: column;
-  gap: calc(20px * var(--ms));
+  gap: calc(12px * var(--ms));
 }
 
 .group-label {
-  margin: 0 0 calc(10px * var(--ms));
+  margin: 0 0 calc(6px * var(--ms));
   font-size: var(--fs-group);
   font-weight: 600;
   text-transform: uppercase;
