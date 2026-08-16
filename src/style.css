@@ -315,19 +315,22 @@ body,
   left: 0;
   top: calc(100% + (2px * var(--ms)));
   z-index: 2;
-  display: inline-flex;
-  align-items: center;
-  max-width: calc(100% + (8px * var(--ms)));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.35em;
+  /* Full filename — do not clip with ellipsis. */
+  max-width: min(92vw, calc(var(--frame-w) * 1.85));
   padding: calc(2px * var(--ms)) calc(6px * var(--ms));
   border-radius: calc(6px * var(--ms));
   background: rgba(12, 12, 12, 0.82);
   color: rgba(255, 255, 255, 0.9);
   font-size: calc(9px * var(--ms));
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 1.35;
   letter-spacing: -0.01em;
-  white-space: nowrap;
-  overflow: hidden;
+  white-space: normal;
+  overflow: visible;
   opacity: 0;
   pointer-events: none;
   transition: opacity 100ms ease;
@@ -349,10 +352,15 @@ body,
   color: inherit;
   cursor: pointer;
   min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  max-width: 100%;
+  overflow: visible;
+  white-space: normal;
   text-align: left;
+  word-break: break-word;
+}
+
+.frame-caption-name {
+  word-break: break-all;
 }
 
 .frame-caption-main:hover {
