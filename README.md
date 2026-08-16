@@ -2,7 +2,7 @@
 
 Public open-startup UI map for Studdly.
 
-- **Live path:** `https://dev.studdly.app/ui`
+- **Live path:** `https://studdlydev.netlify.app/ui`
 - **Host:** Netlify free plan (static Vite SPA only)
 - **Auth:** none — link is enough
 
@@ -33,7 +33,7 @@ Flow:
 1. Push to `studdly` `main` → workflow `.github/workflows/update-ui-map.yml`
 2. Build Flutter web UI preview → sync into `public/app/`
 3. Capture 1× + 2× screenshots (fail-soft: keep old PNGs, mark `stale` in `manifest.json`)
-4. Commit + push this repo → Netlify rebuilds `https://dev.studdly.app`
+4. Commit + push this repo → Netlify rebuilds `https://studdlydev.netlify.app`
 
 ### One-time setup: `DASHBOARD_REPO_TOKEN`
 
