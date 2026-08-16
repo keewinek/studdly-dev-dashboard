@@ -6,8 +6,7 @@
  * Fail-soft: on error, keep the previous PNG (if any) and mark the frame stale
  * in manifest.json so the map can show an "outdated" badge.
  *
- *   PREVIEW_BASE=http://127.0.0.1:7360/app/ node scripts/capture-screenshots.mjs
- *   DEVICE_SCALE=4 OUT_DIR=public/screens/4x WRITE_MANIFEST=0 node --experimental-strip-types scripts/capture-screenshots.mjs
+ *   PREVIEW_BASE=http://127.0.0.1:7360/app/ node --experimental-strip-types scripts/capture-screenshots.mjs
  */
 import { chromium } from 'playwright'
 import { access, mkdir, readFile, rename, unlink, writeFile } from 'node:fs/promises'
@@ -186,8 +185,6 @@ async function main() {
           group: job.def.group,
           compareKey: `${job.def.screenKey}|${job.def.state}`,
           imageUrl: `/screens/${job.id}.png`,
-          imageUrl2x: `/screens/2x/${job.id}.png`,
-          imageUrl4x: `/screens/4x/${job.id}.png`,
           size: { width: device.width, height: device.height },
           stale,
           missing: !filePresent,

@@ -32,7 +32,7 @@ Flow:
 
 1. Push to `studdly` `main` → workflow `.github/workflows/update-ui-map.yml`
 2. Build Flutter web UI preview → sync into `public/app/`
-3. Capture 1× + 2× screenshots (fail-soft: keep old PNGs, mark `stale` in `manifest.json`)
+3. Capture screenshots once into `public/screens/` (fail-soft: keep old PNGs, mark `stale` in `manifest.json`)
 4. Commit + push this repo → Netlify rebuilds `https://studdlydev.netlify.app`
 
 ### One-time setup: `DASHBOARD_REPO_TOKEN`
@@ -69,16 +69,14 @@ Optional: copy `.env.example` → `.env` and set `VITE_FLUTTER_PREVIEW_URL`.
 mkdir -p /tmp/ui-preview-root/app && rsync -a public/app/ /tmp/ui-preview-root/app/
 python3 -m http.server 7360 --directory /tmp/ui-preview-root
 
-# Terminal B — 1× / 2× / 4× (4× = crisp zoom-in on retina)
+# Terminal B — capture screenshots
 PREVIEW_BASE=http://127.0.0.1:7360/app/ npm run capture:screens
-PREVIEW_BASE=http://127.0.0.1:7360/app/ npm run capture:screens:2x
-PREVIEW_BASE=http://127.0.0.1:7360/app/ npm run capture:screens:4x
 
 # Optional filters for faster local runs:
 # LOCALE_FILTER=en THEME_FILTER=dark …
 ```
 
-The map swaps textures by zoom × devicePixelRatio: **1×** overview → **2×** mid → **4×** (~1560×3376, near-4K) when zoomed in.
+One PNG per frame (`/screens/{id}.png`). Zoom uses layout size (`--ms`), not CSS `scale()`, so chrome stays sharp; tiles load only when near the viewport.
 
 Screen states are generated algorithmically from `src/catalog-spec.ts` (scroll positions, overlays, empty/full, CTA chrome, …) — currently ~90 unique layouts × theme × locale.
 

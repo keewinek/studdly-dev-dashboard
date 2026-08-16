@@ -1,36 +1,22 @@
 import type { LocaleId, ScreenFrame, ThemeId, UiManifest } from './types'
-import {
-  frameImageUrl,
-  lodFallback,
-  lodForScale,
-  previewUrl,
-  type ImageLod,
-} from './types'
+import { previewUrl } from './types'
 
-interface PanZoomState {
+interface PanZoom {
   x: number
   y: number
   scale: number
 }
 
-interface LodFrame {
+interface Tile {
   card: HTMLElement
   img: HTMLImageElement
   fallback: HTMLElement
   frame: ScreenFrame
-  lod: ImageLod
-  /** True once the tile is near the viewport and may fetch images. */
   activated: boolean
-  /** Permanent failure — show fallback, stop requesting. */
-  failed: boolean
-  /** LODs that 404'd for this frame — never re-request them. */
-  failedLods: Set<ImageLod>
 }
 
 const MIN_SCALE = 0.15
 const MAX_SCALE = 5
-/** Extra margin so tiles prefetch slightly before they enter view. */
-const OBSERVER_MARGIN = '200px'
 
 export function createUiMap(
   host: HTMLElement,
@@ -39,14 +25,15 @@ export function createUiMap(
   host.innerHTML = ''
   host.classList.add('shell')
 
-  const topbar = document.createElement('div')
-  topbar.className = 'topbar'
   const staleCount = manifest.screens.filter((s) => s.stale && !s.missing).length
   const missingCount = manifest.screens.filter((s) => s.missing).length
   const warnBits = [
     staleCount > 0 ? `${staleCount} outdated` : '',
     missingCount > 0 ? `${missingCount} missing` : '',
   ].filter(Boolean)
+
+  const topbar = document.createElement('div')
+  topbar.className = 'topbar'
   topbar.innerHTML = `
     <div class="brand">
       <h1>Studdly UI Map</h1>
@@ -77,152 +64,43 @@ export function createUiMap(
   const columns = document.createElement('div')
   columns.className = 'columns'
 
-  const lodFrames: LodFrame[] = []
-
+  const tiles: Tile[] = []
   for (const locale of manifest.locales) {
-    columns.appendChild(
-      buildLocaleColumn(manifest, locale.code, locale.nativeName, lodFrames),
-    )
+    columns.appendChild(buildLocaleColumn(manifest, locale.code, locale.nativeName, tiles))
   }
 
   world.appendChild(columns)
   viewport.appendChild(world)
   host.append(topbar, viewport, toolbar)
 
-  const state: PanZoomState = { x: 48, y: 24, scale: 0.55 }
+  const state: PanZoom = { x: 48, y: 24, scale: 0.55 }
   const zoomLabel = toolbar.querySelector('[data-zoom]') as HTMLElement
-  const dpr = typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1
-  let desiredLod: ImageLod = lodForScale(state.scale, dpr)
-  let lodTimer: number | null = null
-  let visibleTimer: number | null = null
 
-  const isNearViewport = (card: HTMLElement): boolean => {
-    const vr = viewport.getBoundingClientRect()
-    const cr = card.getBoundingClientRect()
-    const pad = 240
-    return !(
-      cr.right < vr.left - pad ||
-      cr.left > vr.right + pad ||
-      cr.bottom < vr.top - pad ||
-      cr.top > vr.bottom + pad
-    )
+  const showFallback = (tile: Tile) => {
+    tile.img.removeAttribute('src')
+    tile.img.hidden = true
+    tile.fallback.hidden = false
+    tile.card.classList.add('frame-stale')
   }
 
-  const showFallback = (entry: LodFrame) => {
-    entry.failed = true
-    entry.img.removeAttribute('src')
-    entry.img.removeAttribute('srcset')
-    entry.img.hidden = true
-    entry.fallback.hidden = false
-    entry.card.classList.add('frame-stale')
-  }
-
-  /** Highest LOD ≤ desired that has not already 404'd for this frame. */
-  const resolveLod = (entry: LodFrame, want: ImageLod): ImageLod | null => {
-    let lod: ImageLod | null = want
-    while (lod != null && entry.failedLods.has(lod)) {
-      lod = lodFallback(lod)
-    }
-    return lod
-  }
-
-  const loadEntryAtLod = (entry: LodFrame, want: ImageLod) => {
-    if (entry.failed || entry.frame.missing) return
-    if (!entry.activated) return
-
-    const lod = resolveLod(entry, want)
-    if (lod == null) {
-      showFallback(entry)
+  const activate = (tile: Tile) => {
+    if (tile.activated) return
+    tile.activated = true
+    if (tile.frame.missing) {
+      showFallback(tile)
       return
     }
-
-    const next = frameImageUrl(entry.frame, lod)
-    const current = entry.img.getAttribute('data-lod-src') || ''
-    if (entry.lod === lod && (entry.img.src.endsWith(next) || current === next)) {
-      return
-    }
-
-    entry.lod = lod
-    entry.img.setAttribute('data-lod-src', next)
-    entry.img.setAttribute('data-lod', String(lod))
-    entry.img.hidden = false
-    entry.fallback.hidden = true
-
-    const pre = new Image()
-    pre.decoding = 'async'
-    pre.onload = () => {
-      if (entry.failed) return
-      if (entry.img.getAttribute('data-lod-src') !== next) return
-      entry.img.src = next
-    }
-    pre.onerror = () => {
-      if (entry.failed) return
-      if (entry.img.getAttribute('data-lod-src') !== next) return
-      entry.failedLods.add(lod)
-      const fb = lodFallback(lod)
-      if (fb != null) {
-        loadEntryAtLod(entry, fb)
-        return
-      }
-      showFallback(entry)
-    }
-    pre.src = next
-  }
-
-  const activateEntry = (entry: LodFrame) => {
-    if (entry.activated || entry.failed) return
-    entry.activated = true
-    if (entry.frame.missing) {
-      showFallback(entry)
-      return
-    }
-    loadEntryAtLod(entry, desiredLod)
-  }
-
-  /** Upgrade/downgrade only tiles that are on-screen (avoids 1000+ parallel fetches). */
-  const syncVisibleLod = () => {
-    for (const entry of lodFrames) {
-      if (entry.failed || entry.frame.missing) continue
-      if (!isNearViewport(entry.card)) continue
-      if (!entry.activated) {
-        activateEntry(entry)
-        continue
-      }
-      const target = resolveLod(entry, desiredLod)
-      if (target != null && entry.lod !== target) {
-        loadEntryAtLod(entry, desiredLod)
-      }
-    }
-  }
-
-  const scheduleVisibleSync = () => {
-    if (visibleTimer != null) window.clearTimeout(visibleTimer)
-    visibleTimer = window.setTimeout(() => {
-      visibleTimer = null
-      syncVisibleLod()
-    }, 80)
-  }
-
-  const scheduleLod = () => {
-    const next = lodForScale(state.scale, dpr)
-    if (next === desiredLod) {
-      scheduleVisibleSync()
-      return
-    }
-    desiredLod = next
-    if (lodTimer != null) window.clearTimeout(lodTimer)
-    lodTimer = window.setTimeout(() => {
-      lodTimer = null
-      syncVisibleLod()
-    }, 50)
+    tile.img.hidden = false
+    tile.fallback.hidden = true
+    tile.img.onerror = () => showFallback(tile)
+    tile.img.src = tile.frame.imageUrl
   }
 
   const applyTransform = () => {
-    // Pan with translate only. Zoom by resizing layout (--ms), NOT transform:scale().
+    // Zoom via layout size (--ms), not transform:scale() — keeps text/borders sharp.
     world.style.setProperty('--ms', String(state.scale))
     world.style.transform = `translate(${state.x}px, ${state.y}px)`
     zoomLabel.textContent = `${Math.round(state.scale * 100)}%`
-    scheduleLod()
   }
 
   const zoomAt = (clientX: number, clientY: number, nextScale: number) => {
@@ -250,27 +128,21 @@ export function createUiMap(
     applyTransform()
   }
 
-  // Activate tiles as they approach the viewport (root = map viewport, not the page).
+  // Only fetch images near the viewport (native loading=lazy is unreliable with pan transforms).
   const observer = new IntersectionObserver(
     (entries) => {
-      for (const obs of entries) {
-        if (!obs.isIntersecting) continue
-        const id = (obs.target as HTMLElement).dataset.id
-        if (!id) continue
-        const entry = lodFrames.find((f) => f.frame.id === id)
-        if (entry) activateEntry(entry)
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue
+        const id = (entry.target as HTMLElement).dataset.id
+        const tile = tiles.find((t) => t.frame.id === id)
+        if (tile) activate(tile)
       }
     },
-    { root: viewport, rootMargin: OBSERVER_MARGIN, threshold: 0 },
+    { root: viewport, rootMargin: '200px', threshold: 0 },
   )
-
-  for (const entry of lodFrames) {
-    observer.observe(entry.card)
-  }
+  for (const tile of tiles) observer.observe(tile.card)
 
   applyTransform()
-  // First paint: activate whatever is already visible.
-  requestAnimationFrame(() => syncVisibleLod())
 
   let panning = false
   let panStartX = 0
@@ -309,14 +181,9 @@ export function createUiMap(
   const onPointerUp = () => {
     panning = false
     viewport.classList.remove('panning')
-    scheduleVisibleSync()
-    // Allow the suppressed click (after a drag) to settle, then clear the flag
-    // so the next genuine click (e.g. Open in new tab) works.
-    if (moved) {
-      window.setTimeout(() => {
-        moved = false
-      }, 0)
-    }
+    if (moved) window.setTimeout(() => {
+      moved = false
+    }, 0)
   }
 
   const onWheel = (e: WheelEvent) => {
@@ -341,28 +208,23 @@ export function createUiMap(
   const onPointerMovePinch = (e: PointerEvent) => {
     if (!pointers.has(e.pointerId)) return
     pointers.set(e.pointerId, e)
-    if (pointers.size === 2) {
+    if (pointers.size === 2 && pinchStartDist > 0) {
       const [a, b] = [...pointers.values()]
       const dist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY)
-      if (pinchStartDist > 0) {
-        const midX = (a.clientX + b.clientX) / 2
-        const midY = (a.clientY + b.clientY) / 2
-        zoomAt(midX, midY, pinchStartScale * (dist / pinchStartDist))
-      }
+      const midX = (a.clientX + b.clientX) / 2
+      const midY = (a.clientY + b.clientY) / 2
+      zoomAt(midX, midY, pinchStartScale * (dist / pinchStartDist))
     }
   }
 
   const onPointerUpPinch = (e: PointerEvent) => {
     pointers.delete(e.pointerId)
-    if (pointers.size < 2) {
-      pinchStartDist = 0
-    }
+    if (pointers.size < 2) pinchStartDist = 0
   }
 
   const blockSelect = (e: Event) => e.preventDefault()
   viewport.addEventListener('selectstart', blockSelect)
   viewport.addEventListener('dragstart', blockSelect)
-
   viewport.addEventListener('pointerdown', onPointerDown)
   viewport.addEventListener('pointerdown', onPointerDownPinch)
   viewport.addEventListener('pointermove', onPointerMove)
@@ -377,9 +239,7 @@ export function createUiMap(
     'click',
     (e) => {
       if (!moved) return
-      const target = e.target as HTMLElement
-      // Never swallow Open-in-new-tab — only suppress accidental clicks after a drag.
-      if (target.closest('.open-btn')) return
+      if ((e.target as HTMLElement).closest('.open-btn')) return
       e.preventDefault()
       e.stopPropagation()
     },
@@ -397,8 +257,6 @@ export function createUiMap(
 
   return {
     destroy: () => {
-      if (lodTimer != null) window.clearTimeout(lodTimer)
-      if (visibleTimer != null) window.clearTimeout(visibleTimer)
       observer.disconnect()
       host.innerHTML = ''
     },
@@ -411,7 +269,7 @@ function buildLocaleColumn(
   manifest: UiManifest,
   locale: LocaleId,
   nativeName: string,
-  lodFrames: LodFrame[],
+  tiles: Tile[],
 ): HTMLElement {
   const col = document.createElement('section')
   col.className = 'locale-column'
@@ -420,13 +278,11 @@ function buildLocaleColumn(
   const heading = document.createElement('h2')
   heading.className = 'locale-heading'
   heading.textContent = nativeName
-
   col.append(heading)
 
   for (const theme of manifest.themes) {
-    col.appendChild(buildThemeBlock(manifest, locale, theme.id, theme.label, lodFrames))
+    col.appendChild(buildThemeBlock(manifest, locale, theme.id, theme.label, tiles))
   }
-
   return col
 }
 
@@ -435,7 +291,7 @@ function buildThemeBlock(
   locale: LocaleId,
   theme: ThemeId,
   themeLabel: string,
-  lodFrames: LodFrame[],
+  tiles: Tile[],
 ): HTMLElement {
   const block = document.createElement('section')
   block.className = 'theme-block'
@@ -463,9 +319,8 @@ function buildThemeBlock(
     const grid = document.createElement('div')
     grid.className = 'frames'
     for (const frame of groupFrames) {
-      grid.appendChild(buildFrameCard(manifest, frame, lodFrames))
+      grid.appendChild(buildFrameCard(manifest, frame, tiles))
     }
-
     groupEl.append(label, grid)
     groupsWrap.appendChild(groupEl)
   }
@@ -477,7 +332,7 @@ function buildThemeBlock(
 function buildFrameCard(
   manifest: UiManifest,
   frame: ScreenFrame,
-  lodFrames: LodFrame[],
+  tiles: Tile[],
 ): HTMLElement {
   const card = document.createElement('article')
   card.className = 'frame'
@@ -487,7 +342,6 @@ function buildFrameCard(
   img.alt = ''
   img.draggable = false
   img.decoding = 'async'
-  // src is assigned only when the tile activates near the viewport.
 
   const fallback = document.createElement('div')
   fallback.className = 'frame-fallback'
@@ -509,8 +363,7 @@ function buildFrameCard(
   openBtn.addEventListener('click', (e) => {
     e.preventDefault()
     e.stopPropagation()
-    const url = previewUrl(manifest.flutterPreviewBaseUrl, frame)
-    window.open(url, '_blank', 'noopener,noreferrer')
+    window.open(previewUrl(manifest.flutterPreviewBaseUrl, frame), '_blank', 'noopener,noreferrer')
   })
 
   overlay.appendChild(openBtn)
@@ -535,15 +388,12 @@ function buildFrameCard(
     card.appendChild(badge)
   }
 
-  lodFrames.push({
+  tiles.push({
     card,
     img,
     fallback,
     frame,
-    lod: 1,
-    activated: false,
-    failed: !!frame.missing,
-    failedLods: new Set(),
+    activated: !!frame.missing,
   })
   return card
 }

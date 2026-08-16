@@ -8,8 +8,6 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "capture:screens": "node --experimental-strip-types scripts/capture-screenshots.mjs",
-    "capture:screens:2x": "DEVICE_SCALE=2 OUT_DIR=public/screens/2x WRITE_MANIFEST=0 node --experimental-strip-types scripts/capture-screenshots.mjs",
-    "capture:screens:4x": "DEVICE_SCALE=4 OUT_DIR=public/screens/4x WRITE_MANIFEST=0 SETTLE_MS=2400 node --experimental-strip-types scripts/capture-screenshots.mjs",
     "sync:preview": "./scripts/sync-flutter-preview.sh"
   },
   "devDependencies": {
