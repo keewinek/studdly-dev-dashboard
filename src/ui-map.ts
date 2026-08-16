@@ -14,13 +14,23 @@ interface PanZoomState {
 }
 
 interface LodFrame {
+  card: HTMLElement
   img: HTMLImageElement
+  fallback: HTMLElement
   frame: ScreenFrame
   lod: ImageLod
+  /** True once the tile is near the viewport and may fetch images. */
+  activated: boolean
+  /** Permanent failure — show fallback, stop requesting. */
+  failed: boolean
+  /** LODs that 404'd for this frame — never re-request them. */
+  failedLods: Set<ImageLod>
 }
 
 const MIN_SCALE = 0.15
 const MAX_SCALE = 5
+/** Extra margin so tiles prefetch slightly before they enter view. */
+const OBSERVER_MARGIN = '200px'
 
 export function createUiMap(
   host: HTMLElement,
@@ -82,54 +92,133 @@ export function createUiMap(
   const state: PanZoomState = { x: 48, y: 24, scale: 0.55 }
   const zoomLabel = toolbar.querySelector('[data-zoom]') as HTMLElement
   const dpr = typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1
-  let currentLod: ImageLod = lodForScale(state.scale, dpr)
+  let desiredLod: ImageLod = lodForScale(state.scale, dpr)
   let lodTimer: number | null = null
+  let visibleTimer: number | null = null
 
-  const applyLod = (lod: ImageLod) => {
-    if (lod === currentLod) return
-    currentLod = lod
+  const isNearViewport = (card: HTMLElement): boolean => {
+    const vr = viewport.getBoundingClientRect()
+    const cr = card.getBoundingClientRect()
+    const pad = 240
+    return !(
+      cr.right < vr.left - pad ||
+      cr.left > vr.right + pad ||
+      cr.bottom < vr.top - pad ||
+      cr.top > vr.bottom + pad
+    )
+  }
+
+  const showFallback = (entry: LodFrame) => {
+    entry.failed = true
+    entry.img.removeAttribute('src')
+    entry.img.removeAttribute('srcset')
+    entry.img.hidden = true
+    entry.fallback.hidden = false
+    entry.card.classList.add('frame-stale')
+  }
+
+  /** Highest LOD ≤ desired that has not already 404'd for this frame. */
+  const resolveLod = (entry: LodFrame, want: ImageLod): ImageLod | null => {
+    let lod: ImageLod | null = want
+    while (lod != null && entry.failedLods.has(lod)) {
+      lod = lodFallback(lod)
+    }
+    return lod
+  }
+
+  const loadEntryAtLod = (entry: LodFrame, want: ImageLod) => {
+    if (entry.failed || entry.frame.missing) return
+    if (!entry.activated) return
+
+    const lod = resolveLod(entry, want)
+    if (lod == null) {
+      showFallback(entry)
+      return
+    }
+
+    const next = frameImageUrl(entry.frame, lod)
+    const current = entry.img.getAttribute('data-lod-src') || ''
+    if (entry.lod === lod && (entry.img.src.endsWith(next) || current === next)) {
+      return
+    }
+
+    entry.lod = lod
+    entry.img.setAttribute('data-lod-src', next)
+    entry.img.setAttribute('data-lod', String(lod))
+    entry.img.hidden = false
+    entry.fallback.hidden = true
+
+    const pre = new Image()
+    pre.decoding = 'async'
+    pre.onload = () => {
+      if (entry.failed) return
+      if (entry.img.getAttribute('data-lod-src') !== next) return
+      entry.img.src = next
+    }
+    pre.onerror = () => {
+      if (entry.failed) return
+      if (entry.img.getAttribute('data-lod-src') !== next) return
+      entry.failedLods.add(lod)
+      const fb = lodFallback(lod)
+      if (fb != null) {
+        loadEntryAtLod(entry, fb)
+        return
+      }
+      showFallback(entry)
+    }
+    pre.src = next
+  }
+
+  const activateEntry = (entry: LodFrame) => {
+    if (entry.activated || entry.failed) return
+    entry.activated = true
+    if (entry.frame.missing) {
+      showFallback(entry)
+      return
+    }
+    loadEntryAtLod(entry, desiredLod)
+  }
+
+  /** Upgrade/downgrade only tiles that are on-screen (avoids 1000+ parallel fetches). */
+  const syncVisibleLod = () => {
     for (const entry of lodFrames) {
-      if (entry.lod === lod) continue
-      const next = frameImageUrl(entry.frame, lod)
-      if (entry.img.src.endsWith(next) || entry.img.getAttribute('data-lod-src') === next) {
-        entry.lod = lod
+      if (entry.failed || entry.frame.missing) continue
+      if (!isNearViewport(entry.card)) continue
+      if (!entry.activated) {
+        activateEntry(entry)
         continue
       }
-      entry.lod = lod
-      entry.img.setAttribute('data-lod-src', next)
-      entry.img.setAttribute('data-lod', String(lod))
-      // Prefetch then swap to avoid flicker
-      const pre = new Image()
-      pre.decoding = 'async'
-      pre.onload = () => {
-        if (entry.lod === lod) {
-          entry.img.src = next
-        }
+      const target = resolveLod(entry, desiredLod)
+      if (target != null && entry.lod !== target) {
+        loadEntryAtLod(entry, desiredLod)
       }
-      pre.onerror = () => {
-        const fb = lodFallback(lod)
-        if (fb == null || entry.lod !== lod) return
-        const fallbackUrl = frameImageUrl(entry.frame, fb)
-        entry.lod = fb
-        entry.img.setAttribute('data-lod-src', fallbackUrl)
-        entry.img.setAttribute('data-lod', String(fb))
-        entry.img.src = fallbackUrl
-      }
-      pre.src = next
     }
+  }
+
+  const scheduleVisibleSync = () => {
+    if (visibleTimer != null) window.clearTimeout(visibleTimer)
+    visibleTimer = window.setTimeout(() => {
+      visibleTimer = null
+      syncVisibleLod()
+    }, 80)
   }
 
   const scheduleLod = () => {
     const next = lodForScale(state.scale, dpr)
-    if (next === currentLod) return
+    if (next === desiredLod) {
+      scheduleVisibleSync()
+      return
+    }
+    desiredLod = next
     if (lodTimer != null) window.clearTimeout(lodTimer)
-    // Swap hi-res early so crisp pixels are ready as you zoom in.
-    lodTimer = window.setTimeout(() => applyLod(next), 40)
+    lodTimer = window.setTimeout(() => {
+      lodTimer = null
+      syncVisibleLod()
+    }, 50)
   }
 
   const applyTransform = () => {
     // Pan with translate only. Zoom by resizing layout (--ms), NOT transform:scale().
-    // CSS scale() rasterizes the world as a bitmap and upscales it → pixelated text/borders.
     world.style.setProperty('--ms', String(state.scale))
     world.style.transform = `translate(${state.x}px, ${state.y}px)`
     zoomLabel.textContent = `${Math.round(state.scale * 100)}%`
@@ -161,7 +250,27 @@ export function createUiMap(
     applyTransform()
   }
 
+  // Activate tiles as they approach the viewport (root = map viewport, not the page).
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const obs of entries) {
+        if (!obs.isIntersecting) continue
+        const id = (obs.target as HTMLElement).dataset.id
+        if (!id) continue
+        const entry = lodFrames.find((f) => f.frame.id === id)
+        if (entry) activateEntry(entry)
+      }
+    },
+    { root: viewport, rootMargin: OBSERVER_MARGIN, threshold: 0 },
+  )
+
+  for (const entry of lodFrames) {
+    observer.observe(entry.card)
+  }
+
   applyTransform()
+  // First paint: activate whatever is already visible.
+  requestAnimationFrame(() => syncVisibleLod())
 
   let panning = false
   let panStartX = 0
@@ -173,7 +282,10 @@ export function createUiMap(
   const onPointerDown = (e: PointerEvent) => {
     if (e.button !== 0) return
     const target = e.target as HTMLElement
-    if (target.closest('.open-btn')) return
+    if (target.closest('.open-btn')) {
+      moved = false
+      return
+    }
     panning = true
     moved = false
     panStartX = e.clientX
@@ -197,6 +309,14 @@ export function createUiMap(
   const onPointerUp = () => {
     panning = false
     viewport.classList.remove('panning')
+    scheduleVisibleSync()
+    // Allow the suppressed click (after a drag) to settle, then clear the flag
+    // so the next genuine click (e.g. Open in new tab) works.
+    if (moved) {
+      window.setTimeout(() => {
+        moved = false
+      }, 0)
+    }
   }
 
   const onWheel = (e: WheelEvent) => {
@@ -253,12 +373,18 @@ export function createUiMap(
   viewport.addEventListener('pointercancel', onPointerUpPinch)
   viewport.addEventListener('wheel', onWheel, { passive: false })
 
-  world.addEventListener('click', (e) => {
-    if (moved) {
+  world.addEventListener(
+    'click',
+    (e) => {
+      if (!moved) return
+      const target = e.target as HTMLElement
+      // Never swallow Open-in-new-tab — only suppress accidental clicks after a drag.
+      if (target.closest('.open-btn')) return
       e.preventDefault()
       e.stopPropagation()
-    }
-  }, true)
+    },
+    true,
+  )
 
   toolbar.addEventListener('click', (e) => {
     const btn = (e.target as HTMLElement).closest('button')
@@ -272,6 +398,8 @@ export function createUiMap(
   return {
     destroy: () => {
       if (lodTimer != null) window.clearTimeout(lodTimer)
+      if (visibleTimer != null) window.clearTimeout(visibleTimer)
+      observer.disconnect()
       host.innerHTML = ''
     },
     resetView,
@@ -358,46 +486,18 @@ function buildFrameCard(
   const img = document.createElement('img')
   img.alt = ''
   img.draggable = false
-  img.loading = 'lazy'
   img.decoding = 'async'
-  const initialUrl = frameImageUrl(frame, 1)
-  img.src = initialUrl
-  img.setAttribute('data-lod-src', initialUrl)
+  // src is assigned only when the tile activates near the viewport.
 
   const fallback = document.createElement('div')
   fallback.className = 'frame-fallback'
   fallback.hidden = true
   fallback.innerHTML = `<strong>${escapeHtml(frame.name)}</strong><span>${escapeHtml(frame.state)} · ${frame.locale} · ${frame.theme}</span>`
 
-  let retries = 0
-  img.addEventListener('error', () => {
-    const intended = img.getAttribute('data-lod-src') || frame.imageUrl
-    if (retries < 2) {
-      retries += 1
-      const url = new URL(intended, window.location.origin)
-      url.searchParams.set('retry', String(retries))
-      img.src = url.toString()
-      return
-    }
-    // Fall down the LOD chain: 4× → 2× → 1×
-    if (intended.includes('/4x/')) {
-      const mid = frame.imageUrl2x || `/screens/2x/${frame.id}.png`
-      img.setAttribute('data-lod-src', mid)
-      img.setAttribute('data-lod', '2')
-      img.src = mid
-      retries = 0
-      return
-    }
-    if (intended.includes('/2x/')) {
-      img.setAttribute('data-lod-src', frame.imageUrl)
-      img.setAttribute('data-lod', '1')
-      img.src = frame.imageUrl
-      retries = 0
-      return
-    }
-    img.remove()
+  if (frame.missing) {
     fallback.hidden = false
-  })
+    img.hidden = true
+  }
 
   const overlay = document.createElement('div')
   overlay.className = 'frame-overlay'
@@ -422,7 +522,9 @@ function buildFrameCard(
     badge.className = 'stale-badge'
     badge.title = frame.captureError
       ? `Capture failed on ${frame.attemptSha || 'latest'}: ${frame.captureError}`
-      : 'Capture failed on the latest commit'
+      : frame.missing
+        ? 'No screenshot for this state yet'
+        : 'Capture failed on the latest commit'
     badge.textContent = frame.missing ? 'Missing' : 'Outdated'
     const detail = document.createElement('span')
     detail.className = 'stale-detail'
@@ -433,7 +535,16 @@ function buildFrameCard(
     card.appendChild(badge)
   }
 
-  lodFrames.push({ img, frame, lod: 1 })
+  lodFrames.push({
+    card,
+    img,
+    fallback,
+    frame,
+    lod: 1,
+    activated: false,
+    failed: !!frame.missing,
+    failedLods: new Set(),
+  })
   return card
 }
 

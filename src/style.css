@@ -260,6 +260,7 @@ body,
   overflow: hidden;
   background: #000;
   user-select: none;
+  contain: layout paint style;
 }
 
 .theme-block[data-theme='light'] .frame {
