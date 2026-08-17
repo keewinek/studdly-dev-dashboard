@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-17T09:21:17.342315Z",
+  "generatedAt": "2026-08-17T09:25:05.604019Z",
   "source": "studdly/lib/ui_preview/ui_preview_catalog.dart",
   "screens": [
     {
@@ -1174,26 +1174,24 @@
       ]
     },
     {
-      "screenKey": "ai_provider_dialog",
+      "screenKey": "ai_provider_picker",
       "name": "AI Provider Picker",
-      "route": "/settings",
+      "route": "/ai-provider-picker",
       "state": "default",
       "group": "Settings",
       "tags": [
         "settings",
-        "dialog",
         "ai"
       ]
     },
     {
-      "screenKey": "ai_provider_dialog",
+      "screenKey": "ai_provider_picker",
       "name": "AI Provider Picker — Scrolled",
-      "route": "/settings",
+      "route": "/ai-provider-picker",
       "state": "scrolled_mid",
       "group": "Settings",
       "tags": [
         "settings",
-        "dialog",
         "ai",
         "scrolled"
       ]
