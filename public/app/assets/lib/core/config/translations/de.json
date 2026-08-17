@@ -123,7 +123,7 @@
   "contentNotAvailableHint": "Du kannst trotzdem das Quiz versuchen, wenn Fragen verfügbar sind, oder zur Themenübersicht zurückkehren.",
   "checkProgress": "Fortschritt prüfen",
   "analyzingPage": "Seite {current} von {total} wird analysiert...",
-  "aiAnalysisPageSkipped": "Seite {page} aus dem Thema {title} wurde aufgrund eines Fehlers übersprungen.",
+  "aiAnalysisPageSkipped": "Seite {page} aus dem Thema \"{title}\" wurde aufgrund eines Fehlers übersprungen.",
   "aiAnalysisPromptTooLarge": "Diese Seite ist zu groß für deinen aktuellen KI-Anbieter. Versuche Google AI Studio oder OpenRouter in den Einstellungen oder verwende eine kürzere Seite.",
   "noInternetConnection": "Keine Internetverbindung.",
   "aiAllModelsFailed": "Alle KI-Modelle sind fehlgeschlagen. Bitte versuche es später erneut.",
