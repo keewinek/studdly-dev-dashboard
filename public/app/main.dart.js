@@ -132304,29 +132304,31 @@ r.a.toString
 return A.jm(s,s,s,new A.agb(q,0.28,0.28,s),B.P)},
 $S:705}
 A.agb.prototype={
-be(a,b){var s,r,q,p,o,n,m,l,k,j,i=null,h=this.b
-if(h<=0||h>=1||b.ga0(0))return
+be(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null,e=this.b
+if(e<=0||e>=1||b.ga0(0))return
 s=b.a
 r=s*this.d
-q=-r+(s+r*2)*h
-h=b.b
-p=-h
-o=p*0.25
-n=new A.H(q,o,q+r,o+h*1.5)
+q=Math.abs(Math.sin(-0.35))
+p=b.b
+o=s*q+p*Math.abs(Math.cos(-0.35))+r
+n=p*q
+m=-r-n+(s+r*2+n*2)*e
+l=(p-o)/2
+k=new A.H(m,l,m+r,l+o)
 $.ad()
-m=A.bu()
-o=A.b([B.n.fb(0),B.n.fb(this.c),B.n.fb(0)],t.t_)
-l=B.cO.aD(i).aeH(n)
-k=B.jK.aD(i).aeH(n)
-j=new A.a_t(B.cO,B.jK,B.ew,o,B.a7H,i).ay4()
-m.szd(A.auk(l,k,o,j,B.ew,i))
-o=a.a
-J.aM(o.save())
-o.translate(s/2,h/2)
+j=A.bu()
+e=A.b([B.n.fb(0),B.n.fb(this.c),B.n.fb(0)],t.t_)
+i=B.cO.aD(f).aeH(k)
+h=B.jK.aD(f).aeH(k)
+g=new A.a_t(B.cO,B.jK,B.ew,e,B.a7H,f).ay4()
+j.szd(A.auk(i,h,e,g,B.ew,f))
+e=a.a
+J.aM(e.save())
+e.translate(s/2,p/2)
 a.Vt(-0.35)
-o.translate(-s/2,p/2)
-a.i5(n,m)
-o.restore()},
+e.translate(-s/2,-p/2)
+a.i5(k,j)
+e.restore()},
 fV(a){return a.b!==this.b||a.c!==this.c||a.d!==this.d}}
 A.SO.prototype={
 m(){var s=this,r=s.cl$
