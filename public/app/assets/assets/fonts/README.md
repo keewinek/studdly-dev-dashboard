@@ -1,8 +1,6 @@
-# Bundled fonts (Jost)
+# Bundled fonts
 
-This folder can contain Jost font files so the app **always** uses Jost on Android and iOS (no device font fallback, including offline and first launch).
+- **Figtree** (`Figtree-VariableFont_wght.ttf`) — primary UI font. Do not replace.
+- **Noto Sans** (Cyrillic subset) — `fontFamilyFallback` only. Figtree has no Cyrillic, and Samsung system fonts often omit Ukrainian letters such as **ї** (the 5th letter of «Українська»), which then show as tofu squares.
 
-- **Included:** `Jost-VariableFont_wght.ttf` (variable weight font from Google Fonts) is bundled; the `google_fonts` package may use it when available in assets.
-- **Optional:** For full compatibility with all weights/styles, download [Jost from Google Fonts](https://fonts.google.com/specimen/Jost) (Download family), unzip, and add the `.ttf` files here **without renaming** (e.g. `Jost-Regular.ttf`, `Jost-Italic.ttf`, …).
-
-Bundled files are used instead of runtime HTTP fetch, so the app font stays Jost even when offline.
+Noto Sans files are subset to Cyrillic (U+0400–U+052F) at weights 400 / 500 / 600 and licensed under the SIL Open Font License (see `OFL-NotoSans.txt`).
