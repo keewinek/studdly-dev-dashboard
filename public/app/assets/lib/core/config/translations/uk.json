@@ -300,7 +300,7 @@
   "sambaNovaWebUnavailable": "SambaNova не працює в браузері. Використай Google AI Studio або Groq, або застосунок на телефоні/комп'ютері.",
   "aiWebNetworkHint": "Цей ШІ може не працювати в браузері. Спробуй Google AI Studio або Groq, або застосунок на телефоні/комп'ютері.",
   "mistralApi": "Mistral AI",
-  "mistralApiDescription": "Безкоштовні моделі Mistral (ліміти)",
+  "mistralApiDescription": "Безкоштовні моделі Mistral",
   "apiKeySectionMistral": "Ключ API Mistral AI",
   "onboardingApiKeyTutorial1Mistral": "Studdly може використовувати безкоштовний ключ Mistral. Ми допоможемо його отримати.",
   "onboardingApiKeyTutorial2Mistral": "Перейди на console.mistral.ai/api-keys, створи ключ API і скопіюй його.",

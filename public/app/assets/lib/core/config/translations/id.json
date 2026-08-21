@@ -344,7 +344,7 @@
   "sambaNovaWebUnavailable": "SambaNova tidak berfungsi di browser. Pakai Google AI Studio atau Groq, atau aplikasi ponsel/komputer.",
   "aiWebNetworkHint": "AI ini mungkin tidak berfungsi di browser. Coba Google AI Studio atau Groq, atau pakai aplikasi ponsel/komputer.",
   "mistralApi": "Mistral AI",
-  "mistralApiDescription": "Model Mistral gratis (ada batas)",
+  "mistralApiDescription": "Model Mistral gratis",
   "apiKeySectionMistral": "Kunci API Mistral AI",
   "onboardingApiKeyTutorial1Mistral": "Studdly bisa memakai kunci Mistral gratis. Kami akan membantumu mendapatkannya.",
   "onboardingApiKeyTutorial2Mistral": "Buka console.mistral.ai/api-keys, buat kunci API, lalu salin.",
