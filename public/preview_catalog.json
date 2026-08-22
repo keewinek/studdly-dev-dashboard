@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T16:04:24.189746Z",
+  "generatedAt": "2026-08-22T16:11:20.576719Z",
   "source": "studdly/lib/ui_preview/ui_preview_catalog.dart",
   "screens": [
     {
@@ -720,6 +720,28 @@
       "tags": [
         "create",
         "sheet"
+      ]
+    },
+    {
+      "screenKey": "pdf_page_selector",
+      "name": "PDF Page Selector — Default",
+      "route": "/create-topic/pdf-pages",
+      "state": "default",
+      "group": "Create Topic",
+      "tags": [
+        "create",
+        "pdf"
+      ]
+    },
+    {
+      "screenKey": "pdf_page_selector",
+      "name": "PDF Page Selector — With Selection",
+      "route": "/create-topic/pdf-pages",
+      "state": "with_selection",
+      "group": "Create Topic",
+      "tags": [
+        "create",
+        "pdf"
       ]
     },
     {
