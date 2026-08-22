@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-08-22T16:19:02.679Z",
+  "generatedAt": "2026-08-22T16:20:50.704Z",
   "gitSha": "256549c70b0c",
   "appVersion": "preview-capture",
   "flutterPreviewBaseUrl": "/app/",
@@ -9,7 +9,7 @@
     "total": 1368,
     "failed": 0,
     "keptOld": 0,
-    "missing": 16,
+    "missing": 14,
     "stale": 0
   },
   "device": {
@@ -11918,9 +11918,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.001Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.661Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_language.other_highlighted.light.es",
@@ -11943,9 +11943,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.002Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.661Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "language_picker.default.light.es",
@@ -11968,9 +11968,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.002Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.661Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "language_picker.no_selection.light.es",
@@ -11994,9 +11994,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.002Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.661Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "language_picker.search.light.es",
@@ -12020,9 +12020,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.002Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.661Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "language_picker.search_empty.light.es",
@@ -12047,9 +12047,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.002Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.661Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "language_picker.scrolled_mid.light.es",
@@ -12073,9 +12073,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.002Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.661Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_q1.default.light.es",
@@ -12098,9 +12098,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.002Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.661Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_q1.option_selected.light.es",
@@ -12123,9 +12123,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.002Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.661Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_q2.default.light.es",
@@ -12148,9 +12148,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.002Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.661Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_q2.option_selected.light.es",
@@ -12173,9 +12173,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.002Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.661Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_q3.default.light.es",
@@ -12198,9 +12198,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.003Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.661Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_q3.option_selected.light.es",
@@ -12223,9 +12223,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.003Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_name.empty.light.es",
@@ -12249,9 +12249,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.003Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_name.filled.light.es",
@@ -12274,9 +12274,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.003Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_video.video_google_ai_studio.light.es",
@@ -12302,9 +12302,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.003Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_video.video_groq.light.es",
@@ -12330,9 +12330,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.003Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_video.video_cerebras.light.es",
@@ -12358,9 +12358,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.003Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_video.video_open_router.light.es",
@@ -12386,9 +12386,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.003Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_video.video_openai.light.es",
@@ -12414,9 +12414,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.003Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_video.video_sambanova.light.es",
@@ -12442,9 +12442,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.003Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_video.video_mistral.light.es",
@@ -12470,9 +12470,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.003Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_video.video_zai.light.es",
@@ -12498,9 +12498,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.004Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_google_ai_studio.light.es",
@@ -12526,9 +12526,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.004Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_groq.light.es",
@@ -12554,9 +12554,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.004Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_cerebras.light.es",
@@ -12582,9 +12582,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.004Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_open_router.light.es",
@@ -12610,9 +12610,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.004Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_openai.light.es",
@@ -12638,9 +12638,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.004Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_sambanova.light.es",
@@ -12666,9 +12666,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.004Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.662Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_mistral.light.es",
@@ -12694,9 +12694,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.004Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_api_key.api_key_zai.light.es",
@@ -12722,9 +12722,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.004Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_api_key.testing.light.es",
@@ -12749,9 +12749,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.004Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_api_key.error.light.es",
@@ -12777,9 +12777,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.004Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_api_key.visible.light.es",
@@ -12804,9 +12804,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.004Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_api_key.provider_dialog.light.es",
@@ -12832,9 +12832,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.005Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_easy.default.light.es",
@@ -12857,9 +12857,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.005Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_dialogue_final.default.light.es",
@@ -12882,9 +12882,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.005Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.empty.light.es",
@@ -12908,9 +12908,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.005Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.ready.light.es",
@@ -12933,9 +12933,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.005Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.ready_scrolled_mid.light.es",
@@ -12959,9 +12959,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.005Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.ready_scrolled_bottom.light.es",
@@ -12985,9 +12985,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.005Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.empty_ready.light.es",
@@ -13011,9 +13011,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.005Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.partial_progress.light.es",
@@ -13036,9 +13036,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.005Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.analyzing.light.es",
@@ -13061,9 +13061,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.005Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.queued.light.es",
@@ -13086,9 +13086,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.005Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.mixed_statuses.light.es",
@@ -13111,9 +13111,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.006Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.663Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.mixed_scrolled_mid.light.es",
@@ -13137,9 +13137,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.006Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.search_no_results.light.es",
@@ -13164,9 +13164,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.006Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.context_menu.light.es",
@@ -13190,9 +13190,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.006Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.reorder.light.es",
@@ -13216,9 +13216,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.006Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.rename.light.es",
@@ -13241,9 +13241,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.006Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "home.delete_dialog.light.es",
@@ -13267,9 +13267,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.006Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "create_topic.empty.light.es",
@@ -13293,9 +13293,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.006Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "create_topic.title_only.light.es",
@@ -13318,9 +13318,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.006Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "create_topic.with_pages.light.es",
@@ -13343,9 +13343,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.006Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "create_topic.pages_one.light.es",
@@ -13368,9 +13368,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.006Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "create_topic.ocr.light.es",
@@ -13393,9 +13393,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.007Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "create_topic.ocr_start.light.es",
@@ -13418,9 +13418,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.007Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "create_topic.creating.light.es",
@@ -13443,9 +13443,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.007Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "create_topic.pages_many_scrolled_mid.light.es",
@@ -13469,9 +13469,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.007Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "create_topic.advancement_open.light.es",
@@ -13494,9 +13494,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.007Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "create_topic.permission_dialog.light.es",
@@ -13520,9 +13520,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.007Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "create_topic.suggested_title_dialog.light.es",
@@ -13546,9 +13546,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.007Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "create_topic.add_page_sheet.light.es",
@@ -13572,9 +13572,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.007Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "pdf_page_selector.default.light.es",
@@ -13590,15 +13590,17 @@
       ],
       "group": "Create Topic",
       "compareKey": "pdf_page_selector|default",
-      "imageUrl": "/screens/pdf_page_selector.default.light.es.png",
+      "imageUrl": "/screens/thumbs/pdf_page_selector.default.light.es.webp",
       "fullImageUrl": "/screens/pdf_page_selector.default.light.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.664Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "pdf_page_selector.with_selection.light.es",
@@ -13614,15 +13616,17 @@
       ],
       "group": "Create Topic",
       "compareKey": "pdf_page_selector|with_selection",
-      "imageUrl": "/screens/pdf_page_selector.with_selection.light.es.png",
+      "imageUrl": "/screens/thumbs/pdf_page_selector.with_selection.light.es.webp",
       "fullImageUrl": "/screens/pdf_page_selector.with_selection.light.es.png",
       "size": {
         "width": 390,
         "height": 844
       },
       "stale": false,
-      "missing": true,
-      "captureError": "no screenshot yet"
+      "missing": false,
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "topic_path.empty.light.es",
@@ -13646,9 +13650,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.007Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "topic_path.partial.light.es",
@@ -13671,9 +13675,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.007Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "topic_path.ready.light.es",
@@ -13696,9 +13700,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.007Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "topic_path.expanded.light.es",
@@ -13721,9 +13725,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.008Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "topic_path.completed_nodes.light.es",
@@ -13746,9 +13750,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.008Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "topic_path.completed_nodes_expanded.light.es",
@@ -13771,9 +13775,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.008Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "topic_path.analyzing_with_path.light.es",
@@ -13796,9 +13800,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.008Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "topic_path.scrolled.light.es",
@@ -13822,9 +13826,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.008Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "topic_path.ready_scrolled_bottom.light.es",
@@ -13848,9 +13852,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.008Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "topic_path.empty_content_dialog.light.es",
@@ -13874,9 +13878,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.008Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "read_text.quiz_disabled.light.es",
@@ -13899,9 +13903,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.008Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "read_text.quiz_enabled.light.es",
@@ -13924,9 +13928,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.008Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "read_text.empty_content.light.es",
@@ -13950,9 +13954,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.008Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "read_text.reading_aloud.light.es",
@@ -13975,9 +13979,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.008Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "read_text.scrolled.light.es",
@@ -14001,9 +14005,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.009Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "read_text.scrolled_bottom.light.es",
@@ -14027,9 +14031,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.009Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "quiz.unanswered.light.es",
@@ -14052,9 +14056,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.009Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.665Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "quiz.correct.light.es",
@@ -14077,9 +14081,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.009Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "quiz.wrong.light.es",
@@ -14102,9 +14106,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.009Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "quiz.completed.light.es",
@@ -14127,9 +14131,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.009Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "quiz.mid_progress.light.es",
@@ -14152,9 +14156,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.009Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "quiz.mid_progress_wrong.light.es",
@@ -14177,9 +14181,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.009Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "quiz.revision.light.es",
@@ -14202,9 +14206,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.009Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "quiz.revision_wrong.light.es",
@@ -14227,9 +14231,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.009Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "quiz.no_questions.light.es",
@@ -14253,9 +14257,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.010Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "quiz.long_options.light.es",
@@ -14278,9 +14282,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.010Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "quiz.long_options_scrolled_mid.light.es",
@@ -14304,9 +14308,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.010Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "ai_analysis.analyzing_start.light.es",
@@ -14329,9 +14333,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.010Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "ai_analysis.analyzing_mid.light.es",
@@ -14354,9 +14358,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.010Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "download_prompt.default.light.es",
@@ -14379,9 +14383,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.010Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.default.light.es",
@@ -14404,9 +14408,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.010Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.no_api_key.light.es",
@@ -14431,9 +14435,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.010Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.key_visible.light.es",
@@ -14457,9 +14461,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.010Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.sound_muted.light.es",
@@ -14482,9 +14486,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.010Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.scrolled_mid.light.es",
@@ -14508,9 +14512,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.011Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.666Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.scrolled_bottom.light.es",
@@ -14534,9 +14538,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.011Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.provider_google_ai_studio.light.es",
@@ -14560,9 +14564,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.011Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.provider_groq.light.es",
@@ -14586,9 +14590,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.011Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.provider_cerebras.light.es",
@@ -14612,9 +14616,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.011Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.provider_open_router.light.es",
@@ -14638,9 +14642,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.012Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.provider_openai.light.es",
@@ -14664,9 +14668,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.012Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.provider_sambanova.light.es",
@@ -14690,9 +14694,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.012Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.provider_mistral.light.es",
@@ -14716,9 +14720,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.012Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "settings.provider_zai.light.es",
@@ -14742,9 +14746,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.012Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "ai_provider_picker.default.light.es",
@@ -14768,9 +14772,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.012Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "ai_provider_picker.scrolled_mid.light.es",
@@ -14795,9 +14799,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.012Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "logs.empty.light.es",
@@ -14822,9 +14826,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.013Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "logs.with_entries.light.es",
@@ -14848,9 +14852,9 @@
       },
       "stale": false,
       "missing": false,
-      "lastSuccessSha": "354009e449f4",
-      "lastSuccessAt": "2026-08-22T14:44:01.013Z",
-      "attemptSha": "354009e449f4"
+      "lastSuccessSha": "256549c70b0c",
+      "lastSuccessAt": "2026-08-22T16:20:50.667Z",
+      "attemptSha": "256549c70b0c"
     },
     {
       "id": "onboarding_language.default.dark.es",
