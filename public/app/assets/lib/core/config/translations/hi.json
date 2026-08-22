@@ -20,6 +20,7 @@
   "pages": "किताब या नोट्स के पेज",
   "createTopic": "विषय बनाएँ",
   "readTextCarefully": "पाठ ध्यान से पढ़ें",
+  "aiGeneratedBadge": "AI",
   "readAloud": "ज़ोर से पढ़ें",
   "readAloudFailed": "ज़ोर से नहीं पढ़ सके। डिवाइस की TTS सेटिंग जाँचें और फिर कोशिश करें।",
   "beginQuiz": "क्विज़ शुरू करें",

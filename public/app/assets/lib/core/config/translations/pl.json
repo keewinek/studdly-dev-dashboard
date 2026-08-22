@@ -20,6 +20,7 @@
   "pages": "Strony podręcznika lub notatek",
   "createTopic": "Utwórz temat",
   "readTextCarefully": "Przeczytaj tekst uważnie",
+  "aiGeneratedBadge": "AI",
   "readAloud": "Czytaj na głos",
   "readAloudFailed": "Nie udało się przeczytać na głos. Sprawdź ustawienia TTS urządzenia i spróbuj ponownie.",
   "beginQuiz": "Rozpocznij quiz",

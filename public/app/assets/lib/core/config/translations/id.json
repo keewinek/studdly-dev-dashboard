@@ -20,6 +20,7 @@
   "pages": "Halaman buku atau catatan",
   "createTopic": "Buat topik",
   "readTextCarefully": "Baca teks dengan saksama",
+  "aiGeneratedBadge": "AI",
   "readAloud": "Baca nyaring",
   "readAloudFailed": "Tidak bisa membaca nyaring. Periksa pengaturan TTS perangkat, lalu coba lagi.",
   "beginQuiz": "Mulai kuis",

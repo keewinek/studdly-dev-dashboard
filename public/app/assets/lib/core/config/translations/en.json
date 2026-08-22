@@ -20,6 +20,7 @@
   "pages": "Textbook or notes pages",
   "createTopic": "Create topic",
   "readTextCarefully": "Read the text carefully",
+  "aiGeneratedBadge": "AI",
   "readAloud": "Read aloud",
   "readAloudFailed": "Couldn't read aloud. Check device TTS settings and try again.",
   "beginQuiz": "Begin quiz",
