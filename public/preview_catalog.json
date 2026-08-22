@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T11:56:35.093784Z",
+  "generatedAt": "2026-08-22T14:16:21.287051Z",
   "source": "studdly/lib/ui_preview/ui_preview_catalog.dart",
   "screens": [
     {
@@ -563,6 +563,17 @@
       "tags": [
         "home",
         "menu"
+      ]
+    },
+    {
+      "screenKey": "home",
+      "name": "Home — Reorder",
+      "route": "/home",
+      "state": "reorder",
+      "group": "Home",
+      "tags": [
+        "home",
+        "reorder"
       ]
     },
     {
