@@ -30,15 +30,18 @@ Map tiles load **WebP thumbs** (`/screens/thumbs/*.webp`); full PNGs stay at `/s
 ## Automation (free Actions on public repo)
 
 Heavy work runs on **this public repo** (`studdly-dev-dashboard`) so GitHub Actions minutes are free.
-Private `studdly` only runs a tiny trigger (~seconds) on each `main` push.
+Private `studdly` only runs a tiny trigger (~seconds) when **UI-preview paths** change on `main`
+(or via manual dispatch) — not on every Studdly push.
 
 Flow:
 
-1. Push to `studdly` `main` → tiny workflow `trigger-ui-map.yml`  
+1. Push to `studdly` `main` that touches `lib/ui_preview/**` (or related paths) → tiny workflow `trigger-ui-map.yml`  
+   - Or: Actions → **Trigger UI map update** / **Update UI map** → Run workflow (any Studdly SHA)  
 2. That kicks off **Update UI map** here (public, free minutes)  
-3. Checkout private Studdly → build Flutter `/app` → capture screenshots in locale×theme packs (e.g. `light.en`), pushing each pack live → final commit for leftover `/app` build  
+3. Checkout private Studdly → build Flutter `/app` → capture screenshots in locale×theme packs (e.g. `light.en`), pushing each pack as a git checkpoint (`[skip netlify]`) → **one** final leftovers/deploy commit  
+4. Netlify rebuilds `https://dev.studdly.app` **once** per successful run (backup: `https://studdlydev.netlify.app`)
 
-4. Netlify rebuilds `https://dev.studdly.app` (backup: `https://studdlydev.netlify.app`)
+Pack commits and the early `/app` push use `[skip netlify]` so intermediate pushes do not burn Netlify build minutes. The live map updates when the final deploy commit lands (all packs + `/app` together).
 
 ### One-time setup (2 secrets)
 
@@ -94,7 +97,8 @@ mkdir -p /tmp/ui-preview-root/app && rsync -a public/app/ /tmp/ui-preview-root/a
 python3 -m http.server 7360 --directory /tmp/ui-preview-root
 
 # Terminal B — capture screenshots
-# Optional: COMMIT_EACH_PACK=1 pushes after each locale×theme pack (used in CI)
+# Optional: COMMIT_EACH_PACK=1 pushes after each locale×theme pack (used in CI;
+# pack commits include [skip netlify] — live deploy is the final CI commit)
 PREVIEW_BASE=http://127.0.0.1:7360/app/ npm run capture:screens
 
 # Optional filters for faster local runs:

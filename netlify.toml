@@ -1,6 +1,9 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  # Belt-and-suspenders with [skip netlify] on pack/app checkpoint commits:
+  # exit 0 = skip build, exit 1 = proceed.
+  ignore = "git log -1 --pretty=%B | grep -qE '\\[skip netlify\\]|UI map pack ' && exit 0 || exit 1"
 
 # Flutter web preview: static files under /app/ (from public/app).
 # Netlify serves existing files before the SPA fallback below.

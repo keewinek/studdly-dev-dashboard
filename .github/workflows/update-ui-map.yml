@@ -108,12 +108,14 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Ship /app before packs so mid-run screenshots match the new preview build
           # (cancel-in-progress must not leave new screens + old /app).
+          # [skip netlify]: pack + early app pushes are git checkpoints; one final
+          # leftovers/deploy commit (no skip tag) triggers a single Netlify build.
           git add public/app public/preview_catalog.json src/preview_catalog.json
           if git diff --cached --quiet; then
             echo "Flutter app build already up to date on main."
             exit 0
           fi
-          git commit -m "chore: refresh UI map app build from studdly@${{ steps.sha.outputs.short }}"
+          git commit -m "chore: refresh UI map app build from studdly@${{ steps.sha.outputs.short }} [skip netlify]"
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             if git rebase origin/main; then
@@ -136,7 +138,7 @@ jobs:
             # If abort dropped the commit, recreate it before retrying.
             git add public/app public/preview_catalog.json src/preview_catalog.json
             if ! git diff --cached --quiet; then
-              git commit -m "chore: refresh UI map app build from studdly@${{ steps.sha.outputs.short }}" || true
+              git commit -m "chore: refresh UI map app build from studdly@${{ steps.sha.outputs.short }} [skip netlify]" || true
             fi
             echo "Push race; retrying in 10s…"
             sleep 10
@@ -162,7 +164,8 @@ jobs:
           CONCURRENCY: '4'
           SETTLE_MS: '2000'
           # Push screens + manifest after each locale×theme pack (e.g. light.en)
-          # so Netlify can update the live map mid-run.
+          # as git checkpoints ([skip netlify]). Live site updates on the final
+          # leftovers/deploy commit below.
           COMMIT_EACH_PACK: '1'
         run: |
           set -euo pipefail
@@ -203,7 +206,7 @@ jobs:
           npm run thumbs:screens
           node scripts/point-manifest-thumbs.mjs
 
-      - name: Commit remaining leftovers
+      - name: Commit remaining leftovers and deploy
         run: |
           set -euo pipefail
           git config user.name "studdly-ui-bot"
@@ -213,16 +216,18 @@ jobs:
           git add public/app public/screens public/manifest.json public/capture-report.json \
             public/preview_catalog.json src/preview_catalog.json
           if git diff --cached --quiet; then
-            echo "No leftover dashboard changes (packs already pushed)."
-            exit 0
+            # Packs already pushed everything with [skip netlify]. Force one empty
+            # deploy commit so Netlify builds the accumulated app + screens once.
+            git commit --allow-empty -m "chore: deploy UI map from studdly@${{ steps.sha.outputs.short }}"
+          else
+            git commit -m "chore: refresh UI map leftovers from studdly@${{ steps.sha.outputs.short }}"
           fi
-          git commit -m "chore: refresh UI map leftovers from studdly@${{ steps.sha.outputs.short }}"
 
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             if git rebase origin/main; then
               if git push origin HEAD:main; then
-                echo "Pushed leftovers on attempt ${attempt}"
+                echo "Pushed leftovers/deploy on attempt ${attempt}"
                 exit 0
               fi
             else
@@ -248,6 +253,8 @@ jobs:
               public/preview_catalog.json src/preview_catalog.json
             if ! git diff --cached --quiet; then
               git commit -m "chore: refresh UI map leftovers from studdly@${{ steps.sha.outputs.short }}" || true
+            elif ! git log -1 --pretty=%B | grep -q 'deploy UI map\|refresh UI map leftovers'; then
+              git commit --allow-empty -m "chore: deploy UI map from studdly@${{ steps.sha.outputs.short }}" || true
             fi
             echo "Push race; retrying in 10s…"
             sleep 10

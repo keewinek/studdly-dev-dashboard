@@ -7,7 +7,9 @@
  * in manifest.json so the map can show a "Kept old" badge.
  *
  *   PREVIEW_BASE=http://127.0.0.1:7360/app/ node scripts/capture-screenshots.mjs
- *   COMMIT_EACH_PACK=1  — after each locale×theme pack, git commit + push (CI)
+ *   COMMIT_EACH_PACK=1  — after each locale×theme pack, git commit + push (CI).
+ *     Pack commits include [skip netlify] so intermediate pushes do not burn
+ *     Netlify build minutes; the workflow's final leftovers/deploy commit builds once.
  */
 import { chromium } from 'playwright'
 import { execSync } from 'node:child_process'
@@ -27,7 +29,7 @@ const concurrency = Number(process.env.CONCURRENCY || 3)
 const deviceScaleFactor = Number(process.env.DEVICE_SCALE || 1)
 const device = { width: 390, height: 844 }
 const writeManifest = process.env.WRITE_MANIFEST !== '0'
-/** After each locale×theme pack, commit + push so Netlify can update live. */
+/** After each locale×theme pack, commit + push (git checkpoint; Netlify skipped). */
 const commitEachPack = process.env.COMMIT_EACH_PACK === '1'
 const gitSha = (process.env.GITHUB_SHA || 'local').slice(0, 12)
 const settleMs = Number(process.env.SETTLE_MS || 2200)
@@ -351,7 +353,9 @@ function resolveRebaseConflicts() {
 
 async function commitAndPushPack(packLabel) {
   const short = String(gitSha).slice(0, 7)
-  const message = `chore: UI map pack ${packLabel} from studdly@${short}`
+  // [skip netlify]: pack pushes are resilience checkpoints only. One final CI
+  // commit (without this tag) deploys app + all packs together.
+  const message = `chore: UI map pack ${packLabel} from studdly@${short} [skip netlify]`
   // Screens + manifest only — Flutter web build is committed before packs in CI.
   if (!ensurePackCommit(message)) {
     console.log(`[pack ${packLabel}] nothing new to commit`)
@@ -383,10 +387,13 @@ async function commitAndPushPack(packLabel) {
         execSync('node scripts/point-manifest-thumbs.mjs', { cwd: root, stdio: 'inherit' })
         stagePackPaths()
         if (hasStagedChanges()) {
-          execSync(`git commit -m ${JSON.stringify(`${message} (thumb urls)`)}`, {
-            cwd: root,
-            stdio: 'inherit',
-          })
+          execSync(
+            `git commit -m ${JSON.stringify(`${message} (thumb urls)`)}`,
+            {
+              cwd: root,
+              stdio: 'inherit',
+            },
+          )
         }
       } catch (thumbErr) {
         console.warn(`[pack ${packLabel}] thumb url fix:`, String(thumbErr).slice(0, 180))
