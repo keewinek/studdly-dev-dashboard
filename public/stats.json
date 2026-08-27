@@ -1,0 +1,29 @@
+{
+  "generatedAt": "1970-01-01T00:00:00.000Z",
+  "source": "unconfigured",
+  "packageName": "com.studdly.app",
+  "appleId": "6755741754",
+  "total": null,
+  "stores": [
+    {
+      "platform": "google_play",
+      "label": "Google Play",
+      "downloads": null,
+      "metric": "Total user installs",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.studdly.app",
+      "note": "Configure PLAY_* Netlify env vars (or run npm run stats:fetch)"
+    },
+    {
+      "platform": "app_store",
+      "label": "App Store",
+      "downloads": null,
+      "metric": "First-time downloads",
+      "storeUrl": "https://apps.apple.com/app/id6755741754",
+      "note": "Configure ASC_* Netlify env vars (or run npm run stats:fetch)"
+    }
+  ],
+  "setup": [
+    "Set Netlify env vars for Google Play Cloud Storage reports and App Store Connect API — see README → Stats.",
+    "Or run locally: npm run stats:fetch (writes public/stats.json), then commit/push."
+  ]
+}

@@ -3,9 +3,45 @@
 Public open-startup UI map for Studdly.
 
 - **Live path:** `https://dev.studdly.app/ui`
+- **Stats:** `https://dev.studdly.app/stats`
 - **Backup:** `https://studdlydev.netlify.app/ui` (same Netlify site)
-- **Host:** Netlify free plan (static Vite SPA only)
+- **Host:** Netlify free plan (static Vite SPA + one downloads function)
 - **Auth:** none — link is enough
+
+## What `/stats` is
+
+Exact lifetime download counts for Studdly — not Play Console “10K+” buckets and not the fuzzy App Store Connect charts.
+
+| Store | Metric | Source |
+|--------|--------|--------|
+| Google Play | **Total user installs** | Play Console Cloud Storage `stats/installs/…_overview.csv` |
+| App Store | **First-time downloads** (Sales `Units`) | [App Store Connect Sales Reports API](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-salesreports) |
+
+The page loads `/api/downloads` (Netlify Function). If the function isn’t configured yet, it falls back to `public/stats.json`.
+
+### One-time credentials (Netlify env vars)
+
+Set these in **Netlify → Site configuration → Environment variables** (and optionally in local `.env` for `npm run stats:fetch`):
+
+**Google Play**
+
+1. Play Console → **Download reports** → Statistics → **Copy Cloud Storage URI** → set `PLAY_GCS_BUCKET` (e.g. `pubsite_prod_rev_…`)
+2. Create a Google Cloud **service account**, download JSON key → paste as `PLAY_SERVICE_ACCOUNT_JSON` (raw JSON or base64)
+3. In Play Console → Users and permissions, invite that service account email with **View app information** (and access to statistics / financial as needed)
+4. Optional: `PLAY_PACKAGE_NAME=com.studdly.app`
+
+**App Store Connect**
+
+1. [Users and Access → Integrations → App Store Connect API](https://appstoreconnect.apple.com/access/integrations/api) → create a key with **Sales and Reports** access
+2. Set `ASC_ISSUER_ID`, `ASC_KEY_ID`, `ASC_PRIVATE_KEY` (PEM text; use `\n` for newlines in env UIs)
+3. Vendor number from Payments and Financial Reports → `ASC_VENDOR_NUMBER`
+4. Optional: `ASC_APPLE_ID=6755741754`, `ASC_SKU=…`, `ASC_START_YEAR=2025`
+
+Local snapshot (writes `public/stats.json`):
+
+```bash
+npm run stats:fetch
+```
 
 ## What `/ui` is
 
