@@ -1,4 +1,4 @@
-import { buildDownloadsSnapshot } from '../scripts/lib/store-downloads.mjs'
+import { buildDownloadsSnapshot } from '../../scripts/lib/store-downloads.mjs'
 
 const CORS = {
   'Access-Control-Allow-Origin': '*',
