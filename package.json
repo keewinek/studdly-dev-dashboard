@@ -9,8 +9,7 @@
     "preview": "vite preview",
     "capture:screens": "node scripts/capture-screenshots.mjs",
     "sync:preview": "./scripts/sync-flutter-preview.sh",
-    "thumbs:screens": "node scripts/generate-screen-thumbs.mjs",
-    "stats:fetch": "node scripts/fetch-store-stats.mjs"
+    "thumbs:screens": "node scripts/generate-screen-thumbs.mjs"
   },
   "devDependencies": {
     "playwright": "^1.62.1",

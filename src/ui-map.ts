@@ -150,10 +150,6 @@ export function createUiMap(
           ? `<p class="status-warn" title="Capture in progress = mid-run pack publish (Behind badges suppressed). Behind = older successful capture than the latest completed map run. Kept old = capture failed and a previous PNG is shown. Missing = no PNG yet.">${warnBits.join(' · ')}</p>`
           : ''
       }
-      <nav class="site-nav" aria-label="Dashboard">
-        <a href="/ui" aria-current="page">UI Map</a>
-        <a href="/stats">Stats</a>
-      </nav>
     </div>
   `
 
