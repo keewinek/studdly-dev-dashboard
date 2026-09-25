@@ -44,9 +44,13 @@ Analyse le texte OCR fourni et crée des sous-thèmes avec des questions de quiz
 - **ABSOLUMENT INTERDIT** : n'utilise AUCUNE information du texte OCR original pour générer les questions. Tu peux UNIQUEMENT utiliser le contenu du sous-thème que tu as écrit. Si tu te surprends à penser « cela a été mentionné dans l'OCR », arrête-toi et vérifie si c'est dans le contenu de ton sous-thème. Sinon, la question n'est pas valide.
 - Assure-toi que toutes les questions peuvent recevoir une réponse en utilisant uniquement les informations du contenu du sous-thème.
 - Chaque question doit être différente et tester la connaissance d'un aspect différent contenu dans le sous-thème.
-- INTERDIT : ne crée JAMAIS de réponses telles que « Seulement A », « Seulement B », « Seulement C », « A, B et C » ou d'autres schémas simples similaires – toutes les réponses doivent être des phrases ou expressions complètes et descriptives qui exigent une réelle compréhension du contenu.
+- INTERDIT : ne crée JAMAIS de réponses telles que « Seulement A », « Seulement B », « Seulement C », « A, B et C » ou d'autres schémas simples similaires – toutes les options sont des réponses courtes et parallèles à la question — sans explications supplémentaires dans le texte des options.
 - **Longueur des réponses** : garde toutes les réponses (correctes comme incorrectes) COURTES – environ 7 mots maximum. Les réponses doivent être concises et précises, tout en restant complètes et pertinentes.
 - Garde toutes les options de réponse d'une longueur proche pour que la longueur ne trahisse pas la bonne réponse.
+- **Réponses sans indices** : Chaque option est une courte réponse possible — pas une explication ni une description de fonction. N'ajoute pas d'informations qui révèlent si l'option correspond à la question.
+- **Quatre candidats également plausibles** : Les quatre options sonnent comme des réponses raisonnables après lecture du sous-thème. Une seule est correcte. Les mauvaises options sont d'autres concepts réels du même sujet qu'on pourrait facilement confondre avec elle — pas des négations ni des auto-exclusions.
+- **Forme parallèle, sans modèle** : Même style et longueur similaire pour toutes les options. La bonne réponse ne doit pas se distinguer par le format ou la longueur.
+- **Test de devinette** : Si quelqu'un qui n'a pas lu le sous-thème pourrait deviner la bonne option — réécris la question et les quatre options.
 
 ## Format de sortie (STRICT - AUCUN TEXTE SUPPLÉMENTAIRE)
 - Réponds UNIQUEMENT avec l'objet JSON final décrit ci-dessous. N'ajoute pas d'explications, d'en-têtes, de commentaires, de balises markdown ni de blocs de code.
@@ -64,17 +68,18 @@ Renvoie l'analyse au format JSON suivant (crée exactement 1 sous-thème) :
       "questions": [
         {
           "question": "Texte de la question ici. Génère les questions uniquement à partir du contenu de ce sous-thème, en français.",
-          "right_answer": "Bonne réponse sous forme de phrase ou d'expression complète, en français.",
+          "right_answer": "Courte bonne réponse — p. ex. un nom ou une phrase, sans explications.",
           "wrong_answers": [
-            "Réponse incorrecte mais plausible reflétant un malentendu typique, en français.",
-            "Une autre réponse plausible mais incorrecte, en français.",
-            "Encore une réponse plausible mais incorrecte, en français."
+            "Courte réponse fausse plausible du même sujet.",
+            "Une autre courte réponse fausse plausible du même sujet.",
+            "Encore une courte réponse fausse plausible du même sujet."
           ]
         }
       ]
     }
   ]
 }
+
 
 ## Texte OCR à analyser :
 {TEXT_CONTENT}

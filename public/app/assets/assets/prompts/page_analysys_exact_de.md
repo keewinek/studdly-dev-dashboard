@@ -43,9 +43,13 @@ Analysiere den bereitgestellten OCR-Text und erstelle Unterthemen mit Quizfragen
 - **ABSOLUT VERBOTEN**: Verwende beim Erstellen der Fragen KEINE Informationen aus dem ursprünglichen OCR-Text. Du darfst NUR den von dir geschriebenen Inhalt des Unterthemas verwenden. Wenn du denkst „das wurde im OCR erwähnt", halte inne und prüfe, ob es im Inhalt deines Unterthemas steht. Wenn nicht, ist die Frage ungültig.
 - Stelle sicher, dass alle Fragen allein mit den Informationen aus dem Inhalt des Unterthemas beantwortet werden können.
 - Jede Frage soll anders sein und das Wissen über einen anderen Aspekt des Unterthema-Inhalts prüfen.
-- VERBOTEN: Erstelle NIEMALS Antworten wie „Nur A", „Nur B", „Nur C", „A, B und C" oder ähnliche einfache Muster – alle Antworten müssen vollständige, beschreibende Sätze oder Formulierungen sein, die ein echtes Verständnis des Inhalts erfordern.
+- VERBOTEN: Erstelle NIEMALS Antworten wie „Nur A", „Nur B", „Nur C", „A, B und C" oder ähnliche einfache Muster – alle Optionen sind kurze, parallele Antworten auf die Frage — ohne zusätzliche Erklärungen im Optionstext.
 - **Antwortlänge**: Halte alle Antworten (sowohl richtige als auch falsche) KURZ – höchstens etwa 7 Wörter. Die Antworten sollen prägnant und auf den Punkt sein, aber vollständig und sinnvoll bleiben.
 - Halte alle Antwortoptionen ungefähr gleich lang, damit die Länge nicht die richtige Antwort verrät.
+- **Antworten ohne Hinweise**: Jede Option ist eine kurze mögliche Antwort — keine Erklärung oder Funktionsbeschreibung. Füge keiner Option Informationen hinzu, die verraten, ob sie zur Frage passt.
+- **Vier gleich plausibel Kandidaten**: Alle vier Optionen klingen nach dem Lesen des Unterthemas wie sinnvolle Antworten. Genau eine ist richtig. Falsche Optionen sind andere reale Begriffe aus demselben Thema, die man leicht damit verwechseln könnte — keine Negationen oder Selbstausschlüsse.
+- **Parallele Form, kein Schema**: Alle Optionen im gleichen Stil und ähnlicher Länge (z. B. nur Namen oder nur kurze Phrasen). Die richtige Antwort darf sich nicht durch Format oder Länge abheben.
+- **Rate-Test**: Wenn jemand ohne Kenntnis des Stoffs die richtige Option erraten könnte — Frage und alle vier Optionen neu schreiben.
 
 ## Ausgabeformat (STRIKT - KEIN ZUSÄTZLICHER TEXT)
 - Antworte NUR mit dem unten beschriebenen finalen JSON-Objekt. Füge keine Erklärungen, Überschriften, Kommentare, Markdown-Zäune oder Codeblöcke hinzu.
@@ -63,17 +67,18 @@ Gib die Analyse im folgenden JSON-Format zurück (dies ist nur ein Beispiel für
       "questions": [
         {
           "question": "Fragetext hier. Erstelle Fragen nur auf Basis des Inhalts dieses Unterthemas, auf Deutsch.",
-          "right_answer": "Richtige Antwort als vollständiger Satz oder Ausdruck auf Deutsch.",
+          "right_answer": "Kurze richtige Antwort — z. B. Name oder Phrase, ohne Erklärungen.",
           "wrong_answers": [
-            "Falsche, aber plausible Antwort, die ein typisches Missverständnis widerspiegelt, auf Deutsch.",
-            "Eine weitere plausible, aber falsche Antwort auf Deutsch.",
-            "Noch eine plausible, aber falsche Antwort auf Deutsch."
+            "Kurze plausible falsche Antwort aus demselben Thema.",
+            "Eine weitere kurze plausible falsche Antwort aus demselben Thema.",
+            "Noch eine kurze plausible falsche Antwort aus demselben Thema."
           ]
         }
       ]
     }
   ]
 }
+
 
 ## Zu analysierender OCR-Text:
 {TEXT_CONTENT}

@@ -41,9 +41,13 @@ Analyze the provided OCR text and create sub-topics with quiz questions that hel
 - **ABSOLUTELY FORBIDDEN**: Do NOT use information from the original OCR text when generating questions. You may ONLY use the sub-topic content you wrote. If you find yourself thinking "this was mentioned in the OCR", stop and check if it's in your sub-topic content. If not, the question is invalid.
 - Make sure all questions can be answered using only information from the sub-topic content.
 - Each question should be different and should test knowledge of a different aspect contained in the sub-topic content.
-- FORBIDDEN: NEVER create answers like "Only A", "Only B", "Only C", "A, B and C" or similar simple patterns – all answers must be complete, descriptive sentences or phrases that require real understanding of the content.
+- FORBIDDEN: NEVER create answers like "Only A", "Only B", "Only C", "A, B and C" or similar simple patterns – all options must be short parallel answers to the question — no extra explanations inside the option text.
 - **Answer Length**: Keep all answers (both correct and wrong answers) SHORT – approximately 7 words maximum. Answers should be concise and to the point while still being complete and meaningful.
 - Keep every answer option roughly the same length so length alone cannot hint at the correct answer.
+- **No hints in options**: Each option is a short possible answer — not an explanation. Do not add function descriptions or "why this is wrong" text to any option.
+- **Four equally plausible candidates**: All four must sound like reasonable answers after reading the sub-topic. Exactly one is correct. Wrong options are other real concepts from the same topic that could plausibly be mistaken for it, not self-disqualifying descriptions.
+- **Parallel form, no template**: Same style and similar length for all options. The correct answer must not stand out by format or length.
+- **Guess test**: If someone who has not read the sub-topic could pick the correct option from format, length, or contradictions inside the options — rewrite the question and all four options.
 
 ## Output Format (STRICT - NO EXTRA TEXT)
 - Respond with ONLY the final JSON object described below. Do not add explanations, headers, comments, markdown fences, or code blocks.
@@ -61,17 +65,18 @@ Return the analysis in the following JSON format (create exactly 3 sub-topics):
       "questions": [
         {
           "question": "Question text here. Generate questions only based on the content of this sub-topic.",
-          "right_answer": "Correct answer as a full sentence or phrase.",
+          "right_answer": "Short correct answer — e.g. a name or phrase, no explanations.",
           "wrong_answers": [
-            "Incorrect but plausible answer reflecting a typical misunderstanding.",
-            "Another plausible but incorrect answer.",
-            "One more plausible but incorrect answer."
+            "Short plausible wrong answer from the same topic.",
+            "Another short plausible wrong answer from the same topic.",
+            "One more short plausible wrong answer from the same topic."
           ]
         }
       ]
     }
   ]
 }
+
 
 ## OCR Text to Analyze:
 {TEXT_CONTENT}

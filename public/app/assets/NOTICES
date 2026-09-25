@@ -11712,9 +11712,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 --------------------------------------------------------------------------------
 google_mlkit_commons
-google_mlkit_language_id
 google_mlkit_text_recognition
-google_mlkit_translation
 
 MIT License
 

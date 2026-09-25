@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-26T02:07:34.030186Z",
+  "generatedAt": "2026-09-25T20:40:45.726636Z",
   "source": "studdly/lib/ui_preview/ui_preview_catalog.dart",
   "screens": [
     {
@@ -453,6 +453,16 @@
       "name": "Home — Ready",
       "route": "/home",
       "state": "ready",
+      "group": "Home",
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "screenKey": "home",
+      "name": "Home — Streak",
+      "route": "/home",
+      "state": "streak",
       "group": "Home",
       "tags": [
         "home"

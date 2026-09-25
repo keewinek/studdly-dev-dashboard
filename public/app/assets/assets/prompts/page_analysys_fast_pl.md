@@ -43,9 +43,13 @@ Przeanalizuj podany tekst OCR i stwórz podtematy z pytaniami quizowymi, aby pom
 - **ABSOLUTNIE ZABRONIONE**: NIE używaj informacji z oryginalnego tekstu OCR podczas generowania pytań. Możesz używać WYŁĄCZNIE treści podtematu, którą napisałeś. Jeśli zauważysz, że myślisz "to było wspomniane w OCR", zatrzymaj się i sprawdź, czy jest to w treści podtematu. Jeśli nie, pytanie jest nieważne.
 - Upewnij się, że na wszystkie pytania można odpowiedzieć, korzystając wyłącznie z informacji zawartych w treści podtematów.
 - Każde pytanie powinno być inne i sprawdzać wiedzę z innej rzeczy zawartej w treści podtematu.
-- ZABRONIONE: NIGDY nie twórz odpowiedzi takich jak „Tylko A", „Tylko B", „Tylko C", „A, B i C" ani podobnych prostych wzorców – wszystkie odpowiedzi muszą być pełnymi, opisowymi zdaniami lub frazami, które wymagają rzeczywistego zrozumienia treści.
+- ZABRONIONE: NIGDY nie twórz odpowiedzi takich jak „Tylko A", „Tylko B", „Tylko C", „A, B i C" ani podobnych prostych wzorców – wszystkie opcje to krótkie, równoległe odpowiedzi na pytanie — bez dodatkowych wyjaśnień w tekście opcji.
 - **Długość Odpowiedzi**: Zachowuj wszystkie odpowiedzi (zarówno poprawne, jak i błędne) KRÓTKIE – maksymalnie około 7 słów. Odpowiedzi powinny być zwięzłe i na temat, jednocześnie pozostając pełnymi i znaczącymi.
 - Utrzymuj wszystkie opcje odpowiedzi w zbliżonej długości, aby długość nie podpowiadała poprawnej opcji.
+- **Odpowiedzi bez podpowiedzi**: Każda opcja to krótka możliwa odpowiedź na pytanie — nie wyjaśnienie ani opis funkcji. Nie dopisuj do opcji informacji, które same zdradzają, czy odpowiedź pasuje do pytania.
+- **Cztery równo prawdopodobne kandydaty**: Wszystkie cztery opcje brzmią jak sensowne odpowiedzi po przeczytaniu podtematu. Dokładnie jedna jest poprawna. Błędne opcje to inne realne elementy z tego samego tematu, które można łatwo z nią pomylić — nie negacje ani samowykluczenia.
+- **Spójna forma, bez szablonu**: Wszystkie opcje w tym samym stylu i podobnej długości (np. same nazwy albo same krótkie frazy). Poprawna odpowiedź nie może wyróżniać się formatem ani długością.
+- **Test zgadywania**: Jeśli ktoś nie zna materiału mógłby wytypować poprawną odpowiedź bez czytania podtematu — przepisz pytanie i wszystkie cztery opcje.
 
 ## Format Wyniku (BEZ DODATKOWEGO TEKSTU)
 - W odpowiedzi zwróć TYLKO finalny obiekt JSON opisany poniżej. Nie dodawaj żadnych objaśnień, nagłówków, komentarzy, znaczników markdown ani bloków kodu.
@@ -63,17 +67,18 @@ Zwróć analizę w następującym formacie JSON (stwórz dokładnie 1 podtemat):
       "questions": [
         {
           "question": "Tekst pytania tutaj. Generuj pytania wyłącznie na podstawie treści tego podtematu w języku polskim.",
-          "right_answer": "Poprawna odpowiedź jako pełne zdanie lub fraza w języku polskim.",
+          "right_answer": "Krótka poprawna odpowiedź — np. nazwa lub fraza, bez wyjaśnień.",
           "wrong_answers": [
-            "Błędna, ale wiarygodna odpowiedź odzwierciedlająca typowe nieporozumienie w języku polskim.",
-            "Inna wiarygodna, ale błędna odpowiedź w języku polskim.",
-            "Jeszcze jedna wiarygodna, ale błędna odpowiedź w języku polskim."
+            "Krótka, wiarygodna błędna odpowiedź z tego samego tematu.",
+            "Inna krótka, wiarygodna błędna odpowiedź z tego samego tematu.",
+            "Jeszcze jedna krótka, wiarygodna błędna odpowiedź z tego samego tematu."
           ]
         }
       ]
     }
   ]
 }
+
 
 ## Tekst OCR do Analizy:
 {TEXT_CONTENT}

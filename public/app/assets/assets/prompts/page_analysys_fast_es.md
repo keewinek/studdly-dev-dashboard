@@ -44,9 +44,13 @@ Analiza el texto OCR proporcionado y crea subtemas con preguntas de test para ay
 - **ABSOLUTAMENTE PROHIBIDO**: NO uses información del texto OCR original al generar preguntas. Solo puedes usar el contenido del subtema que escribiste. Si te descubres pensando "esto se mencionaba en el OCR", detente y comprueba si está en el contenido de tu subtema. Si no, la pregunta no es válida.
 - Asegúrate de que todas las preguntas puedan responderse usando únicamente la información del contenido del subtema.
 - Cada pregunta debe ser diferente y evaluar el conocimiento de un aspecto distinto contenido en el subtema.
-- PROHIBIDO: NUNCA crees respuestas como "Solo A", "Solo B", "Solo C", "A, B y C" ni patrones simples similares: todas las respuestas deben ser frases u oraciones completas y descriptivas que exijan una comprensión real del contenido.
+- PROHIBIDO: NUNCA crees respuestas como "Solo A", "Solo B", "Solo C", "A, B y C" ni patrones simples similares: todas las opciones son respuestas cortas y paralelas a la pregunta — sin explicaciones extra en el texto de la opción.
 - **Longitud de las respuestas**: Mantén todas las respuestas (tanto correctas como incorrectas) CORTAS: aproximadamente 7 palabras como máximo. Deben ser concisas y directas, pero completas y con sentido.
 - Mantén todas las opciones con una longitud parecida para que la longitud no delate la respuesta correcta.
+- **Respuestas sin pistas**: Cada opción es una respuesta corta posible — no una explicación ni descripción de función. No añadas información que delate si la opción encaja con la pregunta.
+- **Cuatro candidatos igualmente plausibles**: Las cuatro opciones suenan como respuestas razonables tras leer el subtema. Solo una es correcta. Las incorrectas son otros conceptos reales del mismo tema que podrían confundirse fácilmente con ella — no negaciones ni auto-descalificaciones.
+- **Forma paralela, sin plantilla**: Mismo estilo y longitud similar en todas las opciones. La respuesta correcta no debe destacar por formato ni longitud.
+- **Prueba de adivinanza**: Si alguien que no leyó el subtema podría acertar la opción correcta — reescribe la pregunta y las cuatro opciones.
 
 ## Formato de salida (ESTRICTO - SIN TEXTO ADICIONAL)
 - Responde SOLO con el objeto JSON final descrito abajo. No añadas explicaciones, encabezados, comentarios, vallas de markdown ni bloques de código.
@@ -64,17 +68,18 @@ Devuelve el análisis en el siguiente formato JSON (crea exactamente 1 subtema):
       "questions": [
         {
           "question": "Texto de la pregunta aquí. Genera las preguntas solo a partir del contenido de este subtema, en español.",
-          "right_answer": "Respuesta correcta como frase u oración completa en español.",
+          "right_answer": "Respuesta correcta corta — p. ej. un nombre o frase, sin explicaciones.",
           "wrong_answers": [
-            "Respuesta incorrecta pero plausible que refleje un malentendido típico, en español.",
-            "Otra respuesta plausible pero incorrecta, en español.",
-            "Una más plausible pero incorrecta, en español."
+            "Respuesta incorrecta corta y plausible del mismo tema.",
+            "Otra respuesta incorrecta corta y plausible del mismo tema.",
+            "Una más incorrecta corta y plausible del mismo tema."
           ]
         }
       ]
     }
   ]
 }
+
 
 ## Texto OCR para analizar:
 {TEXT_CONTENT}

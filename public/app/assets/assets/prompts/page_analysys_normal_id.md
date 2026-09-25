@@ -43,9 +43,13 @@ Analisis teks OCR yang diberikan dan buat subtopik dengan pertanyaan kuis yang m
 - **SANGAT DILARANG**: Jangan gunakan informasi dari teks OCR asli saat membuat pertanyaan. Anda HANYA boleh menggunakan konten subtopik yang Anda tulis.
 - Pastikan semua pertanyaan dapat dijawab hanya dengan informasi dari konten subtopik.
 - Setiap pertanyaan harus berbeda dan menguji aspek berbeda dari konten subtopik.
-- DILARANG: JANGAN PERNAH membuat jawaban seperti "Hanya A", "Hanya B", "A, B dan C" – semua jawaban harus kalimat atau frasa lengkap yang deskriptif.
+- DILARANG: JANGAN PERNAH membuat jawaban seperti "Hanya A", "Hanya B", "A, B dan C" – semua opsi adalah jawaban singkat dan paralel untuk pertanyaan — tanpa penjelasan tambahan di teks opsi.
 - **Panjang Jawaban**: Buat semua jawaban (benar dan salah) SINGKAT – maksimal sekitar 7 kata.
 - Buat semua opsi jawaban kira-kira sama panjangnya agar panjang tidak mengungkapkan jawaban benar.
+- **Jawaban tanpa petunjuk**: Setiap opsi adalah jawaban singkat yang mungkin — bukan penjelasan atau deskripsi fungsi. Jangan tambahkan informasi yang mengungkapkan apakah opsi cocok dengan pertanyaan.
+- **Empat kandidat sama-sama masuk akal**: Keempat opsi terdengar seperti jawaban wajar setelah membaca subtopik. Hanya satu yang benar. Opsi salah adalah konsep nyata lain dari topik yang sama yang mudah disalahartikan sebagai jawaban benar — bukan negasi atau deskripsi yang menyingkirkan diri sendiri.
+- **Bentuk paralel, tanpa template**: Gaya dan panjang serupa untuk semua opsi. Jawaban benar tidak boleh menonjol karena format atau panjang.
+- **Tes tebak-tebakan**: Jika seseorang yang belum membaca subtopik bisa menebak opsi benar — tulis ulang pertanyaan dan keempat opsi.
 
 ## Format Output (KETAT - TANPA TEKS TAMBAHAN)
 - Balas HANYA dengan objek JSON akhir yang dijelaskan di bawah. Jangan tambahkan penjelasan, header, komentar, markdown fences, atau code blocks.
@@ -63,17 +67,18 @@ Kembalikan analisis dalam format JSON berikut (buat tepat 3 subtopik):
       "questions": [
         {
           "question": "Teks pertanyaan di sini. Buat pertanyaan hanya berdasarkan konten subtopik ini, dalam Bahasa Indonesia.",
-          "right_answer": "Jawaban benar sebagai kalimat atau frasa lengkap dalam Bahasa Indonesia.",
+          "right_answer": "Jawaban benar singkat — mis. nama atau frasa, tanpa penjelasan.",
           "wrong_answers": [
-            "Jawaban salah tapi masuk akal yang mencerminkan kesalahpahaman umum, dalam Bahasa Indonesia.",
-            "Jawaban salah masuk akal lainnya dalam Bahasa Indonesia.",
-            "Jawaban salah masuk akal lagi dalam Bahasa Indonesia."
+            "Jawaban salah singkat yang masuk akal dari topik yang sama.",
+            "Jawaban salah singkat masuk akal lain dari topik yang sama.",
+            "Jawaban salah singkat masuk akal lagi dari topik yang sama."
           ]
         }
       ]
     }
   ]
 }
+
 
 ## Teks OCR untuk Dianalisis:
 {TEXT_CONTENT}
