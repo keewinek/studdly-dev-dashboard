@@ -403,5 +403,22 @@
   "onboardingApiKeyTutorial2Zai": "Go to z.ai/manage-apikey/apikey-list, create an API key and copy it.",
   "onboardingApiKeyTitleZai": "Enter your Z.ai API Key",
   "onboardingApiKeyDescriptionZai": "Get a free key from Z.ai",
-  "onboardingApiKeyOpenStudioZai": "Open Z.ai API Keys"
+  "onboardingApiKeyOpenStudioZai": "Open Z.ai API Keys",
+  "shareTopic": "Share topic",
+  "topicShared": "Topic shared — tap to share again",
+  "shareTopicMessage": "Learn “{title}” with me in Studdly! {url}",
+  "shareNoInternet": "No internet. Connect and try again.",
+  "shareTooManyTries": "Too many shares at once. Try again in a minute.",
+  "shareTooBig": "This topic is too big to share.",
+  "shareFailed": "Couldn't share this topic. Try again later.",
+  "shareServerBusy": "Sharing is resting right now. Try again later.",
+  "importTopicLoading": "Opening the topic…",
+  "importTopicTitle": "Add this topic?",
+  "importTopicLessons": "Lessons: {count}",
+  "importTopicAdd": "Add",
+  "importTopicNotNow": "Not now",
+  "importLinkBroken": "This link doesn't work anymore. Ask your friend to share the topic again.",
+  "importNeedsUpdate": "Update Studdly to open this topic.",
+  "importNoInternet": "No internet. Connect and try again.",
+  "importFailed": "Couldn't add this topic. Try again later."
 }

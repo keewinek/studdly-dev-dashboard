@@ -403,5 +403,22 @@
   "onboardingApiKeyTutorial2Zai": "Wejdź na z.ai/manage-apikey/apikey-list, utwórz klucz API i skopiuj go.",
   "onboardingApiKeyTitleZai": "Wklej swój klucz API z Z.ai",
   "onboardingApiKeyDescriptionZai": "Pobierz darmowy klucz z Z.ai",
-  "onboardingApiKeyOpenStudioZai": "Otwórz Z.ai API Keys"
+  "onboardingApiKeyOpenStudioZai": "Otwórz Z.ai API Keys",
+  "shareTopic": "Udostępnij temat",
+  "topicShared": "Temat udostępniony — kliknij, aby udostępnić ponownie",
+  "shareTopicMessage": "Ucz się ze mną: „{title}” w Studdly! {url}",
+  "shareNoInternet": "Brak internetu. Połącz się i spróbuj ponownie.",
+  "shareTooManyTries": "Za dużo udostępnień naraz. Spróbuj za minutę.",
+  "shareTooBig": "Ten temat jest za duży, żeby go udostępnić.",
+  "shareFailed": "Nie udało się udostępnić tematu. Spróbuj później.",
+  "shareServerBusy": "Udostępnianie teraz odpoczywa. Spróbuj później.",
+  "importTopicLoading": "Otwieram temat…",
+  "importTopicTitle": "Dodać ten temat?",
+  "importTopicLessons": "Lekcje: {count}",
+  "importTopicAdd": "Dodaj",
+  "importTopicNotNow": "Nie teraz",
+  "importLinkBroken": "Ten link już nie działa. Poproś znajomego, żeby udostępnił temat jeszcze raz.",
+  "importNeedsUpdate": "Zaktualizuj Studdly, żeby otworzyć ten temat.",
+  "importNoInternet": "Brak internetu. Połącz się i spróbuj ponownie.",
+  "importFailed": "Nie udało się dodać tematu. Spróbuj później."
 }

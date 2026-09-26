@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-25T20:40:45.989622Z",
+  "generatedAt": "2026-09-26T10:05:03.233368Z",
   "source": "studdly/lib/ui_preview/ui_preview_catalog.dart",
   "screens": [
     {
@@ -855,6 +855,40 @@
       "group": "Learning",
       "tags": [
         "path",
+        "dialog"
+      ]
+    },
+    {
+      "screenKey": "topic_path",
+      "name": "Learning Path — Sharing (spinner)",
+      "route": "/topic",
+      "state": "share_loading",
+      "group": "Learning",
+      "tags": [
+        "path",
+        "share"
+      ]
+    },
+    {
+      "screenKey": "topic_path",
+      "name": "Learning Path — Shared (check badge)",
+      "route": "/topic",
+      "state": "share_shared",
+      "group": "Learning",
+      "tags": [
+        "path",
+        "share"
+      ]
+    },
+    {
+      "screenKey": "topic_path",
+      "name": "Learning Path — Add Shared Topic Dialog",
+      "route": "/topic",
+      "state": "import_confirm",
+      "group": "Learning",
+      "tags": [
+        "path",
+        "share",
         "dialog"
       ]
     },

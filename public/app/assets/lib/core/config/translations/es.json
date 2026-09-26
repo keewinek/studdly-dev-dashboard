@@ -360,5 +360,22 @@
   "onboardingApiKeyTutorial2Zai": "Ve a z.ai/manage-apikey/apikey-list, crea una clave API y cópiala.",
   "onboardingApiKeyTitleZai": "Introduce tu clave API de Z.ai",
   "onboardingApiKeyDescriptionZai": "Consigue una clave gratis de Z.ai",
-  "onboardingApiKeyOpenStudioZai": "Abrir claves API de Z.ai"
+  "onboardingApiKeyOpenStudioZai": "Abrir claves API de Z.ai",
+  "shareTopic": "Compartir tema",
+  "topicShared": "Tema compartido: toca para compartirlo otra vez",
+  "shareTopicMessage": "¡Aprende «{title}» conmigo en Studdly! {url}",
+  "shareNoInternet": "Sin internet. Conéctate e inténtalo de nuevo.",
+  "shareTooManyTries": "Demasiados envíos a la vez. Inténtalo en un minuto.",
+  "shareTooBig": "Este tema es demasiado grande para compartirlo.",
+  "shareFailed": "No se pudo compartir este tema. Inténtalo más tarde.",
+  "shareServerBusy": "Compartir está descansando ahora. Inténtalo más tarde.",
+  "importTopicLoading": "Abriendo el tema…",
+  "importTopicTitle": "¿Añadir este tema?",
+  "importTopicLessons": "Lecciones: {count}",
+  "importTopicAdd": "Añadir",
+  "importTopicNotNow": "Ahora no",
+  "importLinkBroken": "Este enlace ya no funciona. Pide a tu amigo que comparta el tema otra vez.",
+  "importNeedsUpdate": "Actualiza Studdly para abrir este tema.",
+  "importNoInternet": "Sin internet. Conéctate e inténtalo de nuevo.",
+  "importFailed": "No se pudo añadir este tema. Inténtalo más tarde."
 }

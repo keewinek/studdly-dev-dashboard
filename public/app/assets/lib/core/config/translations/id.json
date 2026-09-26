@@ -403,5 +403,22 @@
   "onboardingApiKeyTutorial2Zai": "Buka z.ai/manage-apikey/apikey-list, buat kunci API, lalu salin.",
   "onboardingApiKeyTitleZai": "Masukkan kunci API Z.ai-mu",
   "onboardingApiKeyDescriptionZai": "Ambil kunci gratis dari Z.ai",
-  "onboardingApiKeyOpenStudioZai": "Buka Z.ai API Keys"
+  "onboardingApiKeyOpenStudioZai": "Buka Z.ai API Keys",
+  "shareTopic": "Bagikan topik",
+  "topicShared": "Topik dibagikan — ketuk untuk membagikan lagi",
+  "shareTopicMessage": "Belajar “{title}” bareng aku di Studdly! {url}",
+  "shareNoInternet": "Tidak ada internet. Sambungkan lalu coba lagi.",
+  "shareTooManyTries": "Terlalu banyak berbagi sekaligus. Coba lagi dalam satu menit.",
+  "shareTooBig": "Topik ini terlalu besar untuk dibagikan.",
+  "shareFailed": "Topik tidak bisa dibagikan. Coba lagi nanti.",
+  "shareServerBusy": "Fitur berbagi sedang istirahat. Coba lagi nanti.",
+  "importTopicLoading": "Membuka topik…",
+  "importTopicTitle": "Tambahkan topik ini?",
+  "importTopicLessons": "Pelajaran: {count}",
+  "importTopicAdd": "Tambah",
+  "importTopicNotNow": "Nanti saja",
+  "importLinkBroken": "Tautan ini sudah tidak berfungsi. Minta temanmu membagikan topiknya lagi.",
+  "importNeedsUpdate": "Perbarui Studdly untuk membuka topik ini.",
+  "importNoInternet": "Tidak ada internet. Sambungkan lalu coba lagi.",
+  "importFailed": "Topik tidak bisa ditambahkan. Coba lagi nanti."
 }

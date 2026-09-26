@@ -403,5 +403,22 @@
   "onboardingApiKeyTutorial2Zai": "z.ai/manage-apikey/apikey-list पर जाएँ, API कुंजी बनाएँ और कॉपी करें।",
   "onboardingApiKeyTitleZai": "अपनी Z.ai API कुंजी लिखें",
   "onboardingApiKeyDescriptionZai": "Z.ai से मुफ़्त कुंजी लें",
-  "onboardingApiKeyOpenStudioZai": "Z.ai API Keys खोलें"
+  "onboardingApiKeyOpenStudioZai": "Z.ai API Keys खोलें",
+  "shareTopic": "विषय शेयर करें",
+  "topicShared": "विषय शेयर हो गया — फिर से शेयर करने के लिए टैप करें",
+  "shareTopicMessage": "Studdly में मेरे साथ “{title}” सीखो! {url}",
+  "shareNoInternet": "इंटरनेट नहीं है। कनेक्ट करें और फिर कोशिश करें।",
+  "shareTooManyTries": "एक साथ बहुत ज़्यादा शेयर। एक मिनट बाद कोशिश करें।",
+  "shareTooBig": "यह विषय शेयर करने के लिए बहुत बड़ा है।",
+  "shareFailed": "यह विषय शेयर नहीं हो सका। बाद में कोशिश करें।",
+  "shareServerBusy": "शेयरिंग अभी आराम कर रही है। बाद में कोशिश करें।",
+  "importTopicLoading": "विषय खुल रहा है…",
+  "importTopicTitle": "यह विषय जोड़ें?",
+  "importTopicLessons": "पाठ: {count}",
+  "importTopicAdd": "जोड़ें",
+  "importTopicNotNow": "अभी नहीं",
+  "importLinkBroken": "यह लिंक अब काम नहीं करता। अपने दोस्त से विषय फिर से शेयर करने को कहें।",
+  "importNeedsUpdate": "यह विषय खोलने के लिए Studdly अपडेट करें।",
+  "importNoInternet": "इंटरनेट नहीं है। कनेक्ट करें और फिर कोशिश करें।",
+  "importFailed": "यह विषय जोड़ा नहीं जा सका। बाद में कोशिश करें।"
 }

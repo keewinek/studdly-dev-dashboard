@@ -360,5 +360,22 @@
   "onboardingApiKeyTutorial2Zai": "Перейди на z.ai/manage-apikey/apikey-list, створи ключ API і скопіюй його.",
   "onboardingApiKeyTitleZai": "Введи свій ключ API Z.ai",
   "onboardingApiKeyDescriptionZai": "Отримай безкоштовний ключ у Z.ai",
-  "onboardingApiKeyOpenStudioZai": "Відкрити ключі API Z.ai"
+  "onboardingApiKeyOpenStudioZai": "Відкрити ключі API Z.ai",
+  "shareTopic": "Поділитися темою",
+  "topicShared": "Тему поширено — торкнись, щоб поділитися ще раз",
+  "shareTopicMessage": "Вчи «{title}» разом зі мною в Studdly! {url}",
+  "shareNoInternet": "Немає інтернету. Підключись і спробуй ще раз.",
+  "shareTooManyTries": "Забагато поширень одразу. Спробуй за хвилину.",
+  "shareTooBig": "Ця тема завелика, щоб нею поділитися.",
+  "shareFailed": "Не вдалося поділитися темою. Спробуй пізніше.",
+  "shareServerBusy": "Поширення зараз відпочиває. Спробуй пізніше.",
+  "importTopicLoading": "Відкриваю тему…",
+  "importTopicTitle": "Додати цю тему?",
+  "importTopicLessons": "Уроки: {count}",
+  "importTopicAdd": "Додати",
+  "importTopicNotNow": "Не зараз",
+  "importLinkBroken": "Це посилання більше не працює. Попроси друга поділитися темою ще раз.",
+  "importNeedsUpdate": "Онови Studdly, щоб відкрити цю тему.",
+  "importNoInternet": "Немає інтернету. Підключись і спробуй ще раз.",
+  "importFailed": "Не вдалося додати тему. Спробуй пізніше."
 }
