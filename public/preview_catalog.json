@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-19T19:58:02.248170Z",
+  "generatedAt": "2026-10-19T20:33:34.064624Z",
   "source": "studdly/lib/ui_preview/ui_preview_catalog.dart",
   "screens": [
     {
@@ -867,6 +867,17 @@
       "tags": [
         "path",
         "flashcards"
+      ]
+    },
+    {
+      "screenKey": "topic_path",
+      "name": "Learning Path — Mode: Read",
+      "route": "/topic",
+      "state": "mode_read",
+      "group": "Learning",
+      "tags": [
+        "path",
+        "read"
       ]
     },
     {
