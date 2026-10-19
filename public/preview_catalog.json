@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T10:05:03.233368Z",
+  "generatedAt": "2026-10-19T19:58:02.248170Z",
   "source": "studdly/lib/ui_preview/ui_preview_catalog.dart",
   "screens": [
     {
@@ -845,6 +845,28 @@
       "tags": [
         "path",
         "scrolled"
+      ]
+    },
+    {
+      "screenKey": "topic_path",
+      "name": "Learning Path — Mode: Przepytanka",
+      "route": "/topic",
+      "state": "mode_quiz",
+      "group": "Learning",
+      "tags": [
+        "path",
+        "quiz"
+      ]
+    },
+    {
+      "screenKey": "topic_path",
+      "name": "Learning Path — Mode: Flashcards",
+      "route": "/topic",
+      "state": "mode_flashcards",
+      "group": "Learning",
+      "tags": [
+        "path",
+        "flashcards"
       ]
     },
     {

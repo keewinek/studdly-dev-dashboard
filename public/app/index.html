@@ -33,32 +33,45 @@
   <meta name="description" content="The Future of Learning">
   <link rel="manifest" href="manifest.json">
 
-  <!-- Tesseract.js OCR for Flutter web -->
-  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <!--
+    Tesseract.js OCR for Flutter web.
+
+    Served from our own origin (web/vendor/, populated by tool/fetch_web_vendor.sh)
+    rather than a public CDN: a CDN request would disclose the visitor's IP to a
+    third party before any consent. workerPath / corePath / langPath must be set
+    explicitly, because Tesseract otherwise fetches those at runtime from
+    jsdelivr and tessdata.projectnaptha.com and the leak comes back.
+  -->
+  <script src="vendor/tesseract/tesseract.min.js"></script>
   <script>
+    // Absolute URLs, so the paths still resolve inside Tesseract's web worker
+    // and under a non-root --base-href.
+    window.studdlyVendorBase = new URL('vendor/', document.baseURI).href;
+
     // Called from Dart via JS interop (lib/core/services/ocr/ocr_performer_web.dart)
     window.studdlyRecognizeText = async function (imageBytes, lang) {
       const bytes = imageBytes instanceof Uint8Array
         ? imageBytes
         : new Uint8Array(imageBytes);
       const blob = new Blob([bytes], { type: 'image/jpeg' });
+      const vendor = window.studdlyVendorBase;
       const result = await Tesseract.recognize(blob, lang || 'eng+pol', {
         logger: function () {},
+        workerPath: vendor + 'tesseract/worker.min.js',
+        corePath: vendor + 'tesseract-core',
+        langPath: vendor + 'tesseract-lang',
       });
       return (result && result.data && result.data.text) ? result.data.text : '';
     };
   </script>
 </head>
 <body>
-  <script src='https://cdn.jsdelivr.net/npm/pdfjs-dist@4.6.82/build/pdf.min.mjs' type='module'></script>
+  <!-- pdf.js, self-hosted for the same reason as Tesseract above. -->
+  <script src='vendor/pdfjs/pdf.min.mjs' type='module'></script>
   <script type='module'>
   var { pdfjsLib } = globalThis;
-  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.6.82/build/pdf.worker.mjs';
-
-  var pdfRenderOptions = {
-    cMapUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.6.82/cmaps/',
-    cMapPacked: true,
-  }
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    new URL('vendor/pdfjs/pdf.worker.mjs', document.baseURI).href;
   </script>
   <script>
     // Clear stale Flutter service workers/caches before bootstrapping.
